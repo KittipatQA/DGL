@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="true" generated="20181123 18:11:56.666" generator="Robot 3.1a2 (Python 2.7.15 on win32)">
+<suite id="s1" name="TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003">
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot" id="s1-s1" name="TC OE Lis 001">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:56.829" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:56.829" starttime="20181123 18:11:56.829"></status>
+</kw>
+<test id="s1-s1-t1" name="1ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ชำระแล้ว">
+<status status="FAIL" endtime="20181123 18:11:56.832" critical="yes" starttime="20181123 18:11:56.830">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<test id="s1-s1-t2" name="2ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ค้างชำระ">
+<status status="FAIL" endtime="20181123 18:11:56.833" critical="yes" starttime="20181123 18:11:56.833">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<test id="s1-s1-t3" name="3ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ยกเลิกรายการ">
+<status status="FAIL" endtime="20181123 18:11:56.833" critical="yes" starttime="20181123 18:11:56.833">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:56.833" starttime="20181123 18:11:56.833"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:56.833" starttime="20181123 18:11:56.703">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_002.robot" id="s1-s2" name="TC OE Lis 002">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:56.865" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:56.865" starttime="20181123 18:11:56.865"></status>
+</kw>
+<test id="s1-s2-t1" name="4ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ชำระแล้ว">
+<status status="FAIL" endtime="20181123 18:11:56.880" critical="yes" starttime="20181123 18:11:56.865">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<test id="s1-s2-t2" name="5ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ค้างชำระ">
+<status status="FAIL" endtime="20181123 18:11:56.880" critical="yes" starttime="20181123 18:11:56.880">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<test id="s1-s2-t3" name="6ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ยกเลิกรายการ">
+<status status="FAIL" endtime="20181123 18:11:56.880" critical="yes" starttime="20181123 18:11:56.880">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:56.896" starttime="20181123 18:11:56.896"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:56.896" starttime="20181123 18:11:56.833">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_003_001.robot" id="s1-s3" name="TC OE Lis 003 001">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:56.912" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:56.912" starttime="20181123 18:11:56.912"></status>
+</kw>
+<test id="s1-s3-t1" name="7ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ชำระแล้ว_เลือก_Checkbox_ยกเลิกรายการ">
+<status status="FAIL" endtime="20181123 18:11:56.912" critical="yes" starttime="20181123 18:11:56.912">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:56.912" starttime="20181123 18:11:56.912"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:56.912" starttime="20181123 18:11:56.896">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_003_002.robot" id="s1-s4" name="TC OE Lis 003 002">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:56.943" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:56.943" starttime="20181123 18:11:56.943"></status>
+</kw>
+<test id="s1-s4-t1" name="8ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ชำระแล้ว_เลือก_Checkbox_ยกเลิกรายการ">
+<status status="FAIL" endtime="20181123 18:11:56.943" critical="yes" starttime="20181123 18:11:56.943">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:56.943" starttime="20181123 18:11:56.943"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:56.943" starttime="20181123 18:11:56.927">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_004.robot" id="s1-s5" name="TC OE Lis 004">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:56.974" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:56.974" starttime="20181123 18:11:56.974"></status>
+</kw>
+<test id="s1-s5-t1" name="9ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ไม่เลือกสถานะเอกสาร">
+<status status="FAIL" endtime="20181123 18:11:56.974" critical="yes" starttime="20181123 18:11:56.974">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<test id="s1-s5-t2" name="10ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ไม่เลือกสถานะเอกสาร">
+<status status="FAIL" endtime="20181123 18:11:56.990" critical="yes" starttime="20181123 18:11:56.974">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:56.990" starttime="20181123 18:11:56.990"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:56.990" starttime="20181123 18:11:56.958">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_001.robot" id="s1-s6" name="TC OE Sr 001 001">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:57.005" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:57.005" starttime="20181123 18:11:57.005"></status>
+</kw>
+<test id="s1-s6-t1" name="11ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ค้นหาเลขที่เอกสารที่มีในระบบ">
+<status status="FAIL" endtime="20181123 18:11:57.005" critical="yes" starttime="20181123 18:11:57.005">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:57.021" starttime="20181123 18:11:57.021"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:57.021" starttime="20181123 18:11:56.990">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_002.robot" id="s1-s7" name="TC OE Sr 001 002">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:57.037" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:57.037" starttime="20181123 18:11:57.037"></status>
+</kw>
+<test id="s1-s7-t1" name="12ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ค้นหาผู้จัดจำหน่ายที่มีในระบบ">
+<status status="FAIL" endtime="20181123 18:11:57.037" critical="yes" starttime="20181123 18:11:57.037">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:57.037" starttime="20181123 18:11:57.037"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:57.037" starttime="20181123 18:11:57.021">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_003.robot" id="s1-s8" name="TC OE Sr 001 003">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:57.068" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:57.068" starttime="20181123 18:11:57.068"></status>
+</kw>
+<test id="s1-s8-t1" name="13ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ค้นหารายละเอียดรายการที่มีในระบบ">
+<status status="FAIL" endtime="20181123 18:11:57.068" critical="yes" starttime="20181123 18:11:57.068">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:57.068" starttime="20181123 18:11:57.068"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:57.068" starttime="20181123 18:11:57.052">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_002_001.robot" id="s1-s9" name="TC OE Sr 002 001">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:57.099" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:57.099" starttime="20181123 18:11:57.099"></status>
+</kw>
+<test id="s1-s9-t1" name="14ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ค้นหาเลขที่เอกสารที่ไม่มีในระบบ">
+<status status="FAIL" endtime="20181123 18:11:57.099" critical="yes" starttime="20181123 18:11:57.099">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:57.099" starttime="20181123 18:11:57.099"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:57.099" starttime="20181123 18:11:57.068">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_001_001.robot" id="s1-s10" name="TS OE LSr 001 001">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:57.130" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:57.130" starttime="20181123 18:11:57.130"></status>
+</kw>
+<test id="s1-s10-t1" name="20ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ชำระแล้ว_ระบุรายการที่มีสถานะ_ชำระแล้ว_ในระบบ">
+<status status="FAIL" endtime="20181123 18:11:57.130" critical="yes" starttime="20181123 18:11:57.130">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:57.130" starttime="20181123 18:11:57.130"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:57.130" starttime="20181123 18:11:57.099">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_001_002.robot" id="s1-s11" name="TS OE LSr 001 002">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:57.162" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:57.162" starttime="20181123 18:11:57.162"></status>
+</kw>
+<test id="s1-s11-t1" name="21ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ชำระแล้ว_ระบุรายการที่ไม่มีในระบบ">
+<status status="FAIL" endtime="20181123 18:11:57.162" critical="yes" starttime="20181123 18:11:57.162">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<test id="s1-s11-t2" name="22ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ไม่เลือก_Checkbox_ระบุรายการที่มีสถานะ_ชำระแล้ว_ในระบบ">
+<status status="FAIL" endtime="20181123 18:11:57.162" critical="yes" starttime="20181123 18:11:57.162">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<test id="s1-s11-t3" name="23ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ไม่เลือก_Checkbox_ระบุรายการที่ไม่มีในระบบ">
+<status status="FAIL" endtime="20181123 18:11:57.177" critical="yes" starttime="20181123 18:11:57.177">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:57.177" starttime="20181123 18:11:57.177"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:57.177" starttime="20181123 18:11:57.146">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_002_001.robot" id="s1-s12" name="TS OE LSr 002 001">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:57.208" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:57.208" starttime="20181123 18:11:57.208"></status>
+</kw>
+<test id="s1-s12-t1" name="24ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ชำระแล้ว_ระบุรายการ">
+<status status="FAIL" endtime="20181123 18:11:57.208" critical="yes" starttime="20181123 18:11:57.208">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<test id="s1-s12-t2" name="26ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ไม่เลือก_Checkbox_ระบุรายการ">
+<status status="FAIL" endtime="20181123 18:11:57.208" critical="yes" starttime="20181123 18:11:57.208">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:57.208" starttime="20181123 18:11:57.208"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:57.208" starttime="20181123 18:11:57.177">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_002_002.robot" id="s1-s13" name="TS OE LSr 002 002">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:57.240" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:57.240" starttime="20181123 18:11:57.240"></status>
+</kw>
+<test id="s1-s13-t1" name="25ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ชำระแล้ว_ไม่ระบุรายการ">
+<status status="FAIL" endtime="20181123 18:11:57.240" critical="yes" starttime="20181123 18:11:57.240">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<test id="s1-s13-t2" name="27ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ไม่เลือก_Checkbox_ไม่ระบุรายการ">
+<status status="FAIL" endtime="20181123 18:11:57.240" critical="yes" starttime="20181123 18:11:57.240">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:57.240" starttime="20181123 18:11:57.240"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:57.240" starttime="20181123 18:11:57.224">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_002_002.robot" id="s1-s14" name="TS OE Sr 002 002">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:57.271" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:57.271" starttime="20181123 18:11:57.271"></status>
+</kw>
+<test id="s1-s14-t1" name="15ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ค้นหาผู้จัดจำหน่ายที่ไม่มีในระบบ">
+<status status="FAIL" endtime="20181123 18:11:57.271" critical="yes" starttime="20181123 18:11:57.271">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:57.271" starttime="20181123 18:11:57.271"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:57.271" starttime="20181123 18:11:57.255">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_002_003.robot" id="s1-s15" name="TS OE Sr 002 003">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:57.287" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:57.287" starttime="20181123 18:11:57.287"></status>
+</kw>
+<test id="s1-s15-t1" name="16ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ค้นหารายละเอียดรายการที่ไม่มีในระบบ">
+<status status="FAIL" endtime="20181123 18:11:57.287" critical="yes" starttime="20181123 18:11:57.287">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:57.302" starttime="20181123 18:11:57.302"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:57.302" starttime="20181123 18:11:57.271">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_001.robot" id="s1-s16" name="TS OE Sr 003 001">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:57.318" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:57.318" starttime="20181123 18:11:57.318"></status>
+</kw>
+<test id="s1-s16-t1" name="17ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ค้นหาเลขที่เอกสาร">
+<status status="FAIL" endtime="20181123 18:11:57.318" critical="yes" starttime="20181123 18:11:57.318">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:57.318" starttime="20181123 18:11:57.318"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:57.318" starttime="20181123 18:11:57.302">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_002.robot" id="s1-s17" name="TS OE Sr 003 002">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:57.333" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:57.333" starttime="20181123 18:11:57.333"></status>
+</kw>
+<test id="s1-s17-t1" name="18ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ค้นหาผู้จัดจำหน่าย">
+<status status="FAIL" endtime="20181123 18:11:57.349" critical="yes" starttime="20181123 18:11:57.333">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:57.349" starttime="20181123 18:11:57.349"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:57.349" starttime="20181123 18:11:57.318">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<suite source="D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_003.robot" id="s1-s18" name="TS OE Sr 003 003">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20181123 18:11:57.380" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181123 18:11:57.380" starttime="20181123 18:11:57.380"></status>
+</kw>
+<test id="s1-s18-t1" name="19ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ค้นหารายละเอียดรายการ">
+<status status="FAIL" endtime="20181123 18:11:57.380" critical="yes" starttime="20181123 18:11:57.380">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181123 18:11:57.396" starttime="20181123 18:11:57.396"></status>
+</kw>
+<status status="FAIL" endtime="20181123 18:11:57.396" starttime="20181123 18:11:57.349">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<status status="FAIL" endtime="20181123 18:11:57.412" starttime="20181123 18:11:56.684"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="27" pass="0">Critical Tasks</stat>
+<stat fail="27" pass="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="27" id="s1" name="TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003</stat>
+<stat fail="3" id="s1-s1" name="TC OE Lis 001" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TC OE Lis 001</stat>
+<stat fail="3" id="s1-s2" name="TC OE Lis 002" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TC OE Lis 002</stat>
+<stat fail="1" id="s1-s3" name="TC OE Lis 003 001" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TC OE Lis 003 001</stat>
+<stat fail="1" id="s1-s4" name="TC OE Lis 003 002" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TC OE Lis 003 002</stat>
+<stat fail="2" id="s1-s5" name="TC OE Lis 004" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TC OE Lis 004</stat>
+<stat fail="1" id="s1-s6" name="TC OE Sr 001 001" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TC OE Sr 001 001</stat>
+<stat fail="1" id="s1-s7" name="TC OE Sr 001 002" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TC OE Sr 001 002</stat>
+<stat fail="1" id="s1-s8" name="TC OE Sr 001 003" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TC OE Sr 001 003</stat>
+<stat fail="1" id="s1-s9" name="TC OE Sr 002 001" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TC OE Sr 002 001</stat>
+<stat fail="1" id="s1-s10" name="TS OE LSr 001 001" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TS OE LSr 001 001</stat>
+<stat fail="3" id="s1-s11" name="TS OE LSr 001 002" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TS OE LSr 001 002</stat>
+<stat fail="2" id="s1-s12" name="TS OE LSr 002 001" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TS OE LSr 002 001</stat>
+<stat fail="2" id="s1-s13" name="TS OE LSr 002 002" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TS OE LSr 002 002</stat>
+<stat fail="1" id="s1-s14" name="TS OE Sr 002 002" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TS OE Sr 002 002</stat>
+<stat fail="1" id="s1-s15" name="TS OE Sr 002 003" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TS OE Sr 002 003</stat>
+<stat fail="1" id="s1-s16" name="TS OE Sr 003 001" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TS OE Sr 003 001</stat>
+<stat fail="1" id="s1-s17" name="TS OE Sr 003 002" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TS OE Sr 003 002</stat>
+<stat fail="1" id="s1-s18" name="TS OE Sr 003 003" pass="0">TC OE Lis 001 &amp; TC OE Lis 002 &amp; TC OE Lis 003 001 &amp; TC OE Lis 003 002 &amp; TC OE Lis 004 &amp; TC OE Sr 001 001 &amp; TC OE Sr 001 002 &amp; TC OE Sr 001 003 &amp; TC OE Sr 002 001 &amp; TS OE LSr 001 001 &amp; TS OE LSr 001 002 &amp; TS OE LSr 002 001 &amp; TS OE LSr 002 002 &amp; TS OE Sr 002 002 &amp; TS OE Sr 002 003 &amp; TS OE Sr 003 001 &amp; TS OE Sr 003 002 &amp; TS OE Sr 003 003.TS OE Sr 003 003</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20181123 18:11:56.807" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.807" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.807" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.807" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.823" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Lis_1.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.833" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.849" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.849" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.849" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.849" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Lis_0.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.896" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_003_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.896" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_003_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.896" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_003_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.896" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_003_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.896" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_003_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Lis_2.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.927" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_003_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.927" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_003_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.927" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_003_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.927" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_003_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.927" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_003_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Lis_0.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.958" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_004.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.958" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_004.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.958" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_004.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.958" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_004.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.958" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_004.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Lis_0.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.990" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.990" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:56.990" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.005" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.005" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Sr_1.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.021" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.021" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.021" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.021" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.021" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Sr_2.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.052" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_003.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.052" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_003.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.052" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_003.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.052" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_003.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.052" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_001_003.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Sr_3.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.083" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_002_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.083" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_002_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.083" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_002_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.083" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_002_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.083" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TC_OE_Sr_002_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Sr_0.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.115" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_001_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.115" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_001_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.115" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_001_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.115" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_001_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.115" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_001_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_LSr_1.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.146" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_001_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.146" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_001_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.146" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_001_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.146" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_001_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.146" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_001_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_LSr_0.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.177" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_002_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.177" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_002_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.177" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_002_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.193" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_002_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.193" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_002_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_LSr_0.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.224" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_002_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.224" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_002_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.224" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_002_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.224" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_002_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.224" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_002_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_LSr_0.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.255" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_002_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.255" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_002_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.255" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_002_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.255" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_002_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.255" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_002_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Sr_0.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.271" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_002_003.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.271" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_002_003.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.287" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_002_003.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.287" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_002_003.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.287" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_002_003.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Sr_0.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.302" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.302" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.302" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.302" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.302" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Sr_0.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.333" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.333" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.333" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.333" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.333" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Sr_0.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.365" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_003.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.365" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_003.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.365" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_003.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.365" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_003.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181123 18:11:57.365" level="ERROR">Error in file 'D:\DGL\Case\BuyCase\otherExpense\TS_OE_Sr_003_003.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Sr_0.resource' does not exist.</msg>
+</errors>
+</robot>
