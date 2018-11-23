@@ -8,6 +8,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Page/login_page.resourc
 Resource             /Users/USER1/.jenkins/workspace/DGL/Logic/TS_OE_Sr_2.resource
 Suite Setup          Open the web page
 Test Setup           Go to login page
+Test Teardown        Run Keyword If Test Failed     Capture Screen
 Test Template        Oe Check Search 2
 Suite Teardown       Close Browser
 

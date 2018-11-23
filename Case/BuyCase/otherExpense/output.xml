@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="true" generated="20181123 17:29:29.627" generator="Robot 3.1a2 (Python 2.7.15 on win32)">
-<suite source="c:\Users\USER1\.jenkins\workspace\DGL\Case\BuyCase\otherExpense\TS_OE_LSr_001_002.robot" id="s1" name="TS OE LSr 001 002">
+<robot rpa="true" generated="20181123 17:35:14.275" generator="Robot 3.1a2 (Python 2.7.15 on win32)">
+<suite source="C:\Users\USER1\.jenkins\workspace\DGL\Case\BuyCase\otherExpense" id="s1" name="otherExpense">
+<suite source="C:\Users\USER1\.jenkins\workspace\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot" id="s1-s1" name="TC OE Lis 001">
 <kw type="setup" name="Open the web page" library="dglforsme">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -8,35 +9,35 @@
 <arg>${open_url}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20181123 17:29:29.788" level="INFO">Opening browser 'chrome' to base url 'https://dgl-acct.addtechhub.com'.</msg>
-<status status="PASS" endtime="20181123 17:29:34.046" starttime="20181123 17:29:29.788"></status>
+<msg timestamp="20181123 17:35:14.435" level="INFO">Opening browser 'chrome' to base url 'https://dgl-acct.addtechhub.com'.</msg>
+<status status="PASS" endtime="20181123 17:35:18.508" starttime="20181123 17:35:14.434"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20181123 17:29:35.402" starttime="20181123 17:29:34.047"></status>
+<status status="PASS" endtime="20181123 17:35:19.622" starttime="20181123 17:35:18.508"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>0</arg>
 </arguments>
-<status status="PASS" endtime="20181123 17:29:35.402" starttime="20181123 17:29:35.402"></status>
+<status status="PASS" endtime="20181123 17:35:19.623" starttime="20181123 17:35:19.622"></status>
 </kw>
-<status status="PASS" endtime="20181123 17:29:35.402" starttime="20181123 17:29:29.787"></status>
+<status status="PASS" endtime="20181123 17:35:19.623" starttime="20181123 17:35:14.434"></status>
 </kw>
-<test id="s1-t1" name="21ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ชำระแล้ว_ระบุรายการที่ไม่มีในระบบ">
+<test id="s1-s1-t1" name="1ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ชำระแล้ว">
 <kw type="setup" name="Go to login page" library="dglforsme">
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${login_url}</arg>
 </arguments>
-<msg timestamp="20181123 17:29:35.407" level="INFO">Opening url 'https://dgl-acct.addtechhub.com/login'</msg>
-<status status="PASS" endtime="20181123 17:29:44.563" starttime="20181123 17:29:35.406"></status>
+<msg timestamp="20181123 17:35:19.626" level="INFO">Opening url 'https://dgl-acct.addtechhub.com/login'</msg>
+<status status="PASS" endtime="20181123 17:35:20.558" starttime="20181123 17:35:19.626"></status>
 </kw>
-<status status="PASS" endtime="20181123 17:29:44.564" starttime="20181123 17:29:35.406"></status>
+<status status="PASS" endtime="20181123 17:35:20.558" starttime="20181123 17:35:19.626"></status>
 </kw>
-<kw name="Oe Check List Search 0" library="TS_OE_LSr_0">
+<kw name="Oe Check Result 1" library="TS_OE_Lis_1">
 <arguments>
 <arg>tester@gmail.com</arg>
 <arg>123123</arg>
@@ -44,7 +45,7 @@
 <arg>yes</arg>
 <arg>no</arg>
 <arg>no</arg>
-<arg>เครื่องบินโดยสาร</arg>
+<arg>ชำระแล้ว</arg>
 </arguments>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -52,15 +53,15 @@
 <arg>${logic}</arg>
 <arg>Dharmniti Genaral Ledger</arg>
 </arguments>
-<msg timestamp="20181123 17:29:44.566" level="INFO">${logic} = Dharmniti Genaral Ledger</msg>
-<status status="PASS" endtime="20181123 17:29:44.566" starttime="20181123 17:29:44.565"></status>
+<msg timestamp="20181123 17:35:20.563" level="INFO">${logic} = Dharmniti Genaral Ledger</msg>
+<status status="PASS" endtime="20181123 17:35:20.563" starttime="20181123 17:35:20.561"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>0.3</arg>
 </arguments>
-<status status="PASS" endtime="20181123 17:29:44.566" starttime="20181123 17:29:44.566"></status>
+<status status="PASS" endtime="20181123 17:35:20.564" starttime="20181123 17:35:20.563"></status>
 </kw>
 <kw name="Set Directory" library="dglforsme">
 <arguments>
@@ -78,18 +79,18 @@
 <assign>
 <var>${date current}</var>
 </assign>
-<msg timestamp="20181123 17:29:44.569" level="INFO">${date current} = 2018-11-23 17-29-44</msg>
-<status status="PASS" endtime="20181123 17:29:44.569" starttime="20181123 17:29:44.568"></status>
+<msg timestamp="20181123 17:35:20.566" level="INFO">${date current} = 2018-11-23 17-35-20</msg>
+<status status="PASS" endtime="20181123 17:35:20.566" starttime="20181123 17:35:20.565"></status>
 </kw>
-<msg timestamp="20181123 17:29:44.569" level="INFO">${Date} = 2018-11-23 17-29-44</msg>
-<status status="PASS" endtime="20181123 17:29:44.569" starttime="20181123 17:29:44.568"></status>
+<msg timestamp="20181123 17:35:20.566" level="INFO">${Date} = 2018-11-23 17-35-20</msg>
+<status status="PASS" endtime="20181123 17:35:20.566" starttime="20181123 17:35:20.564"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${Date}</arg>
 </arguments>
-<status status="PASS" endtime="20181123 17:29:44.570" starttime="20181123 17:29:44.569"></status>
+<status status="PASS" endtime="20181123 17:35:20.567" starttime="20181123 17:35:20.566"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -97,51 +98,10 @@
 <arg>${Path}</arg>
 <arg>${Output_url}/${image_name} ${Date}</arg>
 </arguments>
-<msg timestamp="20181123 17:29:44.571" level="INFO">${Path} = /Users/USER1/.jenkins/workspace/DGL-For-SME/Screen/OE Page Search 2018-11-23 17-29-44</msg>
-<status status="PASS" endtime="20181123 17:29:44.571" starttime="20181123 17:29:44.570"></status>
+<msg timestamp="20181123 17:35:20.568" level="INFO">${Path} = /Users/USER1/.jenkins/workspace/DGL-For-SME/Screen/OE Page Search 2018-11-23 17-35-20</msg>
+<status status="PASS" endtime="20181123 17:35:20.568" starttime="20181123 17:35:20.567"></status>
 </kw>
-<status status="PASS" endtime="20181123 17:29:44.571" starttime="20181123 17:29:44.567"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:29:45.179" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-29-44/21%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A1.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-29-44/21%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:29:45.180" starttime="20181123 17:29:44.571"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:29:45.180" starttime="20181123 17:29:44.571"></status>
-</kw>
-<kw name="Input User" library="login_page">
-<arguments>
-<arg>${username}</arg>
-</arguments>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://form/input[1]</arg>
-<arg>${username}</arg>
-</arguments>
-<msg timestamp="20181123 17:29:45.180" level="INFO">Typing text 'tester@gmail.com' into text field 'xpath://form/input[1]'.</msg>
-<status status="PASS" endtime="20181123 17:29:46.192" starttime="20181123 17:29:45.180"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:29:46.192" starttime="20181123 17:29:45.180"></status>
-</kw>
-<kw name="Input Password" library="login_page">
-<arguments>
-<arg>${password}</arg>
-</arguments>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://form/input[2]</arg>
-<arg>${password}</arg>
-</arguments>
-<msg timestamp="20181123 17:29:46.193" level="INFO">Typing text '123123' into text field 'xpath://form/input[2]'.</msg>
-<status status="PASS" endtime="20181123 17:29:47.176" starttime="20181123 17:29:46.193"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:29:47.176" starttime="20181123 17:29:46.192"></status>
+<status status="PASS" endtime="20181123 17:35:20.569" starttime="20181123 17:35:20.564"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -149,1115 +109,159 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20181123 17:29:47.759" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-29-44/21%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A2.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-29-44/21%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:29:47.759" starttime="20181123 17:29:47.176"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:29:47.759" starttime="20181123 17:29:47.176"></status>
-</kw>
-<kw name="Login Submit" library="login_page">
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://button[2]</arg>
-</arguments>
-<msg timestamp="20181123 17:29:47.760" level="INFO">Clicking button 'xpath://button[2]'.</msg>
-<status status="PASS" endtime="20181123 17:29:49.362" starttime="20181123 17:29:47.760"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:29:49.362" starttime="20181123 17:29:47.759"></status>
-</kw>
-<kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<doc>Waits until ``text`` appears on current page.</doc>
-<arguments>
-<arg>${logic}</arg>
-</arguments>
-<status status="PASS" endtime="20181123 17:29:49.697" starttime="20181123 17:29:49.362"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:29:50.314" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-29-44/21%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A3.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-29-44/21%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:29:50.314" starttime="20181123 17:29:49.697"></status>
+<msg timestamp="20181123 17:35:20.586" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 17:35:20.586" starttime="20181123 17:35:20.575"></status>
 </kw>
-<status status="PASS" endtime="20181123 17:29:50.315" starttime="20181123 17:29:49.697"></status>
+<msg timestamp="20181123 17:35:20.586" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 17:35:20.589" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 17:35:20.589" starttime="20181123 17:35:20.569"></status>
 </kw>
-<kw name="Click Tab Buy" library="home_page">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://nb-menu//a[@title="ซื้อ"]</arg>
-</arguments>
-<msg timestamp="20181123 17:29:50.315" level="INFO">Clicking element 'xpath://nb-menu//a[@title="ซื้อ"]'.</msg>
-<status status="PASS" endtime="20181123 17:29:50.991" starttime="20181123 17:29:50.315"></status>
+<status status="FAIL" endtime="20181123 17:35:20.590" starttime="20181123 17:35:20.569"></status>
 </kw>
-<status status="PASS" endtime="20181123 17:29:50.991" starttime="20181123 17:29:50.315"></status>
+<status status="FAIL" endtime="20181123 17:35:20.591" starttime="20181123 17:35:20.559"></status>
 </kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:29:51.596" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-29-44/21%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A4.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-29-44/21%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:29:51.597" starttime="20181123 17:29:50.991"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:29:51.597" starttime="20181123 17:29:50.991"></status>
-</kw>
-<kw name="Click Tab OtherExpense" library="home_page">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://nb-menu//a[@title="บันทึกรายจ่ายอื่นๆ"]</arg>
-</arguments>
-<msg timestamp="20181123 17:29:51.597" level="INFO">Clicking element 'xpath://nb-menu//a[@title="บันทึกรายจ่ายอื่นๆ"]'.</msg>
-<status status="PASS" endtime="20181123 17:29:52.309" starttime="20181123 17:29:51.597"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:29:52.309" starttime="20181123 17:29:51.597"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:29:52.919" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-29-44/21%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A5.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-29-44/21%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:29:52.920" starttime="20181123 17:29:52.310"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:29:52.920" starttime="20181123 17:29:52.309"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${condition_1}' == 'yes'</arg>
-<arg>Click Cbx Paid</arg>
-<arg>ELSE</arg>
-<arg>Unclick Cbx Paid</arg>
-</arguments>
-<kw name="Click Cbx Paid" library="oe_page">
-<kw name="Select Checkbox" library="SeleniumLibrary">
-<doc>Selects checkbox identified by ``locator``.</doc>
-<arguments>
-<arg>id:cbx-oe-paid-input</arg>
-</arguments>
-<msg timestamp="20181123 17:29:52.921" level="INFO">Selecting checkbox 'id:cbx-oe-paid-input'.</msg>
-<status status="PASS" endtime="20181123 17:29:54.154" starttime="20181123 17:29:52.921"></status>
-</kw>
-<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<arguments>
-<arg>name:paid</arg>
-</arguments>
-<msg timestamp="20181123 17:29:54.155" level="INFO">Verifying checkbox 'name:paid' is selected.</msg>
-<status status="PASS" endtime="20181123 17:29:55.692" starttime="20181123 17:29:54.154"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:29:55.692" starttime="20181123 17:29:52.920"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:29:55.692" starttime="20181123 17:29:52.920"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${condition_2}' == 'yes'</arg>
-<arg>Click Cbx outstanding</arg>
-<arg>ELSE</arg>
-<arg>Unclick Cbx outstanding</arg>
-</arguments>
-<kw name="Unclick Cbx outstanding" library="oe_page">
-<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<arguments>
-<arg>name:outstanding</arg>
-</arguments>
-<msg timestamp="20181123 17:29:55.693" level="INFO">Verifying checkbox 'name:outstanding' is selected.</msg>
-<status status="PASS" endtime="20181123 17:29:57.234" starttime="20181123 17:29:55.693"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://*[@id="cbx-oe-outstanding"]/label/div</arg>
-</arguments>
-<msg timestamp="20181123 17:29:57.234" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-outstanding"]/label/div'.</msg>
-<status status="PASS" endtime="20181123 17:29:57.905" starttime="20181123 17:29:57.234"></status>
-</kw>
-<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<arguments>
-<arg>name:outstanding</arg>
-</arguments>
-<msg timestamp="20181123 17:29:57.905" level="INFO">Verifying checkbox 'name:outstanding' is not selected.</msg>
-<status status="PASS" endtime="20181123 17:29:59.435" starttime="20181123 17:29:57.905"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:29:59.435" starttime="20181123 17:29:55.693"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:29:59.435" starttime="20181123 17:29:55.692"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${condition_3}' == 'yes'</arg>
-<arg>Click Cbx cancel</arg>
-<arg>ELSE</arg>
-<arg>Unclick Cbx cancel</arg>
-</arguments>
-<kw name="Unclick Cbx cancel" library="oe_page">
-<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<arguments>
-<arg>name:void</arg>
-</arguments>
-<msg timestamp="20181123 17:29:59.436" level="INFO">Verifying checkbox 'name:void' is selected.</msg>
-<status status="PASS" endtime="20181123 17:30:00.981" starttime="20181123 17:29:59.436"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://*[@id="cbx-oe-void"]/label/div</arg>
-</arguments>
-<msg timestamp="20181123 17:30:00.981" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-void"]/label/div'.</msg>
-<status status="PASS" endtime="20181123 17:30:01.673" starttime="20181123 17:30:00.981"></status>
-</kw>
-<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<arguments>
-<arg>name:void</arg>
-</arguments>
-<msg timestamp="20181123 17:30:01.673" level="INFO">Verifying checkbox 'name:void' is not selected.</msg>
-<status status="PASS" endtime="20181123 17:30:03.206" starttime="20181123 17:30:01.673"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:03.206" starttime="20181123 17:29:59.436"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:03.206" starttime="20181123 17:29:59.435"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:03.799" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-29-44/21%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A6.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-29-44/21%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:03.799" starttime="20181123 17:30:03.206"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:03.799" starttime="20181123 17:30:03.206"></status>
-</kw>
-<kw name="Input Data Search" library="oe_page">
-<arguments>
-<arg>${data}</arg>
-</arguments>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>id:ipt-oe-txt</arg>
-<arg>${data}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:03.800" level="INFO">Typing text 'เครื่องบินโดยสาร' into text field 'id:ipt-oe-txt'.</msg>
-<status status="PASS" endtime="20181123 17:30:04.880" starttime="20181123 17:30:03.799"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:04.880" starttime="20181123 17:30:03.799"></status>
-</kw>
-<kw name="Click Btn Search" library="oe_page">
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>id:btn-oe-search-keyword</arg>
-</arguments>
-<msg timestamp="20181123 17:30:04.881" level="INFO">Clicking button 'id:btn-oe-search-keyword'.</msg>
-<status status="PASS" endtime="20181123 17:30:06.464" starttime="20181123 17:30:04.880"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:06.464" starttime="20181123 17:30:04.880"></status>
-</kw>
-<kw name="Get Element Count" library="SeleniumLibrary">
-<doc>Returns number of elements matching ``locator``.</doc>
-<arguments>
-<arg>//*[contains(@id, 'sl-oe-detail')]</arg>
-</arguments>
-<assign>
-<var>${column}</var>
-</assign>
-<msg timestamp="20181123 17:30:06.784" level="INFO">${column} = 0</msg>
-<status status="PASS" endtime="20181123 17:30:06.784" starttime="20181123 17:30:06.464"></status>
-</kw>
-<kw name="Set Suite Variable" library="BuiltIn">
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<arguments>
-<arg>${column}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:06.784" level="INFO">${column} = 0</msg>
-<status status="PASS" endtime="20181123 17:30:06.785" starttime="20181123 17:30:06.784"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${column}</arg>
-</arguments>
-<status status="PASS" endtime="20181123 17:30:06.786" starttime="20181123 17:30:06.785"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${column} &gt; 0</arg>
-<arg>Fail</arg>
-</arguments>
-<status status="PASS" endtime="20181123 17:30:06.786" starttime="20181123 17:30:06.786"></status>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>//table-body/div/div/label</arg>
-</arguments>
-<msg timestamp="20181123 17:30:07.101" level="INFO">Current page contains element '//table-body/div/div/label'.</msg>
-<status status="PASS" endtime="20181123 17:30:07.101" starttime="20181123 17:30:06.786"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:07.696" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-29-44/21%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A7.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-29-44/21%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:07.696" starttime="20181123 17:30:07.101"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:07.696" starttime="20181123 17:30:07.101"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:07.696" starttime="20181123 17:29:44.564"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:07.697" critical="yes" starttime="20181123 17:29:35.402"></status>
+<status status="FAIL" endtime="20181123 17:35:20.593" critical="yes" starttime="20181123 17:35:19.623">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</status>
 </test>
-<test id="s1-t2" name="22ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ไม่เลือก_Checkbox_ระบุรายการที่มีสถานะ_ชำระแล้ว_ในระบบ">
+<test id="s1-s1-t2" name="2ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ค้างชำระ">
 <kw type="setup" name="Go to login page" library="dglforsme">
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${login_url}</arg>
 </arguments>
-<msg timestamp="20181123 17:30:07.702" level="INFO">Opening url 'https://dgl-acct.addtechhub.com/login'</msg>
-<status status="PASS" endtime="20181123 17:30:09.307" starttime="20181123 17:30:07.702"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:09.307" starttime="20181123 17:30:07.702"></status>
-</kw>
-<kw name="Oe Check List Search 0" library="TS_OE_LSr_0">
-<arguments>
-<arg>tester@gmail.com</arg>
-<arg>123123</arg>
-<arg>OE Page Search</arg>
-<arg>no</arg>
-<arg>no</arg>
-<arg>no</arg>
-<arg>ค่าเช่า</arg>
-</arguments>
-<kw name="Set Suite Variable" library="BuiltIn">
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<arguments>
-<arg>${logic}</arg>
-<arg>Dharmniti Genaral Ledger</arg>
-</arguments>
-<msg timestamp="20181123 17:30:09.309" level="INFO">${logic} = Dharmniti Genaral Ledger</msg>
-<status status="PASS" endtime="20181123 17:30:09.310" starttime="20181123 17:30:09.309"></status>
-</kw>
-<kw name="Set Selenium Speed" library="SeleniumLibrary">
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<arguments>
-<arg>0.3</arg>
-</arguments>
-<status status="PASS" endtime="20181123 17:30:09.310" starttime="20181123 17:30:09.310"></status>
-</kw>
-<kw name="Set Directory" library="dglforsme">
-<arguments>
-<arg>${image_name}</arg>
-</arguments>
-<kw name="Get DateTime" library="dglforsme">
-<assign>
-<var>${Date}</var>
-</assign>
-<kw name="Get Current Date" library="DateTime">
-<doc>Returns current local or UTC time with an optional increment.</doc>
-<arguments>
-<arg>result_format=%Y-%m-%d %H-%M-%S</arg>
-</arguments>
-<assign>
-<var>${date current}</var>
-</assign>
-<msg timestamp="20181123 17:30:09.311" level="INFO">${date current} = 2018-11-23 17-30-09</msg>
-<status status="PASS" endtime="20181123 17:30:09.311" starttime="20181123 17:30:09.311"></status>
-</kw>
-<msg timestamp="20181123 17:30:09.311" level="INFO">${Date} = 2018-11-23 17-30-09</msg>
-<status status="PASS" endtime="20181123 17:30:09.311" starttime="20181123 17:30:09.310"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${Date}</arg>
-</arguments>
-<status status="PASS" endtime="20181123 17:30:09.312" starttime="20181123 17:30:09.311"></status>
-</kw>
-<kw name="Set Suite Variable" library="BuiltIn">
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<arguments>
-<arg>${Path}</arg>
-<arg>${Output_url}/${image_name} ${Date}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:09.313" level="INFO">${Path} = /Users/USER1/.jenkins/workspace/DGL-For-SME/Screen/OE Page Search 2018-11-23 17-30-09</msg>
-<status status="PASS" endtime="20181123 17:30:09.313" starttime="20181123 17:30:09.312"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:09.313" starttime="20181123 17:30:09.310"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
+<msg timestamp="20181123 17:35:20.600" level="INFO">Opening url 'https://dgl-acct.addtechhub.com/login'</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:09.914" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-09/22%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B0_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A1.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-09/22%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B0_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:09.914" starttime="20181123 17:30:09.313"></status>
+<msg timestamp="20181123 17:35:20.609" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 17:35:20.609" starttime="20181123 17:35:20.601"></status>
 </kw>
-<status status="PASS" endtime="20181123 17:30:09.914" starttime="20181123 17:30:09.313"></status>
+<msg timestamp="20181123 17:35:20.609" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 17:35:20.610" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 17:35:20.611" starttime="20181123 17:35:20.600"></status>
 </kw>
-<kw name="Input User" library="login_page">
-<arguments>
-<arg>${username}</arg>
-</arguments>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://form/input[1]</arg>
-<arg>${username}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:09.915" level="INFO">Typing text 'tester@gmail.com' into text field 'xpath://form/input[1]'.</msg>
-<status status="PASS" endtime="20181123 17:30:10.928" starttime="20181123 17:30:09.915"></status>
+<status status="FAIL" endtime="20181123 17:35:20.611" starttime="20181123 17:35:20.599"></status>
 </kw>
-<status status="PASS" endtime="20181123 17:30:10.928" starttime="20181123 17:30:09.915"></status>
-</kw>
-<kw name="Input Password" library="login_page">
-<arguments>
-<arg>${password}</arg>
-</arguments>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://form/input[2]</arg>
-<arg>${password}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:10.929" level="INFO">Typing text '123123' into text field 'xpath://form/input[2]'.</msg>
-<status status="PASS" endtime="20181123 17:30:11.912" starttime="20181123 17:30:10.929"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:11.912" starttime="20181123 17:30:10.928"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:12.499" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-09/22%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B0_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A2.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-09/22%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B0_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:12.499" starttime="20181123 17:30:11.912"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:12.499" starttime="20181123 17:30:11.912"></status>
-</kw>
-<kw name="Login Submit" library="login_page">
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://button[2]</arg>
-</arguments>
-<msg timestamp="20181123 17:30:12.499" level="INFO">Clicking button 'xpath://button[2]'.</msg>
-<status status="PASS" endtime="20181123 17:30:14.095" starttime="20181123 17:30:12.499"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:14.095" starttime="20181123 17:30:12.499"></status>
-</kw>
-<kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<doc>Waits until ``text`` appears on current page.</doc>
-<arguments>
-<arg>${logic}</arg>
-</arguments>
-<status status="PASS" endtime="20181123 17:30:14.409" starttime="20181123 17:30:14.095"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:15.018" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-09/22%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B0_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A3.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-09/22%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B0_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:15.018" starttime="20181123 17:30:14.410"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:15.018" starttime="20181123 17:30:14.409"></status>
-</kw>
-<kw name="Click Tab Buy" library="home_page">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://nb-menu//a[@title="ซื้อ"]</arg>
-</arguments>
-<msg timestamp="20181123 17:30:15.019" level="INFO">Clicking element 'xpath://nb-menu//a[@title="ซื้อ"]'.</msg>
-<status status="PASS" endtime="20181123 17:30:15.691" starttime="20181123 17:30:15.019"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:15.691" starttime="20181123 17:30:15.018"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:16.300" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-09/22%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B0_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A4.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-09/22%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B0_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:16.301" starttime="20181123 17:30:15.691"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:16.301" starttime="20181123 17:30:15.691"></status>
-</kw>
-<kw name="Click Tab OtherExpense" library="home_page">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://nb-menu//a[@title="บันทึกรายจ่ายอื่นๆ"]</arg>
-</arguments>
-<msg timestamp="20181123 17:30:16.301" level="INFO">Clicking element 'xpath://nb-menu//a[@title="บันทึกรายจ่ายอื่นๆ"]'.</msg>
-<status status="PASS" endtime="20181123 17:30:17.008" starttime="20181123 17:30:16.301"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:17.008" starttime="20181123 17:30:16.301"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:17.620" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-09/22%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B0_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A5.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-09/22%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B0_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:17.620" starttime="20181123 17:30:17.009"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:17.620" starttime="20181123 17:30:17.008"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${condition_1}' == 'yes'</arg>
-<arg>Click Cbx Paid</arg>
-<arg>ELSE</arg>
-<arg>Unclick Cbx Paid</arg>
-</arguments>
-<kw name="Unclick Cbx Paid" library="oe_page">
-<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<arguments>
-<arg>name:paid</arg>
-</arguments>
-<msg timestamp="20181123 17:30:17.621" level="INFO">Verifying checkbox 'name:paid' is selected.</msg>
-<status status="PASS" endtime="20181123 17:30:19.165" starttime="20181123 17:30:17.621"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://*[@id="cbx-oe-paid"]/label/div</arg>
-</arguments>
-<msg timestamp="20181123 17:30:19.167" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-paid"]/label/div'.</msg>
-<status status="PASS" endtime="20181123 17:30:19.835" starttime="20181123 17:30:19.166"></status>
-</kw>
-<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<arguments>
-<arg>name:paid</arg>
-</arguments>
-<msg timestamp="20181123 17:30:19.835" level="INFO">Verifying checkbox 'name:paid' is not selected.</msg>
-<status status="PASS" endtime="20181123 17:30:21.364" starttime="20181123 17:30:19.835"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:21.364" starttime="20181123 17:30:17.621"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:21.364" starttime="20181123 17:30:17.620"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${condition_2}' == 'yes'</arg>
-<arg>Click Cbx outstanding</arg>
-<arg>ELSE</arg>
-<arg>Unclick Cbx outstanding</arg>
-</arguments>
-<kw name="Unclick Cbx outstanding" library="oe_page">
-<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<arguments>
-<arg>name:outstanding</arg>
-</arguments>
-<msg timestamp="20181123 17:30:21.365" level="INFO">Verifying checkbox 'name:outstanding' is selected.</msg>
-<status status="PASS" endtime="20181123 17:30:22.911" starttime="20181123 17:30:21.365"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://*[@id="cbx-oe-outstanding"]/label/div</arg>
-</arguments>
-<msg timestamp="20181123 17:30:22.911" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-outstanding"]/label/div'.</msg>
-<status status="PASS" endtime="20181123 17:30:23.570" starttime="20181123 17:30:22.911"></status>
-</kw>
-<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<arguments>
-<arg>name:outstanding</arg>
-</arguments>
-<msg timestamp="20181123 17:30:23.570" level="INFO">Verifying checkbox 'name:outstanding' is not selected.</msg>
-<status status="PASS" endtime="20181123 17:30:25.098" starttime="20181123 17:30:23.570"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:25.098" starttime="20181123 17:30:21.365"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:25.098" starttime="20181123 17:30:21.364"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${condition_3}' == 'yes'</arg>
-<arg>Click Cbx cancel</arg>
-<arg>ELSE</arg>
-<arg>Unclick Cbx cancel</arg>
-</arguments>
-<kw name="Unclick Cbx cancel" library="oe_page">
-<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<arguments>
-<arg>name:void</arg>
-</arguments>
-<msg timestamp="20181123 17:30:25.099" level="INFO">Verifying checkbox 'name:void' is selected.</msg>
-<status status="PASS" endtime="20181123 17:30:26.644" starttime="20181123 17:30:25.099"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://*[@id="cbx-oe-void"]/label/div</arg>
-</arguments>
-<msg timestamp="20181123 17:30:26.645" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-void"]/label/div'.</msg>
-<status status="PASS" endtime="20181123 17:30:27.310" starttime="20181123 17:30:26.644"></status>
-</kw>
-<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<arguments>
-<arg>name:void</arg>
-</arguments>
-<msg timestamp="20181123 17:30:27.310" level="INFO">Verifying checkbox 'name:void' is not selected.</msg>
-<status status="PASS" endtime="20181123 17:30:28.842" starttime="20181123 17:30:27.310"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:28.842" starttime="20181123 17:30:25.099"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:28.842" starttime="20181123 17:30:25.098"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:29.436" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-09/22%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B0_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A6.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-09/22%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B0_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:29.436" starttime="20181123 17:30:28.843"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:29.436" starttime="20181123 17:30:28.842"></status>
-</kw>
-<kw name="Input Data Search" library="oe_page">
-<arguments>
-<arg>${data}</arg>
-</arguments>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>id:ipt-oe-txt</arg>
-<arg>${data}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:29.437" level="INFO">Typing text 'ค่าเช่า' into text field 'id:ipt-oe-txt'.</msg>
-<status status="PASS" endtime="20181123 17:30:30.459" starttime="20181123 17:30:29.436"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:30.459" starttime="20181123 17:30:29.436"></status>
-</kw>
-<kw name="Click Btn Search" library="oe_page">
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>id:btn-oe-search-keyword</arg>
-</arguments>
-<msg timestamp="20181123 17:30:30.459" level="INFO">Clicking button 'id:btn-oe-search-keyword'.</msg>
-<status status="PASS" endtime="20181123 17:30:32.043" starttime="20181123 17:30:30.459"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:32.043" starttime="20181123 17:30:30.459"></status>
-</kw>
-<kw name="Get Element Count" library="SeleniumLibrary">
-<doc>Returns number of elements matching ``locator``.</doc>
-<arguments>
-<arg>//*[contains(@id, 'sl-oe-detail')]</arg>
-</arguments>
-<assign>
-<var>${column}</var>
-</assign>
-<msg timestamp="20181123 17:30:32.358" level="INFO">${column} = 0</msg>
-<status status="PASS" endtime="20181123 17:30:32.358" starttime="20181123 17:30:32.043"></status>
-</kw>
-<kw name="Set Suite Variable" library="BuiltIn">
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<arguments>
-<arg>${column}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:32.358" level="INFO">${column} = 0</msg>
-<status status="PASS" endtime="20181123 17:30:32.358" starttime="20181123 17:30:32.358"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${column}</arg>
-</arguments>
-<status status="PASS" endtime="20181123 17:30:32.359" starttime="20181123 17:30:32.358"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${column} &gt; 0</arg>
-<arg>Fail</arg>
-</arguments>
-<status status="PASS" endtime="20181123 17:30:32.359" starttime="20181123 17:30:32.359"></status>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>//table-body/div/div/label</arg>
-</arguments>
-<msg timestamp="20181123 17:30:32.672" level="INFO">Current page contains element '//table-body/div/div/label'.</msg>
-<status status="PASS" endtime="20181123 17:30:32.672" starttime="20181123 17:30:32.359"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:33.272" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-09/22%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B0_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A7.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-09/22%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B0_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7_%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:33.272" starttime="20181123 17:30:32.672"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:33.272" starttime="20181123 17:30:32.672"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:33.272" starttime="20181123 17:30:09.308"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:33.273" critical="yes" starttime="20181123 17:30:07.699"></status>
+<status status="FAIL" endtime="20181123 17:35:20.611" critical="yes" starttime="20181123 17:35:20.594">Setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</status>
 </test>
-<test id="s1-t3" name="23ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ไม่เลือก_Checkbox_ระบุรายการที่ไม่มีในระบบ">
+<test id="s1-s1-t3" name="3ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ยกเลิกรายการ">
 <kw type="setup" name="Go to login page" library="dglforsme">
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${login_url}</arg>
 </arguments>
-<msg timestamp="20181123 17:30:33.278" level="INFO">Opening url 'https://dgl-acct.addtechhub.com/login'</msg>
-<status status="PASS" endtime="20181123 17:30:35.468" starttime="20181123 17:30:33.278"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:35.468" starttime="20181123 17:30:33.278"></status>
-</kw>
-<kw name="Oe Check List Search 0" library="TS_OE_LSr_0">
-<arguments>
-<arg>tester@gmail.com</arg>
-<arg>123123</arg>
-<arg>OE Page Search</arg>
-<arg>no</arg>
-<arg>no</arg>
-<arg>no</arg>
-<arg>ค่าเช่า</arg>
-</arguments>
-<kw name="Set Suite Variable" library="BuiltIn">
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<arguments>
-<arg>${logic}</arg>
-<arg>Dharmniti Genaral Ledger</arg>
-</arguments>
-<msg timestamp="20181123 17:30:35.471" level="INFO">${logic} = Dharmniti Genaral Ledger</msg>
-<status status="PASS" endtime="20181123 17:30:35.471" starttime="20181123 17:30:35.470"></status>
-</kw>
-<kw name="Set Selenium Speed" library="SeleniumLibrary">
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<arguments>
-<arg>0.3</arg>
-</arguments>
-<status status="PASS" endtime="20181123 17:30:35.472" starttime="20181123 17:30:35.471"></status>
-</kw>
-<kw name="Set Directory" library="dglforsme">
-<arguments>
-<arg>${image_name}</arg>
-</arguments>
-<kw name="Get DateTime" library="dglforsme">
-<assign>
-<var>${Date}</var>
-</assign>
-<kw name="Get Current Date" library="DateTime">
-<doc>Returns current local or UTC time with an optional increment.</doc>
-<arguments>
-<arg>result_format=%Y-%m-%d %H-%M-%S</arg>
-</arguments>
-<assign>
-<var>${date current}</var>
-</assign>
-<msg timestamp="20181123 17:30:35.474" level="INFO">${date current} = 2018-11-23 17-30-35</msg>
-<status status="PASS" endtime="20181123 17:30:35.474" starttime="20181123 17:30:35.473"></status>
-</kw>
-<msg timestamp="20181123 17:30:35.474" level="INFO">${Date} = 2018-11-23 17-30-35</msg>
-<status status="PASS" endtime="20181123 17:30:35.474" starttime="20181123 17:30:35.472"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${Date}</arg>
-</arguments>
-<status status="PASS" endtime="20181123 17:30:35.476" starttime="20181123 17:30:35.474"></status>
-</kw>
-<kw name="Set Suite Variable" library="BuiltIn">
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<arguments>
-<arg>${Path}</arg>
-<arg>${Output_url}/${image_name} ${Date}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:35.477" level="INFO">${Path} = /Users/USER1/.jenkins/workspace/DGL-For-SME/Screen/OE Page Search 2018-11-23 17-30-35</msg>
-<status status="PASS" endtime="20181123 17:30:35.477" starttime="20181123 17:30:35.476"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:35.477" starttime="20181123 17:30:35.472"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
+<msg timestamp="20181123 17:35:20.616" level="INFO">Opening url 'https://dgl-acct.addtechhub.com/login'</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:36.071" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-35/23%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A1.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-35/23%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:36.071" starttime="20181123 17:30:35.478"></status>
+<msg timestamp="20181123 17:35:20.627" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 17:35:20.628" starttime="20181123 17:35:20.618"></status>
 </kw>
-<status status="PASS" endtime="20181123 17:30:36.071" starttime="20181123 17:30:35.477"></status>
+<msg timestamp="20181123 17:35:20.628" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 17:35:20.629" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 17:35:20.629" starttime="20181123 17:35:20.616"></status>
 </kw>
-<kw name="Input User" library="login_page">
-<arguments>
-<arg>${username}</arg>
-</arguments>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://form/input[1]</arg>
-<arg>${username}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:36.072" level="INFO">Typing text 'tester@gmail.com' into text field 'xpath://form/input[1]'.</msg>
-<status status="PASS" endtime="20181123 17:30:37.094" starttime="20181123 17:30:36.072"></status>
+<status status="FAIL" endtime="20181123 17:35:20.630" starttime="20181123 17:35:20.615"></status>
 </kw>
-<status status="PASS" endtime="20181123 17:30:37.094" starttime="20181123 17:30:36.072"></status>
-</kw>
-<kw name="Input Password" library="login_page">
-<arguments>
-<arg>${password}</arg>
-</arguments>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://form/input[2]</arg>
-<arg>${password}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:37.095" level="INFO">Typing text '123123' into text field 'xpath://form/input[2]'.</msg>
-<status status="PASS" endtime="20181123 17:30:38.077" starttime="20181123 17:30:37.094"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:38.077" starttime="20181123 17:30:37.094"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:38.651" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-35/23%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A2.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-35/23%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:38.651" starttime="20181123 17:30:38.077"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:38.651" starttime="20181123 17:30:38.077"></status>
-</kw>
-<kw name="Login Submit" library="login_page">
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://button[2]</arg>
-</arguments>
-<msg timestamp="20181123 17:30:38.652" level="INFO">Clicking button 'xpath://button[2]'.</msg>
-<status status="PASS" endtime="20181123 17:30:40.248" starttime="20181123 17:30:38.651"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:40.249" starttime="20181123 17:30:38.651"></status>
-</kw>
-<kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<doc>Waits until ``text`` appears on current page.</doc>
-<arguments>
-<arg>${logic}</arg>
-</arguments>
-<status status="PASS" endtime="20181123 17:30:40.564" starttime="20181123 17:30:40.249"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:41.185" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-35/23%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A3.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-35/23%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:41.185" starttime="20181123 17:30:40.564"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:41.186" starttime="20181123 17:30:40.564"></status>
-</kw>
-<kw name="Click Tab Buy" library="home_page">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://nb-menu//a[@title="ซื้อ"]</arg>
-</arguments>
-<msg timestamp="20181123 17:30:41.186" level="INFO">Clicking element 'xpath://nb-menu//a[@title="ซื้อ"]'.</msg>
-<status status="PASS" endtime="20181123 17:30:41.856" starttime="20181123 17:30:41.186"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:41.856" starttime="20181123 17:30:41.186"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:42.470" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-35/23%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A4.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-35/23%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:42.471" starttime="20181123 17:30:41.856"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:42.471" starttime="20181123 17:30:41.856"></status>
-</kw>
-<kw name="Click Tab OtherExpense" library="home_page">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://nb-menu//a[@title="บันทึกรายจ่ายอื่นๆ"]</arg>
-</arguments>
-<msg timestamp="20181123 17:30:42.471" level="INFO">Clicking element 'xpath://nb-menu//a[@title="บันทึกรายจ่ายอื่นๆ"]'.</msg>
-<status status="PASS" endtime="20181123 17:30:43.174" starttime="20181123 17:30:42.471"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:43.174" starttime="20181123 17:30:42.471"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:43.791" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-35/23%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A5.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-35/23%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:43.791" starttime="20181123 17:30:43.174"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:43.791" starttime="20181123 17:30:43.174"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${condition_1}' == 'yes'</arg>
-<arg>Click Cbx Paid</arg>
-<arg>ELSE</arg>
-<arg>Unclick Cbx Paid</arg>
-</arguments>
-<kw name="Unclick Cbx Paid" library="oe_page">
-<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<arguments>
-<arg>name:paid</arg>
-</arguments>
-<msg timestamp="20181123 17:30:43.792" level="INFO">Verifying checkbox 'name:paid' is selected.</msg>
-<status status="PASS" endtime="20181123 17:30:45.329" starttime="20181123 17:30:43.792"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://*[@id="cbx-oe-paid"]/label/div</arg>
-</arguments>
-<msg timestamp="20181123 17:30:45.330" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-paid"]/label/div'.</msg>
-<status status="PASS" endtime="20181123 17:30:45.992" starttime="20181123 17:30:45.329"></status>
-</kw>
-<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<arguments>
-<arg>name:paid</arg>
-</arguments>
-<msg timestamp="20181123 17:30:45.992" level="INFO">Verifying checkbox 'name:paid' is not selected.</msg>
-<status status="PASS" endtime="20181123 17:30:47.522" starttime="20181123 17:30:45.992"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:47.522" starttime="20181123 17:30:43.791"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:47.522" starttime="20181123 17:30:43.791"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${condition_2}' == 'yes'</arg>
-<arg>Click Cbx outstanding</arg>
-<arg>ELSE</arg>
-<arg>Unclick Cbx outstanding</arg>
-</arguments>
-<kw name="Unclick Cbx outstanding" library="oe_page">
-<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<arguments>
-<arg>name:outstanding</arg>
-</arguments>
-<msg timestamp="20181123 17:30:47.523" level="INFO">Verifying checkbox 'name:outstanding' is selected.</msg>
-<status status="PASS" endtime="20181123 17:30:49.061" starttime="20181123 17:30:47.522"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://*[@id="cbx-oe-outstanding"]/label/div</arg>
-</arguments>
-<msg timestamp="20181123 17:30:49.061" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-outstanding"]/label/div'.</msg>
-<status status="PASS" endtime="20181123 17:30:49.714" starttime="20181123 17:30:49.061"></status>
-</kw>
-<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<arguments>
-<arg>name:outstanding</arg>
-</arguments>
-<msg timestamp="20181123 17:30:49.714" level="INFO">Verifying checkbox 'name:outstanding' is not selected.</msg>
-<status status="PASS" endtime="20181123 17:30:51.249" starttime="20181123 17:30:49.714"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:51.249" starttime="20181123 17:30:47.522"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:51.250" starttime="20181123 17:30:47.522"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>'${condition_3}' == 'yes'</arg>
-<arg>Click Cbx cancel</arg>
-<arg>ELSE</arg>
-<arg>Unclick Cbx cancel</arg>
-</arguments>
-<kw name="Unclick Cbx cancel" library="oe_page">
-<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<arguments>
-<arg>name:void</arg>
-</arguments>
-<msg timestamp="20181123 17:30:51.253" level="INFO">Verifying checkbox 'name:void' is selected.</msg>
-<status status="PASS" endtime="20181123 17:30:52.794" starttime="20181123 17:30:51.253"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://*[@id="cbx-oe-void"]/label/div</arg>
-</arguments>
-<msg timestamp="20181123 17:30:52.794" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-void"]/label/div'.</msg>
-<status status="PASS" endtime="20181123 17:30:53.458" starttime="20181123 17:30:52.794"></status>
-</kw>
-<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
-<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<arguments>
-<arg>name:void</arg>
-</arguments>
-<msg timestamp="20181123 17:30:53.458" level="INFO">Verifying checkbox 'name:void' is not selected.</msg>
-<status status="PASS" endtime="20181123 17:30:54.990" starttime="20181123 17:30:53.458"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:54.990" starttime="20181123 17:30:51.252"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:54.990" starttime="20181123 17:30:51.250"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:55.591" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-35/23%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A6.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-35/23%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:55.591" starttime="20181123 17:30:54.990"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:55.591" starttime="20181123 17:30:54.990"></status>
-</kw>
-<kw name="Input Data Search" library="oe_page">
-<arguments>
-<arg>${data}</arg>
-</arguments>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>id:ipt-oe-txt</arg>
-<arg>${data}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:55.592" level="INFO">Typing text 'ค่าเช่า' into text field 'id:ipt-oe-txt'.</msg>
-<status status="PASS" endtime="20181123 17:30:56.612" starttime="20181123 17:30:55.592"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:56.612" starttime="20181123 17:30:55.591"></status>
-</kw>
-<kw name="Click Btn Search" library="oe_page">
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>id:btn-oe-search-keyword</arg>
-</arguments>
-<msg timestamp="20181123 17:30:56.613" level="INFO">Clicking button 'id:btn-oe-search-keyword'.</msg>
-<status status="PASS" endtime="20181123 17:30:58.190" starttime="20181123 17:30:56.613"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:58.190" starttime="20181123 17:30:56.612"></status>
-</kw>
-<kw name="Get Element Count" library="SeleniumLibrary">
-<doc>Returns number of elements matching ``locator``.</doc>
-<arguments>
-<arg>//*[contains(@id, 'sl-oe-detail')]</arg>
-</arguments>
-<assign>
-<var>${column}</var>
-</assign>
-<msg timestamp="20181123 17:30:58.506" level="INFO">${column} = 0</msg>
-<status status="PASS" endtime="20181123 17:30:58.506" starttime="20181123 17:30:58.190"></status>
-</kw>
-<kw name="Set Suite Variable" library="BuiltIn">
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<arguments>
-<arg>${column}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:58.506" level="INFO">${column} = 0</msg>
-<status status="PASS" endtime="20181123 17:30:58.506" starttime="20181123 17:30:58.506"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${column}</arg>
-</arguments>
-<status status="PASS" endtime="20181123 17:30:58.507" starttime="20181123 17:30:58.507"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${column} &gt; 0</arg>
-<arg>Fail</arg>
-</arguments>
-<status status="PASS" endtime="20181123 17:30:58.508" starttime="20181123 17:30:58.508"></status>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<arguments>
-<arg>//table-body/div/div/label</arg>
-</arguments>
-<msg timestamp="20181123 17:30:58.821" level="INFO">Current page contains element '//table-body/div/div/label'.</msg>
-<status status="PASS" endtime="20181123 17:30:58.821" starttime="20181123 17:30:58.508"></status>
-</kw>
-<kw name="Capture Screen" library="dglforsme">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<arguments>
-<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
-</arguments>
-<msg timestamp="20181123 17:30:59.418" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-35/23%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A7.png"&gt;&lt;img src="../../../../DGL-For-SME/Screen/OE%20Page%20Search%202018-11-23%2017-30-35/23%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%99%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181123 17:30:59.418" starttime="20181123 17:30:58.821"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:59.418" starttime="20181123 17:30:58.821"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:59.418" starttime="20181123 17:30:35.469"></status>
-</kw>
-<status status="PASS" endtime="20181123 17:30:59.419" critical="yes" starttime="20181123 17:30:33.275"></status>
+<status status="FAIL" endtime="20181123 17:35:20.630" critical="yes" starttime="20181123 17:35:20.611">Setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</status>
 </test>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20181123 17:31:01.759" starttime="20181123 17:30:59.421"></status>
+<status status="PASS" endtime="20181123 17:35:22.969" starttime="20181123 17:35:20.631"></status>
 </kw>
-<status status="PASS" endtime="20181123 17:31:01.759" starttime="20181123 17:29:29.629"></status>
+<status status="FAIL" endtime="20181123 17:35:22.969" starttime="20181123 17:35:14.295"></status>
 </suite>
-<statistics>
-<total>
-<stat fail="0" pass="3">Critical Tasks</stat>
-<stat fail="0" pass="3">All Tasks</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat fail="0" id="s1" name="TS OE LSr 001 002" pass="3">TS OE LSr 001 002</stat>
-</suite>
-</statistics>
+<suite source="C:\Users\USER1\.jenkins\workspace\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_002.robot" id="s1-s2" name="TC OE Lis 002">
+<kw type="setup" name="Open the web page" library="dglforsme">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${open_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181123 17:35:22.980" level="INFO">Opening browser 'chrome' to base url 'https://dgl-acct.addtechhub.com'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 17:35:32.057" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20181123 17:35:32.057" starttime="20181123 17:35:32.056"></status>
+</kw>
+<msg timestamp="20181123 17:35:32.062" level="FAIL">SessionNotCreatedException: Message: session not created exception
+from chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 17:35:32.062" starttime="20181123 17:35:22.980"></status>
+</kw>
+<status status="FAIL" endtime="20181123 17:35:32.063" starttime="20181123 17:35:22.980"></status>
+</kw>
 <errors>
-<msg timestamp="20181123 17:29:29.784" level="ERROR">Error in file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_LSr_0.resource': Resource file '\Users\USER1\.jenkins\workspace\DGL-For-SME\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 17:35:14.433" level="ERROR">Error in file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Lis_1.resource': Resource file '\Users\USER1\.jenkins\workspace\DGL-For-SME\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181123 17:35:20.586" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 17:35:20.609" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 17:35:20.628" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 17:35:22.979" level="ERROR">Error in file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Lis_0.resource': Resource file '\Users\USER1\.jenkins\workspace\DGL-For-SME\Resource\dglforsme.resource' does not exist.</msg>
 </errors>
 </robot>
