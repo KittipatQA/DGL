@@ -12,7 +12,7 @@ ${Type of file}      png
 Open the web page
     Open Browser    ${open_url}     chrome
     Maximize Browser Window
-    Set Selenium Speed  0
+    Set Selenium Speed	1
 
 Go to login page
     Go to           ${login_url}
