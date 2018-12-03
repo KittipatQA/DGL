@@ -7,7 +7,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 *** Keywords ***
 
 Oe Add Data 1
-    [Arguments]            ${username}      ${password}       ${image_name}
+    [Arguments]            ${username}      ${password}       ${image_name}     ${supplier_code}
     Set Suite Variable       ${logic}       Dharmniti Genaral Ledger
     Set Selenium Speed     0.3
     Set Directory          ${image_name}
