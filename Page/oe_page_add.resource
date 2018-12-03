@@ -34,7 +34,7 @@ Input datePickerDueDate
 
 Input Department
     [Arguments]     ${detail_department}   
-    Input Text      id:input-oe-detail-department     ${input-oe-detail-detail_department}
+    Input Text      id:input-oe-detail-department     ${detail_department}
 
 Input billNo
     [Arguments]     ${detail_billNo}              
@@ -51,7 +51,7 @@ Input vatPeriod
 
 Input description
     [Arguments]     ${detail_description}              
-    Input Text      xpath://*[@id="input-oe-detail-description"]     ${detail_description}
+    Input Text      id:input-oe-detail-description     ${detail_description}
 
 Input bindingexpenseInfo
     [Arguments]     ${no_bindingexpenseInfo}              
