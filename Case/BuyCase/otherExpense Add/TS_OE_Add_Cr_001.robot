@@ -9,11 +9,11 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Logic/TS_OE_Add_Cr_1.re
 Suite Setup          Open the web page
 Test Setup           Go to login page
 Test Template        Oe Add Data 1
-# Suite Teardown       Close Browser
+#Suite Teardown       Close Browser
 
 *** Variables ***
 
 *** Keywords ***
 
 *** Tasks ***
-1ตรวจสอบการเพิ่มรายการ_กรณี_นิติบุคคลมี_VATจ่ายเจ้าหนี้ไม่มี_VAT_รายการ_ไม่มี_TAX_   tester@gmail.com   123123   OE Add   D001
+1ตรวจสอบการเพิ่มรายการ_กรณี_นิติบุคคลมี_VATจ่ายเจ้าหนี้ไม่มี_VAT_รายการ_ไม่มี_TAX_   tester@gmail.com   123123   OE Add   D001   ไม่มี

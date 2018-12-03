@@ -24,6 +24,7 @@ Oe Add Data 1
     Click Btn Add
     Capture Screen
     Input Supplier Code     ${supplier_code}
+    Select Vat Type     ${data_list}
     Capture Screen                 
   
 
