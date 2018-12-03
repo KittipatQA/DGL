@@ -27,8 +27,8 @@ if ARGV.length > 0
     content_TS_OE_Sr_001_1  = ""
     content_TS_OE_Sr_001_2  = ""
     content_TS_OE_Sr_001_3  = ""
-    content_TS_OE_ฺSr_002_1  = ""
-    content_TS_OE_ฺSr_002_2  = ""
+    content_TS_OE_Sr_002_1  = ""
+    content_TS_OE_Sr_002_2  = ""
 
     text=File.open(ARGV[0]).read
     text.each_line do |line|
