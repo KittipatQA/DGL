@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="true" generated="20181203 12:46:20.246" generator="Robot 3.1a2 (Python 2.7.15 on win32)">
+<robot rpa="true" generated="20181203 14:52:12.871" generator="Robot 3.1a2 (Python 2.7.15 on win32)">
 <suite source="d:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot" id="s1" name="TC OE Lis 001">
 <kw type="setup" name="Open the web page">
-<msg timestamp="20181203 12:46:20.510" level="FAIL">No keyword with name 'Open the web page' found.</msg>
-<status status="FAIL" endtime="20181203 12:46:20.510" starttime="20181203 12:46:20.510"></status>
+<msg timestamp="20181203 14:52:13.046" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181203 14:52:13.046" starttime="20181203 14:52:13.046"></status>
 </kw>
 <test id="s1-t1" name="1ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ชำระแล้ว">
-<status status="FAIL" endtime="20181203 12:46:20.513" critical="yes" starttime="20181203 12:46:20.510">Parent suite setup failed:
+<status status="FAIL" endtime="20181203 14:52:13.048" critical="yes" starttime="20181203 14:52:13.046">Parent suite setup failed:
 No keyword with name 'Open the web page' found.</status>
 </test>
 <test id="s1-t2" name="2ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ค้างชำระ">
-<status status="FAIL" endtime="20181203 12:46:20.518" critical="yes" starttime="20181203 12:46:20.514">Parent suite setup failed:
+<status status="FAIL" endtime="20181203 14:52:13.052" critical="yes" starttime="20181203 14:52:13.050">Parent suite setup failed:
 No keyword with name 'Open the web page' found.</status>
 </test>
 <test id="s1-t3" name="3ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ยกเลิกรายการ">
-<status status="FAIL" endtime="20181203 12:46:20.524" critical="yes" starttime="20181203 12:46:20.522">Parent suite setup failed:
+<status status="FAIL" endtime="20181203 14:52:13.055" critical="yes" starttime="20181203 14:52:13.053">Parent suite setup failed:
 No keyword with name 'Open the web page' found.</status>
 </test>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20181203 12:46:20.527" starttime="20181203 12:46:20.526"></status>
+<status status="PASS" endtime="20181203 14:52:13.057" starttime="20181203 14:52:13.057"></status>
 </kw>
-<status status="FAIL" endtime="20181203 12:46:20.527" starttime="20181203 12:46:20.252">Suite setup failed:
+<status status="FAIL" endtime="20181203 14:52:13.057" starttime="20181203 14:52:12.873">Suite setup failed:
 No keyword with name 'Open the web page' found.</status>
 </suite>
 <statistics>
@@ -36,10 +36,10 @@ No keyword with name 'Open the web page' found.</status>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20181203 12:46:20.498" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
-<msg timestamp="20181203 12:46:20.501" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
-<msg timestamp="20181203 12:46:20.502" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
-<msg timestamp="20181203 12:46:20.503" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
-<msg timestamp="20181203 12:46:20.504" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Lis_1.resource' does not exist.</msg>
+<msg timestamp="20181203 14:52:13.024" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181203 14:52:13.024" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181203 14:52:13.040" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page.resource' does not exist.</msg>
+<msg timestamp="20181203 14:52:13.040" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181203 14:52:13.041" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Lis_1.resource' does not exist.</msg>
 </errors>
 </robot>

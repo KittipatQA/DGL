@@ -24,18 +24,18 @@ Oe Add Data 1
     Click Btn Add
     Capture Screen
     Input Supplier Code     ${supplier_code}
-    Select Vat Type     ${data_list}
-    Input transactionDate       ${transaction_date}
-    Input datePickerDueDate     ${datePickerDueDate}
-    Input Department        ${input-oe-detail-detail_department}
-    Input billNo            ${detail_billNo}
-    Input billDate          ${detail_billDate}
-    Input vatPeriod         ${detail_vatPeriod}
-    Input description       ${detail_description}
-    Input bindingexpenseInfo        ${no_bindingexpenseInfo}
-    Input number        ${qty}
-    Iuput Remark        ${remark}
-    Iuput paymentCash       ${paymentCashAmount}
+    #Select Vat Type     ${data_list}
+    #Input transactionDate       ${transaction_date}
+    #Input datePickerDueDate     ${datePickerDueDate}
+    #Input Department        ${input-oe-detail-detail_department}
+    #Input billNo            ${detail_billNo}
+    #Input billDate          ${detail_billDate}
+    #Input vatPeriod         ${detail_vatPeriod}
+    #Input description       ${detail_description}
+    #Input bindingexpenseInfo        ${no_bindingexpenseInfo}
+    #Input number        ${qty}
+    #Iuput Remark        ${remark}
+    #Iuput paymentCash       ${paymentCashAmount}
     Capture Screen          
     Click Btn Submit        
     Capture Screen
