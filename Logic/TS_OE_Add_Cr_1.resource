@@ -7,7 +7,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 *** Keywords ***
 
 Oe Add Data 1
-    [Arguments]            ${username}      ${password}       ${image_name}     ${supplier_code}    ${data_list}    ${transaction_date}     ${datePickerDueDate}        ${input-oe-detail-detail_department}        ${detail_billNo}        ${detail_billDate}      ${detail_vatPeriod}     ${detail_description}        
+    [Arguments]            ${username}      ${password}       ${image_name}     ${supplier_code}    ${data_list}    ${transaction_date}     ${datePickerDueDate}        ${detail_department}        ${detail_billNo}        ${detail_billDate}      ${detail_vatPeriod}     ${detail_description}        
     Set Suite Variable       ${logic}       Dharmniti Genaral Ledger
     Set Selenium Speed     0.3
     Set Directory          ${image_name}
@@ -27,7 +27,7 @@ Oe Add Data 1
     Select Vat Type     ${data_list}
     Input transactionDate       ${transaction_date}
     Input datePickerDueDate         ${datePickerDueDate}
-    Input Department        ${input-oe-detail-detail_department}
+    Input Department        ${detail_department}
     Input billNo        ${detail_billNo}
     Input billDate      ${detail_billDate}
     Input vatPeriod     ${detail_vatPeriod}
