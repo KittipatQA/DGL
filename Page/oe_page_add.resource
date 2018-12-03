@@ -18,8 +18,9 @@ Input Supplier Name
     Input Text      id:input-oe-detail-name     ${supplier_name}
 
 Select Vat Type
-    [Arguments]     ${data_list}         
-    Select From List By Label        ${data_list}
+    [Arguments]     ${data_list}
+    Click Element   id:sl-oe-detail-vatType        
+    Select From List By Label       id:sl-oe-detail-vatType     ${data_list}
 
 Input transactionDate
     [Arguments]     ${transaction_date}              
