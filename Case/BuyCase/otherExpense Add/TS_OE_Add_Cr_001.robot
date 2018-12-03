@@ -9,7 +9,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Logic/TS_OE_Add_Cr_1.re
 Suite Setup          Open the web page
 Test Setup           Go to login page
 Test Template        Oe Add Data 1
-Suite Teardown       Close Browser
+#Suite Teardown       Close Browser
 
 *** Variables ***
 
