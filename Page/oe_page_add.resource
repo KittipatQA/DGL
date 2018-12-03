@@ -51,7 +51,7 @@ Input vatPeriod
 
 Input description
     [Arguments]     ${detail_description}              
-    Input Text      id:input-oe-detail-description     ${detail_description}
+    Input Text      xpath://*[@id="input-oe-detail-description"]     ${detail_description}
 
 Input bindingexpenseInfo
     [Arguments]     ${no_bindingexpenseInfo}              
