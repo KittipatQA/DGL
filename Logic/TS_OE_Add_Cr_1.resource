@@ -24,8 +24,7 @@ Oe Add Data 1
     Click Btn Add
     Capture Screen
     Input Supplier Code     ${supplier_code}
-    Capture Screen          
-    Click Btn Submit        
+    Capture Screen                 
     Capture Screen
 
     
