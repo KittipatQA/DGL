@@ -8,7 +8,7 @@ Library              SeleniumLibrary
 Click Btn Add
     Click Button       id:btn-oe-save
 
-Input Supplier Code 
+Input Supplier Code  
     [Arguments]     ${supplier_code}              
     Input Text      id:input-oe-detail-code     ${supplier_code}
 
