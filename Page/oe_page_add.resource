@@ -23,15 +23,17 @@ Select Vat Type
     Select From List By Label       id:sl-oe-detail-vatType     ${data_list}
 
 Input transactionDate
-    [Arguments]     ${transaction_date}              
+    [Arguments]     ${transaction_date}
+    Clear Element Text      id:input-oe-detail-transactionDate           
     Input Text      id:input-oe-detail-transactionDate     ${transaction_date}
 
 Input datePickerDueDate
-    [Arguments]     ${datePickerDueDate}              
+    [Arguments]     ${datePickerDueDate}
+    Clear Element Text      id:input-oe-detail-datePickerDueDate              
     Input Text      id:input-oe-detail-datePickerDueDate     ${datePickerDueDate}
 
 Input Department
-    [Arguments]     ${detail_department}              
+    [Arguments]     ${detail_department}   
     Input Text      id:input-oe-detail-department     ${input-oe-detail-detail_department}
 
 Input billNo
@@ -39,7 +41,8 @@ Input billNo
     Input Text      id:input-oe-detail-billNo     ${detail_billNo}
 
 Input billDate
-    [Arguments]     ${detail_billDate}              
+    [Arguments]     ${detail_billDate}
+    Clear Element Text      id:input-oe-detail-billDate              
     Input Text      id:input-oe-detail-billDate     ${detail_billDate}
 
 Input vatPeriod
