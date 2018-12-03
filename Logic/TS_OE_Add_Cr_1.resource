@@ -25,6 +25,6 @@ Oe Add Data 1
     Capture Screen
     Input Supplier Code     ${supplier_code}
     Capture Screen                 
-    Capture Screen
+  
 
     

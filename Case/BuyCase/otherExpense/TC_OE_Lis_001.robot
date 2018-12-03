@@ -10,7 +10,7 @@ Suite Setup          Open the web page
 Test Setup           Go to login page
 Test Teardown        Run Keyword If Test Failed     Capture Screen
 Test Template        Oe Check Result 1
-Suite Teardown       Close Browser
+# Suite Teardown       Close Browser
 
 *** Variables ***
 
