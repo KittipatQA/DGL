@@ -11,6 +11,7 @@ Click Btn Add
 Input Supplier Code  
     [Arguments]     ${supplier_code}              
     Input Text      id:input-oe-detail-code     ${supplier_code}
+    Click Element       id:ngb-typeahead-0-0
 
 Input Supplier Name
     [Arguments]     ${supplier_name}              
@@ -18,7 +19,7 @@ Input Supplier Name
 
 Select Vat Type
     [Arguments]     ${data_list}         
-    Select From List        ${data_list}
+    Select From List By Label        ${data_list}
 
 Input transactionDate
     [Arguments]     ${transaction_date}              
