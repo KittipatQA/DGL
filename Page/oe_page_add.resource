@@ -64,7 +64,8 @@ Input number
     Input Text      id:input-oe-transactions-qty-0     ${qty}
 
 Input discount
-    [Arguments]     ${discount}              
+    [Arguments]     ${discount}     
+    Clear Element Text      id:input-oe-transactions-discount-0        
     Input Text      id:input-oe-transactions-discount-0     ${discount}
 
 Input Vat
