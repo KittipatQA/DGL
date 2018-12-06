@@ -58,7 +58,8 @@ Input bindingexpenseInfo
     Input Text      id:input-oe-transactions-bindingexpenseInfo-0     ${no_bindingexpenseInfo}
 
 Input number
-    [Arguments]     ${qty}              
+    [Arguments]     ${qty}
+    Clear Element Text      id:input-oe-transactions-qty-0                    
     Input Text      id:input-oe-transactions-qty-0     ${qty}
 
 Input discount
@@ -70,19 +71,28 @@ Input Vat
     Input Text      id:sl-oe-transactions-vatPercentage-0     ${vatPercentage}
 
 Input taxAmount
-    [Arguments]     ${taxAmount}              
-    Input Text      id:input-oe-transactions-taxAmount-0     ${taxAmount}
+    [Arguments]     ${taxAmountlist}    
+    Click Element   id:input-oe-transactions-taxAmount-0        
+    Select From List By Label       id:input-oe-transactions-taxAmount-0     ${taxAmountlist}          
 
-Iuput Remark
+Input Remark
     [Arguments]     ${remark}              
     Input Text      id:input-oe-detail-remark    ${remark}
 
-Iuput paymentCash
+Input paymentCash
     [Arguments]     ${paymentCashAmount}              
     Input Text      id:input-oe-detail-paymentCashAmount    ${paymentCashAmount}
 
+Input Price
+    [Arguments]     ${price}    
+    Clear Element Text      id:input-oe-transactions-unitPrice-0    
+    Input Text      id:input-oe-transactions-unitPrice-0    ${price}
+
 Click Btn Submit
     Click Button       id:btn-oe-submit
+
+Click Btn Confirm
+    Click Button        id:btn-modal-cancel
 
 
 
