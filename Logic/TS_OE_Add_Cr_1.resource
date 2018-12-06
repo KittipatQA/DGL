@@ -35,4 +35,5 @@ Oe Add Data 1
       Input bindingexpenseInfo      ${no_bindingexpenseInfo}
       Input number      ${qty}
       Input Price    ${price}
+      Input taxAmount      ${taxAmountlist}
       Capture Screen
