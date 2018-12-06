@@ -56,7 +56,7 @@ Input description
 Input bindingexpenseInfo
     [Arguments]     ${no_bindingexpenseInfo}              
     Input Text      id:input-oe-transactions-bindingexpenseInfo-0     ${no_bindingexpenseInfo}
-
+    Click Element       id:ngb-typeahead-2-0
 Input number
     [Arguments]     ${qty}
     Clear Element Text      id:input-oe-transactions-qty-0                    
