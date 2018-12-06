@@ -94,3 +94,6 @@ Click Btn Submit
 
 Click Btn Confirm
     Click Button        id:btn-modal-cancel
+
+Click Btn Ok
+    Click Button        xpath://*[@id="mat-dialog-4"]/app-dialog/div/div/div[3]/div/button 

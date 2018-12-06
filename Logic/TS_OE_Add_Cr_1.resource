@@ -41,4 +41,5 @@ Oe Add Data 1
       Input paymentCash    ${paymentCashAmount}
       Click Btn Submit
       Click Btn Confirm
+      Click Btn Ok
       Capture Screen
