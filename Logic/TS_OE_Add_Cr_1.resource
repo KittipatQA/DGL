@@ -7,28 +7,28 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 *** Keywords ***
 
 Oe Add Data 1
- [Arguments]            ${username}      ${password}       ${image_name}     ${supplier_code}    ${data_list}    ${transaction_date}     ${datePickerDueDate}        ${detail_department}        ${detail_billNo}        ${detail_billDate}      ${detail_vatPeriod}     ${detail_description}        
-    Set Suite Variable       ${logic}       Dharmniti Genaral Ledger
-    Set Selenium Speed     0.3
-    Set Directory          ${image_name}
-     Capture Screen
-     Input User             ${username}    
-     Input Password         ${password}
-     Capture Screen
-     Login Submit                 
-     Wait Until Page Contains        ${logic}   
-     Capture Screen
-     Click Tab Buy
-     Capture Screen
-     Click Tab OtherExpense
-     Click Btn Add
-     Capture Screen
-     Input Supplier Code     ${supplier_code}
-    Select Vat Type     ${data_list}
-    Input transactionDate       ${transaction_date}
-    Input datePickerDueDate         ${datePickerDueDate}
-     Input Department        ${detail_department}
-    Input billNo        ${detail_billNo}
-    Input billDate      ${detail_billDate}
-    Input vatPeriod     ${detail_vatPeriod}
-    Capture Screen
+      [Arguments]            ${username}      ${password}       ${image_name}     ${supplier_code}    ${data_list}    ${transaction_date}     ${datePickerDueDate}        ${detail_department}        ${detail_billNo}        ${detail_billDate}      ${detail_vatPeriod}     ${detail_description}        
+      Set Suite Variable       ${logic}       Dharmniti Genaral Ledger
+      Set Selenium Speed     0.3
+      Set Directory          ${image_name}
+      Capture Screen
+      Input User             ${username}    
+      Input Password         ${password}
+      Capture Screen
+      Login Submit                 
+      Wait Until Page Contains        ${logic}   
+      Capture Screen
+      Click Tab Buy
+      Capture Screen
+      Click Tab OtherExpense
+      Click Btn Add
+      Capture Screen
+      Input Supplier Code     ${supplier_code}
+      Select Vat Type     ${data_list}
+      Input transactionDate       ${transaction_date}
+      Input datePickerDueDate         ${datePickerDueDate}
+      Input Department        ${detail_department}
+      Input billNo        ${detail_billNo}
+      Input billDate      ${detail_billDate}
+      Input vatPeriod     ${detail_vatPeriod}
+      Capture Screen
