@@ -31,4 +31,5 @@ Oe Add Data 1
       Input billNo        ${detail_billNo}
       Input billDate      ${detail_billDate}
       Input vatPeriod     ${detail_vatPeriod}
+      Input description    ${detail_description}
       Capture Screen
