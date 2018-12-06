@@ -35,11 +35,6 @@ Oe Add Data 1
     Input bindingexpenseInfo        ${no_bindingexpenseInfo}
     Input number        ${qty}
     Input Price     ${price}
-    Input taxAmount     ${taxAmount}
-    Input Remark        ${remark}
-    Input paymentCash       ${paymentCashAmount}
-    Click Btn Submit
-    Click Btn Confirm
     Capture Screen                 
   
 
