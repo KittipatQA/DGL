@@ -33,8 +33,6 @@ Oe Add Data 1
     Input vatPeriod     ${detail_vatPeriod}
     Input description       ${detail_description}
     Input bindingexpenseInfo        ${no_bindingexpenseInfo}
-    Input number        ${qty}
-    Input Price     ${price}
     Capture Screen                 
   
 
