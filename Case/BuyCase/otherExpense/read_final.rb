@@ -486,14 +486,13 @@ if ARGV.length > 0
                 vatPeriod   = data[14]
                 remark  = data[15]
                 bindingexpenseInfo  = data[16]
-                list  = data[17]
-                number = data[18]
-                unitPrice   = data[19]
-                discount    = data[20]
-                taxAmount   = data[21]
-                remark  = data[22]
-                paymentCashAmount  = data[23]
-                output = no + detail + "   " + user + "   " + pass + "   " + image_name + "   " + code + "   " + vattype  + "   " + transactionDate  + "   " + datePickerDueDate  + "   " + department  + "   " + billNo  + "   " + billDate  + "   " + vatPeriod  + "   " + remark  + "   " + bindingexpenseInfo  + "   " + list  + "   " + number  + "   " + unitPrice  + "   " + discount  + "   " + taxAmount  + "   " + remark  + "   " + paymentCashAmount
+                number = data[17]
+                unitPrice   = data[18]
+                discount    = data[19]
+                taxAmount   = data[20]
+                remark  = data[21]
+                paymentCashAmount  = data[22]
+                output = no + detail + "   " + user + "   " + pass + "   " + image_name + "   " + code + "   " + vattype  + "   " + transactionDate  + "   " + datePickerDueDate  + "   " + department  + "   " + billNo  + "   " + billDate  + "   " + vatPeriod  + "   " + remark  + "   " + bindingexpenseInfo  + "   " + number  + "   " + unitPrice  + "   " + discount  + "   " + taxAmount  + "   " + remark  + "   " + paymentCashAmount
                 content_TS_OE_Add_Cr_01 = content_TS_OE_Add_Cr_01 + "\n"  + output
                 header = readfile("D:/DGL/Header/TS_OE_Cr_Add_1_Hd.resource")
                 writefile("D:/DGL/Case/BuyCase/otherExpense Add/TS_OE_Add_Cr_001.robot", header+content_TS_OE_Add_Cr_01)
