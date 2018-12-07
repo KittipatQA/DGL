@@ -75,7 +75,7 @@ Input Vat
 Input taxAmount
     [Arguments]     ${taxAmountlist}    
     Click Element      id:sl-oe-transactions-taxAmount-0                  
-    Click Element       name:${taxAmountlist}       
+    Click Element       xpath:/html/body/app-root/app-home-layout/app-layout/nb-layout/div[1]/div/div/div/div/nb-layout-column/div/app-other-expense-detail/form/div[4]/app-table/div/div[2]/table-body/div/div/div/div[8]/div/div/div/span[1]     
 
 Input Remark
     [Arguments]     ${remark}              
