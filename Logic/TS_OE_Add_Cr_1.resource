@@ -46,5 +46,5 @@ Oe Add Data 1
       Set Suite Variable       ${status_true}   สถานะถูกต้อง
       Set Suite Variable       ${status_fail}   สถานะไม่ถูกต้อง
       ${columnafter}=       Get Element Count        //*[contains(@id, 'sl-oe-detail')]
-      Run Keyword If       ${columnafter}<${columnbefore}        Log To Console      ${status_true}       ELSE        fail     Log To Console         ${status_fail}
+      Run Keyword If       ${columnafter}<${columnbefore}        Log To Console      ${status_true}       ELSE        fail    Log To Console    ${status_fail}
       Capture Screen
