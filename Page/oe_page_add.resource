@@ -56,8 +56,7 @@ Input description
 Input bindingexpenseInfo
     [Arguments]     ${no_bindingexpenseInfo}              
     Input Text      id:input-oe-transactions-bindingexpenseInfo-0       ${no_bindingexpenseInfo}
-    Click Element   xpath://*[@id="ngb-typeahead-154-0"]/ngb-highlight
-
+    Execute JavaScript      document.getElementById("ngb-typeahead-154-0").onclick()
 
 Input number
     [Arguments]     ${qty}
