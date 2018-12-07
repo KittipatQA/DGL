@@ -56,7 +56,7 @@ Input description
 Input bindingexpenseInfo
     [Arguments]     ${no_bindingexpenseInfo}              
     Input Text      id:input-oe-transactions-bindingexpenseInfo-0       ${no_bindingexpenseInfo}
-    Click Element   //button[@id="ngb-typeahead-154-0"]
+    Click Element       xpath://button[@id="ngb-typeahead-154-0"]
 
 Input number
     [Arguments]     ${qty}
