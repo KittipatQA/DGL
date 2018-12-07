@@ -75,7 +75,7 @@ Input Vat
 Input taxAmount
     [Arguments]     ${taxAmountlist}    
     Click Element      id:sl-oe-transactions-taxAmount-0                  
-    Select From List By Label       id:sl-oe-transactions-taxAmount-0       ${taxAmountlist}
+    Click Element       name:${taxAmountlist}       
 
 Input Remark
     [Arguments]     ${remark}              
