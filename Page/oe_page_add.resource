@@ -98,3 +98,6 @@ Click Btn Confirm
 
 Click Btn Ok
     Click Element        xpath://*[@id="mat-dialog-1"]/app-dialog/div/div/div[3]/div/button
+
+Check List After Add
+    Page Should Contain Element     xpath://*[@id="sl-oe-detail-0"]/div[2]    

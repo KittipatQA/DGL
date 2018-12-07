@@ -21,6 +21,7 @@ Oe Add Data 1
       Click Tab Buy
       Capture Screen
       Click Tab OtherExpense
+      ${columnbefore}=       Get Element Count        //*[contains(@id, 'sl-oe-detail')]
       Click Btn Add
       Capture Screen
       Input Supplier Code     ${supplier_code}
@@ -42,4 +43,8 @@ Oe Add Data 1
       Click Btn Submit
       Click Btn Confirm
       Click Btn Ok
+      Set Suite Variable       ${status_true}   สถานะถูกต้อง
+      Set Suite Variable       ${status_fail}   สถานะไม่ถูกต้อง
+      ${columnafter}=       Get Element Count        //*[contains(@id, 'sl-oe-detail')]
+      Run Keyword If       ${columnafter}>${columnbefore}        Log To Console      ${status_true}       ELSE        fail  ${column} : ${status_fail}
       Capture Screen
