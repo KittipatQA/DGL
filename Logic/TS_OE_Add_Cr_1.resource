@@ -12,7 +12,7 @@ Oe Add Data 1
       Set Selenium Speed     0.3
       Set Directory          ${image_name}
       Capture Screen
-      Input User             ${username}    
+      Input User             ${username}
       Input Password         ${password}
       Capture Screen
       Login Submit                 
@@ -46,5 +46,5 @@ Oe Add Data 1
       Set Suite Variable       ${status_true}   สถานะถูกต้อง
       Set Suite Variable       ${status_fail}   สถานะไม่ถูกต้อง
       ${columnafter}=       Get Element Count        //*[contains(@id, 'sl-oe-detail')]
-      Run Keyword If       ${columnafter}<${columnbefore}        Log To Console      ${status_true}       ELSE        fail  ${columnafter} : ${status_value}
+      Run Keyword If       ${columnafter}<${columnbefore}        Log To Console      ${status_true}       ELSE        fail  ${columnafter} : ${status_fail}
       Capture Screen
