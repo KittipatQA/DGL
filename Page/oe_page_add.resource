@@ -2,6 +2,8 @@
 Library              SeleniumLibrary
 
 *** Variables ***
+    Set Suite Variable       ${status_true}   สถานะถูกต้อง
+    Set Suite Variable       ${status_false}  สถานะไม่ถูกต้อง
 
 *** Keywords ***
 
@@ -96,8 +98,26 @@ Input Price
     Input Text      id:input-oe-transactions-unitPrice-0    ${price}
 
 Get Price
-    ${value_now}=       Get Value      id:input-oe-transactions-unitPrice-0
-    Log To Console      ${value_now}      
+    ${price_now}=       Get Value      id:input-oe-transactions-unitPrice-0
+    Log To Console      ${price_now}
+
+Get Discount
+    ${discount_now}=       Get Value      id:input-oe-transactions-discount-0
+    Log To Console      ${discount_now}
+
+Check Price
+    ${price_result}=       Get Value      id:input-oe-detail-discount
+    Log To Console      ${price_result}
+    Run Keyword If      "${price_now}" == "${price_result}"  Log to Console    ${status_true}           ELSE        fail  ${status_false}
+
+Check Discount
+    ${discount_result}=       Get Value      id:show-oe-total-before-vat-exempt
+    Log To Console      ${discount_now}
+    Run Keyword If      "${discount_now}" == "${discount_result}"  Log to Console    ${status_true}           ELSE        fail  ${status_false}
+
+#Calculator Result
+#${cal_result}=       Get Value      id:show-oe-total-before-vat-exempt
+
 
 Click Btn Submit
     Click Button       id:btn-oe-submit
