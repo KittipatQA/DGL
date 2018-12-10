@@ -2,8 +2,8 @@
 Library              SeleniumLibrary
 
 *** Variables ***
-    Set Suite Variable       ${status_true}   สถานะถูกต้อง
-    Set Suite Variable       ${status_false}  สถานะไม่ถูกต้อง
+    ${status_true}   สถานะถูกต้อง
+    ${status_false}  สถานะไม่ถูกต้อง
 
 *** Keywords ***
 
