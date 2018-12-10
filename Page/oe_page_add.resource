@@ -56,7 +56,7 @@ Input description
 Input bindingexpenseInfo
     [Arguments]     ${no_bindingexpenseInfo}              
     Input Text      id:input-oe-transactions-bindingexpenseInfo-0       ${no_bindingexpenseInfo}
-    Click Element       xpath://*[@id="ngb-typeahead-${index}-0"]
+    Click Element       class:ngb-highlight ng-star-inserted
 
 Input number
     [Arguments]     ${qty}
