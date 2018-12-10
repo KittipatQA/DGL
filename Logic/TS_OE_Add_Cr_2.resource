@@ -37,6 +37,7 @@ Oe Add Data 2
       Input taxAmount      ${taxAmountlist}
       Input Remark      ${remark}
       Input paymentCash    ${paymentCashAmount}
+      Get Price
       Click Btn Submit
       Click Btn Confirm
       Click Btn Ok

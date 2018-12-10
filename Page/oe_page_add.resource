@@ -95,6 +95,10 @@ Input Price
     Clear Element Text      id:input-oe-transactions-unitPrice-0    
     Input Text      id:input-oe-transactions-unitPrice-0    ${price}
 
+Get Price
+    ${value_now}=Get Value      input-oe-transactions-unitPrice-0
+    Log To Console      ${value_now}      
+
 Click Btn Submit
     Click Button       id:btn-oe-submit
 
