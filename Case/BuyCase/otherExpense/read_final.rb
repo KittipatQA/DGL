@@ -39,6 +39,7 @@ if ARGV.length > 0
     content_TS_OE_LSr_02_01    = ""
     content_TS_OE_LSr_02_01_0  = ""
     content_TS_OE_Add_Cr_01  = ""
+    content_TS_OE_Add_Cr_02  = ""
 
 
     text=File.open(filename).read
@@ -496,6 +497,41 @@ if ARGV.length > 0
                 content_TS_OE_Add_Cr_01 = content_TS_OE_Add_Cr_01 + "\n"  + output
                 header = readfile("D:/DGL/Header/TS_OE_Cr_Add_1_Hd.resource")
                 writefile("D:/DGL/Case/BuyCase/otherExpense Add/TS_OE_Add_Cr_001.robot", header+content_TS_OE_Add_Cr_01)
+
+            end
+
+        end
+
+        if (line =~ /^\d/)
+            data=line.split(/\t/)
+            if (data[4]=="TS_OE_Add_Cr_002")
+                no      = data[0]
+                type    = data[1]
+                detail  = data[2].gsub(/[\s&\/"-]+/, '_')
+                predata = data[3]
+                key     = data[4]
+                user    = data[5]
+                pass    = data[6]
+                code    = data[7]
+                vattype     = data[8]
+                transactionDate     = data[9]
+                datePickerDueDate   = data[10]
+                department   = data[11]
+                billNo  = data[12]
+                billDate = data[13]
+                vatPeriod   = data[14]
+                remark_customer  = data[15]
+                list  = data[16]
+                number = data[17]
+                unitPrice   = data[18]
+                discount    = data[19]
+                taxAmount   = data[20]
+                remark_lish  = data[21]
+                paymentCashAmount  = data[22]
+                output = no + detail + "   " + user + "   " + pass + "   " + image_name + "   " + code + "   " + vattype  + "   " + transactionDate  + "   " + datePickerDueDate  + "   " + billDate  + "   " + vatPeriod  + "   " + remark_customer  + "   " + list  + "   " + number  + "   " + unitPrice  + "   " + discount  + "   " + taxAmount  + "   " + remark_lish  + "   " + paymentCashAmount
+                content_TS_OE_Add_Cr_02 = content_TS_OE_Add_Cr_02 + "\n"  + output
+                header = readfile("D:/DGL/Header/TS_OE_Cr_Add_2_Hd.resource")
+                writefile("D:/DGL/Case/BuyCase/otherExpense Add/TS_OE_Add_Cr_002.robot", header+content_TS_OE_Add_Cr_02)
 
             end
 
