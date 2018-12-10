@@ -61,6 +61,7 @@ Input bindingexpenseInfo
 Input list
     [Arguments]     ${list}
     Input Text      id:input-oe-transactions-description-0      ${list}
+    Click Element       xpath://span[@class="ngb-highlight ng-star-inserted"]
 
 Input number
     [Arguments]     ${qty}
