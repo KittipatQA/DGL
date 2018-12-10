@@ -105,14 +105,14 @@ Get Discount
     ${discount_now}=       Get Value      id:input-oe-transactions-discount-0
     Log To Console      ${discount_now}
 
-#Check Price
-#    ${price_result}=       Get Value      id:input-oe-detail-discount
-#    Log To Console      ${price_result}
+Check Price
+    ${price_result}=       Get Value      id:input-oe-detail-discount
+    Log To Console      ${price_result}
 #    Run Keyword If      "${price_now}" == "${price_result}"  Log to Console    ${status_true}           ELSE        fail  ${status_false}
 
-#Check Discount
-#    ${discount_result}=       Get Value      id:show-oe-total-before-vat-exempt
-#    Log To Console      ${discount_now}
+Check Discount
+    ${discount_result}=       Get Value      id:show-oe-total-before-vat-exempt
+    Log To Console      ${discount_now}
 #    Run Keyword If      "${discount_now}" == "${discount_result}"  Log to Console    ${status_true}           ELSE        fail  ${status_false}
 
 #Calculator Result
