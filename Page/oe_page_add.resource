@@ -96,7 +96,7 @@ Input Price
     Input Text      id:input-oe-transactions-unitPrice-0    ${price}
 
 Get Price
-    ${value_now}=Get Text      xpath:input-oe-transactions-unitPrice-0
+    ${value_now}=       Get Text      xpath:input-oe-transactions-unitPrice-0
     Log To Console      ${value_now}      
 
 Click Btn Submit
