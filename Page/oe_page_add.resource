@@ -110,7 +110,7 @@ Check Discount
     Log To Console      ${price_result}
 
 Check total exempt
-    ${price_exempt}=        Get Value      id:input-oe-detail-discount 
+    ${price_exempt}=        Get Value      id:show-oe-total-before-vat-exempt
     Log To Console      ${price_exempt}
 
 Click Btn Submit
