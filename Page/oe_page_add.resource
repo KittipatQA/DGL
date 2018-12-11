@@ -105,7 +105,7 @@ Get Discount
     ${discount_now}=       Get Value      id:input-oe-transactions-discount-0
     Log To Console      ${discount_now}
 
-Check Price
+Check Discount
     ${price_result}=       Get Value      id:input-oe-detail-discount
     Log To Console      ${price_result}
 #    Run Keyword If      "${price_now}" == "${price_result}"  Log to Console    ${status_true}           ELSE        fail  ${status_false}
