@@ -91,14 +91,11 @@ Input Remark
 Input paymentCash
     [Arguments]     ${paymentCashAmount}              
     Input Text      id:input-oe-detail-paymentCashAmount    ${paymentCashAmount}
-    ${paymentCashAmount}=  Convert To Number  ${paymentCashAmount}  2
-    Set Suite Variable     ${paymentCashAmount}
-
+ 
 Input Price
     [Arguments]     ${price}    
     Clear Element Text      id:input-oe-transactions-unitPrice-0    
-    Input Text      id:input-oe-transactions-unitPrice-0    ${price}
-    Set Suite Variable     ${price}
+    Input Text      id:input-oe-transactions-unitPrice-0    ${price}   
   
 Get Price
     ${price_now}=       Get Value      id:input-oe-transactions-unitPrice-0
