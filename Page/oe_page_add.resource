@@ -98,19 +98,17 @@ Input Price
     [Arguments]     ${price}    
     Clear Element Text      id:input-oe-transactions-unitPrice-0    
     Input Text      id:input-oe-transactions-unitPrice-0    ${price}
-     ${price}=  Convert To Number  ${price}  2
     Set Suite Variable     ${price}
   
-
 Get Price
     ${price_now}=       Get Value      id:input-oe-transactions-unitPrice-0
     Log To Console      ${price_now}
-    Should Be True     '${price_now}'=='${price}'
+    Should Be Equal As Numbers      ${price_now}        ${price}
 
 Get Discount
     ${discount_now}=       Get Value      id:input-oe-transactions-discount-0
     Log To Console      ${discount_now}
-    Should Be True     '${discount_now}'=='${discount}'
+    Should Be Equal As Numbers     ${discount_now}      ${discount}
 
 Check Discount
     ${price_result}=       Get Value      id:input-oe-detail-discount
