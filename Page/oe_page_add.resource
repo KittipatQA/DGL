@@ -117,6 +117,14 @@ Check total before vat
     ${price_before_vat}=        Get Value      id:show-oe-total-before-vat
     Log To Console      ${price_before_vat}
 
+Check total vat
+    ${price_total_vat}=        Get Value      id:show-oe-total-vat
+    Log To Console      ${price_total_vat}   
+
+Check net amount
+    ${net_amount}=        Get Value      id:show-oe-net-amount
+    Log To Console      ${net_amount}  
+
 Click Btn Submit
     Click Button       id:btn-oe-submit
 

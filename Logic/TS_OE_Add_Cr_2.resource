@@ -42,6 +42,8 @@ Oe Add Data 2
       Check Discount
       Check total exempt
       Check total before vat
+      Check total vat
+      Check net amount
       Click Btn Submit
       Click Btn Confirm
       Click Btn Ok
