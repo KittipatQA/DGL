@@ -110,15 +110,6 @@ Check Discount
     Log To Console      ${price_result}
 #    Run Keyword If      "${price_now}" == "${price_result}"  Log to Console    ${status_true}           ELSE        fail  ${status_false}
 
-Check Discount
-    ${discount_result}=       Get Value      id:show-oe-total-before-vat-exempt
-    Log To Console      ${discount_now}
-#    Run Keyword If      "${discount_now}" == "${discount_result}"  Log to Console    ${status_true}           ELSE        fail  ${status_false}
-
-#Calculator Result
-#${cal_result}=       Get Value      id:show-oe-total-before-vat-exempt
-
-
 Click Btn Submit
     Click Button       id:btn-oe-submit
 
