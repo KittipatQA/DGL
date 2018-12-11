@@ -40,7 +40,7 @@ Oe Add Data 2
       Get Price
       Get Discount
       Check Price
-      Check Discount
+      #Check Discount
       Click Btn Submit
       Click Btn Confirm
       Click Btn Ok
