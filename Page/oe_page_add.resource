@@ -113,6 +113,10 @@ Check total exempt
     ${price_exempt}=        Get Value      id:show-oe-total-before-vat-exempt
     Log To Console      ${price_exempt}
 
+Check total before vat
+    ${price_before_vat}=        Get Value      id:show-oe-total-before-vat
+    Log To Console      ${price_before_vat}
+
 Click Btn Submit
     Click Button       id:btn-oe-submit
 
