@@ -44,6 +44,8 @@ Oe Add Data 2
       Check total before vat
       Check total vat
       Check net amount
+      Check with holding
+      Check amount
       Click Btn Submit
       Click Btn Confirm
       Click Btn Ok

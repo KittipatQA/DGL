@@ -125,6 +125,14 @@ Check net amount
     ${net_amount}=        Get Value      id:show-oe-net-amount
     Log To Console      ${net_amount}  
 
+Check with holding 
+    ${vat_wht}=        Get Value      id:show-oe-wht
+    Log To Console      ${vat_wht}  
+
+Check amount
+    ${vat_amount}=        Get Value      id:show-oe-vat-amount
+    Log To Console      ${vat_amount}  
+
 Click Btn Submit
     Click Button       id:btn-oe-submit
 
