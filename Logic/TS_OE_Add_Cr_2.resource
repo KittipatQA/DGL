@@ -40,6 +40,7 @@ Oe Add Data 2
       Get Price
       Get Discount
       Check Discount
+      Check total exempt
       Click Btn Submit
       Click Btn Confirm
       Click Btn Ok

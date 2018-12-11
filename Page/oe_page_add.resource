@@ -108,7 +108,10 @@ Get Discount
 Check Discount
     ${price_result}=       Get Value      id:input-oe-detail-discount
     Log To Console      ${price_result}
-#    Run Keyword If      "${price_now}" == "${price_result}"  Log to Console    ${status_true}           ELSE        fail  ${status_false}
+
+Check total exempt
+    ${price_exempt}=        Get Value      id:input-oe-detail-discount 
+    Log To Console      ${price_exempt}
 
 Click Btn Submit
     Click Button       id:btn-oe-submit
