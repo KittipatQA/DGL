@@ -91,21 +91,20 @@ Input Remark
 Input paymentCash
     [Arguments]     ${paymentCashAmount}              
     Input Text      id:input-oe-detail-paymentCashAmount    ${paymentCashAmount}
- 
+
 Input Price
     [Arguments]     ${price}    
     Clear Element Text      id:input-oe-transactions-unitPrice-0    
-    Input Text      id:input-oe-transactions-unitPrice-0    ${price}   
-  
+    Input Text      id:input-oe-transactions-unitPrice-0    ${price}
+
 Get Price
     ${price_now}=       Get Value      id:input-oe-transactions-unitPrice-0
     Log To Console      ${price_now}
-    Should Be Equal As Strings      ${price_now}        ${price}
+
 
 Get Discount
     ${discount_now}=       Get Value      id:input-oe-transactions-discount-0
     Log To Console      ${discount_now}
-    Should Be Equal As Strings     ${discount_now}      ${discount}
 
 Check Discount
     ${price_result}=       Get Value      id:input-oe-detail-discount
