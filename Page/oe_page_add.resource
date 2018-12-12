@@ -118,6 +118,15 @@ Check total before vat
     ${price_before_vat}=        Get Value      id:show-oe-total-before-vat
     Log To Console      ${price_before_vat}
 
+Check transactions before vat
+    ${transactions_before_vat}=        Get Value      id:input-oe-transactions-beforeAmount-0
+    Log To Console      ${transactions_before_vat}
+    Set Suite Variable      ${transactions_before_vat}      
+    
+
+Check transactions total Price
+    ${transactions_totalPrice_vat}=        Get Value      id:input-oe-transactions-totalPrice-0
+
 Check total vat
     ${price_total_vat}=        Get Value      id:show-oe-total-vat
     Log To Console      ${price_total_vat}   
@@ -132,7 +141,12 @@ Check with holding
 
 Check amount
     ${vat_amount}=        Get Value      id:show-oe-vat-amount
-    Log To Console      ${vat_amount}  
+    Log To Console      ${vat_amount}
+
+Calculator No vatType
+    ${price_input}=       Get Value      id:input-oe-transactions-unitPrice-0
+    Log To Console      ${price_input}
+    Should be equal as strings      ${price_input}      ${transactions_before_vat}                        
 
 Click Btn Submit
     Click Button       id:btn-oe-submit

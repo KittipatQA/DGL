@@ -40,6 +40,7 @@ Oe Add Data 1
       Input taxAmount      ${taxAmountlist}
       Input Remark      ${remark}
       Input paymentCash    ${paymentCashAmount}
+      Calculator No vatType
       Click Btn Submit
       Click Btn Confirm
       Click Btn Ok
