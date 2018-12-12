@@ -142,7 +142,7 @@ Check amount
 Calculator No vatType
     ${price_input}=       Get Value      id:input-oe-transactions-unitPrice-0
     Log To Console      ${price_input}
-    Should be equal as strings      ${price_input}      ${transactions_before_vat}                        
+    Should Be Equal As Strings      ${price_input}      ${transactions_before_vat}                        
 
 Click Btn Submit
     Click Button       id:btn-oe-submit

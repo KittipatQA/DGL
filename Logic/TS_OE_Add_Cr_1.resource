@@ -40,17 +40,7 @@ Oe Add Data 1
       Input taxAmount      ${taxAmountlist}
       Input Remark      ${remark}
       Input paymentCash    ${paymentCashAmount}
-      Get Price
-      Get Discount
-      Check Discount
-      Check total exempt
-      Check total before vat
-      Check net amount
-      Check with holding
-      Check amount
       Check transactions before vat
-      Check transactions total Price
-      Calculator No vatType
       Click Btn Submit
       Click Btn Confirm
       Click Btn Ok
