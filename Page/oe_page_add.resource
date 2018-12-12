@@ -120,8 +120,7 @@ Check total before vat
 
 Check transactions before vat
     ${transactions_before_vat}=        Get Value      id:input-oe-transactions-beforeAmount-0
-    Log To Console      ${transactions_before_vat}
-    Set Suite Variable      ${transactions_before_vat}      
+    Log To Console      ${transactions_before_vat}   
     
 
 Check transactions total Price
@@ -146,6 +145,7 @@ Check amount
 Calculator No vatType
     ${price_input}=       Get Value      id:input-oe-transactions-unitPrice-0
     Log To Console      ${price_input}
+    ${transactions_before_vat}=        Get Value      id:input-oe-transactions-beforeAmount-0
     Should be equal as strings      ${price_input}      ${transactions_before_vat}                        
 
 Click Btn Submit
