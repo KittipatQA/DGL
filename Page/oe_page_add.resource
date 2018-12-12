@@ -120,7 +120,6 @@ Check total before vat
 
 Check transactions before vat
     ${transactions_before_vat}=        Get Value      id:input-oe-transactions-beforeAmount-0
-    Set Suite Variable      ${transactions_before_vat}
     Log To Console      ${transactions_before_vat}   
     
 
