@@ -45,7 +45,6 @@ Oe Add Data 1
       Check Discount
       Check total exempt
       Check total before vat
-      Check total vat
       Check net amount
       Check with holding
       Check amount
