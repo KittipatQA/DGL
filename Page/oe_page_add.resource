@@ -125,6 +125,7 @@ Check transactions before vat
 
 Check transactions total Price
     ${transactions_totalPrice_vat}=        Get Text      id:input-oe-transactions-totalPrice-0
+    Log To Console      ${transactions_totalPrice_vat} 
 
 Check net amount
     ${net_amount}=        Get Value      id:show-oe-net-amount
@@ -139,9 +140,9 @@ Check amount
     Log To Console      ${vat_amount}
 
 Calculator No vatType
-    ${price_input}=       Get Value      id:input-oe-transactions-unitPrice-0
-    Log To Console      ${price_input}
-    Should Be Equal As Strings      ${price_input}      ${transactions_before_vat}                        
+    Get Price
+    Check total exempt
+    Should Be Equal As Strings      ${price_now}      ${price_exempt}                        
 
 Click Btn Submit
     Click Button       id:btn-oe-submit
