@@ -100,11 +100,12 @@ Input Price
 Get Price
     ${price_now}=       Get Value      id:input-oe-transactions-unitPrice-0
     Log To Console      ${price_now}
-
+    Set Suite Variable      ${price_now}
 
 Get Discount
     ${discount_now}=       Get Value      id:input-oe-transactions-discount-0
     Log To Console      ${discount_now}
+    Set Suite Variable      ${discount_now}
 
 Check Discount
     ${price_result}=       Get Value      id:input-oe-detail-discount
