@@ -493,7 +493,8 @@ if ARGV.length > 0
                 taxAmount   = data[20]
                 remark_lish  = data[21]
                 paymentCashAmount  = data[22]
-                output = no + detail + "   " + user + "   " + pass + "   " + image_name + "   " + code + "   " + vattype  + "   " + transactionDate  + "   " + datePickerDueDate  + "   " + department  + "   " + billNo  + "   " + billDate  + "   " + vatPeriod  + "   " + remark_customer  + "   " + bindingexpenseInfo  + "   " + number  + "   " + unitPrice  + "   " + discount  + "   " + taxAmount  + "   " + remark_lish  + "   " + paymentCashAmount
+                status_now  = data[23]
+                output = no + detail + "   " + user + "   " + pass + "   " + image_name + "   " + code + "   " + vattype  + "   " + transactionDate  + "   " + datePickerDueDate  + "   " + department  + "   " + billNo  + "   " + billDate  + "   " + vatPeriod  + "   " + remark_customer  + "   " + bindingexpenseInfo  + "   " + number  + "   " + unitPrice  + "   " + discount  + "   " + taxAmount  + "   " + remark_lish  + "   " + paymentCashAmount  + "   " + status_now
                 content_TS_OE_Add_Cr_01 = content_TS_OE_Add_Cr_01 + "\n"  + output
                 header = readfile("D:/DGL/Header/TS_OE_Cr_Add_1_Hd.resource")
                 writefile("D:/DGL/Case/BuyCase/otherExpense Add/TS_OE_Add_Cr_001.robot", header+content_TS_OE_Add_Cr_01)
