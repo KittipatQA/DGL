@@ -110,35 +110,42 @@ Get Discount
 Check Discount
     ${price_result}=       Get Value      id:input-oe-detail-discount
     Log To Console      ${price_result}
+    Set Suite Variable      ${price_result}
 
 Check total exempt
     ${price_exempt}=        Get Value      id:show-oe-total-before-vat-exempt
     Log To Console      ${price_exempt}
+    Set Suite Variable      ${price_exempt}
 
 Check total before vat
     ${price_before_vat}=        Get Value      id:show-oe-total-before-vat
     Log To Console      ${price_before_vat}
+    Set Suite Variable      ${price_before_vat}
 
 Check transactions before vat
     ${transactions_before_vat}=        Get Text      id:input-oe-transactions-beforeAmount-0
     Log To Console      ${transactions_before_vat}   
-    
+    Set Suite Variable      ${transactions_before_vat}
 
 Check transactions total Price
     ${transactions_totalPrice_vat}=        Get Text      id:input-oe-transactions-totalPrice-0
     Log To Console      ${transactions_totalPrice_vat} 
+    Set Suite Variable      ${transactions_totalPrice_vat}
 
 Check net amount
     ${net_amount}=        Get Value      id:show-oe-net-amount
     Log To Console      ${net_amount}  
+    Set Suite Variable      ${net_amount}
 
 Check with holding 
     ${vat_wht}=        Get Value      id:show-oe-wht
     Log To Console      ${vat_wht}  
+    Set Suite Variable      ${vat_wht}
 
 Check amount
     ${vat_amount}=        Get Value      id:show-oe-vat-amount
     Log To Console      ${vat_amount}
+    Set Suite Variable      ${vat_amount}
 
 Calculator No vatType
     Get Price
