@@ -119,7 +119,7 @@ Check total before vat
     Log To Console      ${price_before_vat}
 
 Check transactions before vat
-    ${transactions_before_vat}=        Get Value      id:input-oe-transactions-beforeAmount-0
+    ${transactions_before_vat}=        Get Text      id:input-oe-transactions-beforeAmount-0
     Log To Console      ${transactions_before_vat}   
     
 
