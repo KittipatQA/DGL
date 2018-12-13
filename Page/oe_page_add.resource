@@ -124,7 +124,7 @@ Check transactions before vat
     
 
 Check transactions total Price
-    ${transactions_totalPrice_vat}=        Get Value      id:input-oe-transactions-totalPrice-0
+    ${transactions_totalPrice_vat}=        Get Text      id:input-oe-transactions-totalPrice-0
 
 Check net amount
     ${net_amount}=        Get Value      id:show-oe-net-amount
