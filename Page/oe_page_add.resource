@@ -151,7 +151,10 @@ Calculator No vatType
     Get Price
     Check total exempt
     Check total before vat
-    Should Be Equal As Strings      ${price_now}      ${price_exempt}       ${price_before_vat}                        
+    Check net amount
+    Check amount
+    Check transactions before vat
+    Should Be Equal As Strings      ${price_now}      ${price_exempt}       ${price_before_vat}     ${net_amount}       ${vat_amount}       ${transactions_before_vat}                             
 
 Click Btn Submit
     Click Button       id:btn-oe-submit
