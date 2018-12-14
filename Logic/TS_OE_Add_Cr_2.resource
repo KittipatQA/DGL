@@ -7,7 +7,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 *** Keywords ***
 
 Oe Add Data 2
-      [Arguments]            ${username}      ${password}       ${image_name}     ${supplier_code}    ${data_list}    ${transaction_date}     ${detail_billDate}      ${detail_vatPeriod}     ${detail_description}      ${list}      ${qty}      ${price}    ${discount}    ${taxAmountlist}     ${remark}      ${paymentCashAmount}        
+      [Arguments]            ${username}      ${password}       ${image_name}     ${supplier_code}    ${data_list}    ${transaction_date}     ${detail_billDate}      ${detail_vatPeriod}     ${detail_description}      ${list}      ${qty}      ${price}    ${discount}    ${taxAmountlist}     ${remark}      ${paymentCashAmount}           ${status_after_add}        
       Set Suite Variable       ${logic}       Dharmniti Genaral Ledger
       Set Selenium Speed     0.3
       Set Directory          ${image_name}
@@ -53,4 +53,5 @@ Oe Add Data 2
       Set Suite Variable       ${status_fail}   สถานะไม่ถูกต้อง
       ${columnafter}=       Get Element Count        //*[contains(@id, 'sl-oe-detail')]
       Run Keyword If       ${columnafter}>${columnbefore}        Log To Console      ${status_true}       ELSE        fail  ${columnafter} : ${status_fail}
+      Check Payment status    ${status_after_add}
       Capture Screen
