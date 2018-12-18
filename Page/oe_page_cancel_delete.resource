@@ -9,10 +9,10 @@ Click Btn cancel
     Click Button       id:btn-oe-void
 
 Click Btn confirm cancel and delete
-    Click Button        id:btn-modal-cancel
+    Click Button        xpath://*[@id="btn-modal-cancel"]
 
 Click Btn delete
-    Click Button        id:btn-oe-delete
+    Click Button        xpath://*[@id="btn-oe-delete"]
 
 Click last list
     Click Element       xpath://*[@id="sl-oe-detail-0"]
