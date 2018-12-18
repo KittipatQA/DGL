@@ -161,20 +161,6 @@ Calculator No vatType
     Should Be Equal As Strings      ${price_now}      ${transactions_before_vat}
     Should Be Equal As Strings      ${discount_now}     ${price_result}     ${vat_wht}
 
-Calculator No vatType
-    Get Price
-    Check total exempt
-    Check total before vat
-    Check net amount
-    Check amount
-    Check transactions before vat
-    Get Discount
-    Check Discount
-    Check with holding 
-    Should Be Equal As Strings      ${price_now}      ${price_exempt}       ${price_before_vat}     ${net_amount}       ${vat_amount}                             
-    Should Be Equal As Strings      ${price_now}      ${transactions_before_vat}
-    Should Be Equal As Strings      ${discount_now}     ${price_result}     ${vat_wht}
-
 Check Status After Add
     ${status_list}=   Get Text     //*[@id="sl-oe-detail-0"]/div[7]/label
     Set Suite Variable      ${status_list}
