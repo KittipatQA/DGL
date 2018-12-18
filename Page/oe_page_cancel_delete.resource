@@ -15,7 +15,7 @@ Click Btn delete
     Click Button        id:btn-oe-delete
 
 Click last list
-    Click Element       id:sl-oe-detail-0
+    Click Element       xpath://*[@id="sl-oe-detail-0"]
 
 Check Status After cancel
     ${status_list}=   Get Text     //*[@id="sl-oe-detail-0"]/div[7]/label
