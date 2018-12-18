@@ -38,8 +38,11 @@ Oe Add Data 2
       Input Remark      ${remark}
       Input paymentCash    ${paymentCashAmount}
       Calculator No vatType
+      Capture Screen
       Click Btn Submit
+      Capture Screen
       Click Btn Confirm
+      Capture Screen
       Click Btn Ok
       Set Suite Variable       ${status_true}   สถานะถูกต้อง
       Set Suite Variable       ${status_fail}   สถานะไม่ถูกต้อง

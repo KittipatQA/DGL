@@ -6,7 +6,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 
 *** Keywords ***
 
-Oe Add Data 1
+Oe Cancel delete
       [Arguments]            ${username}      ${password}       ${image_name}     ${supplier_code}    ${data_list}    ${transaction_date}     ${datePickerDueDate}        ${detail_department}        ${detail_billNo}        ${detail_billDate}      ${detail_vatPeriod}     ${detail_description}      ${no_bindingexpenseInfo}      ${qty}      ${price}    ${discount}    ${taxAmountlist}     ${remark}      ${paymentCashAmount}      ${status_after_add}                          
       Set Suite Variable       ${logic}       Dharmniti Genaral Ledger
       Set Selenium Speed     0.3
@@ -43,11 +43,26 @@ Oe Add Data 1
       Calculator No vatType
       Capture Screen
       Click Btn Submit
+      Capture Screen
       Click Btn Confirm
+      Capture Screen
       Click Btn Ok
+      Capture Screen
       Set Suite Variable       ${status_true}   สถานะถูกต้อง
       Set Suite Variable       ${status_fail}   สถานะไม่ถูกต้อง
       ${columnafter}=       Get Element Count        //*[contains(@id, 'sl-oe-detail')]
       Run Keyword If       ${columnafter}>${columnbefore}        Log To Console      ${status_true}       ELSE        fail  ${columnafter} : ${status_fail}
       Check Payment status    ${status_after_add}
+      Capture Screen
+      Click last list
+      Click Btn cancel
+      Capture Screen
+      Click Btn confirm cancel and delete
+      Capture Screen
+      Check Status After cancel
+      Click last list
+      Capture Screen
+      Click Btn delete
+      Capture Screen
+      Click Btn confirm cancel and delete
       Capture Screen
