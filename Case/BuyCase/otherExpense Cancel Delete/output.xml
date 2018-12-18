@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="true" generated="20181218 17:40:26.999" generator="Robot 3.1a2 (Python 2.7.15 on win32)">
+<robot rpa="true" generated="20181218 18:08:24.087" generator="Robot 3.1a2 (Python 2.7.15 on win32)">
 <suite source="d:\DGL\Case\BuyCase\otherExpense Cancel Delete\TS_OE_Cancel_001.robot" id="s1" name="TS OE Cancel 001">
 <kw type="setup" name="Open the web page">
-<msg timestamp="20181218 17:40:27.279" level="FAIL">No keyword with name 'Open the web page' found.</msg>
-<status status="FAIL" endtime="20181218 17:40:27.279" starttime="20181218 17:40:27.279"></status>
+<msg timestamp="20181218 18:08:24.587" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181218 18:08:24.587" starttime="20181218 18:08:24.587"></status>
 </kw>
-<test id="s1-t1" name="1ตรวจสอบการเพิ่มรายการ_กรณี_นิติบุคคลมี_VATจ่ายเจ้าหนี้ไม่มี_VAT_รายการ_ไม่มี_TAX_">
-<status status="FAIL" endtime="20181218 17:40:27.279" critical="yes" starttime="20181218 17:40:27.279">Parent suite setup failed:
+<test id="s1-t1" name="1ตรวจสอบการยกเลิกรายการ">
+<status status="FAIL" endtime="20181218 18:08:24.589" critical="yes" starttime="20181218 18:08:24.587">Parent suite setup failed:
 No keyword with name 'Open the web page' found.</status>
 </test>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20181218 17:40:27.279" starttime="20181218 17:40:27.279"></status>
+<status status="PASS" endtime="20181218 18:08:24.591" starttime="20181218 18:08:24.591"></status>
 </kw>
-<status status="FAIL" endtime="20181218 17:40:27.279" starttime="20181218 17:40:27.014">Suite setup failed:
+<status status="FAIL" endtime="20181218 18:08:24.591" starttime="20181218 18:08:24.089">Suite setup failed:
 No keyword with name 'Open the web page' found.</status>
 </suite>
 <statistics>
@@ -28,10 +28,11 @@ No keyword with name 'Open the web page' found.</status>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20181218 17:40:27.264" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Cancel Delete\TS_OE_Cancel_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
-<msg timestamp="20181218 17:40:27.264" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Cancel Delete\TS_OE_Cancel_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
-<msg timestamp="20181218 17:40:27.264" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Cancel Delete\TS_OE_Cancel_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page_add.resource' does not exist.</msg>
-<msg timestamp="20181218 17:40:27.264" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Cancel Delete\TS_OE_Cancel_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
-<msg timestamp="20181218 17:40:27.264" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Cancel Delete\TS_OE_Cancel_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Cancel_1.resource' does not exist.</msg>
+<msg timestamp="20181218 18:08:24.579" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Cancel Delete\TS_OE_Cancel_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page_cancel_delete.resource' does not exist.</msg>
+<msg timestamp="20181218 18:08:24.580" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Cancel Delete\TS_OE_Cancel_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181218 18:08:24.581" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Cancel Delete\TS_OE_Cancel_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181218 18:08:24.581" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Cancel Delete\TS_OE_Cancel_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page_add.resource' does not exist.</msg>
+<msg timestamp="20181218 18:08:24.582" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Cancel Delete\TS_OE_Cancel_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181218 18:08:24.582" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Cancel Delete\TS_OE_Cancel_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Cancel_1.resource' does not exist.</msg>
 </errors>
 </robot>

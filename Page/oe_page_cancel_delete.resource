@@ -6,13 +6,13 @@ Library              SeleniumLibrary
 *** Keywords ***
 
 Click Btn cancel
-    Click Button       id:btn-oe-void
+    Click Element       id:btn-oe-void
 
 Click Btn confirm cancel and delete
-    Click Button        xpath://*[@id="btn-modal-cancel"]
+    Click Element        xpath://*[@id="btn-modal-cancel"]
 
 Click Btn delete
-    Click Button        xpath://*[@id="btn-oe-delete"]
+    Click Element        xpath://*[@id="btn-oe-delete"]
 
 Click last list
     Click Element       xpath://*[@id="sl-oe-detail-0"]
