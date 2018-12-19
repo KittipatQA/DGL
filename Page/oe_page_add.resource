@@ -182,6 +182,5 @@ Click Btn Ok
 Calculator includeVat
     Get Price
     Get Discount
-    Check transactions before vat
     ${result}=Evaluate    ${price_now}-${discount_now}     
     Log to Console      ${result}
