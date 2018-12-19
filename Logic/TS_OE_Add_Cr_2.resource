@@ -1,6 +1,7 @@
 *** Settings ***
 Library              SeleniumLibrary
 Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
+Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/tax_cal_function.resource   
 
 *** Variables ***
 
@@ -49,4 +50,5 @@ Oe Add Data 2
       ${columnafter}=       Get Element Count        //*[contains(@id, 'sl-oe-detail')]
       Run Keyword If       ${columnafter}>${columnbefore}        Log To Console      ${status_true}       ELSE        fail  ${columnafter} : ${status_fail}
       Check Payment status    ${status_after_add}
+      Calculator includeVat
       Capture Screen

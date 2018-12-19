@@ -178,3 +178,10 @@ Click Btn Confirm
 
 Click Btn Ok
     Click Element        xpath://*[@id="mat-dialog-1"]/app-dialog/div/div/div[3]/div/button
+
+Calculator includeVat
+    Get Price
+    Get Discount
+    Check transactions before vat
+    Verify multiplication of ${price_now} and ${discount_now}       is  ${result}
+    compair ${transactions_before_vat}
