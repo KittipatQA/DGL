@@ -183,6 +183,6 @@ Calculator includeVat
     Get Price
     Get Discount
     Check transactions before vat
-    Verify multiplication of ${price_now} and ${discount_now}       is  ${result}
+    ${result}=  Evaluate    ${price_now}-${discount_now}     
     Log to Console      ${result}
     compair ${transactions_before_vat}
