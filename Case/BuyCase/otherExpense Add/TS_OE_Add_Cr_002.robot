@@ -6,6 +6,8 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Page/home_page.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/oe_page_add.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/login_page.resource   
 Resource             /Users/USER1/.jenkins/workspace/DGL/Logic/TS_OE_Add_Cr_2.resource
+Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/tax_cal_function.resource
+Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/math.py
 Suite Setup          Open the web page
 Test Setup           Go to login page
 Test Template        Oe Add Data 2
