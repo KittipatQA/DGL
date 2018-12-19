@@ -21,6 +21,9 @@ Check Status After cancel
     ${status_list}=   Get Text     //*[@id="sl-oe-detail-0"]/div[7]/label
     Set Suite Variable      ${status_list}
 
+Check Status Cancel
+    [Arguments]     ${status_cancel}
+    Should Be Equal As Strings      ${status_list}      ${status_cancel} 
 
 
 

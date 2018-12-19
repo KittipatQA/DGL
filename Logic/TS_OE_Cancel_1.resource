@@ -60,6 +60,7 @@ Oe Cancel delete
       Click Btn confirm cancel and delete
       Capture Screen
       Check Status After cancel
+      Check Status Cancel           ${status_cancel}
       Click last list
       Capture Screen
       Click Btn delete
