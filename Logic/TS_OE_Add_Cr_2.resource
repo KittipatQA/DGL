@@ -38,7 +38,6 @@ Oe Add Data 2
       Input taxAmount      ${taxAmountlist}
       Input Remark      ${remark}
       Input paymentCash    ${paymentCashAmount}
-      #Calculator No vatType
       Capture Screen
       Click Btn Submit
       Capture Screen
