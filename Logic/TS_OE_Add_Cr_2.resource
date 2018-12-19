@@ -1,7 +1,8 @@
 *** Settings ***
 Library              SeleniumLibrary
 Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
-Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/tax_cal_function.resource   
+Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/tax_cal_function.resource
+Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/math.py
 
 *** Variables ***
 
