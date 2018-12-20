@@ -181,6 +181,5 @@ Click Btn Ok
 
 Calculator includeVat
     Get Price
-    Log To Console      ${price_now}
     Get Discount
-    Log To Console      ${discount_now}
+    ${result}=  Evaluate        ${price_now}-Get Discount                      
