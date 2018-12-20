@@ -181,9 +181,9 @@ Click Btn Ok
 
 Calculator includeVat
     Get Price
-    ${price_now_2} =        Convert To Integer        ${price_now}  
+    ${price_now_2} =        Convert To Number        ${price_now}  
     Log To Console      ${price_now_2}      
     Get Discount
-    ${discount_now_2} =     Convert To Integer        ${discount_now}       
+    ${discount_now_2} =     Convert To Number        ${discount_now}       
     Log To Console      ${discount_now_2}    
    
