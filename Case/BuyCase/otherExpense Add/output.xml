@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="true" generated="20181219 17:28:38.478" generator="Robot 3.1a2 (Python 2.7.15 on win32)">
+<robot rpa="true" generated="20181220 12:30:38.497" generator="Robot 3.1a2 (Python 2.7.15 on win32)">
 <suite source="d:\DGL\Case\BuyCase\otherExpense Add\TS_OE_Add_Cr_002.robot" id="s1" name="TS OE Add Cr 002">
 <kw type="setup" name="Open the web page">
-<msg timestamp="20181219 17:28:38.863" level="FAIL">No keyword with name 'Open the web page' found.</msg>
-<status status="FAIL" endtime="20181219 17:28:38.863" starttime="20181219 17:28:38.863"></status>
+<msg timestamp="20181220 12:30:38.664" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20181220 12:30:38.664" starttime="20181220 12:30:38.664"></status>
 </kw>
 <test id="s1-t1" name="2ตรวจสอบการเพิ่มรายการ_กรณี_นิติบุคคลมี_VATจ่ายเจ้าหนี้ไม่มี_VAT_รายการมี_TAX(2%)_">
-<status status="FAIL" endtime="20181219 17:28:38.867" critical="yes" starttime="20181219 17:28:38.863">Parent suite setup failed:
+<status status="FAIL" endtime="20181220 12:30:38.667" critical="yes" starttime="20181220 12:30:38.664">Parent suite setup failed:
 No keyword with name 'Open the web page' found.</status>
 </test>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20181219 17:28:38.872" starttime="20181219 17:28:38.871"></status>
+<status status="PASS" endtime="20181220 12:30:38.670" starttime="20181220 12:30:38.669"></status>
 </kw>
-<status status="FAIL" endtime="20181219 17:28:38.872" starttime="20181219 17:28:38.481">Suite setup failed:
+<status status="FAIL" endtime="20181220 12:30:38.670" starttime="20181220 12:30:38.499">Suite setup failed:
 No keyword with name 'Open the web page' found.</status>
 </suite>
 <statistics>
@@ -28,10 +28,10 @@ No keyword with name 'Open the web page' found.</status>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20181219 17:28:38.839" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Add\TS_OE_Add_Cr_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
-<msg timestamp="20181219 17:28:38.845" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Add\TS_OE_Add_Cr_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
-<msg timestamp="20181219 17:28:38.849" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Add\TS_OE_Add_Cr_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page_add.resource' does not exist.</msg>
-<msg timestamp="20181219 17:28:38.850" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Add\TS_OE_Add_Cr_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
-<msg timestamp="20181219 17:28:38.852" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Add\TS_OE_Add_Cr_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Add_Cr_2.resource' does not exist.</msg>
+<msg timestamp="20181220 12:30:38.656" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Add\TS_OE_Add_Cr_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20181220 12:30:38.657" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Add\TS_OE_Add_Cr_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20181220 12:30:38.658" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Add\TS_OE_Add_Cr_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page_add.resource' does not exist.</msg>
+<msg timestamp="20181220 12:30:38.659" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Add\TS_OE_Add_Cr_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20181220 12:30:38.660" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Add\TS_OE_Add_Cr_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Add_Cr_2.resource' does not exist.</msg>
 </errors>
 </robot>
