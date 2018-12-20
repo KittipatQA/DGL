@@ -182,5 +182,5 @@ Click Btn Ok
 Calculator includeVat
     Get Price
     Get Discount
-    ${result}=    BuiltIn.Evaluate    ${price_now}-${discount_now}
+    ${result}=      ${price_now}-${discount_now}
     Log to Console      ${result}
