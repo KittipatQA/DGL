@@ -39,6 +39,7 @@ Oe Add Data 2
       Input Remark      ${remark}
       Input paymentCash    ${paymentCashAmount}
       Capture Screen
+      Calculator includeVat
       Click Btn Submit
       Capture Screen
       Click Btn Confirm
@@ -49,5 +50,4 @@ Oe Add Data 2
       ${columnafter}=       Get Element Count        //*[contains(@id, 'sl-oe-detail')]
       Run Keyword If       ${columnafter}>${columnbefore}        Log To Console      ${status_true}       ELSE        fail  ${columnafter} : ${status_fail}
       Check Payment status    ${status_after_add}
-      Calculator includeVat
       Capture Screen
