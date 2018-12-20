@@ -1,6 +1,5 @@
 *** Settings ***
 Library              SeleniumLibrary
-Library              BuiltIn
 
 *** Variables ***
 ${status_true}      สถานะถูกต้อง
@@ -183,5 +182,5 @@ Click Btn Ok
 Calculator includeVat
     Get Price
     Get Discount
-    ${result}=    Evaluate    ${price_now}-${discount_now}
+    ${result}=    BuiltIn.Evaluate    ${price_now}-${discount_now}
     Log to Console      ${result}
