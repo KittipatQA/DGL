@@ -183,3 +183,4 @@ Calculator includeVat
     Get Price
     Get Discount
     ${result}=  Evaluate        ${price_now}-Get Discount                      
+    Log To Console      ${result}
