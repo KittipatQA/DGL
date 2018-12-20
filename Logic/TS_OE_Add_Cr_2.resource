@@ -1,5 +1,6 @@
 *** Settings ***
 Library              SeleniumLibrary
+Library              Collections
 Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
 
 
