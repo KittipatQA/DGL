@@ -181,6 +181,6 @@ Click Btn Ok
 
 Calculator includeVat
     Get Price
+    Log To Console      ${price_now}
     Get Discount
-    ${result}=      ${price_now}-${discount_now}
-    Log to Console      ${result}
+    Log To Console      ${discount_now}
