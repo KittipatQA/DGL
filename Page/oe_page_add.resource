@@ -1,5 +1,6 @@
 *** Settings ***
 Library              SeleniumLibrary
+Library              BuiltIn
 
 *** Variables ***
 ${status_true}      สถานะถูกต้อง
