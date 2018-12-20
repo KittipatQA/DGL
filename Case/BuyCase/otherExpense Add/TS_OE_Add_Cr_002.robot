@@ -1,6 +1,9 @@
 *** Settings ***
 Library              SeleniumLibrary
 Library              BuiltIn
+Library              OperatingSystem
+Library              String
+Library              Collections
 Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/home_page.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/oe_page_add.resource
