@@ -179,7 +179,29 @@ Click Btn Confirm
 Click Btn Ok
     Click Element        xpath://*[@id="mat-dialog-1"]/app-dialog/div/div/div[3]/div/button
 
+Replace
+    [Arguments]     ${value_comma}
+        ${no_comma} =        Replace String          ${value_comma}          ,               ${EMPTY}
+        Log To Console          ${no_comma}   
+        Set Suite Variable      ${no_comma}
+
+Float Change 1
+        ${type_float} =      Convert To Number        ${no_comma}
+        Set Suite Variable      ${type_float_1}
+
+Float Change 2
+        ${type_float_2} =      Convert To Number        ${no_comma}
+        Set Suite Variable      ${type_float_2}     
+
 Calculator includeVat
-    Get Price      
-    Get Discount      
+    Get Price
+    Replace     ${price_now}
+    Float Change 1      
+    
+    Get Discount
+    Replace     ${discount_now}
+    Float Change 2
+    Verify subtraction of ${type_float_1} and ${type_float_2}
+    
+          
     
