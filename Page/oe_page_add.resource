@@ -202,6 +202,8 @@ Calculator includeVat
     Replace     ${discount_now}
     Float Change 2
     Verify subtraction of ${type_float_1} and ${type_float_2}
+    Convert     ${calculated_result}
+
 
           
     
