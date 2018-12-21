@@ -186,7 +186,7 @@ Replace
         Set Suite Variable      ${no_comma}
 
 Float Change 1
-        ${type_float} =      Convert To Number        ${no_comma}
+        ${type_float_1} =      Convert To Number        ${no_comma}
         Set Suite Variable      ${type_float_1}
 
 Float Change 2
@@ -202,6 +202,6 @@ Calculator includeVat
     Replace     ${discount_now}
     Float Change 2
     Verify subtraction of ${type_float_1} and ${type_float_2}
-    
+
           
     
