@@ -6,7 +6,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/home_page.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/oe_page_add.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/login_page.resource   
-Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/TS_OE_Add_Cr_2.resource
+Resource             /Users/USER1/.jenkins/workspace/DGL/Logic/TS_OE_Add_Cr_2.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/keywords.resource
 Suite Setup          Open the web page
 Test Setup           Go to login page
