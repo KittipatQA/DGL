@@ -40,6 +40,7 @@ Oe Add Data 2
       Input paymentCash    ${paymentCashAmount}
       Capture Screen
       Calculator includeVat
+      Check transactions before vat
       Click Btn Submit
       Capture Screen
       Click Btn Confirm

@@ -126,6 +126,7 @@ Check transactions before vat
     ${transactions_before_vat}=        Get Text      id:input-oe-transactions-beforeAmount-0
     Log To Console      ${transactions_before_vat}   
     Set Suite Variable      ${transactions_before_vat}
+    Should Be Equal As Strings      ${return_current}     ${transactions_before_vat}    
 
 Check transactions total Price
     ${transactions_totalPrice_vat}=        Get Text      id:input-oe-transactions-totalPrice-0
@@ -197,12 +198,12 @@ Calculator includeVat
     Get Price
     Replace     ${price_now}
     Float Change 1      
-    
     Get Discount
     Replace     ${discount_now}
     Float Change 2
     Verify subtraction of ${type_float_1} and ${type_float_2}
     Convert     ${calculated_result}
+
 
 
           
