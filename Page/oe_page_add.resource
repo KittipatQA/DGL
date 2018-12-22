@@ -178,6 +178,9 @@ Calculator taxAmount
     Convert     ${calculated_result}
     Log To Console      ${return_current}
 
+Compare taxAmount
+    Should Be Equal As Strings      ${return_current}     ${tax_amount}
+
 Check Status After Add
     ${status_list}=   Get Text     //*[@id="sl-oe-detail-0"]/div[7]/label
     Set Suite Variable      ${status_list}

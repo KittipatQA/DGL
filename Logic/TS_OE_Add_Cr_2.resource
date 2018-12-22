@@ -44,6 +44,7 @@ Oe Add Data 2
       Compare ransactions before vat 
       Get Tax Amount
       Calculator taxAmount
+      Compare taxAmount
       Click Btn Submit
       Capture Screen
       Click Btn Confirm
