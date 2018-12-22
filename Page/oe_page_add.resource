@@ -131,7 +131,10 @@ Check transactions before vat
     ${transactions_before_vat}=        Get Text      id:input-oe-transactions-beforeAmount-0
     Log To Console      ${transactions_before_vat}   
     Set Suite Variable      ${transactions_before_vat}
-    Should Be Equal As Strings      ${return_current}     ${transactions_before_vat}    
+    
+
+Compare ransactions before vat  
+    Should Be Equal As Strings      ${return_current}     ${transactions_before_vat}
 
 Check transactions total Price
     ${transactions_totalPrice_vat}=        Get Text      id:input-oe-transactions-totalPrice-0
@@ -174,7 +177,6 @@ Calculator taxAmount
     Verify division of ${calculated_result} and ${100}
     Convert     ${calculated_result}
     Log To Console      ${return_current}
-
 
 Check Status After Add
     ${status_list}=   Get Text     //*[@id="sl-oe-detail-0"]/div[7]/label
