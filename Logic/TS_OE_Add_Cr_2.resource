@@ -42,6 +42,7 @@ Oe Add Data 2
       Calculator includeVat
       Check transactions before vat
       Get Tax Amount
+      Calculator taxAmount
       Click Btn Submit
       Capture Screen
       Click Btn Confirm

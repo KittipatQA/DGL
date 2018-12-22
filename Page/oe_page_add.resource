@@ -167,6 +167,14 @@ Calculator No vatType
     Should Be Equal As Strings      ${price_now}      ${transactions_before_vat}
     Should Be Equal As Strings      ${discount_now}     ${price_result}     ${vat_wht}
 
+Calculator taxAmount
+    Replace     ${transactions_before_vat}
+    Float Change 1      ${no_comma}
+    Verify multiplication of ${type_float_1} and ${2}
+    Verify division of ${calculated_result} and ${100}
+    Log To Console      ${calculated_result}
+
+
 Check Status After Add
     ${status_list}=   Get Text     //*[@id="sl-oe-detail-0"]/div[7]/label
     Set Suite Variable      ${status_list}
