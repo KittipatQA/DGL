@@ -178,13 +178,16 @@ Calculator taxAmount
     Convert     ${calculated_result}
     Log To Console      ${return_current}
 
+
 Calculator totalPrice
     Replace     ${transactions_before_vat}
     Float Change 1
     Replace     ${tax_amount}
     Float Change 2
     Verify subtraction of ${type_float_1} and ${type_float_2}
-    Log To Console     ${calculated_result} 
+    Log To Console     ${calculated_result}
+    Convert     ${calculated_result}
+    Log To Console      ${return_current} 
     
 
 Compare taxAmount
