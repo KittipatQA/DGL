@@ -179,8 +179,6 @@ Calculator taxAmount
     Log To Console      ${return_current}
 
 Compare taxAmount
-    Log To Console      ${return_current}
-    Log To Console      ${tax_amount}
     Should Be Equal As Strings      ${return_current}     ${tax_amount}
 
 Check Status After Add
