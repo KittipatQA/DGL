@@ -173,7 +173,7 @@ Calculator taxAmount
     Verify multiplication of ${type_float_1} and ${2}
     Verify division of ${calculated_result} and ${100}
     Convert     ${calculated_result}
-    Log To Console      ${calculated_result}
+    Log To Console      ${return_current}
 
 
 Check Status After Add
