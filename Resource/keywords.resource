@@ -32,5 +32,6 @@ Convert
     [Arguments]     ${input_current}
     ${return_current}=  convert_cur     ${input_current}
     Log To Console      ${return_current}               
+    Set Suite Variable      ${return_current}
 
   
