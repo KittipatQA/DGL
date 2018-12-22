@@ -46,7 +46,6 @@ Oe Add Data 2
       Calculator taxAmount
       Compare taxAmount
       Calculator totalPrice
-      
       Click Btn Submit
       Capture Screen
       Click Btn Confirm

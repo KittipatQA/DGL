@@ -181,7 +181,9 @@ Calculator taxAmount
 Calculator totalPrice
     Replace     ${transactions_before_vat}
     Float Change 1
-    Verify subtraction of ${type_float_1} and ${tax_amount}
+    Replace     ${tax_amount}
+    Float Change 2
+    Verify subtraction of ${type_float_1} and ${type_float_2}
     Log To Console     ${calculated_result} 
     
 
