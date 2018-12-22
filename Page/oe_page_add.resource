@@ -169,7 +169,7 @@ Calculator No vatType
 
 Calculator taxAmount
     Replace     ${transactions_before_vat}
-    Float Change 1      ${no_comma}
+    Float Change 1
     Verify multiplication of ${type_float_1} and ${2}
     Verify division of ${calculated_result} and ${100}
     Log To Console      ${calculated_result}
