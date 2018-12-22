@@ -187,8 +187,10 @@ Calculator totalPrice
     Verify subtraction of ${type_float_1} and ${type_float_2}
     Log To Console     ${calculated_result}
     Convert     ${calculated_result}
-    Log To Console      ${return_current} 
-    
+    Log To Console      ${return_current}
+
+Compare totalPrice
+    Should Be Equal As Strings      ${return_current}     ${transactions_totalPrice_vat}
 
 Compare taxAmount
     Should Be Equal As Strings      ${return_current}     ${tax_amount}
