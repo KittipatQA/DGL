@@ -108,7 +108,7 @@ Get Discount
     Set Suite Variable      ${discount_now}
 
 Get Tax Amount
-    ${tax_amount}=       Get Text      id:input-oe-transactions-taxAmount-0
+    ${tax_amount}=       Get Value      id:input-oe-transactions-taxAmount-0
     Log To Console      ${tax_amount}
     Set Suite Variable      ${tax_amount}   
 
