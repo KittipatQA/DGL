@@ -190,7 +190,7 @@ Calculator totalPrice
     Log To Console      ${return_current}
 
 Compare totalPrice
-    Should Be Equal As Strings      ${return_current}     ${10}
+    Should Be Equal As Strings      ${return_current}     ${transactions_totalPrice_vat}
 
 Compare taxAmount
     Should Be Equal As Strings      ${return_current}     ${tax_amount}
