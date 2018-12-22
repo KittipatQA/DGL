@@ -178,6 +178,13 @@ Calculator taxAmount
     Convert     ${calculated_result}
     Log To Console      ${return_current}
 
+Calculator totalPrice
+    Replace     ${transactions_before_vat}
+    Float Change 1
+    Verify subtraction of ${type_float_1} and ${tax_amount}
+    Log To Console     ${calculated_result} 
+    
+
 Compare taxAmount
     Should Be Equal As Strings      ${return_current}     ${tax_amount}
 
