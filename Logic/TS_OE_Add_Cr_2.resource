@@ -41,6 +41,7 @@ Oe Add Data 2
       Capture Screen
       Calculator includeVat
       Check transactions before vat
+      Get Tax Amount
       Click Btn Submit
       Capture Screen
       Click Btn Confirm
