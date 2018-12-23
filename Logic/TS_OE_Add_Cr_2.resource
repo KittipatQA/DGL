@@ -48,6 +48,12 @@ Oe Add Data 2
       Calculator totalPrice
       Check transactions total Price
       Compare totalPrice
+      Check total exempt
+      Check net amount
+      Check amount
+      Get paymentCash
+      Check total before vat
+      Calculator includeVat
       Click Btn Submit
       Capture Screen
       Click Btn Confirm

@@ -180,6 +180,23 @@ Calculator No vatType
     Should Be Equal As Strings      ${price_now}      ${transactions_before_vat}
     Should Be Equal As Strings      ${discount_now}     ${price_result}     ${vat_wht}
 
+Calculator includeVat
+    Get Price
+    Check total exempt
+    Check total before vat
+    Check net amount
+    Check amount
+    Check transactions before vat
+    Get Discount
+    Check Discount
+    Check with holding 
+    Should Be Equal As Strings      ${discount}     ${price_result} 
+    Should Be Equal As Strings      ${tax_amount}     ${vat_wht} 
+    Should Be Equal As Strings      ${transactions_before_vat}
+    Should Be Equal As Strings      ${price_exempt}     ${net_amount}       ${total_payment}
+    Should Be Equal As Strings      ${payment_Cash}     ${price_before_vat}                            
+
+
 Calculator taxAmount
     Replace     ${transactions_before_vat}
     Float Change 1
