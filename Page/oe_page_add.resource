@@ -98,7 +98,7 @@ Get paymentCash
     Set Suite Variable      ${payment_Cash}
 
 Get total_payment
-    ${total_payment}=       Get Text      id:show-oe-total-before-vat
+    ${total_payment}=       Get Text      xpath://*[@id="show-oe-total-before-vat"]
     Log To Console      ${total_payment}
     Set Suite Variable      ${total_payment}
 
