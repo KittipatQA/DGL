@@ -98,7 +98,7 @@ Get paymentCash
     Set Suite Variable      ${payment_Cash}
 
 Get total_payment
-    ${total_payment}=       Get Text      xpath://app-other-expense-detail/form/div[6]/div[2]/div/div[3]/div/div/div[2]
+    ${total_payment}=       Get Text      class:form-control text-right ng-pristine ng-valid ng-touched
     Log To Console      ${total_payment}
     Set Suite Variable      ${total_payment}
 
