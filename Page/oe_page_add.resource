@@ -187,7 +187,7 @@ Calculator includeVatType
     Check with holding 
     Should Be Equal As Strings      ${discount_now}     ${price_result} 
     Should Be Equal As Strings      ${tax_amount}     ${vat_wht}  
-    Should Be Equal As Strings      ${transactions_before_vat}      ${price_exempt}     ${net_amount}       ${total_payment}
+    Should Be Equal As Strings      ${transactions_before_vat}      ${price_exempt}     ${net_amount}
 
 Calculator taxAmount
     Replace     ${transactions_before_vat}
