@@ -180,7 +180,7 @@ Calculator No vatType
     Should Be Equal As Strings      ${price_now}      ${transactions_before_vat}
     Should Be Equal As Strings      ${discount_now}     ${price_result}     ${vat_wht}
 
-Calculator includeVat
+Calculator includeVatType
     Get Price
     Check total exempt
     Check total before vat
