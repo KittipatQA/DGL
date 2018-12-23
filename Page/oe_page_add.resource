@@ -190,7 +190,7 @@ Calculator includeVatType
     Get Discount
     Check Discount
     Check with holding 
-    Should Be Equal As Strings      ${discount}     ${price_result} 
+    Should Be Equal As Strings      ${discount_now}     ${price_result} 
     Should Be Equal As Strings      ${tax_amount}     ${vat_wht} 
     Should Be Equal As Strings      ${transactions_before_vat}
     Should Be Equal As Strings      ${price_exempt}     ${net_amount}       ${total_payment}
