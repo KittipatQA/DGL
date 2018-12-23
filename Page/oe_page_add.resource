@@ -92,6 +92,16 @@ Input paymentCash
     [Arguments]     ${paymentCashAmount}              
     Input Text      id:input-oe-detail-paymentCashAmount    ${paymentCashAmount}
 
+Get paymentCash
+    ${payment_Cash}=       Get Value      id:input-oe-detail-paymentCashAmount
+    Log To Console      ${payment_Cash}
+    Set Suite Variable      ${payment_Cash}
+
+Get total_payment
+    ${total_payment}=       Get Text      id:show-oe-total-before-vat
+    Log To Console      ${total_payment}
+    Set Suite Variable      ${total_payment}
+
 Input Price
     [Arguments]     ${price}    
     Clear Element Text      id:input-oe-transactions-unitPrice-0    
@@ -155,6 +165,20 @@ Check amount
     ${vat_amount}=        Get Value      id:show-oe-vat-amount
     Log To Console      ${vat_amount}
     Set Suite Variable      ${vat_amount}
+
+Calculator No vatType
+    Get Price
+    Check total exempt
+    Check total before vat
+    Check net amount
+    Check amount
+    Check transactions before vat
+    Get Discount
+    Check Discount
+    Check with holding 
+    Should Be Equal As Strings      ${price_now}      ${price_exempt}       ${price_before_vat}     ${net_amount}       ${vat_amount}                             
+    Should Be Equal As Strings      ${price_now}      ${transactions_before_vat}
+    Should Be Equal As Strings      ${discount_now}     ${price_result}     ${vat_wht}
 
 Calculator No vatType
     Get Price
