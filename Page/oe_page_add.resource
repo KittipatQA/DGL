@@ -97,11 +97,6 @@ Get paymentCash
     Log To Console      ${payment_Cash}
     Set Suite Variable      ${payment_Cash}
 
-Get total_payment
-    ${total_payment}=       Get Text      id://*[@id="show-oe-total-before-vat"]
-    Log To Console      ${total_payment}
-    Set Suite Variable      ${total_payment}
-
 Input Price
     [Arguments]     ${price}    
     Clear Element Text      id:input-oe-transactions-unitPrice-0    
@@ -193,8 +188,6 @@ Calculator includeVatType
     Should Be Equal As Strings      ${discount_now}     ${price_result} 
     Should Be Equal As Strings      ${tax_amount}     ${vat_wht}  
     Should Be Equal As Strings      ${transactions_before_vat}      ${price_exempt}     ${net_amount}       ${total_payment}
-    #Should Be Equal As Strings      ${payment_Cash}     ${total_payment}                            
-
 
 Calculator taxAmount
     Replace     ${transactions_before_vat}

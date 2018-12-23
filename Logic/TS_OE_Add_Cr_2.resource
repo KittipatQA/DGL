@@ -53,7 +53,6 @@ Oe Add Data 2
       Check amount
       Get paymentCash
       Check total before vat
-      #Get total_payment
       Calculator includeVatType
       Click Btn Submit
       Capture Screen
