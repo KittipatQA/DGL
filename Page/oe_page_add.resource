@@ -98,7 +98,7 @@ Get paymentCash
     Set Suite Variable      ${payment_Cash}
 
 Get total_payment
-    ${total_payment}=       Get Text      xpath://text[@id="show-oe-total-before-vat"]
+    ${total_payment}=       Get Text      css:input#show-oe-total-before-vat.form-control.text-right.ng-pristine.ng-valid.ng-touched
     Log To Console      ${total_payment}
     Set Suite Variable      ${total_payment}
 
