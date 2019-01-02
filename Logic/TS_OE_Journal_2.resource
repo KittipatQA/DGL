@@ -21,7 +21,8 @@ Oe Journal 2
       Click Tab Buy
       Capture Screen
       Click Tab OtherExpense
-      Select Journal List           ${number}
+      Select Journal List
+      Run Python1 Access Token
 
       
      

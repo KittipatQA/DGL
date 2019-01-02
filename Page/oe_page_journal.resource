@@ -1,14 +1,14 @@
 *** Settings ***
 Library              SeleniumLibrary
-Library              Process
+
 
 *** Variables ***
 
 *** Keywords ***
 
 Select Journal List
-    [Arguments]     ${number}
-    Click Element       name:${number}
+    [Arguments]     
+    Click Element       xpath://*[@id="sl-oe-detail-1"]/div[1]
 
 Click Btn Print
     Click Button       id:btn-oe-preview
