@@ -21,7 +21,7 @@ Oe Journal 2
       Click Tab Buy
       Capture Screen
       Click Tab OtherExpense
-      Select Journal List
-      
+      Select Journal List           ${number}
+
       
      
