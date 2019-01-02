@@ -2,7 +2,7 @@
 import json
 
 def readfile():
-    f = open("access_token.json", "r")
+    f = open("/Users/USER1/.jenkins/workspace/DGL/Resource/access_token.json", "r")
     global  access
     access = f.read()
 

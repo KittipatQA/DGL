@@ -29,10 +29,10 @@ headers = {
 
 response = requests.request("GET", url, data=payload, headers=headers)
 
-with open('report.json', 'w') as outf:
+with open('/Users/USER1/.jenkins/workspace/DGL/Resource/report.json', 'w') as outf:
     outf.write(response.content)
 
-with open('report.json') as f:
+with open('/Users/USER1/.jenkins/workspace/DGL/Resource/report.json') as f:
     data = json.load(f)
 
     soi = data['result']['company']['address']['soi']
