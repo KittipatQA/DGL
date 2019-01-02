@@ -7,7 +7,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 *** Keywords ***
 
 Oe Journal 2
-      [Arguments]            ${username}      ${password}       ${image_name}       ${number}                    
+      [Arguments]            ${username}      ${password}       ${image_name}                  
       Set Suite Variable       ${logic}       Dharmniti Genaral Ledger
       Set Selenium Speed     0.3
       Set Directory          ${image_name}
