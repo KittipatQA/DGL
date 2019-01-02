@@ -21,7 +21,7 @@ success = json['access_token']
 
 print   success 
 
-with open('access_token.json', 'w') as outf:
+with open('/Users/USER1/.jenkins/workspace/DGL/Resource/access_token.json', 'w') as outf:
     outf.write(success)
 
 
