@@ -94,7 +94,7 @@ Get sub payment report
     Set Suite Variable      ${sub_payment}
 
 Run Python1 Access Token
-    ${result1}=   Run Process     python      /Users/USER1/.jenkins/workspace/DGL/Resource/pyapi.py
+    Run Process     python      /Users/USER1/.jenkins/workspace/DGL/Resource/pyapi.py
 
 
 
