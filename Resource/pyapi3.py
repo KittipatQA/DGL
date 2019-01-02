@@ -4,12 +4,12 @@ import json
 
 
 def readfile_token():
-    f = open("access_token.json", "r")
+    f = open("/Users/USER1/.jenkins/workspace/DGL/Resource/access_token.json", "r")
     global  access
     access = f.read()
 
 def readfile_idlist():
-    f = open("idlist.json", "r")
+    f = open("/Users/USER1/.jenkins/workspace/DGL/Resource/idlist.json", "r")
     global  idlist
     idlist = f.read()
 

@@ -30,5 +30,5 @@ getid = json[0]['_id']
 
 print   getid 
 
-with open('idlist.json', 'w') as outf:
+with open('/Users/USER1/.jenkins/workspace/DGL/Resource/idlist.json', 'w') as outf:
     outf.write(getid)
