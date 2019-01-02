@@ -1,5 +1,6 @@
 *** Settings ***
 Library              SeleniumLibrary
+Library              Process
 Library              BuiltIn
 Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/home_page.resource
@@ -16,4 +17,4 @@ Suite Teardown       Close Browser
 *** Keywords ***
 
 *** Tasks ***
-1ตรวจสอบการ_พิมพ์เอกสาร_กรณี_ทำการเลือก_ใบสำคัญจ่าย_OE_สถานะเอกสาร_ชำระแล้ว   tester@gmail.com   123123   OE201812-0024
+1ตรวจสอบการ_พิมพ์เอกสาร_กรณี_ทำการเลือก_ใบสำคัญจ่าย_OE_สถานะเอกสาร_ชำระแล้ว     tester@gmail.com      123123     OE201812-0024
