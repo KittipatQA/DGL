@@ -23,6 +23,8 @@ Oe Journal 2
       Click Tab OtherExpense
       Select Journal List
       Run Python1 Access Token
+      Run Python2 id from list
+      Run Python3 Get Value
 
       
      

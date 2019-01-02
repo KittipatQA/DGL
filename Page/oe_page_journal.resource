@@ -96,6 +96,11 @@ Get sub payment report
 Run Python1 Access Token
     Run Process     python      /Users/USER1/.jenkins/workspace/DGL/Resource/pyapi.py
 
+Run Python2 id from list
+    Run Process     python      /Users/USER1/.jenkins/workspace/DGL/Resource/pyapi2.py
+
+Run Python3 Get Value 
+    Run Process     python      /Users/USER1/.jenkins/workspace/DGL/Resource/pyapi3.py
 
 
 
