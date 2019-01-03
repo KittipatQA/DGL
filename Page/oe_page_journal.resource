@@ -9,7 +9,7 @@ ${api_commapy_address} =    ที่อยู่  เลขที่ ${address_
 
 Select Journal List
     [Arguments]     
-    Click Element       xpath://*[@id="sl-oe-detail-1"]/div[1]
+    Select Radio Button       id:mat-radio-3-input
 
 Click Btn Print
     Click Button       id:btn-oe-preview
