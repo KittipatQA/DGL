@@ -8,7 +8,7 @@ ${api_commapy_address} =    ที่อยู่  เลขที่ ${address_
 *** Keywords ***
 
 Click radio circle 
-    Click Element       id:mat-radio-3-input
+    Select Radio Button       id:mat-radio-3-input
 
 Select Journal List
     [Arguments]     
