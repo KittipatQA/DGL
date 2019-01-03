@@ -8,7 +8,7 @@ ${api_commapy_address} =    ที่อยู่  เลขที่ ${address_
 *** Keywords ***
 
 Click radio circle 
-    Select Radio Button       id:mat-radio-3-input
+    Click Element       ใบสำคัญจ่าย OE
 
 Select Journal List
     [Arguments]     
