@@ -2,7 +2,6 @@
 Library              SeleniumLibrary
 Variables            pyapi3.py
 
-
 *** Variables ***
 ${api_precompanyname} =  ${name}
 ${api_commapy_address} =    ที่อยู่  เลขที่ ${address_no}  ห้อง ${address_room}  ชั้น ${address_floorNo} อาคาร ${address_building}  หมู่ ${address_homeGroup}  ตรอก/ซอย ${address_soi}  ถนน ${address_road}  ${address_subDistrict} ${address_district} ${address_province} ${address_postcode} 
@@ -104,6 +103,10 @@ Run Python2 id from list
 
 Run Python3 Get Value 
     Run Process     python      /Users/USER1/.jenkins/workspace/DGL/Resource/pyapi3.py
+
+Check api precompanyname
+    Get precompany name     
+    Should Be Equal As Strings      ${precompany_name}     ${name} 
 
 
 

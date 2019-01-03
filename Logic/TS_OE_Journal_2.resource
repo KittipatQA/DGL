@@ -25,6 +25,7 @@ Oe Journal 2
       Run Python1 Access Token
       Run Python2 id from list
       Run Python3 Get Value
+      Check api precompanyname
 
       
      
