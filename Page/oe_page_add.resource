@@ -8,7 +8,7 @@ ${status_false}     สถานะไม่ถูกต้อง
 *** Keywords ***
 
 Click radio circle 
-    Select Checkbox       xpath://*[@id="mat-radio-3"]/label/div[1]/div[1]
+    Click Element       xpath://*[@id="mat-radio-3"]/label/div[1]/div[1]
 
 Click Btn Add
     Click Button       id:btn-oe-save
