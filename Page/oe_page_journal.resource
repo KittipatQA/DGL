@@ -1,8 +1,11 @@
 *** Settings ***
 Library              SeleniumLibrary
+Variables            pyapi3.py
 
 
 *** Variables ***
+${api_precompanyname} =  ${name}
+${api_commapy_address} =    ที่อยู่  เลขที่ ${address_no}  ห้อง ${address_room}  ชั้น ${address_floorNo} อาคาร ${address_building}  หมู่ ${address_homeGroup}  ตรอก/ซอย ${address_soi}  ถนน ${address_road}  ${address_subDistrict} ${address_district} ${address_province} ${address_postcode} 
 
 *** Keywords ***
 
