@@ -22,6 +22,8 @@ Oe Journal 2
       Capture Screen
       Click Tab OtherExpense
       Select Journal List
+      Click Btn Print
+      Click radio circle
       Run Python1 Access Token
       Run Python2 id from list
       Run Python3 Get Value
