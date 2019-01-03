@@ -1,6 +1,5 @@
 *** Settings ***
 Library              SeleniumLibrary
-Variables            pyapi3.py
 
 *** Variables ***
 ${api_precompanyname} =  ${name}
