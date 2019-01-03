@@ -35,7 +35,15 @@ with open('/Users/USER1/.jenkins/workspace/DGL/Resource/report.json', 'w') as ou
 with open('/Users/USER1/.jenkins/workspace/DGL/Resource/report.json') as f:
     data = json.load(f)
 
-    soi = data['result']['company']['address']['soi']
-print(soi)
-
-
+    name = data['result']['company']['name']
+    address_no = data['result']['company']['address']['no']
+    address_room = data['result']['company']['address']['room']
+    address_floorNo = data['result']['company']['address']['floorNo']
+    address_building = data['result']['company']['address']['building']
+    address_homeGroup = data['result']['company']['address']['homeGroup']
+    address_soi = data['result']['company']['address']['soi']
+    address_road = data['result']['company']['address']['road']
+    address_subDistrict = data['result']['company']['address']['subDistrict']
+    address_district = data['result']['company']['address']['district']
+    address_province = data['result']['company']['address']['province']
+    address_postcode = data['result']['company']['address']['postcode']
