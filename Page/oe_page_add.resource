@@ -7,9 +7,6 @@ ${status_false}     สถานะไม่ถูกต้อง
 
 *** Keywords ***
 
-Click radio circle 
-    Click Element       id:mat-radio-3-input
-
 Click Btn Add
     Click Button       id:btn-oe-save
 
