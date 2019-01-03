@@ -2,6 +2,7 @@
 Library              SeleniumLibrary
 Library              Process
 Library              BuiltIn
+Variables            /Users/USER1/.jenkins/workspace/DGL/Resource/pyapi3.py
 Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/home_page.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/oe_page_journal.resource
