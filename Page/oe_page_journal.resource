@@ -7,8 +7,8 @@ ${api_commapy_address} =    ที่อยู่  เลขที่ ${address_
 
 *** Keywords ***
 
-Click radio circle 
-    Click Element       ใบสำคัญจ่าย OE
+Click radio circle
+    Click Element       xpath://*[@id="mat-radio-3"]/label/div[1]/div[2]
 
 Select Journal List
     [Arguments]     
