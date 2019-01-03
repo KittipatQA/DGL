@@ -8,7 +8,7 @@ ${api_commapy_address} =    ที่อยู่  เลขที่ ${address_
 *** Keywords ***
 
 Click radio circle
-    Click Element       xpath://*[@id="mat-radio-3"]/label/div[1]/div[2]
+    Execute JavaScript    document.getElementById("mat-radio-3-input").onclick()
 
 Select Journal List
     [Arguments]     
