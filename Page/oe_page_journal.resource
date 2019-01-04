@@ -45,7 +45,7 @@ Get description
     Set Suite Variable      ${description}
 
 Get receipt no
-    ${receipt_no}=       Get Text      id:pre-receipt-no-report
+    ${receipt_no}=       Get Text      id:pre-receipt-no-report-0
     Log To Console      ${receipt_no}
     Set Suite Variable      ${receipt_no}
 
