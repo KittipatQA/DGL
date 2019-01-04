@@ -18,7 +18,7 @@ Click Btn Print
     Click Button       id:btn-oe-preview
 
 Get precompany name
-    ${precompany_name}=       Get Value      id:pre-company-name-doc-0
+    ${precompany_name}=       Get Text      id:pre-company-name-doc-0
     Log To Console      ${precompany_name}
     Set Suite Variable      ${precompany_name}
 
