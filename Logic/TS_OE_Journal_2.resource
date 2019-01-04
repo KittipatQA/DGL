@@ -29,6 +29,7 @@ Oe Journal 2
       Run Python3 Get Value
       Check api precompanyname
       Check api company addressConcat
+      Check api taxidentification
 
       
      

@@ -4,6 +4,7 @@ Library              SeleniumLibrary
 *** Variables ***
 ${api_precompanyname} =  ${name}
 ${api_commapy_address} =    ที่อยู่  เลขที่ ${address_no}  ห้อง ${address_room}  ชั้น ${address_floorNo} อาคาร ${address_building}  หมู่ ${address_homeGroup}  ตรอก/ซอย ${address_soi}  ถนน ${address_road}  ${address_subDistrict} ${address_district} ${address_province} ${address_postcode} 
+${api_taxidentification} =   ${taxIdentificationNumber}
 
 *** Keywords ***
 
@@ -113,6 +114,9 @@ Check api precompanyname
 Check api company addressConcat
     Get company addressConcat
     Should Be Equal As Strings      ${company_addressConcat}     ${api_commapy_address} 
+
+Check api taxidentification
+    Get taxIdentification       ${company_taxIdentification}        ${taxIdentificationNumber}
 
 
 

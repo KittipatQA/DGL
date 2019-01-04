@@ -47,3 +47,4 @@ with open('/Users/USER1/.jenkins/workspace/DGL/Resource/report.json') as f:
     address_district = data['result']['company']['address']['district']
     address_province = data['result']['company']['address']['province']
     address_postcode = data['result']['company']['address']['postcode']
+    taxIdentificationNumber = data['result']['company']['taxIdentificationNumber']
