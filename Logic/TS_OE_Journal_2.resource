@@ -1,6 +1,5 @@
 *** Settings ***
 Library              SeleniumLibrary
-Library              /Users/USER1/.jenkins/workspace/DGL/Resource/pyapi3.py
 Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
 
 *** Variables ***
