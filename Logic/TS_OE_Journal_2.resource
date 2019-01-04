@@ -30,6 +30,7 @@ Oe Journal 2
       Check api precompanyname
       Check api company addressConcat
       Check api taxidentification
+      Check api receipt no
 
       
      

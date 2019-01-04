@@ -5,6 +5,7 @@ Library              SeleniumLibrary
 ${api_precompanyname} =  ${name}
 ${api_commapy_address} =    ที่อยู่  เลขที่ ${address_no}  ห้อง ${address_room}  ชั้น ${address_floorNo} อาคาร ${address_building}  หมู่ ${address_homeGroup}  ตรอก/ซอย ${address_soi}  ถนน ${address_road}  ${address_subDistrict} ${address_district} ${address_province} ${address_postcode} 
 ${api_taxidentification} =   ${taxIdentificationNumber}
+${api_receiptNo} =      ${receiptNo}     
 
 *** Keywords ***
 
@@ -118,6 +119,10 @@ Check api company addressConcat
 Check api taxidentification
     Get taxIdentification       
     Should Be Equal As Strings      ${company_taxIdentification}        ${taxIdentificationNumber}
+
+Check api receipt no
+    Get receipt no
+    Should Be Equal As Strings      ${receipt_no}
 
 
 
