@@ -116,8 +116,8 @@ Check api company addressConcat
     Should Be Equal As Strings      ${company_addressConcat}     ${api_commapy_address} 
 
 Check api taxidentification
-    Get taxIdentification       ${company_taxIdentification}        ${taxIdentificationNumber}
-
+    Get taxIdentification       
+    Should Be Equal As Strings      ${company_taxIdentification}        ${taxIdentificationNumber}
 
 
 
