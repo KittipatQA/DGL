@@ -15,7 +15,7 @@ Click radio circle
 
 Select Journal List
     [Arguments]     
-    Click Element       xpath://*[@id="sl-oe-detail-1"]/div[1]
+    Click Element       xpath://*[@id="sl-oe-detail-0"]/div[1]
 
 Click Btn Print
     Click Button       id:btn-oe-preview
