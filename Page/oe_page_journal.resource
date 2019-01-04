@@ -108,7 +108,11 @@ Run Python3 Get Value
 
 Check api precompanyname
     Get precompany name     
-    Should Be Equal As Strings      ${precompany_name}     ${name} 
+    Should Be Equal As Strings      ${precompany_name}     ${api_precompanyname} 
+    
+Check api company addressConcat
+    Get company addressConcat
+    Should Be Equal As Strings      ${company_addressConcat}     ${api_commapy_address} 
 
 
 
