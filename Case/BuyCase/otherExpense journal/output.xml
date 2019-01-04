@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="true" generated="20190104 12:15:01.390" generator="Robot 3.1a2 (Python 2.7.15 on win32)">
+<robot rpa="true" generated="20190104 16:11:24.581" generator="Robot 3.1a2 (Python 2.7.15 on win32)">
 <suite source="d:\DGL\Case\BuyCase\otherExpense journal\TS_OE_Print_002.robot" id="s1" name="TS OE Print 002">
 <kw type="setup" name="Open the web page">
-<msg timestamp="20190104 12:15:01.569" level="FAIL">No keyword with name 'Open the web page' found.</msg>
-<status status="FAIL" endtime="20190104 12:15:01.569" starttime="20190104 12:15:01.569"></status>
+<msg timestamp="20190104 16:11:24.750" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20190104 16:11:24.750" starttime="20190104 16:11:24.750"></status>
 </kw>
 <test id="s1-t1" name="1ตรวจสอบการ_พิมพ์เอกสาร_กรณี_ทำการเลือก_ใบสำคัญจ่าย_OE_สถานะเอกสาร_ชำระแล้ว">
-<status status="FAIL" endtime="20190104 12:15:01.571" critical="yes" starttime="20190104 12:15:01.569">Parent suite setup failed:
+<status status="FAIL" endtime="20190104 16:11:24.753" critical="yes" starttime="20190104 16:11:24.750">Parent suite setup failed:
 No keyword with name 'Open the web page' found.</status>
 </test>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190104 12:15:01.575" starttime="20190104 12:15:01.575"></status>
+<status status="PASS" endtime="20190104 16:11:24.755" starttime="20190104 16:11:24.755"></status>
 </kw>
-<status status="FAIL" endtime="20190104 12:15:01.575" starttime="20190104 12:15:01.392">Suite setup failed:
+<status status="FAIL" endtime="20190104 16:11:24.755" starttime="20190104 16:11:24.583">Suite setup failed:
 No keyword with name 'Open the web page' found.</status>
 </suite>
 <statistics>
@@ -28,11 +28,11 @@ No keyword with name 'Open the web page' found.</status>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190104 12:15:01.559" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense journal\TS_OE_Print_002.robot': Variable file '\Users\USER1\.jenkins\workspace\DGL\Resource\pyapi3.py' does not exist.</msg>
-<msg timestamp="20190104 12:15:01.561" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense journal\TS_OE_Print_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
-<msg timestamp="20190104 12:15:01.562" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense journal\TS_OE_Print_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
-<msg timestamp="20190104 12:15:01.562" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense journal\TS_OE_Print_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page_journal.resource' does not exist.</msg>
-<msg timestamp="20190104 12:15:01.563" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense journal\TS_OE_Print_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
-<msg timestamp="20190104 12:15:01.564" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense journal\TS_OE_Print_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Journal_2.resource' does not exist.</msg>
+<msg timestamp="20190104 16:11:24.742" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense journal\TS_OE_Print_002.robot': Variable file '\Users\USER1\.jenkins\workspace\DGL\Resource\pyapi3.py' does not exist.</msg>
+<msg timestamp="20190104 16:11:24.743" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense journal\TS_OE_Print_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20190104 16:11:24.744" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense journal\TS_OE_Print_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20190104 16:11:24.744" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense journal\TS_OE_Print_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page_journal.resource' does not exist.</msg>
+<msg timestamp="20190104 16:11:24.744" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense journal\TS_OE_Print_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20190104 16:11:24.745" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense journal\TS_OE_Print_002.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Journal_2.resource' does not exist.</msg>
 </errors>
 </robot>

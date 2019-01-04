@@ -122,7 +122,7 @@ Check api taxidentification
 
 Check api receipt no
     Get receipt no
-    Should Be Equal As Strings      ${receipt_no}
+    Should Be Equal As Strings      ${api_receiptNo}        ${receipt_no}   
 
 
 
