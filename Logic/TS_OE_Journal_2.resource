@@ -24,6 +24,9 @@ Oe Journal 2
       Select Journal List
       Click Btn Print
       Click radio circle
+      Run Python1 Access Token
+      Run Python2 id from list
+      Run Python3 Get Value 
       Check api precompanyname
       Check api company addressConcat
       Check api taxidentification
