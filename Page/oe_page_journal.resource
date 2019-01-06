@@ -11,7 +11,7 @@ ${api_billNo} =     ${billNo}
 ${api_remark} =     ${remark}
 ${api_paymentTotalTHBAHT} =      ( ${paymentTotalTHBAHT} ) 
 ${api_itemdescription} =    ${itemdescription}
-${api_qty_unit_price} =    Convert      ${unitPrice}
+${api_qty_unit_price} =     ${unitPrice}
 
 *** Keywords ***
 
@@ -177,7 +177,8 @@ Check api itemdescription
 
 Check api qty unit price
     Get pre qty unit price
-    Should Be Equal As Strings       ${api_qty_unit_price}      ${qty_unit_price}
+    ${api_qty} =   convert_cur     ${api_qty_unit_price}
+    Should Be Equal As Strings       ${api_qty}      ${qty_unit_price}
     
 
 
