@@ -32,3 +32,6 @@ Oe Journal 2
       Check api taxidentification
       Check api receipt no
       Check api description
+      Check api bill no
+      Check api remark
+      Check payment total

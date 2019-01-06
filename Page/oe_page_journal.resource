@@ -7,6 +7,9 @@ ${api_commapy_address} =    ที่อยู่  เลขที่ ${address_
 ${api_taxidentification} =   ${taxIdentificationNumber}
 ${api_receiptNo} =      ${receiptNo}     
 ${api_descriptionreport} =     ${descriptionreport}
+${api_billNo} =     ${billNo}
+${api_remark} =     ${remark}
+${api_paymentTotalTHBAHT} =     ${paymentTotalTHBAHT}
 
 *** Keywords ***
 
@@ -127,7 +130,19 @@ Check api receipt no
 
 Check api description
     Get description
-    Should Be Equal As Strings      ${api_descriptionreport}        ${description}      
+    Should Be Equal As Strings      ${api_descriptionreport}        ${description}    
+
+Check api bill no
+    Get bill no
+    Should Be Equal As Strings      ${api_billNo}       ${bill_no}
+
+Check api remark
+    Get remark report
+    Should Be Equal As Strings      ${api_remark}       ${remark_report}        
+
+Check payment total
+    Get remark report
+    Should Be Equal As Strings      ${api_paymentTotalTHBAHT}       ${payment_total}    
 
 
 

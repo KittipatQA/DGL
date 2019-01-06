@@ -50,3 +50,6 @@ with open('/Users/USER1/.jenkins/workspace/DGL/Resource/report.json') as f:
     taxIdentificationNumber = data['result']['company']['taxIdentificationNumber']
     receiptNo = data['result']['receiptNo']
     descriptionreport = data['result']['description']
+    billNo = data['result']['billNo']
+    remark = data['result']['remark']
+    paymentTotalTHBAHT = data['result']['paymentTotalTHBAHT']
