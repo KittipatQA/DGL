@@ -9,7 +9,7 @@ ${api_receiptNo} =      ${receiptNo}
 ${api_descriptionreport} =     ${descriptionreport}
 ${api_billNo} =     ${billNo}
 ${api_remark} =     ${remark}
-${api_paymentTotalTHBAHT} =     ( ${paymentTotalTHBAHT} )
+${api_paymentTotalTHBAHT} =      ${paymentTotalTHBAHT} 
 
 *** Keywords ***
 
