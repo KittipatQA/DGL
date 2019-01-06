@@ -145,8 +145,6 @@ Check api payment total
     Get payment total report
     Should Be Equal As Strings      ${api_paymentTotalTHBAHT}       ${payment_total}    
 
-
-
 Check api itemdescription
     Get item description
     Should Be Equal As Strings      ${api_paymentTotalTHBAHT}       ${item_description}  
