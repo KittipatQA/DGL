@@ -23,9 +23,6 @@ Oe Journal 2
       Click Tab OtherExpense
       Select Journal List
       Click Btn Print
-      Run Python1 Access Token
-      Run Python2 id from list
-      Run Python3 Get Value
       Click radio circle
       Check api precompanyname
       Check api company addressConcat

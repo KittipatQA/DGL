@@ -147,7 +147,7 @@ Check api payment total
 
 Check api itemdescription
     Get item description
-    Should Be Equal As Strings      ${api_paymentTotalTHBAHT}       ${item_description}  
+    Should Be Equal As Strings      ${api_itemdescription}       ${item_description}  
 
 
 
