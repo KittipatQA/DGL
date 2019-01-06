@@ -8,6 +8,9 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Page/home_page.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/oe_page_journal.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/login_page.resource   
 Resource             /Users/USER1/.jenkins/workspace/DGL/Logic/TS_OE_Journal_2.resource
+Suite Setup          Run Python1 Access Token
+Suite Setup          Run Python2 id from list
+Suite Setup          Run Python3 Get Value 
 Suite Setup          Open the web page
 Test Setup           Go to login page
 Test Template        Oe Journal 2
