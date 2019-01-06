@@ -35,4 +35,4 @@ Oe Journal 2
       Check api bill no
       Check api remark
       Check api payment total
-      Check api itemdescription
+      #Check api itemdescription
