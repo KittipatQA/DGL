@@ -10,6 +10,7 @@ ${api_descriptionreport} =     ${descriptionreport}
 ${api_billNo} =     ${billNo}
 ${api_remark} =     ${remark}
 ${api_paymentTotalTHBAHT} =      ( ${paymentTotalTHBAHT} ) 
+${api_itemdescription} =    ${itemdescription}
 
 *** Keywords ***
 
@@ -140,10 +141,15 @@ Check api remark
     Get remark report
     Should Be Equal As Strings      ${api_remark}       ${remark_report}        
 
-Check payment total
+Check api payment total
     Get payment total report
     Should Be Equal As Strings      ${api_paymentTotalTHBAHT}       ${payment_total}    
 
+
+
+Check api itemdescription
+    Get item description
+    Should Be Equal As Strings      ${api_paymentTotalTHBAHT}       ${item_description}  
 
 
 
