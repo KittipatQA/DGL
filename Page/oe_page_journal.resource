@@ -11,6 +11,7 @@ ${api_billNo} =     ${billNo}
 ${api_remark} =     ${remark}
 ${api_paymentTotalTHBAHT} =      ( ${paymentTotalTHBAHT} ) 
 ${api_itemdescription} =    ${itemdescription}
+${api_qty_unit_price} =    Convert      ${unitPrice}
 
 *** Keywords ***
 
@@ -90,7 +91,7 @@ Get discount report
     Set Suite Variable      ${discount_report}
 
 Get tax amount report
-    ${tax_amount_report}=       Get Text      id:pre-tax-amount-report-0-
+    ${tax_amount_report}=       Get Text      id:pre-tax-amount-report-0
     Log To Console      ${tax_amount_report}
     Set Suite Variable      ${tax_amount_report}
 
@@ -103,6 +104,31 @@ Get sub payment report
     ${sub_payment}=       Get Text      id:pre-sum-payment-total-report-0
     Log To Console      ${sub_payment}
     Set Suite Variable      ${sub_payment}
+
+Get pre total exempt
+    ${total_vat_exampt_report}=       Get Text      id:pre-sub-total-vat-exampt-report-0
+    Log To Console      ${total_vat_exampt_report}
+    Set Suite Variable      ${total_vat_exampt_report}
+
+Get pre qty unit price
+    ${qty_unit_price}=       Get Text      id:pre-item-total-qty-unit-price-report-0-0
+    Log To Console      ${qty_unit_price}
+    Set Suite Variable      ${qty_unit_price}
+
+Get pre discount
+    ${total_discount_report}=       Get Text      id:pre-total-discount-report-0
+    Log To Console      ${total_discount_report}
+    Set Suite Variable      ${total_discount_report}
+    
+Get pre transection beforevat 
+    ${transection_beforevat}=       Get Text      id:pre-sub-total-before-vat-report-0
+    Log To Console      ${transection_beforevat}
+    Set Suite Variable      ${transection_beforevat}
+
+Get pre vat amount
+    ${vat_amount}=       Get Text      id:pre-vat-amount-report-0
+    Log To Console      ${vat_amount}
+    Set Suite Variable      ${vat_amount}
 
 Run Python1 Access Token
     Run Process     python      /Users/USER1/.jenkins/workspace/DGL/Resource/pyapi.py
@@ -148,6 +174,11 @@ Check api payment total
 Check api itemdescription
     Get item description
     Should Be Equal As Strings      ${api_itemdescription}       ${item_description}  
+
+Check api qty unit price
+    Get pre qty unit price
+    Should Be Equal As Strings       ${api_qty_unit_price}      ${qty_unit_price}
+    
 
 
 

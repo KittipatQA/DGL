@@ -33,3 +33,4 @@ Oe Journal 2
       Check api remark
       Check api payment total
       Check api itemdescription
+      Check api qty unit price
