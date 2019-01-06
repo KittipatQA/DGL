@@ -18,14 +18,14 @@ Oe Journal 2
       Login Submit                 
       Wait Until Page Contains        ${logic}   
       Capture Screen
-      Run Python1 Access Token
-      Run Python2 id from list
-      Run Python3 Get Value
       Click Tab Buy
       Capture Screen
       Click Tab OtherExpense
       Select Journal List
       Click Btn Print
+      Run Python1 Access Token
+      Run Python2 id from list
+      Run Python3 Get Value
       Click radio circle
       Check api precompanyname
       Check api company addressConcat
