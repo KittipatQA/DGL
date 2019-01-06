@@ -141,7 +141,7 @@ Check api remark
     Should Be Equal As Strings      ${api_remark}       ${remark_report}        
 
 Check payment total
-    Get remark report
+    Get payment total report
     Should Be Equal As Strings      ${api_paymentTotalTHBAHT}       ${payment_total}    
 
 
