@@ -53,4 +53,4 @@ with open('/Users/USER1/.jenkins/workspace/DGL/Resource/report.json') as f:
     billNo = data['result']['billNo']
     remark = data['result']['remark']
     paymentTotalTHBAHT = data['result']['paymentTotalTHBAHT']
-    itemdescription = ['result'].['transactions'][0].['description']
+    itemdescription = ['result'].['transactions'][0]['description']
