@@ -12,6 +12,10 @@ ${api_remark} =     ${remark}
 ${api_paymentTotalTHBAHT} =      ( ${paymentTotalTHBAHT} ) 
 ${api_itemdescription} =    ${itemdescription}
 ${api_qty_unit_price} =     ${unitPrice}
+${api_discount} =   ${discount}
+${api_subTotalPriceVatExempt} =   ${subTotalPriceVatExempt}
+${api_subTotalPriceBeforeVat} =       ${subTotalPriceBeforeVat}
+${api_totalPrice} =       ${totalPrice}
 
 *** Keywords ***
 
@@ -179,6 +183,29 @@ Check api qty unit price
     Get pre qty unit price
     ${api_qty} =   convert_cur     ${api_qty_unit_price}
     Should Be Equal As Strings       ${api_qty}      ${qty_unit_price}
+
+Check api discount
+    Get pre discount
+    ${api_discount_result} =   convert_cur     ${api_discount}
+    Should Be Equal As Strings       ${api_discount_result}      ${total_discount_report}
+
+Check api subTotalPriceVatExempt
+    Get pre total exempt
+    ${api_subTotalPriceVatExempt_result} =   convert_cur     ${api_subTotalPriceVatExempt}
+    Should Be Equal As Strings       ${api_subTotalPriceVatExempt_result}      ${total_vat_exampt_report}
+
+
+Check api subTotalPriceBeforeVat
+    Get pre transection beforevat 
+    ${api_subTotalPriceBeforeVat_result} =   convert_cur     ${api_subTotalPriceBeforeVat}
+    Should Be Equal As Strings       ${api_subTotalPriceBeforeVat_result}      ${transection_beforevat}
+
+
+Check api totalPrice
+    Get sub payment report
+    ${api_totalPrice_result} =   convert_cur     ${api_totalPrice}
+    Should Be Equal As Strings       ${api_totalPrice_result}      ${sub_payment}
+    
     
 
 

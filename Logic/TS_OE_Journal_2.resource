@@ -34,3 +34,8 @@ Oe Journal 2
       Check api payment total
       Check api itemdescription
       Check api qty unit price
+      Check api discount
+      Check api subTotalPriceVatExempt
+      Check api subTotalPriceBeforeVat
+      Check api subTotalPriceBeforeVat
+      Check api totalPrice
