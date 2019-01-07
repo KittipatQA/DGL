@@ -214,7 +214,7 @@ Check api totalPrice
 
 Check api transaction date
     Get pre transaction date
-    ${api_transaction_date_result} =    convert_time    ${api_transactionDate}
+    ${api_transaction_date_result} =    convert_data_time    ${api_transactionDate}
     Should Be Equal As Strings       ${api_transaction_date_result}     ${transaction_date}           
     
     
