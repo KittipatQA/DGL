@@ -9,6 +9,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Page/oe_page_journal.re
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/login_page.resource   
 Resource             /Users/USER1/.jenkins/workspace/DGL/Logic/TS_OE_Journal_2.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/keywords.resource
+Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/converttime.py
 Suite Setup          Open the web page
 Test Setup           Go to login page
 Test Template        Oe Journal 2

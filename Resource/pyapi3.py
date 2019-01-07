@@ -59,3 +59,4 @@ with open('/Users/USER1/.jenkins/workspace/DGL/Resource/report.json') as f:
     subTotalPriceVatExempt = data['result']['subTotalPriceVatExempt']
     subTotalPriceBeforeVat = data['result']['subTotalPriceBeforeVat']
     totalPrice = data['result']['transactions'][0]['totalPrice']
+    transactionDate = data['result']['transactionDate']

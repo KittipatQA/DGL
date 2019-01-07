@@ -16,6 +16,7 @@ ${api_discount} =   ${discount}
 ${api_subTotalPriceVatExempt} =   ${subTotalPriceVatExempt}
 ${api_subTotalPriceBeforeVat} =       ${subTotalPriceBeforeVat}
 ${api_totalPrice} =       ${totalPrice}
+${api_transactionDate} =    ${transactionDate}
 
 *** Keywords ***
 
@@ -134,6 +135,11 @@ Get pre vat amount
     Log To Console      ${vat_amount}
     Set Suite Variable      ${vat_amount}
 
+Get pre transaction date
+    ${transaction_date}=       Get Text      id:pre-transaction-date-report-0
+    Log To Console      ${transaction_date}
+    Set Suite Variable      ${transaction_date}
+
 Run Python1 Access Token
     Run Process     python      /Users/USER1/.jenkins/workspace/DGL/Resource/pyapi.py
 
@@ -205,6 +211,12 @@ Check api totalPrice
     Get sub payment report
     ${api_totalPrice_result} =   convert_cur     ${api_totalPrice}
     Should Be Equal As Strings       ${api_totalPrice_result}      ${sub_payment}
+
+Check api transaction date
+    Get pre transaction date
+    ${api_transaction_date_result} =    convert_time    ${api_transactionDate}
+    Should Be Equal As Strings       ${api_transaction_date_result}     ${transaction_date}           
+    
     
     
 
