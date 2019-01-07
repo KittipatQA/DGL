@@ -56,6 +56,6 @@ with open('/Users/USER1/.jenkins/workspace/DGL/Resource/report.json') as f:
     itemdescription = data['result']['transactions'][0]['description']
     unitPrice = data['result']['transactions'][0]['unitPrice']
     discount = data['result']['transactions'][0]['discount']
-    subTotalPriceVatExempt = data['result']['transactions'][0]['subTotalPriceVatExempt']
-    subTotalPriceBeforeVat = data['result']['transactions'][0]['subTotalPriceBeforeVat']
+    subTotalPriceVatExempt = data['result']['subTotalPriceVatExempt']
+    subTotalPriceBeforeVat = data['result']['subTotalPriceBeforeVat']
     totalPrice = data['result']['transactions'][0]['totalPrice']
