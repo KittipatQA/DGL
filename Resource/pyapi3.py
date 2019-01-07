@@ -56,6 +56,7 @@ with open('/Users/USER1/.jenkins/workspace/DGL/Resource/report.json') as f:
     paymentTotalTHBAHT = data['result']['paymentTotalTHBAHT']
     itemdescription = data['result']['transactions'][0]['description']
     unitPrice = data['result']['transactions'][0]['unitPrice']
+    vatAmount = data['result']['transactions'][0]['vatAmount']
     discount = data['result']['transactions'][0]['discount']
     subTotalPriceVatExempt = data['result']['subTotalPriceVatExempt']
     subTotalPriceBeforeVat = data['result']['subTotalPriceBeforeVat']

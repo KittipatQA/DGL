@@ -18,6 +18,7 @@ ${api_subTotalPriceVatExempt} =   ${subTotalPriceVatExempt}
 ${api_subTotalPriceBeforeVat} =       ${subTotalPriceBeforeVat}
 ${api_totalPrice} =       ${totalPrice}
 ${api_transactionDate} =    ${transactionDate}
+${api_vatAmount} =    ${vatAmount}
 
 *** Keywords ***
 
@@ -221,7 +222,13 @@ Check api transaction date
 Check api bill date
     Get bill date
     ${api_billDate} =    convert_data_time    ${api_billDate} 
-    Should Be Equal As Strings       ${api_billDate}        ${bill date}        
+    Should Be Equal As Strings       ${api_billDate}        ${bill date}
+
+Check api vat amount
+    Get pre vat amount
+    Should Be Equal As Strings       ${api_vatAmount}         ${vat_amount}
+      
+    
     
     
     

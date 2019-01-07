@@ -41,3 +41,4 @@ Oe Journal 2
       Check api totalPrice
       Check api transaction date
       Check api bill date
+      Check api vat amount
