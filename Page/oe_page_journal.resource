@@ -226,7 +226,8 @@ Check api bill date
 
 Check api vat amount
     Get pre vat amount
-    Should Be Equal As Strings       ${api_vatAmount}         ${vat_amount}
+    ${api_billDate_result} =    convert_cur    ${api_billDate} 
+    Should Be Equal As Strings       ${api_billDate_result}         ${vat_amount}
       
     
     
