@@ -40,3 +40,4 @@ Oe Journal 2
       Check api subTotalPriceBeforeVat
       Check api totalPrice
       Check api transaction date
+      Check api bill date

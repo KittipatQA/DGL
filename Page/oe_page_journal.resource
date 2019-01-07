@@ -8,6 +8,7 @@ ${api_taxidentification} =   ${taxIdentificationNumber}
 ${api_receiptNo} =      ${receiptNo}     
 ${api_descriptionreport} =     ${descriptionreport}
 ${api_billNo} =     ${billNo}
+${api_billDate} =     ${billDate}
 ${api_remark} =     ${remark}
 ${api_paymentTotalTHBAHT} =      ( ${paymentTotalTHBAHT} ) 
 ${api_itemdescription} =    ${itemdescription}
@@ -215,7 +216,12 @@ Check api totalPrice
 Check api transaction date
     Get pre transaction date
     ${api_transaction_date_result} =    convert_data_time    ${api_transactionDate}
-    Should Be Equal As Strings       ${api_transaction_date_result}     ${transaction_date}           
+    Should Be Equal As Strings       ${api_transaction_date_result}     ${transaction_date}  
+
+Check api bill date
+    Get bill date
+    ${api_billDate} =    convert_data_time    ${api_billDate} 
+    Should Be Equal As Strings       ${api_billDate}        ${bill date}        
     
     
     
