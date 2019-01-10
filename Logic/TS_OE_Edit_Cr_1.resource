@@ -16,7 +16,6 @@ Oe Edit Data 1
       Input Password         ${password}
       Capture Screen
       Login Submit                 
-      Wait Until Page Contains        ${logic}   
       Capture Screen
       Click Tab Buy
       Capture Screen
