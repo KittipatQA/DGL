@@ -2,8 +2,6 @@
 Library              SeleniumLibrary
 
 *** Variables ***
-${status_true}      สถานะถูกต้อง
-${status_false}     สถานะไม่ถูกต้อง
 
 *** Keywords ***
 
