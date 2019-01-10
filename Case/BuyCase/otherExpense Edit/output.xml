@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="true" generated="20190110 16:30:02.218" generator="Robot 3.1a2 (Python 2.7.15 on win32)">
+<suite source="d:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot" id="s1" name="TS OE Edit Cr 001">
+<kw type="setup" name="Open the web page">
+<msg timestamp="20190110 16:30:02.746" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20190110 16:30:02.747" starttime="20190110 16:30:02.746"></status>
+</kw>
+<test id="s1-t1" name="2ตรวจสอบการเพิ่มรายการ_กรณี_นิติบุคคลมี_VATจ่ายเจ้าหนี้ไม่มี_VAT_รายการมี_TAX(2%)_">
+<status status="FAIL" endtime="20190110 16:30:02.749" critical="yes" starttime="20190110 16:30:02.747">Parent suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190110 16:30:02.751" starttime="20190110 16:30:02.751"></status>
+</kw>
+<status status="FAIL" endtime="20190110 16:30:02.752" starttime="20190110 16:30:02.220">Suite setup failed:
+No keyword with name 'Open the web page' found.</status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tasks</stat>
+<stat fail="1" pass="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="TS OE Edit Cr 001" pass="0">TS OE Edit Cr 001</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190110 16:30:02.738" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20190110 16:30:02.739" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
+<msg timestamp="20190110 16:30:02.740" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page_add.resource' does not exist.</msg>
+<msg timestamp="20190110 16:30:02.740" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
+<msg timestamp="20190110 16:30:02.741" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Edit_Cr_1.resource' does not exist.</msg>
+<msg timestamp="20190110 16:30:02.741" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\keywords.resource' does not exist.</msg>
+</errors>
+</robot>
