@@ -2,7 +2,6 @@
 Library              SeleniumLibrary
 Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
 
-
 *** Variables ***
 
 *** Keywords ***
@@ -64,4 +63,5 @@ Oe Edit Data 1
       ${columnafter}=       Get Element Count        //*[contains(@id, 'sl-oe-detail')]
       Run Keyword If       ${columnafter}>${columnbefore}        Log To Console      ${status_true}       ELSE        fail  ${columnafter} : ${status_fail}
       Check Payment status    ${status_after_add}
+      Click last list
       Capture Screen
