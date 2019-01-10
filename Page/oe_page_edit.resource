@@ -7,3 +7,6 @@ Library              SeleniumLibrary
 
 Click last list
     Click Element       xpath://*[@id="sl-oe-detail-0"]/div[1]
+
+Clear Supplier Code
+    Clear Element Text      id:input-oe-detail-code

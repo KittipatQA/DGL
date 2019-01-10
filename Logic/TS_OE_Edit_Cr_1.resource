@@ -63,5 +63,5 @@ Oe Edit Data 1
       Run Keyword If       ${columnafter}>${columnbefore}        Log To Console      ${status_true}       ELSE        fail  ${columnafter} : ${status_fail}
       Check Payment status    ${status_after_add}
       Click last list
-      Clear Input Supplier Code
+      Clear Supplier Code
       Capture Screen
