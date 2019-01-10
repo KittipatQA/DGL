@@ -64,4 +64,5 @@ Oe Edit Data 1
       Check Payment status    ${status_after_add}
       Click last list
       Clear Supplier Code
+      Clear billNo
       Capture Screen
