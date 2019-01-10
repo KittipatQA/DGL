@@ -5,6 +5,7 @@ Library              String
 Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/home_page.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/oe_page_add.resource
+Resource             /Users/USER1/.jenkins/workspace/DGL/Page/oe_page_edit.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Page/login_page.resource   
 Resource             /Users/USER1/.jenkins/workspace/DGL/Logic/TS_OE_Edit_Cr_1.resource
 Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/keywords.resource
