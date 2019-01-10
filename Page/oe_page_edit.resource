@@ -8,7 +8,7 @@ ${status_false}     สถานะไม่ถูกต้อง
 *** Keywords ***
 
 Click last list
-    Click Element       xpath://*[@id="sl-oe-detail-0"]
+    Click Element       xpath://*[@id="sl-oe-detail-0"]/div[1]
 
 Click Btn Add
     Click Button       id:btn-oe-save
