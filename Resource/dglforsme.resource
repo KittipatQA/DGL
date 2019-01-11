@@ -10,7 +10,7 @@ ${Type of file}      png
            
 *** Keywords ***
 Open the web page
-    Open Browser    ${open_url}     headlesschrome
+    Open Browser    ${open_url}     headlessfirefox
     Maximize Browser Window
     Set Selenium Speed  1
 
