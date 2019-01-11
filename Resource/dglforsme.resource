@@ -15,7 +15,7 @@ ${logic_title}       DGL- Accounting
 Open the web page
     Open Browser    ${open_url}     headlesschrome
     Maximize Browser Window
-    Set Selenium Speed  1
+    Set Selenium Speed  0.5
 
 Go to login page
     Go to           ${login_url}
