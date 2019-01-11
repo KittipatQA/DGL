@@ -8,15 +8,13 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 
 Oe Check Result 1
     [Arguments]            ${username}    ${password}       ${image_name}       ${condition_1}      ${condition_2}      ${condition_3}      ${result_status}
-    Set Suite Variable       ${logic}       Dharmniti Genaral Ledger
     Set Selenium Speed     0.3
     Set Directory          ${image_name}
     Capture Screen
     Input User             ${username}    
     Input Password         ${password}
     Capture Screen
-    Login Submit                 
-    Wait Until Page Contains     ${logic}   
+    Login Submit                  
     Capture Screen
     Click Tab Buy
     Capture Screen
