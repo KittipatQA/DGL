@@ -16,7 +16,7 @@ Oe Check Result 1
     Input Password         ${password}
     Capture Screen
     Login Submit                  
-    Element Should Be Visible       ${logic}
+    Element Should Be Visible       ${DGL- Accounting}
     Capture Screen
     Click Tab Buy
     Capture Screen

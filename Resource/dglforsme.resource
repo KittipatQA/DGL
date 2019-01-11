@@ -7,7 +7,6 @@ ${open_url}          https://dgl-acct.addtechhub.com
 ${login_url}         ${open_url}/login            
 ${Output_url}        /Users/USER1/.jenkins/workspace/DGL/Screen
 ${Type of file}      png
-${logic}             DGL- Accounting
 ${title}             DGL Accounting
            
 *** Keywords ***
