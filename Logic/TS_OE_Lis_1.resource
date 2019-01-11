@@ -11,10 +11,12 @@ Oe Check Result 1
     Set Selenium Speed     0.3
     Set Directory          ${image_name}
     Capture Screen
+    Title Should Be            ${title}
     Input User             ${username}    
     Input Password         ${password}
     Capture Screen
     Login Submit                  
+    Element Should Be Visible       ${logic}
     Capture Screen
     Click Tab Buy
     Capture Screen
