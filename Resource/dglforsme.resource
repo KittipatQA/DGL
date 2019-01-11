@@ -13,7 +13,7 @@ ${logic_title}       DGL- Accounting
            
 *** Keywords ***
 Open the web page
-    Open Browser    ${open_url}     chrome
+    Open Browser    ${open_url}     headlesschrome
     Maximize Browser Window
     Set Selenium Speed  1
 
