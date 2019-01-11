@@ -65,4 +65,15 @@ Oe Edit Data 1
       Click last list
       Clear Supplier Code
       Clear billNo
+      Clear transactionDate
+      Clear detail description
+      Clear detail vatPeriod
+      Clear transactions bindingexpenseInfo
+      Clear transactions description
+      Clear transactions qty
+      Clear transactions unitPrice
+      Clear transactions discount
+      Clear transactions taxAmount
+      Clear detail discount
+      Clear detail remark
       Capture Screen
