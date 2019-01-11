@@ -17,6 +17,7 @@ Oe Check Result 1
     Capture Screen
     Login Submit                  
     Element Should Be Visible           ${logic}
+    Element Should Contain      ${logic}       ${logic_title}
     Capture Screen
     Click Tab Buy
     Capture Screen

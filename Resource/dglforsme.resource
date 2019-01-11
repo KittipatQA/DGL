@@ -9,6 +9,7 @@ ${Output_url}        /Users/USER1/.jenkins/workspace/DGL/Screen
 ${Type of file}      png
 ${title}             DGL Accounting
 ${logic}             //*[@class="title"] 
+${logic_title}       DGL- Accounting
            
 *** Keywords ***
 Open the web page
