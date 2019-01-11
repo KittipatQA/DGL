@@ -2,11 +2,16 @@
 Library              SeleniumLibrary
 
 *** Variables ***
+${buy}      //span[.//text() = 'ชื้อเงินสด']
+${save_other_buy_list}      //span[.//text() = 'บันทึกรายจ่ายอื่นๆ']
+
 
 *** Keywords ***
 
 Click Tab Buy
-    Click Element       //span[.//text() = 'ชื้อเงินสด']
+    Element Should Be Visible           ${buy}
+    Click Element       ${buy}
 
 Click Tab OtherExpense
-    Click Element       //span[.//text() = 'บันทึกรายจ่ายอื่นๆ']
+    Element Should Be Visible           ${save_other_buy_list}
+    Click Element       ${save_other_buy_list}    
