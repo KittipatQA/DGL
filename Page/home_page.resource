@@ -6,7 +6,7 @@ Library              SeleniumLibrary
 *** Keywords ***
 
 Click Tab Buy
-    Click Element    xpath:(//span[@class="menu-title"])[2]
+    Click Element       xpath:(//span[@class="menu-title"])[2]
 
 Click Tab OtherExpense
-    Click Element    xpath:(//span[@class="menu-title"])[4]
+    Click Element       xpath:(//span[@class="menu-title"])[4]
