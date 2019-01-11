@@ -9,15 +9,16 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 
 Oe Add Data 2
       [Arguments]            ${username}      ${password}       ${image_name}     ${supplier_code}    ${data_list}    ${transaction_date}     ${detail_billDate}      ${detail_vatPeriod}     ${detail_description}      ${list}      ${qty}      ${price}    ${discount}    ${taxAmountlist}     ${remark}      ${paymentCashAmount}           ${status_after_add}        
-      Set Suite Variable       ${logic}       Dharmniti Genaral Ledger
       Set Selenium Speed     0.3
       Set Directory          ${image_name}
       Capture Screen
+      Title Should Be            ${title}
       Input User             ${username}
       Input Password         ${password}
       Capture Screen
       Login Submit                 
-      Wait Until Page Contains        ${logic}   
+      Element Should Be Visible           ${logic}
+      Element Should Contain      ${logic}       ${logic_title}
       Capture Screen
       Click Tab Buy
       Capture Screen

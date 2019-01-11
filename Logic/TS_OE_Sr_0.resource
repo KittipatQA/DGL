@@ -8,10 +8,10 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 
 Oe Check Search 0
     [Arguments]            ${username}    ${password}       ${image_name}       ${data}
-    Set Suite Variable       ${logic}       Dharmniti Genaral Ledger
     Set Selenium Speed     0.3
     Set Directory          ${image_name}
     Capture Screen
+    Title Should Be            ${title}
     Input User             ${username}    
     Input Password         ${password}
     Capture Screen

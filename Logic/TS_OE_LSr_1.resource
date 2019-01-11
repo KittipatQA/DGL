@@ -12,11 +12,13 @@ Oe Check List Search 1
     Set Selenium Speed     0.3
     Set Directory          ${image_name}
     Capture Screen
+    Title Should Be            ${title}
     Input User             ${username}    
     Input Password         ${password}
     Capture Screen
     Login Submit                 
-    Wait Until Page Contains     ${logic}   
+    Element Should Be Visible           ${logic}
+    Element Should Contain      ${logic}       ${logic_title}  
     Capture Screen
     Click Tab Buy
     Capture Screen

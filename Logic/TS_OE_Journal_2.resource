@@ -8,15 +8,16 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 
 Oe Journal 2
       [Arguments]            ${username}      ${password}       ${image_name}                  
-      Set Suite Variable       ${logic}       Dharmniti Genaral Ledger
       Set Selenium Speed     0.6
       Set Directory          ${image_name}
       Capture Screen
+      Title Should Be            ${title}
       Input User             ${username}
       Input Password         ${password}
       Capture Screen
       Login Submit                 
-      Wait Until Page Contains        ${logic}   
+      Element Should Be Visible           ${logic}
+      Element Should Contain      ${logic}       ${logic_title} 
       Capture Screen
       Click Tab Buy
       Capture Screen
