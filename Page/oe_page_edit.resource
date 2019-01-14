@@ -15,8 +15,7 @@ Clear Supplier Code
     Input Text      id:input-oe-detail-code     ${new_supplier_code}
     
 Clear Supplier Name
-    Clear Element Text      id:input-oe-detail-name
-    Input Text      id:input-oe-detail-name     ${supplier_name}
+    Click Element      id:input-oe-detail-name
 
 Clear billNo
     Clear Element Text      id:input-oe-detail-billNo

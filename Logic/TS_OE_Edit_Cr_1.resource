@@ -66,6 +66,7 @@ Oe Edit Data 1
       Check Payment status    ${status_after_add}
       Click last list
       Clear Supplier Code
+      Clear Supplier Name
       Clear billNo
       Clear transactionDate
       Clear detail description
