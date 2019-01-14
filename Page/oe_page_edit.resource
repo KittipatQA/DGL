@@ -13,7 +13,7 @@ Click last list
 Clear Supplier Code
     Clear Element Text      id:input-oe-detail-code
     Input Text      id:input-oe-detail-code     ${new_supplier_code}
-    Click Element       id:ngb-typeahead-0-0
+    Click Element       xpath://button[@id="ngb-typeahead-100-0"]
 
 Clear Supplier Name
     Clear Element Text      id:input-oe-detail-name
