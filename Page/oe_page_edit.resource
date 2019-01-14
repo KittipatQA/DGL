@@ -7,7 +7,7 @@ ${new_billNo}     29/11/2018
 ${new_transactionDate}     22/12/2018
 ${new_detail_description}       ค่าเช่า 
 ${new_vatPeriod}       12/61
-${new_transactions_bindingexpenseInfo}      53-2001
+${new_transactions_bindingexpenseInfo}      53-0002
 ${new_billDate}     22/12/2018
 
 
