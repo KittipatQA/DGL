@@ -80,4 +80,5 @@ Oe Edit Data 1
       Clear transactions taxAmount
       Clear detail discount
       Clear detail remark
+      Clear detail paymentCashAmount
       Capture Screen
