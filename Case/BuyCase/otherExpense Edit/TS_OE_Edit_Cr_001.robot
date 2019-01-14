@@ -2,7 +2,7 @@
 Library              SeleniumLibrary
 Library              BuiltIn
 Library              String
-Resource             /DGL/Resource/dglforsme.resource
+Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
 Resource             ${Path_Environment}/Page/home_page.resource
 Resource             ${Path_Environment}/Page/oe_page_add.resource
 Resource             ${Path_Environment}/Page/oe_page_edit.resource

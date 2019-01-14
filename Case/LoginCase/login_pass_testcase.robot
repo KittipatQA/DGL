@@ -1,6 +1,6 @@
 *** Settings ***
 Library              SeleniumLibrary
-Resource             /DGL/Resource/dglforsme.resource
+Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
 Resource             ${Path_Environment}/Page/login_page.resource
 Resource             ${Path_Environment}/Logic/login_pass.resource
 Suite Setup          Open the web page

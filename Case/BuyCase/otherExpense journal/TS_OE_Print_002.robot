@@ -3,7 +3,7 @@ Library              SeleniumLibrary
 Library              Process
 Library              BuiltIn
 Variables            ${Path_Environment}/Resource/pyapi3.py
-Resource             /DGL/Resource/dglforsme.resource
+Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
 Resource             ${Path_Environment}/Page/home_page.resource
 Resource             ${Path_Environment}/Page/oe_page_journal.resource
 Resource             ${Path_Environment}/Page/login_page.resource   
