@@ -1,7 +1,7 @@
 ﻿*** Settings ***
 Library              SeleniumLibrary
 Library              BuiltIn
-Resource             ${Path_Environment}/Resource/dglforsme.resource
+Resource             /DGL/Resource/dglforsme.resource
 Resource             ${Path_Environment}/Page/home_page.resource
 Resource             ${Path_Environment}/Page/oe_page.resource
 Resource             ${Path_Environment}/Page/login_page.resource   
