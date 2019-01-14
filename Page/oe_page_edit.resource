@@ -2,6 +2,7 @@
 Library              SeleniumLibrary
 
 *** Variables ***
+${new_supplier_code}        A001
 
 *** Keywords ***
 
@@ -10,6 +11,7 @@ Click last list
 
 Clear Supplier Code
     Clear Element Text      id:input-oe-detail-code
+    Input Text      id:input-oe-detail-code     ${new_supplier_code}
 
 Clear Supplier Name
     Clear Element Text      id:input-oe-detail-name
