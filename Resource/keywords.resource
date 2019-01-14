@@ -1,5 +1,5 @@
 ﻿*** Settings ***
-Library     /Users/USER1/.jenkins/workspace/DGL/Resource/easy_math.py  WITH NAME  math
+Library     ${Path_Environment}/Resource/easy_math.py  WITH NAME  math
 
 *** Keywords ***
 

@@ -4,8 +4,9 @@ Library              DateTime
 
 *** Variables ***
 ${open_url}          https://dgl-acct.addtechhub.com
-${login_url}         ${open_url}/login            
-${Output_url}        /Users/USER1/.jenkins/workspace/DGL/Screen
+${login_url}         ${open_url}/login
+${Path_Environment}     /Users/USER1/.jenkins/workspace/DGL                 
+${Output_url}        ${Path_Environment}/Screen
 ${Type of file}      png
 ${title}             DGL Accounting
 ${logic}             //*[@class="title"] 

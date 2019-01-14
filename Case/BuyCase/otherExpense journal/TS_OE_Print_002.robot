@@ -2,14 +2,14 @@
 Library              SeleniumLibrary
 Library              Process
 Library              BuiltIn
-Variables            /Users/USER1/.jenkins/workspace/DGL/Resource/pyapi3.py
-Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
-Resource             /Users/USER1/.jenkins/workspace/DGL/Page/home_page.resource
-Resource             /Users/USER1/.jenkins/workspace/DGL/Page/oe_page_journal.resource
-Resource             /Users/USER1/.jenkins/workspace/DGL/Page/login_page.resource   
-Resource             /Users/USER1/.jenkins/workspace/DGL/Logic/TS_OE_Journal_2.resource
-Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/keywords.resource
-Library             /Users/USER1/.jenkins/workspace/DGL/Resource/converttime.py
+Variables            ${Path_Environment}/Resource/pyapi3.py
+Resource             ${Path_Environment}/Resource/dglforsme.resource
+Resource             ${Path_Environment}/Page/home_page.resource
+Resource             ${Path_Environment}/Page/oe_page_journal.resource
+Resource             ${Path_Environment}/Page/login_page.resource   
+Resource             ${Path_Environment}/Logic/TS_OE_Journal_2.resource
+Resource             ${Path_Environment}/Resource/keywords.resource
+Library             ${Path_Environment}/Resource/converttime.py
 Suite Setup          Open the web page
 Test Setup           Go to login page
 Test Template        Oe Journal 2
