@@ -3,7 +3,12 @@ Library              SeleniumLibrary
 
 *** Variables ***
 ${new_supplier_code}        A001
-${new_billNo}     14/01/2019
+${new_billNo}     29/11/2018
+${new_transactionDate}     22/12/2018
+${new_detail_description}       ค่าเช่า 
+${new_vatPeriod}       12/61
+${new_transactions_bindingexpenseInfo}      53-2001
+
 
 *** Keywords ***
 
@@ -23,15 +28,19 @@ Clear billNo
 
 Clear transactionDate
     Clear Element Text      id:input-oe-detail-transactionDate
+    Input Text      id:input-oe-detail-transactionDate     ${new_transactionDate}
 
 Clear detail description 
     Clear Element Text      id:input-oe-detail-description
+    Input Text      id:input-oe-detail-description    ${new_detail_description}
 
 Clear detail vatPeriod
     Clear Element Text      id:input-oe-detail-vatPeriod
+    Input Text      id:input-oe-detail-vatPeriod    ${new_vatPeriod}
 
 Clear transactions bindingexpenseInfo
     Clear Element Text      id:input-oe-transactions-bindingexpenseInfo-0
+    Input Text      id:input-oe-transactions-bindingexpenseInfo-0    ${new_transactions_bindingexpenseInfo}
 
 Clear transactions description
     Clear Element Text      id:input-oe-transactions-description-0

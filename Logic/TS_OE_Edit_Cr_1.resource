@@ -67,8 +67,8 @@ Oe Edit Data 1
       Click last list
       Clear Supplier Code
       Clear Supplier Name
-      Clear billNo
       Clear transactionDate
+      Clear billNo
       Clear detail description
       Clear detail vatPeriod
       Clear transactions bindingexpenseInfo
