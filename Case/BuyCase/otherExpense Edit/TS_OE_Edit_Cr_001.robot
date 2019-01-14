@@ -2,7 +2,7 @@
 Library              SeleniumLibrary
 Library              BuiltIn
 Library              String
-Resource             ${Path_Environment}/Resource/dglforsme.resource
+Variables            ${Path_Environment}/Resource/dglforsme.resource
 Resource             ${Path_Environment}/Page/home_page.resource
 Resource             ${Path_Environment}/Page/oe_page_add.resource
 Resource             ${Path_Environment}/Page/oe_page_edit.resource
