@@ -3,6 +3,7 @@ Library              SeleniumLibrary
 
 *** Variables ***
 ${new_supplier_code}        A001
+${supplier_name}        บจก.แอดวานซ์ ไวร์เลส เน็ทเวอร์ค
 
 *** Keywords ***
 
@@ -12,9 +13,12 @@ Click last list
 Clear Supplier Code
     Clear Element Text      id:input-oe-detail-code
     Input Text      id:input-oe-detail-code     ${new_supplier_code}
+    Click Element       id:ngb-typeahead-0-0
 
 Clear Supplier Name
     Clear Element Text      id:input-oe-detail-name
+    Input Text      id:input-oe-detail-name     ${supplier_name}
+
 
 Clear billNo
     Clear Element Text      id:input-oe-detail-billNo
