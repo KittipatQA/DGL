@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="true" generated="20190110 16:30:02.218" generator="Robot 3.1a2 (Python 2.7.15 on win32)">
+<robot rpa="true" generated="20190114 12:34:58.767" generator="Robot 3.1a2 (Python 2.7.15 on win32)">
 <suite source="d:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot" id="s1" name="TS OE Edit Cr 001">
 <kw type="setup" name="Open the web page">
-<msg timestamp="20190110 16:30:02.746" level="FAIL">No keyword with name 'Open the web page' found.</msg>
-<status status="FAIL" endtime="20190110 16:30:02.747" starttime="20190110 16:30:02.746"></status>
+<msg timestamp="20190114 12:34:59.453" level="FAIL">No keyword with name 'Open the web page' found.</msg>
+<status status="FAIL" endtime="20190114 12:34:59.453" starttime="20190114 12:34:59.452"></status>
 </kw>
 <test id="s1-t1" name="2ตรวจสอบการเพิ่มรายการ_กรณี_นิติบุคคลมี_VATจ่ายเจ้าหนี้ไม่มี_VAT_รายการมี_TAX(2%)_">
-<status status="FAIL" endtime="20190110 16:30:02.749" critical="yes" starttime="20190110 16:30:02.747">Parent suite setup failed:
+<status status="FAIL" endtime="20190114 12:34:59.470" critical="yes" starttime="20190114 12:34:59.454">Parent suite setup failed:
 No keyword with name 'Open the web page' found.</status>
 </test>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190110 16:30:02.751" starttime="20190110 16:30:02.751"></status>
+<status status="PASS" endtime="20190114 12:34:59.478" starttime="20190114 12:34:59.478"></status>
 </kw>
-<status status="FAIL" endtime="20190110 16:30:02.752" starttime="20190110 16:30:02.220">Suite setup failed:
+<status status="FAIL" endtime="20190114 12:34:59.479" starttime="20190114 12:34:58.771">Suite setup failed:
 No keyword with name 'Open the web page' found.</status>
 </suite>
 <statistics>
@@ -28,11 +28,12 @@ No keyword with name 'Open the web page' found.</status>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190110 16:30:02.738" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
-<msg timestamp="20190110 16:30:02.739" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\home_page.resource' does not exist.</msg>
-<msg timestamp="20190110 16:30:02.740" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\oe_page_add.resource' does not exist.</msg>
-<msg timestamp="20190110 16:30:02.740" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Page\login_page.resource' does not exist.</msg>
-<msg timestamp="20190110 16:30:02.741" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Logic\TS_OE_Edit_Cr_1.resource' does not exist.</msg>
-<msg timestamp="20190110 16:30:02.741" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\keywords.resource' does not exist.</msg>
+<msg timestamp="20190114 12:34:59.393" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Resource file '\Users\USER1\.jenkins\workspace\DGL\Resource\dglforsme.resource' does not exist.</msg>
+<msg timestamp="20190114 12:34:59.397" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Replacing variables from setting 'Resource' failed: Variable '${Path_Environment}' not found.</msg>
+<msg timestamp="20190114 12:34:59.403" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Replacing variables from setting 'Resource' failed: Variable '${Path_Environment}' not found.</msg>
+<msg timestamp="20190114 12:34:59.407" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Replacing variables from setting 'Resource' failed: Variable '${Path_Environment}' not found.</msg>
+<msg timestamp="20190114 12:34:59.415" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Replacing variables from setting 'Resource' failed: Variable '${Path_Environment}' not found.</msg>
+<msg timestamp="20190114 12:34:59.422" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Replacing variables from setting 'Resource' failed: Variable '${Path_Environment}' not found.</msg>
+<msg timestamp="20190114 12:34:59.427" level="ERROR">Error in file 'd:\DGL\Case\BuyCase\otherExpense Edit\TS_OE_Edit_Cr_001.robot': Replacing variables from setting 'Resource' failed: Variable '${Path_Environment}' not found.</msg>
 </errors>
 </robot>
