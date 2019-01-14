@@ -69,6 +69,7 @@ Oe Edit Data 1
       Clear Supplier Name
       Clear transactionDate
       Clear billNo
+      Clear billDate
       Clear detail description
       Clear detail vatPeriod
       Clear transactions bindingexpenseInfo

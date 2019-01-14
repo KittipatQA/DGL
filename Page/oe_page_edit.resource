@@ -8,6 +8,7 @@ ${new_transactionDate}     22/12/2018
 ${new_detail_description}       ค่าเช่า 
 ${new_vatPeriod}       12/61
 ${new_transactions_bindingexpenseInfo}      53-2001
+${new_billDate}     22/12/2018
 
 
 *** Keywords ***
@@ -25,6 +26,10 @@ Clear Supplier Name
 Clear billNo
     Clear Element Text      id:input-oe-detail-billNo
     Input Text      id:input-oe-detail-billNo     ${new_billNo}
+    
+Clear billDate
+    Clear Element Text      id:input-oe-detail-billDate
+    Input Text      id:input-oe-detail-billDate     ${new_billDate}
 
 Clear transactionDate
     Clear Element Text      id:input-oe-detail-transactionDate
