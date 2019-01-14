@@ -9,6 +9,12 @@ ${new_detail_description}       ค่าเช่า
 ${new_vatPeriod}       12/61
 ${new_transactions_bindingexpenseInfo}      53-0002
 ${new_billDate}     22/12/2018
+${new_transactions_description}     ค่าอินเตอร์เน็ต
+${new_qty}     2
+${new_transactions_unitPrice}       3000
+${new_transactions_taxAmount}        1000
+${new_detail_discount}      500
+${new_detail_remark}        จ่ายค่าอินเตอร์เน็ต        
 
 
 *** Keywords ***
@@ -49,21 +55,28 @@ Clear transactions bindingexpenseInfo
 
 Clear transactions description
     Clear Element Text      id:input-oe-transactions-description-0
+    Input Text      id:input-oe-transactions-description-0    ${new_transactions_description}
 
 Clear transactions qty
     Clear Element Text      id:input-oe-transactions-qty-0
+    Input Text      id:input-oe-transactions-qty-0    ${new_qty}
 
 Clear transactions unitPrice
     Clear Element Text      id:input-oe-transactions-unitPrice-0
+    Input Text      id:input-oe-transactions-unitPrice-0    ${new_transactions_unitPrice}
 
 Clear transactions discount
     Clear Element Text      id:input-oe-transactions-discount-0
+    Input Text      id:input-oe-transactions-discount-0    ${new_transactions_unitPrice}
 
 Clear transactions taxAmount
     Clear Element Text      id:input-oe-transactions-taxAmount-0
+    Input Text      id:input-oe-transactions-taxAmount-0    ${new_transactions_taxAmount}
 
 Clear detail discount
     Clear Element Text      id:input-oe-detail-discount
-
+    Input Text      id:input-oe-detail-discount    ${new_detail_discount}
+    
 Clear detail remark
     Clear Element Text      id:input-oe-detail-remark
+    Input Text      id:input-oe-detail-remark    ${new_detail_remark}
