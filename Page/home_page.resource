@@ -2,8 +2,8 @@
 Library              SeleniumLibrary
 
 *** Variables ***
-${buy}      //span[.//text() = 'ชื้อเงินสด']
-${save_other_buy_list}      //span[.//text() = 'บันทึกรายจ่ายอื่นๆ']
+${buy}      xpath:(//span[@class="menu-title"])[2]
+${save_other_buy_list}      xpath:(//span[@class="menu-title"])[4]
 
 
 *** Keywords ***
