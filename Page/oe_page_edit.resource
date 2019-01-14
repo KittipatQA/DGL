@@ -13,7 +13,7 @@ Click last list
 Clear Supplier Code
     Clear Element Text      id:input-oe-detail-code
     Input Text      id:input-oe-detail-code     ${new_supplier_code}
-    Click Element       //button[@id="ngb-typeahead-100-0"]
+    Execute JavaScript    document.getElementById("ngb-typeahead-100-0").onclick()
 
 Clear Supplier Name
     Clear Element Text      id:input-oe-detail-name
