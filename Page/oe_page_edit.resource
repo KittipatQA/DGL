@@ -58,9 +58,6 @@ Clear transactions bindingexpenseInfo
 
 Clear transactions description
     Click Element      id:input-oe-transactions-description-0
-    Clear Element Text      id:input-oe-transactions-description-0
-    Input Text      id:input-oe-transactions-description-0    ${new_transactions_description}
-    
 
 Clear transactions qty
     Click Element      id:input-oe-transactions-qty-0
