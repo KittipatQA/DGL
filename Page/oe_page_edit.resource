@@ -25,6 +25,7 @@ Click last list
 Clear Supplier Code
     Clear Element Text      id:input-oe-detail-code
     Input Text      id:input-oe-detail-code     ${new_supplier_code}
+    Click Element      id:input-oe-detail-code
     
 Clear Supplier Name
     Click Element      id:input-oe-detail-name
@@ -52,10 +53,12 @@ Clear detail vatPeriod
 Clear transactions bindingexpenseInfo
     Clear Element Text      id:input-oe-transactions-bindingexpenseInfo-0
     Input Text      id:input-oe-transactions-bindingexpenseInfo-0    ${new_transactions_bindingexpenseInfo}
+    Click Element      id:input-oe-transactions-bindingexpenseInfo-0
 
 Clear transactions description
     Clear Element Text      id:input-oe-transactions-description-0
     Input Text      id:input-oe-transactions-description-0    ${new_transactions_description}
+    Click Element      id:input-oe-transactions-description-0
 
 Clear transactions qty
     Clear Element Text      id:input-oe-transactions-qty-0
