@@ -77,7 +77,7 @@ Oe Edit Data 1
       Clear transactions qty
       Clear transactions unitPrice
       Clear transactions discount
-      Clear transactions taxAmount
+      #Clear transactions taxAmount
       Clear detail remark
       Clear detail paymentCashAmount
       Calculator No vatType
