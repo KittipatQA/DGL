@@ -8,7 +8,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 
 Oe Add Data 1
       [Arguments]            ${username}      ${password}       ${image_name}     ${supplier_code}    ${data_list}    ${transaction_date}     ${datePickerDueDate}        ${detail_department}        ${detail_billNo}        ${detail_billDate}      ${detail_vatPeriod}     ${detail_description}      ${no_bindingexpenseInfo}      ${qty}      ${price}    ${discount}    ${taxAmountlist}     ${remark}      ${paymentCashAmount}      ${status_after_add}                          
-      Set Selenium Speed     0.3
+      Set Selenium Speed     0.5
       Set Directory          ${image_name}
       Capture Screen
       Title Should Be            ${title}
