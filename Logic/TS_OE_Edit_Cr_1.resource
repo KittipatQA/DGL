@@ -82,5 +82,5 @@ Oe Edit Data 1
       Clear detail paymentCashAmount
       Calculator No vatType
       Click Submit Edit Btn
-      Check Payment edit status
+      Check Payment edit status           ${status_after_edit}
       Capture Screen

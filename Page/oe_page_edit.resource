@@ -93,7 +93,7 @@ Clear detail paymentCashAmount
     Input Text      id:input-oe-detail-paymentCashAmount    ${new_paymentCashAmount}
 
 Check Payment edit status
-    [Arguments]     ${status_after_add}
+    [Arguments]     ${status_after_edit}
     Check Status After Add Edit 
     Should Be Equal As Strings      ${status_after_edit}     ${new_status_list}
 
