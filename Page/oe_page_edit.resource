@@ -73,7 +73,7 @@ Clear transactions unitPrice
 
 Clear transactions discount
     Clear Element Text      id:input-oe-transactions-discount-0
-    Input Text      id:input-oe-transactions-discount-0    ${new_transactions_unitPrice}
+    Input Text      id:input-oe-transactions-discount-0    ${new_detail_discount}
 
 Clear transactions taxAmount
     Clear Element Text      id:input-oe-transactions-taxAmount-0
