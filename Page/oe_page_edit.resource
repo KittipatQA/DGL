@@ -22,6 +22,7 @@ ${new_paymentCashAmount}        5500
 Click Submit Edit Btn
     Click Element      id:btn-oe-submit
     Click Element      id:btn-modal-cancel
+    Click Element      xpath://button[@class="btn-dark-blue"]
 
 Click last list
     Click Element       xpath://*[@id="sl-oe-detail-0"]/div[1]
