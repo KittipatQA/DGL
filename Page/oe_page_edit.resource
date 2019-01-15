@@ -3,7 +3,7 @@ Library              SeleniumLibrary
 
 *** Variables ***
 ${new_supplier_code}        A001
-${new_billNo}     29/11/2018
+${new_billNo}     1455467879112
 ${new_transactionDate}     22/12/2018
 ${new_detail_description}       ค่าเช่า 
 ${new_vatPeriod}       12/61
@@ -94,10 +94,12 @@ Clear detail paymentCashAmount
 
 Check Payment edit status
     [Arguments]     ${status_after_edit}
-    Check Status After Add Edit 
     Should Be Equal As Strings      ${status_after_edit}     ${new_status_list}
 
 Check Status After Add Edit
     ${status_after_edit}=   Get Text     //*[@id="sl-oe-detail-0"]/div[7]/label
     Set Suite Variable      ${status_after_edit}
     Log To Console      ${status_after_edit}
+
+Check 
+
