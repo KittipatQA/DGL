@@ -15,7 +15,7 @@ ${new_transactions_unitPrice}       6000
 ${new_detail_discount}      0
 ${new_detail_remark}        จ่ายค่าอินเตอร์เน็ต        
 ${new_paymentCashAmount}        6000
-
+${new_status_list}      ชำระแล้ว
 
 *** Keywords ***
 
@@ -91,3 +91,8 @@ Clear detail remark
 Clear detail paymentCashAmount
     Clear Element Text      id:input-oe-detail-paymentCashAmount
     Input Text      id:input-oe-detail-paymentCashAmount    ${new_paymentCashAmount}
+
+Check Payment edit status
+    [Arguments]     ${status_after_add}
+    Check Status After Add 
+    Should Be Equal As Strings      ${status_after_add}     ${new_status_list}  
