@@ -74,7 +74,7 @@ Oe Edit Data 1
       Clear detail description
       Clear transactions bindingexpenseInfo
       Clear transactions description
-      Clear transactions qty
+      Clear transactions qty-
       Clear transactions unitPrice
       Clear transactions discount
       #Clear transactions taxAmount
@@ -85,4 +85,5 @@ Oe Edit Data 1
       Check Status After Add Edit
       Check Payment edit status           ${status_after_edit}
       Click last list
+      Get edit supplier code 
       Capture Screen

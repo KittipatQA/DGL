@@ -19,6 +19,12 @@ ${new_status_list}      ชำระแล้ว
 
 *** Keywords ***
 
+Get edit supplier code 
+    ${edit_new_supplier_code}=       Get Value      id:input-oe-detail-code
+    Log To Console      ${edit_new_supplier_code}
+    Set Suite Variable      ${edit_new_supplier_code}
+    Should Be Equal As Strings         ${edit_new_supplier_code}        ${new_supplier_code}        
+
 Click Submit Edit Btn
     Click Element      id:btn-oe-submit
     Click Element      id:btn-modal-cancel
@@ -100,6 +106,3 @@ Check Status After Add Edit
     ${status_after_edit}=   Get Text     //*[@id="sl-oe-detail-0"]/div[7]/label
     Set Suite Variable      ${status_after_edit}
     Log To Console      ${status_after_edit}
-
-Check 
-
