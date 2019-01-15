@@ -44,7 +44,7 @@ Oe Edit Data 1
       Compare ransactions before vat 
       Get Tax Amount
       Calculator taxAmount
-      Compare taxAmount
+      #Compare taxAmount
       Calculator totalPrice
       Check transactions total Price
       Compare totalPrice

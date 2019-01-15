@@ -38,7 +38,7 @@ Oe Add Data 1
       Input number      ${qty}
       Input Price    ${price}
       Input discount    ${discount}
-      Input taxAmount      ${taxAmountlist}
+      #Input taxAmount      ${taxAmountlist}
       Input Remark      ${remark}
       Input paymentCash    ${paymentCashAmount}
       Calculator No vatType
