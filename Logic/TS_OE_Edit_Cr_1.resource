@@ -86,4 +86,5 @@ Oe Edit Data 1
       Check Payment edit status           ${status_after_edit}
       Click last list
       Get edit supplier code 
+      Get edit billNo
       Capture Screen

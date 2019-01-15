@@ -23,7 +23,13 @@ Get edit supplier code
     ${edit_new_supplier_code}=       Get Value      id:input-oe-detail-code
     Log To Console      ${edit_new_supplier_code}
     Set Suite Variable      ${edit_new_supplier_code}
-    Should Be Equal As Strings         ${edit_new_supplier_code}        ${new_supplier_code}        
+    Should Be Equal As Strings         ${edit_new_supplier_code}        ${new_supplier_code} 
+
+Get edit billNo
+    ${edit_new_billNo}=       Get Value      id:input-oe-detail-billNo
+    Log To Console      ${edit_new_billNo}
+    Set Suite Variable      ${edit_new_billNo}
+    Should Be Equal As Strings         ${edit_new_billNo}        ${new_billNo}       
 
 Click Submit Edit Btn
     Click Element      id:btn-oe-submit
