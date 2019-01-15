@@ -14,7 +14,7 @@ ${new_qty}     1
 ${new_transactions_unitPrice}       6000
 ${new_detail_discount}      0
 ${new_detail_remark}        จ่ายค่าอินเตอร์เน็ต        
-${new_paymentCashAmount}        5500
+${new_paymentCashAmount}        6000
 
 
 *** Keywords ***

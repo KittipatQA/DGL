@@ -80,7 +80,7 @@ Oe Edit Data 1
       Clear transactions taxAmount
       Clear detail remark
       Clear detail paymentCashAmount
+      Calculator No vatType
       Click Submit Edit Btn
-      
       Check Status After Add
       Capture Screen
