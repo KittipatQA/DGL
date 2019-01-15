@@ -84,4 +84,5 @@ Oe Edit Data 1
       Click Submit Edit Btn
       Check Status After Add
       Check Payment status
+      Check Payment edit status
       Capture Screen

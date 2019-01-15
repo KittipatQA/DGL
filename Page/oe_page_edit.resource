@@ -95,4 +95,4 @@ Clear detail paymentCashAmount
 Check Payment edit status
     [Arguments]     ${status_after_add}
     Check Status After Add 
-    Should Be Equal As Strings      ${status_after_add}     ${new_status_list}  
+    Should Be Equal As Strings      ${status_after_add}     ${new_status_list}
