@@ -15,6 +15,7 @@ ${new_transactions_unitPrice}       3000
 ${new_transactions_taxAmount}        3
 ${new_detail_discount}      500
 ${new_detail_remark}        จ่ายค่าอินเตอร์เน็ต        
+${new_paymentCashAmount}        5500
 
 
 *** Keywords ***
@@ -56,11 +57,13 @@ Clear transactions bindingexpenseInfo
     Click Element      id:input-oe-transactions-bindingexpenseInfo-0
 
 Clear transactions description
+    Click Element      id:input-oe-transactions-description-0
     Clear Element Text      id:input-oe-transactions-description-0
     Input Text      id:input-oe-transactions-description-0    ${new_transactions_description}
-    Click Element      id:input-oe-transactions-description-0
+    
 
 Clear transactions qty
+    Click Element      id:input-oe-transactions-qty-0
     Clear Element Text      id:input-oe-transactions-qty-0
     Input Text      id:input-oe-transactions-qty-0    ${new_qty}
 
