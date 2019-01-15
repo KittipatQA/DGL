@@ -94,5 +94,10 @@ Clear detail paymentCashAmount
 
 Check Payment edit status
     [Arguments]     ${status_after_add}
-    Check Status After Add 
-    Should Be Equal As Strings      ${status_after_add}     ${new_status_list}
+    Check Status After Add Edit 
+    Should Be Equal As Strings      ${status_after_edit}     ${new_status_list}
+
+Check Status After Add Edit
+    ${status_after_edit}=   Get Text     //*[@id="sl-oe-detail-0"]/div[7]/label
+    Set Suite Variable      ${status_after_edit}
+    Log To Console      ${status_after_edit}
