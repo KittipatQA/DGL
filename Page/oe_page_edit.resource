@@ -10,8 +10,8 @@ ${new_vatPeriod}       12/61
 ${new_transactions_bindingexpenseInfo}      53-0002
 ${new_billDate}     22/12/2018
 ${new_transactions_description}     ค่าอินเตอร์เน็ต
-${new_qty}     2
-${new_transactions_unitPrice}       3000
+${new_qty}     1
+${new_transactions_unitPrice}       6000
 ${new_transactions_taxAmount}        165
 ${new_detail_discount}      500
 ${new_detail_remark}        จ่ายค่าอินเตอร์เน็ต        
