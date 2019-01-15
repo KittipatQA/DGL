@@ -217,6 +217,7 @@ Compare taxAmount
 Check Status After Add
     ${status_list}=   Get Text     //*[@id="sl-oe-detail-0"]/div[7]/label
     Set Suite Variable      ${status_list}
+    Log To Console      ${status_list}
 
 Check Payment status
     [Arguments]     ${status_after_add}
