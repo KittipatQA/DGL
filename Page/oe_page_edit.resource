@@ -29,7 +29,49 @@ Get edit billNo
     ${edit_new_billNo}=       Get Value      id:input-oe-detail-billNo
     Log To Console      ${edit_new_billNo}
     Set Suite Variable      ${edit_new_billNo}
-    Should Be Equal As Strings         ${edit_new_billNo}        ${new_billNo}       
+    Should Be Equal As Strings         ${edit_new_billNo}        ${new_billNo} 
+
+Get edit transactionDate
+    ${edit_new_transactionDate}=       Get Value      id:input-oe-detail-transactionDate
+    Log To Console      ${edit_new_transactionDate}
+    Set Suite Variable      ${edit_new_transactionDate}
+    Should Be Equal As Strings         ${edit_new_transactionDate}        ${new_transactionDate} 
+
+Get edit detail description
+    ${edit_new_transactionDate}=       Get Value      id:input-oe-detail-description
+    Log To Console      ${edit_new_transactionDate}
+    Set Suite Variable      ${edit_new_transactionDate}
+    Should Be Equal As Strings         ${edit_new_transactionDate}        ${new_transactionDate}    
+
+Get edit detail vatPeriod
+    ${edit_new_vatPeriod}=       Get Value      id:input-oe-detail-vatPeriod
+    Log To Console      ${edit_new_vatPeriod}
+    Set Suite Variable      ${edit_new_vatPeriod}
+    Should Be Equal As Strings         ${edit_new_vatPeriod}        ${new_vatPeriod}    
+
+Get edit transactions bindingexpenseInfo
+    ${edit_new_transactions_bindingexpenseInfo}=       Get Value      id:input-oe-transactions-bindingexpenseInfo-0
+    Log To Console      ${edit_new_transactions_bindingexpenseInfo}
+    Set Suite Variable      ${edit_new_transactions_bindingexpenseInfo}
+    Should Be Equal As Strings         ${edit_new_transactions_bindingexpenseInfo}        ${new_transactions_bindingexpenseInfo}  
+
+Get edit detail billDate
+    ${edit_new_detail_billDate}=       Get Value      id:input-oe-detail-billDate
+    Log To Console      ${edit_new_detail_billDate}
+    Set Suite Variable      ${edit_new_detail_billDate}
+    Should Be Equal As Strings         ${edit_new_detail_billDate}        ${new_billDate} 
+
+Get edit transactions description
+    ${edit_new_transactions_description}=       Get Value      id:input-oe-transactions-description-0
+    Log To Console      ${edit_new_transactions_description}
+    Set Suite Variable      ${edit_new_transactions_description}
+    Should Be Equal As Strings         ${edit_new_transactions_description}        ${new_transactions_description}    
+
+Get edit qty
+    ${edit_new_qty}=       Get Value      id:input-oe-transactions-qty-0
+    Log To Console      ${edit_new_qty}
+    Set Suite Variable      ${edit_new_qty}
+    Should Be Equal As Strings         ${edit_new_qty}        ${new_qty}    
 
 Click Submit Edit Btn
     Click Element      id:btn-oe-submit

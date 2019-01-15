@@ -87,4 +87,11 @@ Oe Edit Data 1
       Click last list
       Get edit supplier code 
       Get edit billNo
+      Get edit transactionDate
+      Get edit detail description
+      Get edit detail vatPeriod
+      Get edit transactions bindingexpenseInfo
+      Get edit detail billDate
+      Get edit transactions description
+      Get edit qty
       Capture Screen
