@@ -12,10 +12,9 @@ ${new_billDate}     22/12/2018
 ${new_transactions_description}     ค่าอินเตอร์เน็ต
 ${new_qty}     1
 ${new_transactions_unitPrice}       6000
-${new_transactions_taxAmount}        165
 ${new_detail_discount}      500
 ${new_detail_remark}        จ่ายค่าอินเตอร์เน็ต        
-${new_paymentCashAmount}        5335
+${new_paymentCashAmount}        5500
 
 
 *** Keywords ***
@@ -74,7 +73,7 @@ Clear transactions discount
 
 Clear transactions taxAmount
     Clear Element Text      id:input-oe-transactions-taxAmount-0
-    Input Text      id:input-oe-transactions-taxAmount-0    ${new_transactions_taxAmount}
+    
 
 Clear detail discount
     Clear Element Text      id:input-oe-detail-discount
