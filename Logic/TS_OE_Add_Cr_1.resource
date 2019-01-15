@@ -50,5 +50,5 @@ Oe Add Data 1
       Set Suite Variable       ${status_fail}   สถานะไม่ถูกต้อง
       ${columnafter}=       Get Element Count        //*[contains(@id, 'sl-oe-detail')]
       Run Keyword If       ${columnafter}>${columnbefore}        Log To Console      ${status_true}       ELSE        fail  ${columnafter} : ${status_fail}
-      Check Payment status    ${new_status_list}
+      Check Payment status    ${status_after_add}
       Capture Screen
