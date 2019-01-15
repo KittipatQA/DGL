@@ -231,7 +231,7 @@ Click Btn Confirm
     Click Button        id:btn-modal-cancel
 
 Click Btn Ok
-    Click Element        xpath://*[@id="mat-dialog-1"]/app-dialog/div/div/div[3]/div/button
+    Click Element        xpath://button[@class="btn-dark-blue"]
 
 Replace
     [Arguments]     ${value_comma}
