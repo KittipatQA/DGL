@@ -83,5 +83,5 @@ Oe Edit Data 1
       Calculator No vatType
       Click Submit Edit Btn
       Check Status After Add
-      Check Payment edit status           ${status_after_add}
+      Check Payment edit status           ${new_status_list}
       Capture Screen
