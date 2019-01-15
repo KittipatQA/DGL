@@ -74,7 +74,7 @@ Oe Edit Data 1
       Clear detail description
       Clear transactions bindingexpenseInfo
       Clear transactions description
-      Clear transactions qty-
+      Clear transactions qty
       Clear transactions unitPrice
       Clear transactions discount
       #Clear transactions taxAmount
