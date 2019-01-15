@@ -89,4 +89,4 @@ Clear detail remark
 
 Clear detail paymentCashAmount
     Clear Element Text      id:input-oe-detail-paymentCashAmount
-    Input Text      id:input-oe-detail-paymentCashAmount    ${new_detail_remark}
+    Input Text      id:input-oe-detail-paymentCashAmount    ${new_paymentCashAmount}

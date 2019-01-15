@@ -70,8 +70,8 @@ Oe Edit Data 1
       Clear transactionDate
       Clear billNo
       Clear billDate
-      Clear detail description
       Clear detail vatPeriod
+      Clear detail description
       Clear transactions bindingexpenseInfo
       Clear transactions description
       Clear transactions qty
