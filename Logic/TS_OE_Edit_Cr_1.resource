@@ -94,4 +94,8 @@ Oe Edit Data 1
       Get edit detail billDate
       Get edit transactions description
       Get edit qty
+      Get edit unitPrice
+      Get edit transactions discount
+      Get edit detail remark
+      Get edit detail paymentCashAmount
       Capture Screen
