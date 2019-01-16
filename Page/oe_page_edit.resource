@@ -22,8 +22,8 @@ ${new_status_list}      ชำระแล้ว
 Get edit unitPrice
     ${edit_new_transactions_unitPrice}=       Get Value      id:input-oe-transactions-unitPrice-0
     Log To Console      ${edit_new_transactions_unitPrice}
-    Set Suite Variable      ${edit_new_transactions_unitPrice}
-    Should Be Equal As Strings         ${edit_new_transactions_unitPrice}        ${new_transactions_unitPrice} 
+    ${Convert_unitPrice} =      convert_cur     ${edit_new_transactions_unitPrice}     
+    Should Be Equal As Strings         ${Convert_unitPrice}        ${new_transactions_unitPrice} 
 
 
 Get edit detail paymentCashAmount  
@@ -35,8 +35,8 @@ Get edit detail paymentCashAmount
 Get edit transactions discount  
     ${edit_new_transactions_discount}=       Get Value      id:input-oe-transactions-discount-0
     Log To Console      ${edit_new_transactions_discount}
-    Set Suite Variable      ${edit_new_transactions_discount}
-    Should Be Equal As Strings         ${edit_new_transactions_discount}        ${new_detail_discount} 
+    ${convert_transaction_discount} =        convert_cur     ${edit_new_transactions_discount}
+    Should Be Equal As Strings         ${convert_transaction_discount}        ${new_detail_discount} 
 
 Get edit detail remark  
     ${edit_new_detail_remark}=       Get Value      id:input-oe-detail-remark
