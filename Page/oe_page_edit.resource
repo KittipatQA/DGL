@@ -66,7 +66,7 @@ Get edit detail description
     ${edit_new_transactionDate}=       Get Value      id:input-oe-detail-description
     Log To Console      ${edit_new_transactionDate}
     Set Suite Variable      ${edit_new_transactionDate}
-    Should Be Equal As Strings         ${edit_new_transactionDate}        ${new_transactionDate}    
+    Should Be Equal As Strings         ${edit_new_transactionDate}        ${new_detail_description}    
 
 Get edit detail vatPeriod
     ${edit_new_vatPeriod}=       Get Value      id:input-oe-detail-vatPeriod
