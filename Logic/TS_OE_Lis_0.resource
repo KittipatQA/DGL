@@ -8,7 +8,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 
 Oe Check Result 0
     [Arguments]            ${username}      ${password}       ${image_name}       ${condition_1}      ${condition_2}      ${condition_3}
-    Set Selenium Speed     0.3
+    Set Selenium Speed     0.5
     Set Directory          ${image_name}
     Capture Screen
     Title Should Be            ${title}
