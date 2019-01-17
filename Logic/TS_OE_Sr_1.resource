@@ -28,6 +28,7 @@ Oe Check Search 1
     Log To Console       ${column}
     Run Keyword If       ${column} > 1        Fail
     Input Data Search    ${data}
+    Click Btn Search
     ${number_document}=    Get Text     //*[@id="sl-oe-detail-0"]/div[1]/label 
     Set Suite Variable       ${status_true}   สถานะถูกต้อง
     Set Suite Variable       ${status_false}  สถานะไม่ถูกต้อง
