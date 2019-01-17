@@ -15,7 +15,8 @@ Oe Check Search 0
     Input Password         ${password}
     Capture Screen
     Login Submit                 
-    Wait Until Page Contains     ${logic}
+    Wait Until Element Is Visible           ${logic}
+    Element Should Contain      ${logic}       ${logic_title} 
     Capture Screen
     Click Tab Buy
     Capture Screen
