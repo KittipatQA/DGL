@@ -16,7 +16,7 @@ Oe Check List Search 1
     Input Password         ${password}
     Capture Screen
     Login Submit                 
-    Element Should Be Visible           ${logic}
+    Wait Until Element Is Visible           ${logic}
     Element Should Contain      ${logic}       ${logic_title}  
     Capture Screen
     Click Tab Buy
