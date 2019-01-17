@@ -11,7 +11,6 @@ Oe Edit Data 1
       Set Selenium Speed     0.6
       Set Directory          ${image_name}
       Capture Screen
-      Title Should Be            ${title}
       Input User             ${username}
       Input Password         ${password}
       Capture Screen
