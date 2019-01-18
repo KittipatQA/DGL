@@ -22,5 +22,5 @@ Click Tab Sell
     Click Element       ${sell}
 
 Click Tab otherRevenue
-    Element Should Be Visible           ${save_other_buy_list}
+    Element Should Be Visible           ${save_otherRevenue_sell_list}
     Click Element       ${save_otherRevenue_sell_list}    
