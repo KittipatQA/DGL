@@ -7,11 +7,11 @@ Library              SeleniumLibrary
 
 Input User 
     [Arguments]     ${username}              
-    Input Text      xpath://form/input[1]     ${username}
+    Input Text      id:input-email     ${username}
     
 Input Password
     [Arguments]     ${password}
-    Input Text      xpath://form/input[2]     ${password}
+    Input Text      id:input-password     ${password}
 
 Login Submit
-    Click Button    xpath://button[2]
+    Click Button    id:btn-submit-login
