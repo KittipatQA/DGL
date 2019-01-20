@@ -30,6 +30,7 @@ OI Check Result 2
     Set Suite Variable       ${status_value}  ไม่พบรายการ
     ${column}=       Get Element Count        //*[contains(@id, 'sl-oe-detail')]
     Set Suite Variable       ${column}
+    Log To Console      ${column}
     Run Keyword If       ${column}>0        Log To Console      มีรายการ       ELSE        fail  ${column} : ${status_value}
     :FOR    ${index}    IN RANGE     0     ${column}    
     \   ${status_now}=   Get Text     //*[@id="sl-oe-detail-${index}"]/div[7]/label
