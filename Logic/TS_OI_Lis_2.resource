@@ -22,14 +22,6 @@ OI Check Result 2
     Capture Screen
     Click Tab otherRevenue
     Capture Screen
-    #Run Keyword If     '${condition_1}' == 'yes'        Click Cbx Paid   
-    #...                ELSE                             Unclick Cbx Paid
-
-    #Run Keyword If     '${condition_2}' == 'yes'        Click Cbx outstanding   
-    #...                ELSE                             Unclick Cbx outstanding
-
-    #Run Keyword If     '${condition_3}' == 'yes'        Click Cbx cancel   
-    #...                ELSE                             Unclick Cbx cancel
     Capture Screen
     Click Btn Search
     Set Suite Variable      @{status_line}      ${result_status}
