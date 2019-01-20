@@ -1,0 +1,20 @@
+*** Settings ***
+Library              SeleniumLibrary
+Library              BuiltIn
+Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
+Resource             ${Path_Environment}/Page/home_page.resource
+Resource             ${Path_Environment}/Page/oe_page.resource
+Resource             ${Path_Environment}/Page/login_page.resource   
+Resource             ${Path_Environment}/Logic/TS_OI_Lis_2.resource
+Suite Setup          Open the web page
+Test Setup           Go to login page
+Test Teardown        Run Keyword If Test Failed     Capture Screen
+Test Template        Oi Check Result 3
+Suite Teardown       Close Browser
+
+*** Variables ***
+
+*** Keywords ***
+
+*** Tasks ***
+7ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ชำระแล้ว_เลือก_Checkbox_ค้างชำระ_เลือก_Checkbox_ยกเลิกรายการ   tester@gmail.com   123123   OI Page Search   yes   yes   yes   ชำระแล้ว     ค้างชำระ    ยกเลิกรายการ
