@@ -9,7 +9,7 @@ Resource             ${Path_Environment}/Logic/TS_OI_Lis_2.resource
 Suite Setup          Open the web page
 Test Setup           Go to login page
 Test Teardown        Run Keyword If Test Failed     Capture Screen
-Test Template        Oi Check Result 3
+Test Template        OI Check Result 2
 Suite Teardown       Close Browser
 
 *** Variables ***
