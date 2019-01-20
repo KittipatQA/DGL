@@ -22,7 +22,6 @@ OI Check Result 2
     Capture Screen
     Click Tab otherRevenue
     Capture Screen
-    Capture Screen
     Click Btn Search
     Set Suite Variable      @{status_line}      ${result_status}      ${result2_status}       ${result3_status}
     Set Suite Variable       ${status_true}   สถานะถูกต้อง

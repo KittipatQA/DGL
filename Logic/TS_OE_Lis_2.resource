@@ -22,15 +22,6 @@ Oe Check Result 2
     Capture Screen
     Click Tab OtherExpense
     Capture Screen
-    Run Keyword If     '${condition_1}' == 'yes'        Click Cbx Paid   
-    ...                ELSE                             Unclick Cbx Paid
-
-    Run Keyword If     '${condition_2}' == 'yes'        Click Cbx outstanding   
-    ...                ELSE                             Unclick Cbx outstanding
-
-    Run Keyword If     '${condition_3}' == 'yes'        Click Cbx cancel   
-    ...                ELSE                             Unclick Cbx cancel
-    Capture Screen
     Click Btn Search
     Set Suite Variable       @{status_line}   ${result_status}      ${result2_status}       ${result3_status}
     Set Suite Variable       ${status_true}   สถานะถูกต้อง
@@ -45,5 +36,5 @@ Oe Check Result 2
     :FOR    ${index}    IN RANGE     0     ${column}
     \   ${status_now}=   Get Text     //*[@id="sl-oe-detail-${index}"]/div[7]/label
     \   Log To Console      ${status_now}
-    \   Run Keyword If     $status_now in $status_line      Pass Execution      ${status_now} : ${status_true}      ELSE        fail  ${status_now} : ${status_false}
+    \   Run Keyword If     $status_now in $status_line      Log To Console      ${status_now} : ${status_true}      ELSE        fail  ${status_now} : ${status_false}
     Capture Screen
