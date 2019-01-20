@@ -17,4 +17,4 @@ Suite Teardown       Close Browser
 *** Keywords ***
 
 *** Tasks ***
-7ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ชำระแล้ว_เลือก_Checkbox_ค้างชำระ_เลือก_Checkbox_ยกเลิกรายการ   tester@gmail.com   123123   OI Page Search   yes   yes   yes   ชำระแล้ว     ค้างชำระ    ยกเลิกรายการ
+7ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ชำระแล้ว_เลือก_Checkbox_ค้างชำระ_เลือก_Checkbox_ยกเลิกรายการ   tester@gmail.com   123123   OI Page Search      ชำระแล้ว     ค้างชำระ    ยกเลิกรายการ
