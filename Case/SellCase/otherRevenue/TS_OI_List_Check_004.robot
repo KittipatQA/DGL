@@ -17,4 +17,4 @@ Suite Teardown       Close Browser
 *** Keywords ***
 
 *** Tasks ***
-9ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ไม่เลือกสถานะเอกสาร   automate@gmail.com   123123   OE Page Search   yes   no   no
+6ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_ไม่เลือกสถานะเอกสาร   automate@gmail.com   123123   OE Page Search   yes   no   no
