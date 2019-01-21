@@ -18,9 +18,9 @@ OI Check Search 1
     Wait Until Element Is Visible           ${logic}
     Element Should Contain      ${logic}       ${logic_title} 
     Capture Screen
-    Click Tab Buy
+    Click Tab Sell
     Capture Screen
-    Click Tab OtherExpense
+    Click Tab otherRevenue
     Capture Screen
     Click Btn Search
     ${column}=       Get Element Count        //*[@id="sl-oe-detail-0"]
