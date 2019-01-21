@@ -6,7 +6,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 
 *** Keywords ***
 
-Oe Check Search 2
+OI Check Search 2
     [Arguments]            ${username}    ${password}       ${image_name}       ${data}
     Set Selenium Speed     0.5
     Set Directory          ${image_name}
