@@ -5,11 +5,11 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 Resource             ${Path_Environment}/Page/home_page.resource
 Resource             ${Path_Environment}/Page/oe_page.resource
 Resource             ${Path_Environment}/Page/login_page.resource   
-Resource             ${Path_Environment}/Logic/TS_OI_Sr_1.resource
+Resource             ${Path_Environment}/Logic/TS_OE_Sr_1.resource
 Suite Setup          Open the web page
 Test Setup           Go to login page
 Test Teardown        Run Keyword If Test Failed     Capture Screen
-Test Template        OI Check Search 1
+Test Template        Oe Check Search 1
 Suite Teardown       Close Browser
 
 *** Variables ***
