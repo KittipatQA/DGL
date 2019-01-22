@@ -22,6 +22,7 @@ Oe Check Search 2
     Capture Screen
     Click Tab OtherExpense
     Capture Screen
+    Input Data Search    ${data}
     Click Btn Search
     Set Suite Variable       ${status_true}   สถานะถูกต้อง
     Set Suite Variable       ${status_false}  สถานะไม่ถูกต้อง
@@ -29,7 +30,6 @@ Oe Check Search 2
     ${column}=       Get Element Count        //*[contains(@id, 'sl-oe-detail')]
     Set Suite Variable       ${column}
     Run Keyword If       ${column}>0        Log To Console      มีรายการ       ELSE        fail  ${column} : ${status_value}
-    Input Data Search    ${data}
     :FOR    ${index}    IN RANGE     0     ${column}
     \   ${status_now}=   Get Text     //*[@id="sl-oe-detail-${index}"]/div[2]/label
     \   Log To Console      ${status_now}
