@@ -33,5 +33,5 @@ OI Check Search 0
     :FOR    ${index}    IN RANGE     0     ${column}
     \   ${status_now}=   Get Text     //*[@id="sl-oe-detail-${index}"]/div[3]/label
     \   Log To Console      ${status_now}
-    \   Run Keyword If      '${status_now}'=='${data}'      Pass Execution      ${status_now} : ${status_true}      ELSE      fail  ${status_now} : ${status_false}
+    \   Run Keyword If      '${status_now}'=='${data}'      Log To Console      ${status_now} : ${status_true}      ELSE      fail  ${status_now} : ${status_false}
     Capture Screen

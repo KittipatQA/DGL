@@ -41,6 +41,6 @@ OI Check Result 1
     Run Keyword If       ${column}>0        Log To Console      มีรายการ       ELSE        fail  ${column} : ${status_value}
     :FOR    ${index}    IN RANGE     0     ${column}    
     \   ${status_now}=   Get Text     //*[@id="sl-oe-detail-${index}"]/div[7]/label
-    \   Run Keyword If     $status_now in $status_line      Pass Execution      ${status_now} : ${status_true}      ELSE      fail  ${status_now} : ${status_false}
+    \   Run Keyword If     $status_now in $status_line      Log To Console      ${status_now} : ${status_true}      ELSE      fail  ${status_now} : ${status_false}
     Capture Screen
     

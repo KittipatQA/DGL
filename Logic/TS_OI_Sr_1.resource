@@ -32,5 +32,5 @@ OI Check Search 1
     ${number_document}=    Get Text     //*[@id="sl-oe-detail-0"]/div[1]/label 
     Set Suite Variable       ${status_true}   สถานะถูกต้อง
     Set Suite Variable       ${status_false}  สถานะไม่ถูกต้อง
-    Run Keyword If     '${number_document}'=='${data}'      Pass Execution      ${number_document} : ${status_true}      ELSE        fail  ${number_document} : ${status_false}  
+    Run Keyword If     '${number_document}'=='${data}'      Log To Console      ${number_document} : ${status_true}      ELSE        fail  ${number_document} : ${status_false}  
     Capture Screen
