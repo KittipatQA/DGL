@@ -7,7 +7,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 *** Keywords ***
 
 OI Check List Search 2
-    [Arguments]            ${username}    ${password}       ${image_name}       ${condition_1}      ${condition_2}      ${condition_3}      ${result_status}    ${data}
+    [Arguments]            ${username}    ${password}       ${image_name}       ${condition_1}      ${condition_2}      ${condition_3}      ${result_status}        ${result2_status}        ${data}
     Set Selenium Speed     0.5
     Set Directory          ${image_name}
     Capture Screen
@@ -33,7 +33,7 @@ OI Check List Search 2
     Capture Screen
     Input Data Search    ${data}
     Click Btn Search
-    Set Suite Variable      @{status_line}      ${result_status}
+    Set Suite Variable      @{status_line}      ${result_status}        ${result2_status}
     Set Suite Variable       ${status_true}   สถานะถูกต้อง
     Set Suite Variable       ${status_false}  สถานะไม่ถูกต้อง
     Set Suite Variable       ${status_value}  ไม่พบรายการ
