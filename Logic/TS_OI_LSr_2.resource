@@ -44,6 +44,6 @@ OI Check List Search 2
     \   ${status_now}=      Get Text     //*[@id="sl-oe-detail-${index}"]/div[7]/label
     \   Run Keyword If     $status_now in $status_line      Log To Console      ${status_now} : ${status_true}      ELSE        fail  ${status_now} : ${status_false}
     :FOR    ${index}    IN RANGE     0     ${column}
-    \   ${data_document}=    Get Text     //*[@id="sl-oe-detail-0"]/div[3]/label
+    \   ${data_document}=    Get Text     //*[@id="sl-oe-detail-0"]/div[2]/label
     \   Run Keyword If     '${data_document}'=='${data}'      Log To Console      ${data_document} : ${status_true}      ELSE        fail  ${data_document} : ${status_false}
     Capture Screen
