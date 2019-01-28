@@ -29,7 +29,7 @@ OI Add Data 1
       Input transactionDate       ${transaction_date}
       Input datePickerDueDate         ${datePickerDueDate}
       Input Department        ${detail_department}
-      Input bindingexpenseInfo
+      Input bindingexpenseInfo            ${no_bindingexpenseInfo}            
       Input description    ${detail_description}
       Input list
       Input number      ${qty}
