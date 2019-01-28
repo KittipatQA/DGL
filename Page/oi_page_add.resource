@@ -157,6 +157,7 @@ Calculator No vatType
     Get Discount
     Check Discount
     Check total exempt
+    Get paymentCash
     #Check with holding 
     Should Be Equal As Strings      ${price_now}      ${price_exempt}             
     Should Be Equal As Strings      ${price_before_vat}    ${price_result}     ${discount_now}           
