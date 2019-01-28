@@ -150,13 +150,13 @@ Check amount
 
 Calculator No vatType
     Get Price
-    Check total exempt
     Check total before vat
     #Check net amount
     Check amount
     #Check transactions before vat
     Get Discount
     Check Discount
+    Check total exempt
     #Check with holding 
     Should Be Equal As Strings      ${price_now}      ${price_exempt}             
     Should Be Equal As Strings      ${price_before_vat}    ${price_result}     ${discount_now}           
