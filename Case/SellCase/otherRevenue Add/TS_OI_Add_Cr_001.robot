@@ -8,7 +8,7 @@ Resource             ${Path_Environment}/Page/login_page.resource
 Resource             ${Path_Environment}/Logic/TS_OI_Add_Cr_1.resource
 Suite Setup          Open the web page
 Test Setup           Go to login page
-Test Template        Oe Add Data 1
+Test Template        OI Add Data 1
 Suite Teardown       Close Browser
 
 *** Variables ***

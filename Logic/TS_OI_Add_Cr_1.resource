@@ -6,7 +6,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 
 *** Keywords ***
 
-Oe Add Data 1
+OI Add Data 1
       [Arguments]            ${username}      ${password}       ${image_name}     ${supplier_code}    ${data_list}    ${transaction_date}     ${datePickerDueDate}        ${detail_department}        ${detail_description}          ${no_bindingexpenseInfo}      ${qty}      ${price}    ${discount}            ${remark}      ${paymentCashAmount}      ${status_after_add}                          
       Set Selenium Speed     0.5
       Set Directory          ${image_name}
