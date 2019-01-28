@@ -149,7 +149,7 @@ Calculator No vatType
     Check total before vat
     #Check net amount
     Check amount
-    Check transactions before vat
+    #Check transactions before vat
     Get Discount
     Check Discount
     Check with holding 
