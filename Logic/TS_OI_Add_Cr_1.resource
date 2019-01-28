@@ -8,7 +8,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 
 OI Add Data 1
       [Arguments]            ${username}      ${password}       ${image_name}     ${supplier_code}    ${transaction_date}     ${datePickerDueDate}        ${detail_department}            ${no_bindingexpenseInfo}            ${detail_description}      ${qty}      ${price}    ${discount}            ${remark}      ${paymentCashAmount}      ${status_after_add}                          
-      Set Selenium Speed     0.5
+      Set Selenium Speed     0.6
       Set Directory          ${image_name}
       Capture Screen
       Input User             ${username}
