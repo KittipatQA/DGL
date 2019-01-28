@@ -31,7 +31,7 @@ OI Add Data 1
       Input Department        ${detail_department}
       Input bindingexpenseInfo            ${no_bindingexpenseInfo}            
       Input description    ${detail_description}
-      Input list
+      #Input list
       Input number      ${qty}
       Input Price    ${price}
       Input discount    ${discount}
