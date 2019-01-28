@@ -105,7 +105,7 @@ Check Discount
     Set Suite Variable      ${price_result}
 
 Check total exempt
-    ${price_exempt}=        Get Value      id:show-oi-total-before-vat-exempt
+    ${price_exempt}=        Get Text      id:show-oi-total-before-vat-exempt
     Log To Console      ${price_exempt}
     Set Suite Variable      ${price_exempt}
 
