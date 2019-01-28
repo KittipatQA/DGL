@@ -4,8 +4,8 @@ Library              SeleniumLibrary
 *** Variables ***
 ${buy}      xpath:(//span[@class="menu-title"])[2]
 ${save_other_buy_list}      xpath:(//span[@class="menu-title"])[4]
-${sell}     xpath:(//span[@class="menu-title"])[8]
-${save_otherRevenue_sell_list}      xpath:(//span[@class="menu-title"])[10]
+${sell}     xpath:(//span[@class="menu-title"])[5]
+${save_otherRevenue_sell_list}      xpath:(//span[@class="menu-title"])[7]
 
 *** Keywords ***
 
