@@ -153,9 +153,9 @@ Calculator No vatType
     Get Discount
     Check Discount
     #Check with holding 
-    Should Be Equal As Strings      ${price_now}      ${price_exempt}       ${price_before_vat}     #${net_amount}       ${vat_amount}                             
-    Should Be Equal As Strings      ${price_now}      ${transactions_before_vat}
-    Should Be Equal As Strings      ${discount_now}     ${price_result}     #${vat_wht}
+    Should Be Equal As Strings      ${price_now}      ${price_exempt}             
+    Should Be Equal As Strings      ${price_before_vat}    ${price_result}     ${discount_now}           
+    Should Be Equal As Strings      ${payment_Cash}        ${price_before_vat}            
 
 Calculator includeVatType
     Get Price
