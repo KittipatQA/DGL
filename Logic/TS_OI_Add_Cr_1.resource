@@ -25,7 +25,7 @@ OI Add Data 1
       Click Btn Add
       Capture Screen
       Input Supplier Code     ${supplier_code}
-      Select Vat Type     ${data_list}
+      #Select Vat Type     ${data_list}
       Input transactionDate       ${transaction_date}
       Input datePickerDueDate         ${datePickerDueDate}
       Input Department        ${detail_department}
