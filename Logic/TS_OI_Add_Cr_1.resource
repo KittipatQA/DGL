@@ -29,9 +29,6 @@ Oe Add Data 1
       Input transactionDate       ${transaction_date}
       Input datePickerDueDate         ${datePickerDueDate}
       Input Department        ${detail_department}
-      Input billNo        ${detail_billNo}
-      Input billDate      ${detail_billDate}
-      Input vatPeriod     ${detail_vatPeriod}
       Input description    ${detail_description}
       Input bindingexpenseInfo      ${no_bindingexpenseInfo}
       Input number      ${qty}

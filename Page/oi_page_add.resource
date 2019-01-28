@@ -38,19 +38,6 @@ Input Department
     [Arguments]     ${detail_department}   
     Input Text      id:input-oi-detail-department     ${detail_department}
 
-Input billNo
-    [Arguments]     ${detail_billNo}              
-    Input Text      id:input-oi-detail-billNo     ${detail_billNo}
-
-Input billDate
-    [Arguments]     ${detail_billDate}
-    Clear Element Text      id:input-oi-detail-billDate              
-    Input Text      id:input-oi-detail-billDate     ${detail_billDate}
-
-Input vatPeriod
-    [Arguments]     ${detail_vatPeriod}              
-    Input Text      id:input-oi-detail-vatPeriod     ${detail_vatPeriod}
-
 Input description
     [Arguments]     ${detail_description}              
     Input Text      id:input-oi-detail-description     ${detail_description}
