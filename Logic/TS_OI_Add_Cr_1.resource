@@ -30,7 +30,6 @@ Oe Add Data 1
       Input datePickerDueDate         ${datePickerDueDate}
       Input Department        ${detail_department}
       Input description    ${detail_description}
-      Input bindingexpenseInfo      ${no_bindingexpenseInfo}
       Input number      ${qty}
       Input Price    ${price}
       Input discount    ${discount}

@@ -42,11 +42,6 @@ Input description
     [Arguments]     ${detail_description}              
     Input Text      id:input-oi-detail-description     ${detail_description}
 
-Input bindingexpenseInfo
-    [Arguments]     ${no_bindingexpenseInfo}              
-    Input Text      id:input-oi-transactions-bindingexpenseInfo-0       ${no_bindingexpenseInfo}
-    Click Element       xpath://span[@class="ngb-highlight ng-star-inserted"]
-
 Input list
     [Arguments]     ${list}
     Input Text      id:input-oi-transactions-description-0      ${list}
