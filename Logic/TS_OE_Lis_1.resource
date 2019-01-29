@@ -1,6 +1,6 @@
 *** Settings ***
 Library              SeleniumLibrary
-Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
+Resource             ${CURDIR}/.jenkins/workspace/DGL/Resource/dglforsme.resource
 
 *** Variables ***
 
@@ -32,7 +32,6 @@ Oe Check Result 1
     ...                ELSE                             Unclick Cbx cancel
     Capture Screen
     Click Btn Search
-    Log To Console      ${CURDIR}
     Set Suite Variable      @{status_line}      ${result_status}
     Set Suite Variable       ${status_true}   สถานะถูกต้อง
     Set Suite Variable       ${status_false}  สถานะไม่ถูกต้อง
