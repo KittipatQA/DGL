@@ -2,7 +2,7 @@
 Library              SeleniumLibrary
 Library		         OperatingSystem
 Library              BuiltIn
-Library              ${CURDIR}/.jenkins/workspace/DGL/Resource/dglforsme.resource
+Resource             ${CURDIR}/.jenkins/workspace/DGL/Resource/dglforsme.resource
 Resource             ${CURDIR}/Page/home_page.resource
 Resource             ${CURDIR}/Page/oe_page.resource
 Resource             ${CURDIR}/Page/login_page.resource   
