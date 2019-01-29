@@ -1,7 +1,8 @@
 *** Settings ***
 Library              SeleniumLibrary
+Library		         OperatingSystem
 Library              BuiltIn
-Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
+Resource             ${CURDIR}/.jenkins/workspace/DGL/Resource/dglforsme.resource
 Resource             ${Path_Environment}/Page/home_page.resource
 Resource             ${Path_Environment}/Page/oe_page.resource
 Resource             ${Path_Environment}/Page/login_page.resource   
