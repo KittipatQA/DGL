@@ -10,7 +10,7 @@ ${Output_url}        ${Path_Environment}/Screen
 ${Type of file}      png
 ${title}             DGL Accounting
 ${logic}             //*[@class="title"] 
-${logic_title}       :Dgl Account (v.1.0.67)
+${logic_title}       :Dgl Account (v.1.0.69)
            
 *** Keywords ***
 Open the web page
