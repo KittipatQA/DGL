@@ -1,6 +1,6 @@
 *** Settings ***
 Library              SeleniumLibrary
-Resource             ${CURDIR}/.jenkins/workspace/DGL/Resource/dglforsme.resource
+Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
 
 *** Variables ***
 
