@@ -1,6 +1,6 @@
 *** Settings ***
 Library              SeleniumLibrary
-Resource             ${ROOT}/DGL/Resource/dglforsme.resource
+Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
 
 *** Variables ***
 
@@ -18,7 +18,6 @@ Oe Check Result 1
     Wait Until Element Is Visible           ${logic}
     Element Should Contain      ${logic}       ${logic_title}
     Capture Screen
-    Log To Console      ${CURDIR}
     Click Tab Buy
     Capture Screen
     Click Tab OtherExpense
