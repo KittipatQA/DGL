@@ -2,11 +2,11 @@
 Library              SeleniumLibrary
 Library		         OperatingSystem
 Library              BuiltIn
-Resource             ../DGL/Resource/dglforsme.resource
-Resource             ../Page/home_page.resource
-Resource             ../Page/oe_page.resource
-Resource             ../Page/login_page.resource   
-Resource             ../Logic/TS_OE_Lis_1.resource
+Resource             ${ROOT}/DGL/Resource/dglforsme.resource
+Resource             ${ROOT}/Page/home_page.resource
+Resource             ${ROOT}/Page/oe_page.resource
+Resource             ${ROOT}/Page/login_page.resource   
+Resource             ${ROOT}/Logic/TS_OE_Lis_1.resource
 Suite Setup          Open the web page
 Test Setup           Go to login page
 Test Teardown        Run Keyword If Test Failed     Capture Screen

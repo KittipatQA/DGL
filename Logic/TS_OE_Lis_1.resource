@@ -1,6 +1,6 @@
 *** Settings ***
 Library              SeleniumLibrary
-Resource             ../DGL/Resource/dglforsme.resource
+Resource             ${ROOT}/DGL/Resource/dglforsme.resource
 
 *** Variables ***
 
