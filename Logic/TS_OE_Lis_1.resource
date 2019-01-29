@@ -1,6 +1,6 @@
 *** Settings ***
 Library              SeleniumLibrary
-Resource             ${JENKINS_HOME}/workspace/DGL/Resource/dglforsme.resource
+Resource             /Users/../.jenkins/workspace/DGL/Resource/dglforsme.resource
 
 *** Variables ***
 
