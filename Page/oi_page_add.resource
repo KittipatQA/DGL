@@ -203,7 +203,7 @@ Compare taxAmount
     Should Be Equal As Strings      ${return_current}     ${tax_amount}
 
 Check Status After Add
-    ${status_list}=   Get Text     //*[@id="sl-oi-detail-0"]/div[7]/label
+    ${status_list}=   Get Text     //*[@id="sl-oe-detail-0"]/div[7]
     Set Suite Variable      ${status_list}
     Log To Console      ${status_list}
 
