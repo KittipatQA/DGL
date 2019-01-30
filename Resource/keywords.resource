@@ -34,5 +34,3 @@ Convert
     Log To Console      ${return_current}               
     Set Suite Variable      ${return_current}
 
-S
-
