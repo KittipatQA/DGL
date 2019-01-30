@@ -6,6 +6,7 @@ Resource             ${Path_Environment}/Page/home_page.resource
 Resource             ${Path_Environment}/Page/oi_page_add.resource
 Resource             ${Path_Environment}/Page/login_page.resource   
 Resource             ${Path_Environment}/Logic/TS_OI_Add_Cr_2.resource
+Resource             ${Path_Environment}/Resource/keywords.resource
 Suite Setup          Open the web page
 Test Setup           Go to login page
 Test Template        OI Add Data 2
