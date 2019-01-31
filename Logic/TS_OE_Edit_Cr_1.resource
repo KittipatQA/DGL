@@ -15,8 +15,7 @@ Oe Edit Data 1
       Input Password         ${password}
       Capture Screen
       Login Submit      
-      Wait Until Element Is Visible           ${logic}
-      Element Should Contain      ${logic}       ${logic_title}           
+      Wait Until Element Is Visible           ${logic}         
       Capture Screen
       Click Tab Buy
       Capture Screen

@@ -14,7 +14,8 @@ OI Check Result 0
     Input User             ${username}    
     Input Password         ${password}
     Capture Screen
-    Login Submit                 
+    Login Submit       
+    Wait Until Element Is Visible           ${logic}          
     Capture Screen
     Click Tab Sell
     Capture Screen
