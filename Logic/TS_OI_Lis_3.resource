@@ -16,7 +16,7 @@ OI Check Result 0
     Capture Screen
     Login Submit                 
     Wait Until Element Is Visible           ${logic}
-    Should Match Regexp      ${logic}       \w\.\d\.\d.\d{2}
+    Should Match Regexp      ${logic}       \\w\.\d\.\d.\d{2}
     Capture Screen
     Click Tab Sell
     Capture Screen
