@@ -8,8 +8,6 @@ ${login_url}         ${open_url}/login
 ${Path_Environment}     /Users/USER1/.jenkins/workspace/DGL           
 ${Output_url}        ${Path_Environment}/Screen
 ${Type of file}      png
-${title}             DGL Accounting
-${logic}             //*[@class="title"] 
 ${logic_title}       :Dgl Account
            
 *** Keywords ***
