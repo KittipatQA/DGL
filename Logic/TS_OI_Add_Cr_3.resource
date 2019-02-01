@@ -7,7 +7,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 *** Keywords ***
 
 OI Add Data 3
-      [Arguments]            ${username}      ${password}       ${image_name}     ${supplier_code}          ${transaction_date}            ${no_bindingexpenseInfo}            ${detail_description}        ${qty}        ${price}            ${discount}       ${paymentCashAmount}      ${status_after_add}                          
+      [Arguments]            ${username}      ${password}       ${image_name}     ${supplier_code}          ${transaction_date}            ${no_bindingexpenseInfo}           ${no_bindingexpenseInfo2}            ${detail_description}        ${qty}            ${qty2}           ${price}          ${price2}            ${discount}         ${discount2}       ${paymentCashAmount}      ${status_after_add}                          
       Set Selenium Speed     0.6
       Set Directory          ${image_name}
       Capture Screen
@@ -32,9 +32,8 @@ OI Add Data 3
       Input number      ${qty}
       Input Price    ${price}
       Input discount    ${discount}
-      Input bindingexpenseInfo            ${no_bindingexpenseInfo}  
 
-      Input description2    ${detail_description2}
+      Input bindingexpenseInfo2            ${no_bindingexpenseInfo2}  
       #Input list
       Input number2      ${qty2}
       Input Price2    ${price2}
