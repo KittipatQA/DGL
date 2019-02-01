@@ -62,6 +62,21 @@ Input discount
     Clear Element Text      id:input-oi-transactions-discount-0        
     Input Text      id:input-oi-transactions-discount-0     ${discount}
 
+Input bindingexpenseInfo2
+    [Arguments]     ${no_bindingexpenseInfo2}              
+    Input Text      id:input-oi-transactions-bindingrevenueInfo-1       ${no_bindingexpenseInfo2}
+    Click Element       xpath://span[@class="ngb-highlight ng-star-inserted"]
+
+Input number2
+    [Arguments]     ${qty2}
+    Clear Element Text      id:input-oi-transactions-qty-1               
+    Input Text      id:input-oi-transactions-qty-1     ${qty2}
+
+Input discount2
+    [Arguments]     ${discount2}     
+    Clear Element Text      id:input-oi-transactions-discount-1        
+    Input Text      id:input-oi-transactions-discount-1     ${discount2}
+
 Input Vat
     [Arguments]     ${vatPercentage}              
     Input Text      id:sl-oi-transactions-vatPercentage-0     ${vatPercentage}
