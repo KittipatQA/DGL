@@ -32,6 +32,14 @@ OI Add Data 3
       Input number      ${qty}
       Input Price    ${price}
       Input discount    ${discount}
+      Input bindingexpenseInfo            ${no_bindingexpenseInfo}  
+
+      Input description2    ${detail_description2}
+      #Input list
+      Input number2      ${qty2}
+      Input Price2    ${price2}
+      Input discount2    ${discount2}
+      
       #Input taxAmount      ${taxAmountlist}
       Input paymentCash    ${paymentCashAmount}
       Calculator No vatType And Discount
