@@ -36,7 +36,7 @@ Convert
 
 Convert2
     [Arguments]     ${input_current2}
-    ${return_current}=  convert_cur     ${input_current2}
+    ${return_current2}=  convert_cur     ${input_current2}
     Log To Console      ${return_current2}               
     Set Suite Variable      ${return_current2}
 
