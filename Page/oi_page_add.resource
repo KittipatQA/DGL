@@ -240,6 +240,13 @@ Calculator More List Discount
     Float Change 2
     Verify addition of ${type_float_1} and ${type_float_2}
     Convert2     ${calculated_result}
+    Replace     ${return_current}
+    Float Change 1
+    Replace     ${return_current2}
+    Float Change 2
+    Verify subtraction of ${type_float_2} and ${type_float_1}
+    Convert     ${calculated_result}
+
     Verify subtraction of ${return_current2} and ${return_current}
     Convert     ${calculated_result}
 
