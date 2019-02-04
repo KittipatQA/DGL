@@ -143,6 +143,11 @@ Check total exempt
     ${price_exempt}=        Get Value      id:show-oi-total-before-vat-exempt
     Log To Console      ${price_exempt}
     Set Suite Variable      ${price_exempt}
+    
+Check total amount
+    ${price_exempt}=        Get Value      id:show-oi-total-amount
+    Log To Console      ${price_total_amount}
+    Set Suite Variable      ${price_total_amount}
 
 Check total before vat
     ${price_before_vat}=        Get Text      id:show-oi-total-before-vat
@@ -188,10 +193,11 @@ Calculator No vatType
     Check Discount
     Check total exempt
     Get paymentCash
+    Check total amount
     #Check with holding 
     Should Be Equal As Strings      ${price_now}      ${price_exempt}             
-    Should Be Equal As Strings      ${price_result}     ${discount_now}     #${price_before_vat}           
-    #Should Be Equal As Strings      ${payment_Cash}        ${price_before_vat}
+    Should Be Equal As Strings      ${price_result}     ${discount_now}     ${price_before_vat}           
+    Should Be Equal As Strings      ${payment_Cash}        ${price_total_amount}
 
 Calculator No vatType And Discount
     Calculator includeVat
