@@ -247,9 +247,6 @@ Calculator More List Discount
     Verify subtraction of ${type_float_2} and ${type_float_1}
     Convert     ${calculated_result}
 
-    Verify subtraction of ${return_current2} and ${return_current}
-    Convert     ${calculated_result}
-
                 
 
 Calculator includeVatType
