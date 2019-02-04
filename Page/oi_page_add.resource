@@ -231,8 +231,7 @@ Calculator More List Discount
     Replace     ${discount_now2}
     Float Change 2
     Verify addition of ${type_float_1} and ${type_float_2}
-    ${discount_sum}=        Convert     ${calculated_result}
-    Log To Console      ${discount_sum}
+    Convert     ${calculated_result}
     Get Price
     Replace     ${price_now}
     Float Change 1
