@@ -41,7 +41,9 @@ OI Add Data 3
       
       #Input taxAmount      ${taxAmountlist}
       Input paymentCash    ${paymentCashAmount}
-      Calculator No vatType And Discount
+      Calculator More List Discount
+      
+      #Calculator No vatType And Discount
       Capture Screen
       Click Btn Submit
       Click Btn Confirm
