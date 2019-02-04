@@ -240,6 +240,9 @@ Calculator More List Discount
     Float Change 2
     Verify addition of ${type_float_1} and ${type_float_2}
     Convert2     ${calculated_result}
+    Verify subtraction of ${return_current2} and ${return_current}
+    Convert     ${calculated_result}
+
                 
 
 Calculator includeVatType
