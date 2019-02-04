@@ -114,6 +114,11 @@ Get Price
     Log To Console      ${price_now}
     Set Suite Variable      ${price_now}
 
+Get Price 2
+    ${price_now2}=       Get Value      id:input-oi-transactions-unitPrice-1
+    Log To Console      ${price_now2}
+    Set Suite Variable      ${price_now2}
+
 Get Discount
     ${discount_now}=       Get Value      id:input-oi-transactions-discount-0
     Log To Console      ${discount_now}
@@ -227,6 +232,16 @@ Calculator More List Discount
     Float Change 2
     Verify addition of ${type_float_1} and ${type_float_2}
     Convert     ${calculated_result}
+    Get Price
+    Replace     ${price_now}
+    Float Change 1
+    Get Price 2
+    Replace     ${price_now2}
+    Float Change 2
+    Verify addition of ${type_float_1} and ${type_float_2}
+    Convert     ${calculated_result}
+
+
     Log To Console      ${return_current}                  
 
 Calculator includeVatType
