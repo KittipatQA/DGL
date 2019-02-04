@@ -197,7 +197,7 @@ Calculator No vatType
     #Check with holding 
     Should Be Equal As Strings      ${price_now}      ${price_exempt}             
     Should Be Equal As Strings      ${price_result}     ${discount_now}     ${price_before_vat}           
-    Should Be Equal As Strings      ${payment_Cash}        ${price_total_amount}
+    Should Be Equal As Strings      ${price_total_amount}       ${payment_Cash}        
 
 Calculator No vatType And Discount
     Calculator includeVat
