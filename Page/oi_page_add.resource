@@ -104,6 +104,11 @@ Input Price
     Clear Element Text      id:input-oi-transactions-unitPrice-0    
     Input Text      id:input-oi-transactions-unitPrice-0    ${price}
 
+Input Price 2
+    [Arguments]     ${price2}    
+    Clear Element Text      id:input-oi-transactions-unitPrice-1    
+    Input Text      id:input-oi-transactions-unitPrice-1    ${price2}
+
 Get Price
     ${price_now}=       Get Value      id:input-oi-transactions-unitPrice-0
     Log To Console      ${price_now}
