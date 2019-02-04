@@ -231,8 +231,8 @@ Calculator More List Discount
     Replace     ${discount_now2}
     Float Change 2
     Verify addition of ${type_float_1} and ${type_float_2}
-    Convert     ${calculated_result}
-    ${SumDiscount} =    ${return_current}
+    ${SumDiscount}=    Convert     ${calculated_result}
+    Set Suite Variable      ${SumDiscount}
     Get Price
     Replace     ${price_now}
     Float Change 1
@@ -240,8 +240,8 @@ Calculator More List Discount
     Replace     ${price_now2}
     Float Change 2
     Verify addition of ${type_float_1} and ${type_float_2}
-    Convert     ${calculated_result}
-    ${SumPrice} =    ${return_current}
+    ${SumPrice}=    Convert     ${calculated_result}
+    Set Suite Variable      ${SumPrice}
     Log To Console      ${SumDiscount}
     Log To Console      ${SumPrice}
                 
