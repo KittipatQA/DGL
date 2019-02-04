@@ -222,6 +222,7 @@ Calculator More List Discount
     Get Discount
     Replace     ${discount_now}
     Float Change 1
+    Get Discount 2
     Replace     ${discount_now2}
     Float Change 2
     Verify addition of ${type_float_1} and ${type_float_2}
