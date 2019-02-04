@@ -147,6 +147,7 @@ Check total exempt
 Check total amount
     ${last_price_total_amount}=        Get Text      id:show-oi-total-amount
     Log To Console      That: ${last_price_total_amount}
+    Set Suite Variable      ${last_price_total_amount}
 
 Check total before vat
     ${price_before_vat}=        Get Text      id:show-oi-total-before-vat
