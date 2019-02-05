@@ -219,13 +219,14 @@ Calculator No vatType And Discount
 Calculator No vatType More List And Discount 
     Calculator includeVat
     Check total before vat
-    #Check net amount
+    Check net amount
     Check amount
     #Check transactions before vat
     Get Discount
     Check Discount
     Check total exempt
     Get paymentCash
+    Check total amount
     #Check with holding 
     Should Be Equal As Strings      ${return_current}      ${price_exempt}             
     Should Be Equal As Strings      ${price_result}     ${discount_now}     #${price_before_vat}           
