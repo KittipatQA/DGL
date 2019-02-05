@@ -145,7 +145,7 @@ Check total exempt
 
     ${last_price_total_amount_input}=        Get Value      id:show-oi-total-amount
     Replace     ${last_price_total_amount_input}
-    Integer Change 2        ${no_comma}        
+    Integer Change 2       
     ${last_price_total_amount} =      ${type_int_3}
          
 Check total before vat
