@@ -261,10 +261,10 @@ Calculator More List Discount
     Verify subtraction of ${type_float_2} and ${type_float_1}
     Check amount
     Check total exempt
-    Check total before vat
     Check tax amount
     Get paymentCash
     Check total amount
+    Check total before vat
     Convert     ${calculated_result}
     Should Be Equal As Strings      ${vat_amount}      ${price_exempt}             
     Should Be Equal As Strings      ${price_before_vat}   ${tax_amount}        
