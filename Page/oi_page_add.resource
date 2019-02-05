@@ -142,11 +142,11 @@ Check total exempt
     ${price_exempt}=        Get Value      id:show-oi-total-before-vat-exempt
     Log To Console      ${price_exempt}
     Set Suite Variable      ${price_exempt}
-    
-Check total amount
+
     ${last_price_total_amount_input}=        Get Value      id:show-oi-total-amount
     Replace     ${last_price_total_amount_input}
-    ${last_price_total_amount} =        Set Suite Variable      ${no_comma}
+    Integer Change 2        ${no_comma}        
+    ${last_price_total_amount} =      ${type_int_3}
          
 Check total before vat
     ${price_before_vat}=        Get Value      id:show-oi-total-before-vat
@@ -343,6 +343,10 @@ Float Change 1
 Float Change 2
         ${type_float_2} =      Convert To Number        ${no_comma}
         Set Suite Variable      ${type_float_2}     
+
+Integer Change 2
+        ${type_int_3} =      Convert To Integer        ${no_comma}
+        Set Suite Variable      ${type_int_3}     
 
 Calculator includeVat
     Get Price
