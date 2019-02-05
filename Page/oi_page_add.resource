@@ -95,11 +95,8 @@ Input paymentCash
     Input Text      id:input-oi-detail-paymentCashAmount    ${paymentCashAmount}
 
 Get paymentCash
-    ${payment_Cash_input}=       Get Value      id:input-oi-detail-paymentCashAmount
-    Convert     ${payment_Cash_input}
-    ${payment_Cash} =       Set Suite Variable      ${return_current} 
-    Log To Console      tongnee:        ${payment_Cash}     
-    
+    ${payment_Cash}=       Get Text      id:input-oi-detail-paymentCashAmount
+    Log To Console     ${payment_Cash}
 
 Input Price
     [Arguments]     ${price}    
