@@ -208,11 +208,12 @@ Calculator No vatType And Discount
     Get Discount
     Check Discount
     Check total exempt
+    Check total amount
     Get paymentCash
     #Check with holding 
     Should Be Equal As Strings      ${return_current}      ${price_exempt}             
-    Should Be Equal As Strings      ${price_result}     ${discount_now}     #${price_before_vat}           
-    #Should Be Equal As Strings      ${payment_Cash}        ${price_before_vat}
+    Should Be Equal As Strings      ${price_result}     ${discount_now}     ${price_before_vat}           
+    Should Be Equal As Strings      ${payment_Cash}        ${last_price_total_amount}
 
 Calculator No vatType More List And Discount 
     Calculator includeVat
