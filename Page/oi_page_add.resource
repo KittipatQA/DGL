@@ -350,7 +350,7 @@ Float Change 2
 
 Float Change 3
         [Arguments]     ${input_value}
-        ${type_float_3} =      Convert To Number        ${input_value}
+        ${type_float_3} =      Convert To Number        ${input_value}      2      
         Set Suite Variable      ${type_float_3}     
 
 Calculator includeVat
