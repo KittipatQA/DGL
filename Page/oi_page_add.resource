@@ -144,10 +144,11 @@ Check total exempt
     Set Suite Variable      ${price_exempt}
     
 Check total amount
-    ${last_price_total_amount}=        Get Value      id:show-oi-total-amount
-    Log To Console      That: ${last_price_total_amount}
-    Set Suite Variable      ${last_price_total_amount}
-
+    ${last_price_total_amount_input}=        Get Value      id:show-oi-total-amount
+    Replace     ${last_price_total_amount_input}
+    Float Change 1
+    ${last_price_total_amount} =        Set Suite Variable      ${type_float_1}
+         
 Check total before vat
     ${price_before_vat}=        Get Value      id:show-oi-total-before-vat
     Log To Console       this:  ${price_before_vat}
