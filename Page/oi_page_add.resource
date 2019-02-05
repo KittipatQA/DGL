@@ -148,7 +148,8 @@ Check total exempt
 Check total amount
     ${last_price_total_amount_input}=        Get Value      id:show-oi-total-amount
     Replace     ${last_price_total_amount_input}
-    ${last_price_total_amount} =        Set Variable        ${no_comma}        
+    Float Change 1
+    ${last_price_total_amount} =        Set Variable        ${type_float_1}        
     Log To Console      Test:${last_price_total_amount}
     Set Suite Variable      ${last_price_total_amount}
          
@@ -350,7 +351,7 @@ Float Change 2
 
 Float Change 3
         [Arguments]     ${input_value}
-        ${type_float_3} =      Convert To Number        ${input_value}      2      
+        ${type_float_3} =      Convert To Number        ${input_value}      
         Set Suite Variable      ${type_float_3}     
 
 Calculator includeVat
