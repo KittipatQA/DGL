@@ -95,9 +95,8 @@ Input paymentCash
     Input Text      id:input-oi-detail-paymentCashAmount    ${paymentCashAmount}
 
 Get paymentCash
-    ${payment_Cash}=       Get Text      id:input-oi-detail-paymentCashAmount
+    ${payment_Cash}=       Get Value      id:input-oi-detail-paymentCashAmount
     Set Suite Variable       ${payment_Cash}      
-    Log To Console     Now: ${payment_Cash}
 
 Input Price
     [Arguments]     ${price}    
