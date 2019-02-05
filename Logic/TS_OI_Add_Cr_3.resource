@@ -38,11 +38,9 @@ OI Add Data 3
       Input number2      ${qty2}
       Input Price2    ${price2}
       Input discount2    ${discount2}
-      
       #Input taxAmount      ${taxAmountlist}
       Input paymentCash    ${paymentCashAmount}
       Calculator More List Discount
-      
       Capture Screen
       Click Btn Submit
       Click Btn Confirm

@@ -183,6 +183,11 @@ Check amount
     Log To Console      ${vat_amount}
     Set Suite Variable      ${vat_amount}
 
+Check tax amount
+    ${tax_amount}=        Get Value      id:input-oi-detail-taxAmount
+    Log To Console      ${tax_amount}
+    Set Suite Variable      ${tax_amount}
+
 
 Calculator No vatType
     Get Price
@@ -264,6 +269,7 @@ Calculator More List Discount
     Should Be Equal As Strings      ${vat_amount}      ${price_exempt}             
     Should Be Equal As Strings      ${price_before_vat}   ${tax_amount}        
     Should Be Equal As Strings      ${payment_Cash}        ${last_price_total_amount}
+
 
                 
 
