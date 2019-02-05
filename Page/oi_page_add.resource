@@ -345,7 +345,7 @@ Float Change 2
         Set Suite Variable      ${type_float_2}     
 
 Integer Change 2
-        ${type_int_3} =      Convert To Integer        ${no_comma}
+        ${type_int_3} =      Convert To Integer        ${no_comma}      10
         Set Suite Variable      ${type_int_3}     
 
 Calculator includeVat
