@@ -95,8 +95,10 @@ Input paymentCash
     Input Text      id:input-oi-detail-paymentCashAmount    ${paymentCashAmount}
 
 Get paymentCash
-    ${payment_Cash}=       Get Value      id:input-oi-detail-paymentCashAmount
-    Set Suite Variable       ${payment_Cash}      
+    ${payment_Cash_input}=       Get Value      id:input-oi-detail-paymentCashAmount
+    Float Change 3      ${payment_Cash_input}             
+    ${payment_Cash} =       Set Variable        ${type_float_3}
+    Set Suite Variable      ${payment_Cash}             
 
 Input Price
     [Arguments]     ${price}    
@@ -344,7 +346,12 @@ Float Change 1
 
 Float Change 2
         ${type_float_2} =      Convert To Number        ${no_comma}
-        Set Suite Variable      ${type_float_2}     
+        Set Suite Variable      ${type_float_2} 
+
+Float Change 3
+        [Arguments]     ${input_value}
+        ${type_float_2} =      Convert To Number        ${input_value}
+        Set Suite Variable      ${type_float_3}     
 
 Calculator includeVat
     Get Price
