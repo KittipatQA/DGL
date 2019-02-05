@@ -96,7 +96,7 @@ Input paymentCash
 
 Get paymentCash
     ${payment_Cash}=       Get Text      id:input-oi-detail-paymentCashAmount
-    Log To Console     ${payment_Cash}
+    Log To Console     Now: ${payment_Cash}
 
 Input Price
     [Arguments]     ${price}    
