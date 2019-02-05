@@ -183,6 +183,7 @@ Check amount
     Log To Console      ${vat_amount}
     Set Suite Variable      ${vat_amount}
 
+
 Calculator No vatType
     Get Price
     Check total before vat
@@ -252,7 +253,16 @@ Calculator More List Discount
     Replace     ${return_current2}
     Float Change 2
     Verify subtraction of ${type_float_2} and ${type_float_1}
+    Check amount
+    Check total exempt
+    Check total before vat
+    Check tax amount
+    Get paymentCash
+    Check total amount
     Convert     ${calculated_result}
+    Should Be Equal As Strings      ${vat_amount}      ${price_exempt}             
+    Should Be Equal As Strings      ${price_before_vat}   ${tax_amount}        
+    Should Be Equal As Strings      ${payment_Cash}        ${last_price_total_amount}
 
                 
 

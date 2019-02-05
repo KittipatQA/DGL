@@ -43,7 +43,6 @@ OI Add Data 3
       Input paymentCash    ${paymentCashAmount}
       Calculator More List Discount
       
-      #Calculator No vatType And Discount
       Capture Screen
       Click Btn Submit
       Click Btn Confirm
