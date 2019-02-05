@@ -96,8 +96,11 @@ Input paymentCash
 
 Get paymentCash
     ${payment_Cash_input}=       Get Value      id:input-oi-detail-paymentCashAmount
-    Convert     ${payment_Cash_input}
-    ${payment_Cash}=       Replace     ${return_current}
+    Float Change 1
+    Convert     ${type_float_1}
+    ${payment_Cash} =       Set Suite Variable      ${return_current} 
+    Log To Console      tongnee:        ${payment_Cash}     
+    
 
 Input Price
     [Arguments]     ${price}    
