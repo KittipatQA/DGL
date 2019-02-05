@@ -96,8 +96,8 @@ Input paymentCash
 
 Get paymentCash
     ${payment_Cash_input}=       Get Value      id:input-oi-detail-paymentCashAmount
-    ${payment_Cash}=    Convert     ${payment_Cash_input}
-    Log To Console      ${payment_Cash}
+    ${payment_Cash} =    Convert     ${payment_Cash_input}
+    Log To Console     now: ${payment_Cash}
 
 Input Price
     [Arguments]     ${price}    
