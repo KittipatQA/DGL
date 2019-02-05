@@ -95,7 +95,7 @@ Input paymentCash
     Input Text      id:input-oi-detail-paymentCashAmount    ${paymentCashAmount}
 
 Get paymentCash
-    ${payment_Cash}=       Get Text      id:input-oi-detail-paymentCashAmount
+    ${payment_Cash}=       Get Value      id:input-oi-detail-paymentCashAmount
     Log To Console      ${payment_Cash}
     Set Suite Variable      ${payment_Cash}
 
@@ -229,8 +229,8 @@ Calculator No vatType More List And Discount
     Get Discount
     Check Discount
     Check total exempt
-    Get paymentCash
     Check total amount
+    Get paymentCash
     Check total before vat
     #Check with holding 
     Should Be Equal As Strings      ${return_current}      ${price_exempt}             
