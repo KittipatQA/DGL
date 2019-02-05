@@ -97,7 +97,7 @@ Input paymentCash
 Get paymentCash
     ${payment_Cash_input}=       Get Value      id:input-oi-detail-paymentCashAmount
     Convert     ${payment_Cash_input}
-    ${payment_Cash} =       ${return_current}
+    ${payment_Cash}=       Set Variable        ${return_current}
 
 Input Price
     [Arguments]     ${price}    
