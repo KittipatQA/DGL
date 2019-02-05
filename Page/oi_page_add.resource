@@ -145,7 +145,8 @@ Check total exempt
 
 Check total amount
     ${last_price_total_amount_input}=        Get Value      id:show-oi-total-amount
-    ${last_price_total_amount}=     Replace     ${last_price_total_amount_input}
+    Replace     ${last_price_total_amount_input}
+    ${last_price_total_amount} =        Set Variable        ${no_comma}        
     Log To Console      Test:${last_price_total_amount}
          
 Check total before vat
