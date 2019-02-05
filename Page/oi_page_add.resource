@@ -144,8 +144,7 @@ Check total exempt
     Set Suite Variable      ${price_exempt}
 
     ${last_price_total_amount_input}=        Get Value      id:show-oi-total-amount
-    Replace     ${last_price_total_amount_input}     
-    ${last_price_total_amount} =      ${no_comma}
+    ${last_price_total_amount} =     Replace     ${last_price_total_amount_input}
          
 Check total before vat
     ${price_before_vat}=        Get Value      id:show-oi-total-before-vat
