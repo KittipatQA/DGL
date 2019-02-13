@@ -6,7 +6,7 @@ Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.reso
 
 *** Keywords ***
 
-Oe Edit Data 1
+Oe Edit Data 2
       [Arguments]            ${username}      ${password}       ${image_name}     ${supplier_code}    ${data_list}    ${transaction_date}     ${detail_billDate}      ${detail_vatPeriod}     ${detail_description}      ${list}      ${qty}      ${price}    ${discount}     ${remark}      ${paymentCashAmount}           ${status_after_add}        
       Set Selenium Speed     0.6
       Set Directory          ${image_name}
@@ -83,11 +83,11 @@ Oe Edit Data 1
       Check Status After Add Edit
       Check Payment edit status           ${status_after_edit}
       Click last list
-      Get edit supplier code 
-      Get edit billNo
-      Get edit transactionDate
-      Get edit detail description
-      Get edit detail vatPeriod
+      #Get edit supplier code 
+      #Get edit billNo
+      #Get edit transactionDate
+      #Get edit detail description
+      #Get edit detail vatPeriod
       Get edit transactions bindingexpenseInfo
       Get edit detail billDate
       Get edit transactions description
