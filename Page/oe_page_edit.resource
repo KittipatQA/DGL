@@ -12,7 +12,7 @@ ${new_billDate}     22/12/2018
 ${new_transactions_description}     ค่าอินเตอร์เน็ต
 ${new_qty}     1
 ${new_transactions_unitPrice}       6000
-${new_detail_discount}      0
+${new_detail_discount}      0.00
 ${new_detail_remark}        จ่ายค่าอินเตอร์เน็ต        
 ${new_paymentCashAmount}        6000
 ${new_status_list}      ชำระแล้ว
