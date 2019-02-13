@@ -70,14 +70,14 @@ Oe Edit Data 1
       Clear billDate
       Clear detail vatPeriod
       Clear detail description
-      Clear transactions bindingexpenseInfo
-      Clear transactions description
-      Clear transactions qty
-      Clear transactions unitPrice
-      Clear transactions discount
+      #Clear transactions bindingexpenseInfo
+      #Clear transactions description
+      #Clear transactions qty
+      #Clear transactions unitPrice
+      #Clear transactions discount
       #Clear transactions taxAmount
-      Clear detail remark
-      Clear detail paymentCashAmount
+      #Clear detail remark
+      #Clear detail paymentCashAmount
       Calculator No vatType
       Click Submit Edit Btn
       Check Status After Add Edit
