@@ -88,12 +88,12 @@ Oe Edit Data 1
       Get edit transactionDate
       Get edit detail description
       Get edit detail vatPeriod
-      #Get edit transactions bindingexpenseInfo
-      #Get edit detail billDate
-      #Get edit transactions description
-      #Get edit qty
-      #Get edit unitPrice
-      #Get edit transactions discount
-      #Get edit detail remark
-      #Get edit detail paymentCashAmount
+      Get edit transactions bindingexpenseInfo
+      Get edit detail billDate
+      Get edit transactions description
+      Get edit qty
+      Get edit unitPrice
+      Get edit transactions discount
+      Get edit detail remark
+      Get edit detail paymentCashAmount
       Capture Screen
