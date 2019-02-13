@@ -22,7 +22,7 @@ ${new_status_list}      ชำระแล้ว
 Get edit unitPrice
     ${edit_new_transactions_unitPrice}=       Get Value      id:input-oe-transactions-unitPrice-0
     Log To Console      ${edit_new_transactions_unitPrice}
-    ${Convert_unitPrice} =      convert_cur     ${edit_new_transactions_unitPrice}     
+    #${Convert_unitPrice} =      convert_cur     ${edit_new_transactions_unitPrice}     
     Should Be Equal As Strings         ${Convert_unitPrice}        ${new_transactions_unitPrice} 
 
 
