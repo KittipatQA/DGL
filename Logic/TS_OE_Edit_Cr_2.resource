@@ -63,13 +63,13 @@ Oe Edit Data 2
       Run Keyword If       ${columnafter}>${columnbefore}        Log To Console      ${status_true}       ELSE        fail  ${columnafter} : ${status_fail}
       Check Payment status    ${status_after_add}
       Click last list
-      Clear Supplier Code
-      Clear Supplier Name
-      Clear transactionDate
-      Clear billNo
-      Clear billDate
-      Clear detail vatPeriod
-      Clear detail description
+      #Clear Supplier Code
+      #Clear Supplier Name
+      #Clear transactionDate
+      #Clear billNo
+      #Clear billDate
+      #Clear detail vatPeriod
+      #Clear detail description
       Clear transactions bindingexpenseInfo
       Clear transactions description
       Clear transactions qty
