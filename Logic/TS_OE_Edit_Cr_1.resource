@@ -81,7 +81,7 @@ Oe Edit Data 1
       Calculator No vatType
       Click Submit Edit Btn
       Check Status After Add Edit
-      Check Payment edit status           ${status_after_edit}
+      #Check Payment edit status           ${status_after_edit}
       Click last list
       Get edit supplier code 
       Get edit billNo
