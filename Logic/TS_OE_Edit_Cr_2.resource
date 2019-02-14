@@ -65,7 +65,7 @@ Oe Edit Data 2
       Click last list
       #Clear Supplier Code
       #Clear Supplier Name
-      #Clear transactionDate
+      Clear transactionDate
       #Clear billNo
       Clear billDate
       #Clear detail vatPeriod
