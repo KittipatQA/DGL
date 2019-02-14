@@ -9,7 +9,7 @@ ${Path_Environment}     /Users/USER1/.jenkins/workspace/DGL
 ${Output_url}        ${Path_Environment}/Screen
 ${Type of file}      png
 ${logic_title}       :Dgl Account
-${logic}             xpath:/html/head/title
+${logic}             //*[@id="lineChart"]
            
 *** Keywords ***
 Open the web page
