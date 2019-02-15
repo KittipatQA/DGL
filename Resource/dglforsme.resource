@@ -13,7 +13,7 @@ ${logic}             //*[@id="lineChart"]
            
 *** Keywords ***
 Open the web page
-    Open Browser    ${open_url}     chrome
+    Open Browser    ${open_url}     firefox
     Maximize Browser Window
     Set Selenium Speed  0.5
 
