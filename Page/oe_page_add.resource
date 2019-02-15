@@ -26,12 +26,12 @@ Select Vat Type
 
 Input transactionDate
     [Arguments]     ${transaction_date}
-    Clear Element Text      id:input-oe-detail-transactionDate           
+    Clear Element      id:input-oe-detail-transactionDate           
     Input Text      id:input-oe-detail-transactionDate     ${transaction_date}
 
 Input datePickerDueDate
     [Arguments]     ${datePickerDueDate}
-    Clear Element Text      id:input-oe-detail-datePickerDueDate              
+    Clear Element      id:input-oe-detail-datePickerDueDate              
     Input Text      id:input-oe-detail-datePickerDueDate     ${datePickerDueDate}
 
 Input Department
@@ -44,7 +44,7 @@ Input billNo
 
 Input billDate
     [Arguments]     ${detail_billDate}
-    Clear Element Text      id:input-oe-detail-billDate              
+    Clear Element      id:input-oe-detail-billDate              
     Input Text      id:input-oe-detail-billDate     ${detail_billDate}
 
 Input vatPeriod
@@ -67,12 +67,12 @@ Input list
 
 Input number
     [Arguments]     ${qty}
-    Clear Element Text      id:input-oe-transactions-qty-0                    
+    Clear Element      id:input-oe-transactions-qty-0                    
     Input Text      id:input-oe-transactions-qty-0     ${qty}
 
 Input discount
     [Arguments]     ${discount}     
-    Clear Element Text      id:input-oe-transactions-discount-0        
+    Clear Element      id:input-oe-transactions-discount-0        
     Input Text      id:input-oe-transactions-discount-0     ${discount}
 
 Input Vat
@@ -99,7 +99,7 @@ Get paymentCash
 
 Input Price
     [Arguments]     ${price}    
-    Clear Element Text      id:input-oe-transactions-unitPrice-0    
+    Clear Element      id:input-oe-transactions-unitPrice-0    
     Input Text      id:input-oe-transactions-unitPrice-0    ${price}
 
 Get Price
