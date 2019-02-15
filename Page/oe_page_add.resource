@@ -26,12 +26,12 @@ Select Vat Type
 
 Input transactionDate
     [Arguments]     ${transaction_date}
-    Clear Element Text      id:input-oe-detail-transactionDate           
+    #Clear Element Text      id:input-oe-detail-transactionDate           
     Input Text      id:input-oe-detail-transactionDate     ${transaction_date}
 
 Input datePickerDueDate
     [Arguments]     ${datePickerDueDate}
-    Clear Element Text      id:input-oe-detail-datePickerDueDate              
+    #Clear Element Text      id:input-oe-detail-datePickerDueDate              
     Input Text      id:input-oe-detail-datePickerDueDate     ${datePickerDueDate}
 
 Input Department
