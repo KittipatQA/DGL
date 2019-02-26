@@ -5,6 +5,8 @@ Library              SeleniumLibrary
 ${status_true}      สถานะถูกต้อง
 ${status_false}     สถานะไม่ถูกต้อง
 ${table}       xpath:(//thead[@class="mat-calendar-table-header"])
+${next}     xpath:(//button[@class="mat-calendar-next-button mat-icon-button"])
+${previous}     xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])
 
 *** Keywords ***
 
