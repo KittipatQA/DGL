@@ -4,6 +4,7 @@ Library              SeleniumLibrary
 *** Variables ***
 ${status_true}      สถานะถูกต้อง
 ${status_false}     สถานะไม่ถูกต้อง
+${table}       xpath:(//thead[@class="mat-calendar-table-header"])
 
 *** Keywords ***
 
