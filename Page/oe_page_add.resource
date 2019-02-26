@@ -78,12 +78,12 @@ Input transactionDate
     Click Element       id:input-oe-detail-transactionDate
     Select Date         
     
-
 Input datePickerDueDate
     [Arguments]     ${datePickerDueDate}
-    Clear Element Text      id:input-oe-detail-datePickerDueDate              
-    Input Text      id:input-oe-detail-datePickerDueDate     ${datePickerDueDate}
-
+    Convert Time        ${datePickerDueDate}
+    Click Element       id:input-oe-detail-datePickerDueDate
+    Select Date 
+    
 Input Department
     [Arguments]     ${detail_department}   
     Input Text      id:input-oe-detail-department     ${detail_department}
