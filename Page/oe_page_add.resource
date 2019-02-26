@@ -72,7 +72,6 @@ Select Vat Type
 Input transactionDate
     [Arguments]     ${transaction_date}
     Convert Time        ${transaction_date}
-    Clear Element Text      id:input-oe-detail-transactionDate
     Select Date         
     
 
