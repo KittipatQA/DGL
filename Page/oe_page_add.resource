@@ -19,7 +19,7 @@ Convert Time
     Set Suite Variable      ${input_year} 
 
 Select Date 
-    Click Element       xpath:(//*[@id="input-oe-detail-transactionDate"])
+    #Click Element       xpath:(//*[@id="input-oe-detail-transactionDate"])
     ${currentDate} =     Get Current Date       result_format=datetime
     Log To Console      ${currentDate}
     ${year}=    Convert To Integer  ${input_year}
@@ -71,8 +71,10 @@ Select Vat Type
 
 Input transactionDate
     [Arguments]     ${transaction_date}
-    Clear Element Text      id:input-oe-detail-transactionDate           
-    Input Text      id:input-oe-detail-transactionDate     ${transaction_date}
+    Convert Time        ${transaction_date}
+    Clear Element Text      id:input-oe-detail-transactionDate
+    Select Date         
+    
 
 Input datePickerDueDate
     [Arguments]     ${datePickerDueDate}
