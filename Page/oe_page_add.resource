@@ -94,8 +94,9 @@ Input billNo
 
 Input billDate
     [Arguments]     ${detail_billDate}
-    Clear Element Text      id:input-oe-detail-billDate              
-    Input Text      id:input-oe-detail-billDate     ${detail_billDate}
+    Convert Time        ${detail_billDate}
+    Click Element       id:input-oe-detail-billDate
+    Select Date 
 
 Input vatPeriod
     [Arguments]     ${detail_vatPeriod}              
