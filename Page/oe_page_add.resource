@@ -117,7 +117,8 @@ Input list
     Click Element       xpath://span[@class="ngb-highlight ng-star-inserted"]
 
 Input number
-    [Arguments]     ${qty}     
+    [Arguments]     ${qty}
+    Click Element       id:input-oe-transactions-qty-0     
     Clear Element Text      id:input-oe-transactions-qty-0                  
     Input Text      id:input-oe-transactions-qty-0     ${qty}
 
