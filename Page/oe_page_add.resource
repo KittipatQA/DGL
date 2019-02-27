@@ -118,9 +118,7 @@ Input list
 
 Input number
     [Arguments]     ${qty}
-    Click Element       id:input-oe-transactions-qty-0     
-    Clear Element Text      id:input-oe-transactions-qty-0                  
-    Input Text      id:input-oe-transactions-qty-0     ${qty}
+    execute javascript      document.getElementById('input-oe-transactions-qty-0').value='${qty}';
 
 Input discount
     [Arguments]     ${discount}     
