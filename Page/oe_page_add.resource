@@ -118,7 +118,7 @@ Input list
 
 Input number
     [Arguments]     ${qty}
-    Input Text      id:input-oe-transactions-qty-0     ${empty}                     
+    Input Text      id:input-oe-transactions-qty-0     ${EMPTY}                  
     Input Text      id:input-oe-transactions-qty-0     ${qty}
 
 Input discount
