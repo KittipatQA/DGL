@@ -1,5 +1,5 @@
 ﻿*** Settings ***
-Library     ${Path_Environment}/Resource/easy_math.py  WITH NAME  math
+Library     ${CURDIR}/../Resource/easy_math.py  WITH NAME  math
 
 *** Keywords ***
 
