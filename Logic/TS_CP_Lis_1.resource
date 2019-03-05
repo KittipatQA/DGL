@@ -35,11 +35,10 @@ CP Check Result 1
     Set Suite Variable       ${status_true}   สถานะถูกต้อง
     Set Suite Variable       ${status_false}  สถานะไม่ถูกต้อง
     Set Suite Variable       ${status_value}  ไม่พบรายการ
-    ${column}=       Get Element Count        //*[contains(@id, 'sl-oe-detail')]
+    ${column}=       Get Element Count        //*[contains(@id, 'sl-cp-detail')]
     Set Suite Variable       ${column}
     Run Keyword If       ${column}>0        Log To Console      มีรายการ       ELSE        fail  ${column} : ${status_value}
     :FOR    ${index}    IN RANGE     0     ${column}    
-    \   ${status_now}=   Get Text     //*[@id="sl-oe-detail-${index}"]/div[7]/label
+    \   ${status_now}=   Get Text     //*[@id="sl-cp-detail-${index}"]/div[6]
     \   Run Keyword If     $status_now in $status_line      Log To Console      ${status_now} : ${status_true}      ELSE      fail  ${status_now} : ${status_false}
     Capture Screen
-    
