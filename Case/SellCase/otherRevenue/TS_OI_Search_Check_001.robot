@@ -1,11 +1,11 @@
 *** Settings ***
 Library              SeleniumLibrary
 Library              BuiltIn
-Resource             /Users/USER1/.jenkins/workspace/DGL/Resource/dglforsme.resource
-Resource             ${Path_Environment}/Page/home_page.resource
-Resource             ${Path_Environment}/Page/oe_page.resource
-Resource             ${Path_Environment}/Page/login_page.resource   
-Resource             ${Path_Environment}/Logic/TS_OI_Sr_1.resource
+Resource             ${CURDIR}/../../../Resource/dglforsme.resource
+Resource             ${CURDIR}/../../../Page/home_page.resource
+Resource             ${CURDIR}/../../../Page/oe_page.resource
+Resource             ${CURDIR}/../../../Page/login_page.resource   
+Resource             ${CURDIR}/../../../Logic/TS_OI_Sr_1.resource
 Suite Setup          Open the web page
 Test Setup           Go to login page
 Test Teardown        Run Keyword If Test Failed     Capture Screen

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="true" generated="20190228 15:14:10.521" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<robot rpa="true" generated="20190304 11:38:49.225" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
 <suite source="d:\DGL\Case\BuyCase\otherExpense Add\TS_OE_Add_Cr_002.robot" id="s1" name="TS OE Add Cr 002">
 <kw type="setup" name="Open the web page" library="dglforsme">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,21 +8,21 @@
 <arg>${open_url}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20190228 15:14:11.337" level="INFO">Opening browser 'chrome' to base url 'https://dgl-acct.addtechhub.com'.</msg>
-<status status="PASS" endtime="20190228 15:14:18.179" starttime="20190228 15:14:11.336"></status>
+<msg timestamp="20190304 11:38:49.470" level="INFO">Opening browser 'chrome' to base url 'https://dgl-acct.addtechhub.com'.</msg>
+<status status="PASS" endtime="20190304 11:38:55.008" starttime="20190304 11:38:49.469"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20190228 15:14:19.340" starttime="20190228 15:14:18.180"></status>
+<status status="PASS" endtime="20190304 11:38:56.122" starttime="20190304 11:38:55.008"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>0.5</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:19.341" starttime="20190228 15:14:19.341"></status>
+<status status="PASS" endtime="20190304 11:38:56.123" starttime="20190304 11:38:56.123"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:19.342" starttime="20190228 15:14:11.334"></status>
+<status status="PASS" endtime="20190304 11:38:56.123" starttime="20190304 11:38:49.469"></status>
 </kw>
 <test id="s1-t1" name="2ตรวจสอบการเพิ่มรายการ_กรณี_นิติบุคคลมี_VATจ่ายเจ้าหนี้ไม่มี_VAT_รายการมี_TAX(2%)_">
 <kw type="setup" name="Go to login page" library="dglforsme">
@@ -31,10 +31,10 @@
 <arguments>
 <arg>${login_url}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:19.369" level="INFO">Opening url 'https://dgl-acct.addtechhub.com/login'</msg>
-<status status="PASS" endtime="20190228 15:14:23.292" starttime="20190228 15:14:19.369"></status>
+<msg timestamp="20190304 11:38:56.130" level="INFO">Opening url 'https://dgl-acct.addtechhub.com/login'</msg>
+<status status="PASS" endtime="20190304 11:38:59.067" starttime="20190304 11:38:56.130"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:23.292" starttime="20190228 15:14:19.368"></status>
+<status status="PASS" endtime="20190304 11:38:59.067" starttime="20190304 11:38:56.129"></status>
 </kw>
 <kw name="Oe Add Data 2" library="TS_OE_Add_Cr_2">
 <arguments>
@@ -61,7 +61,7 @@
 <arguments>
 <arg>0.3</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:23.298" starttime="20190228 15:14:23.297"></status>
+<status status="PASS" endtime="20190304 11:38:59.069" starttime="20190304 11:38:59.068"></status>
 </kw>
 <kw name="Set Directory" library="dglforsme">
 <arguments>
@@ -79,18 +79,18 @@
 <assign>
 <var>${date current}</var>
 </assign>
-<msg timestamp="20190228 15:14:23.302" level="INFO">${date current} = 2019-02-28 15-14-23</msg>
-<status status="PASS" endtime="20190228 15:14:23.303" starttime="20190228 15:14:23.301"></status>
+<msg timestamp="20190304 11:38:59.069" level="INFO">${date current} = 2019-03-04 11-38-59</msg>
+<status status="PASS" endtime="20190304 11:38:59.070" starttime="20190304 11:38:59.069"></status>
 </kw>
-<msg timestamp="20190228 15:14:23.304" level="INFO">${Date} = 2019-02-28 15-14-23</msg>
-<status status="PASS" endtime="20190228 15:14:23.304" starttime="20190228 15:14:23.300"></status>
+<msg timestamp="20190304 11:38:59.070" level="INFO">${Date} = 2019-03-04 11-38-59</msg>
+<status status="PASS" endtime="20190304 11:38:59.070" starttime="20190304 11:38:59.069"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${Date}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:23.307" starttime="20190228 15:14:23.304"></status>
+<status status="PASS" endtime="20190304 11:38:59.072" starttime="20190304 11:38:59.070"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -98,10 +98,10 @@
 <arg>${Path}</arg>
 <arg>${Output_url}/${image_name} ${Date}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:23.313" level="INFO">${Path} = /Users/USER1/.jenkins/workspace/DGL/Screen/เพิ่มรายการค่าใช้จ่ายเคสสอง 2019-02-28 15-14-23</msg>
-<status status="PASS" endtime="20190228 15:14:23.313" starttime="20190228 15:14:23.307"></status>
+<msg timestamp="20190304 11:38:59.073" level="INFO">${Path} = /Users/USER1/.jenkins/workspace/DGL/Screen/เพิ่มรายการค่าใช้จ่ายเคสสอง 2019-03-04 11-38-59</msg>
+<status status="PASS" endtime="20190304 11:38:59.073" starttime="20190304 11:38:59.072"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:23.314" starttime="20190228 15:14:23.299"></status>
+<status status="PASS" endtime="20190304 11:38:59.073" starttime="20190304 11:38:59.069"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -109,10 +109,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:24.388" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-02-28%2015-14-23/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_1.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-02-28%2015-14-23/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190228 15:14:24.389" starttime="20190228 15:14:23.316"></status>
+<msg timestamp="20190304 11:38:59.686" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-03-04%2011-38-59/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_1.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-03-04%2011-38-59/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190304 11:38:59.686" starttime="20190304 11:38:59.073"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:24.389" starttime="20190228 15:14:23.314"></status>
+<status status="PASS" endtime="20190304 11:38:59.686" starttime="20190304 11:38:59.073"></status>
 </kw>
 <kw name="Input User" library="login_page">
 <arguments>
@@ -124,10 +124,10 @@
 <arg>id:input-email</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:24.391" level="INFO">Typing text 'tester_2@gmail.com' into text field 'id:input-email'.</msg>
-<status status="PASS" endtime="20190228 15:14:25.706" starttime="20190228 15:14:24.390"></status>
+<msg timestamp="20190304 11:38:59.687" level="INFO">Typing text 'tester_2@gmail.com' into text field 'id:input-email'.</msg>
+<status status="PASS" endtime="20190304 11:39:00.717" starttime="20190304 11:38:59.687"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:25.706" starttime="20190228 15:14:24.390"></status>
+<status status="PASS" endtime="20190304 11:39:00.717" starttime="20190304 11:38:59.686"></status>
 </kw>
 <kw name="Input Password" library="login_page">
 <arguments>
@@ -139,10 +139,10 @@
 <arg>id:input-password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:25.709" level="INFO">Typing text '123123' into text field 'id:input-password'.</msg>
-<status status="PASS" endtime="20190228 15:14:26.870" starttime="20190228 15:14:25.708"></status>
+<msg timestamp="20190304 11:39:00.718" level="INFO">Typing text '123123' into text field 'id:input-password'.</msg>
+<status status="PASS" endtime="20190304 11:39:01.694" starttime="20190304 11:39:00.717"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:26.870" starttime="20190228 15:14:25.707"></status>
+<status status="PASS" endtime="20190304 11:39:01.694" starttime="20190304 11:39:00.717"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -150,10 +150,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:27.679" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-02-28%2015-14-23/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_2.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-02-28%2015-14-23/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190228 15:14:27.679" starttime="20190228 15:14:26.873"></status>
+<msg timestamp="20190304 11:39:02.302" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-03-04%2011-38-59/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_2.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-03-04%2011-38-59/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190304 11:39:02.302" starttime="20190304 11:39:01.695"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:27.680" starttime="20190228 15:14:26.871"></status>
+<status status="PASS" endtime="20190304 11:39:02.302" starttime="20190304 11:39:01.694"></status>
 </kw>
 <kw name="Login Submit" library="login_page">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -161,17 +161,17 @@
 <arguments>
 <arg>id:btn-submit-login</arg>
 </arguments>
-<msg timestamp="20190228 15:14:27.682" level="INFO">Clicking button 'id:btn-submit-login'.</msg>
-<status status="PASS" endtime="20190228 15:14:29.420" starttime="20190228 15:14:27.681"></status>
+<msg timestamp="20190304 11:39:02.303" level="INFO">Clicking button 'id:btn-submit-login'.</msg>
+<status status="PASS" endtime="20190304 11:39:03.877" starttime="20190304 11:39:02.303"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:29.420" starttime="20190228 15:14:27.680"></status>
+<status status="PASS" endtime="20190304 11:39:03.877" starttime="20190304 11:39:02.303"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${logic}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:30.896" starttime="20190228 15:14:29.421"></status>
+<status status="PASS" endtime="20190304 11:39:04.591" starttime="20190304 11:39:03.877"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -179,10 +179,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:31.858" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-02-28%2015-14-23/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_3.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-02-28%2015-14-23/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190228 15:14:31.859" starttime="20190228 15:14:30.898"></status>
+<msg timestamp="20190304 11:39:05.206" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-03-04%2011-38-59/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_3.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-03-04%2011-38-59/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190304 11:39:05.206" starttime="20190304 11:39:04.591"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:31.859" starttime="20190228 15:14:30.896"></status>
+<status status="PASS" endtime="20190304 11:39:05.207" starttime="20190304 11:39:04.591"></status>
 </kw>
 <kw name="Click Tab Buy" library="home_page">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
@@ -190,18 +190,18 @@
 <arguments>
 <arg>${buy}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:32.535" level="INFO">Element 'xpath:(//span[@class="menu-title"])[2]' is displayed.</msg>
-<status status="PASS" endtime="20190228 15:14:32.535" starttime="20190228 15:14:31.862"></status>
+<msg timestamp="20190304 11:39:05.832" level="INFO">Element 'xpath:(//span[@class="menu-title"])[2]' is displayed.</msg>
+<status status="PASS" endtime="20190304 11:39:05.832" starttime="20190304 11:39:05.207"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${buy}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:32.536" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[2]'.</msg>
-<status status="PASS" endtime="20190228 15:14:33.305" starttime="20190228 15:14:32.536"></status>
+<msg timestamp="20190304 11:39:05.832" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[2]'.</msg>
+<status status="PASS" endtime="20190304 11:39:06.485" starttime="20190304 11:39:05.832"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:33.305" starttime="20190228 15:14:31.860"></status>
+<status status="PASS" endtime="20190304 11:39:06.485" starttime="20190304 11:39:05.207"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -209,10 +209,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:34.199" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-02-28%2015-14-23/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_4.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-02-28%2015-14-23/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190228 15:14:34.199" starttime="20190228 15:14:33.309"></status>
+<msg timestamp="20190304 11:39:07.096" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-03-04%2011-38-59/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_4.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-03-04%2011-38-59/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190304 11:39:07.097" starttime="20190304 11:39:06.485"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:34.200" starttime="20190228 15:14:33.306"></status>
+<status status="PASS" endtime="20190304 11:39:07.097" starttime="20190304 11:39:06.485"></status>
 </kw>
 <kw name="Click Tab OtherExpense" library="home_page">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
@@ -220,18 +220,18 @@
 <arguments>
 <arg>${save_other_buy_list}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:34.860" level="INFO">Element 'xpath:(//span[@class="menu-title"])[4]' is displayed.</msg>
-<status status="PASS" endtime="20190228 15:14:34.860" starttime="20190228 15:14:34.201"></status>
+<msg timestamp="20190304 11:39:07.721" level="INFO">Element 'xpath:(//span[@class="menu-title"])[4]' is displayed.</msg>
+<status status="PASS" endtime="20190304 11:39:07.721" starttime="20190304 11:39:07.097"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${save_other_buy_list}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:34.862" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[4]'.</msg>
-<status status="PASS" endtime="20190228 15:14:35.782" starttime="20190228 15:14:34.861"></status>
+<msg timestamp="20190304 11:39:07.721" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[4]'.</msg>
+<status status="PASS" endtime="20190304 11:39:08.425" starttime="20190304 11:39:07.721"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:35.782" starttime="20190228 15:14:34.200"></status>
+<status status="PASS" endtime="20190304 11:39:08.425" starttime="20190304 11:39:07.097"></status>
 </kw>
 <kw name="Get Element Count" library="SeleniumLibrary">
 <doc>Returns number of elements matching ``locator``.</doc>
@@ -241,8 +241,8 @@
 <assign>
 <var>${columnbefore}</var>
 </assign>
-<msg timestamp="20190228 15:14:36.108" level="INFO">${columnbefore} = 9</msg>
-<status status="PASS" endtime="20190228 15:14:36.108" starttime="20190228 15:14:35.782"></status>
+<msg timestamp="20190304 11:39:08.737" level="INFO">${columnbefore} = 1</msg>
+<status status="PASS" endtime="20190304 11:39:08.737" starttime="20190304 11:39:08.425"></status>
 </kw>
 <kw name="Click Btn Add" library="oe_page_add">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -250,10 +250,10 @@
 <arguments>
 <arg>id:btn-oe-save</arg>
 </arguments>
-<msg timestamp="20190228 15:14:36.111" level="INFO">Clicking button 'id:btn-oe-save'.</msg>
-<status status="PASS" endtime="20190228 15:14:38.287" starttime="20190228 15:14:36.109"></status>
+<msg timestamp="20190304 11:39:08.738" level="INFO">Clicking button 'id:btn-oe-save'.</msg>
+<status status="PASS" endtime="20190304 11:39:10.479" starttime="20190304 11:39:08.738"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:38.288" starttime="20190228 15:14:36.108"></status>
+<status status="PASS" endtime="20190304 11:39:10.479" starttime="20190304 11:39:08.737"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -261,10 +261,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:39.102" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-02-28%2015-14-23/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_5.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-02-28%2015-14-23/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190228 15:14:39.102" starttime="20190228 15:14:38.290"></status>
+<msg timestamp="20190304 11:39:11.078" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-03-04%2011-38-59/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_5.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-03-04%2011-38-59/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190304 11:39:11.078" starttime="20190304 11:39:10.479"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:39.106" starttime="20190228 15:14:38.289"></status>
+<status status="PASS" endtime="20190304 11:39:11.078" starttime="20190304 11:39:10.479"></status>
 </kw>
 <kw name="Input Supplier Code" library="oe_page_add">
 <arguments>
@@ -276,18 +276,18 @@
 <arg>id:input-oe-detail-code</arg>
 <arg>${supplier_code}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:39.111" level="INFO">Typing text 'D001' into text field 'id:input-oe-detail-code'.</msg>
-<status status="PASS" endtime="20190228 15:14:40.482" starttime="20190228 15:14:39.109"></status>
+<msg timestamp="20190304 11:39:11.079" level="INFO">Typing text 'D001' into text field 'id:input-oe-detail-code'.</msg>
+<status status="PASS" endtime="20190304 11:39:12.151" starttime="20190304 11:39:11.078"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>id:ngb-typeahead-0-0</arg>
 </arguments>
-<msg timestamp="20190228 15:14:40.483" level="INFO">Clicking element 'id:ngb-typeahead-0-0'.</msg>
-<status status="PASS" endtime="20190228 15:14:41.258" starttime="20190228 15:14:40.482"></status>
+<msg timestamp="20190304 11:39:12.151" level="INFO">Clicking element 'id:ngb-typeahead-0-0'.</msg>
+<status status="PASS" endtime="20190304 11:39:12.818" starttime="20190304 11:39:12.151"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:41.258" starttime="20190228 15:14:39.107"></status>
+<status status="PASS" endtime="20190304 11:39:12.818" starttime="20190304 11:39:11.078"></status>
 </kw>
 <kw name="Select Vat Type" library="oe_page_add">
 <arguments>
@@ -298,8 +298,8 @@
 <arguments>
 <arg>id:sl-oe-detail-vatType</arg>
 </arguments>
-<msg timestamp="20190228 15:14:41.260" level="INFO">Clicking element 'id:sl-oe-detail-vatType'.</msg>
-<status status="PASS" endtime="20190228 15:14:42.000" starttime="20190228 15:14:41.259"></status>
+<msg timestamp="20190304 11:39:12.819" level="INFO">Clicking element 'id:sl-oe-detail-vatType'.</msg>
+<status status="PASS" endtime="20190304 11:39:13.462" starttime="20190304 11:39:12.819"></status>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
@@ -307,10 +307,10 @@
 <arg>id:sl-oe-detail-vatType</arg>
 <arg>${data_list}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:42.002" level="INFO">Selecting options from selection list 'id:sl-oe-detail-vatType' by label รวมภาษีมูลค่าเพิ่ม.</msg>
-<status status="PASS" endtime="20190228 15:14:44.293" starttime="20190228 15:14:42.001"></status>
+<msg timestamp="20190304 11:39:13.462" level="INFO">Selecting options from selection list 'id:sl-oe-detail-vatType' by label รวมภาษีมูลค่าเพิ่ม.</msg>
+<status status="PASS" endtime="20190304 11:39:15.635" starttime="20190304 11:39:13.462"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:44.293" starttime="20190228 15:14:41.258"></status>
+<status status="PASS" endtime="20190304 11:39:15.635" starttime="20190304 11:39:12.818"></status>
 </kw>
 <kw name="Input transactionDate" library="oe_page_add">
 <arguments>
@@ -327,15 +327,15 @@
 <assign>
 <var>${date_now}</var>
 </assign>
-<msg timestamp="20190228 15:14:44.296" level="INFO">${date_now} = [u'29', u'11', u'2018']</msg>
-<status status="PASS" endtime="20190228 15:14:44.296" starttime="20190228 15:14:44.295"></status>
+<msg timestamp="20190304 11:39:15.636" level="INFO">${date_now} = [u'29', u'11', u'2018']</msg>
+<status status="PASS" endtime="20190304 11:39:15.636" starttime="20190304 11:39:15.636"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${date_now}[0]</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:44.298" starttime="20190228 15:14:44.297"></status>
+<status status="PASS" endtime="20190304 11:39:15.637" starttime="20190304 11:39:15.636"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -345,8 +345,8 @@
 <assign>
 <var>${input_date}</var>
 </assign>
-<msg timestamp="20190228 15:14:44.300" level="INFO">${input_date} = 29</msg>
-<status status="PASS" endtime="20190228 15:14:44.300" starttime="20190228 15:14:44.299"></status>
+<msg timestamp="20190304 11:39:15.638" level="INFO">${input_date} = 29</msg>
+<status status="PASS" endtime="20190304 11:39:15.638" starttime="20190304 11:39:15.638"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -356,8 +356,8 @@
 <assign>
 <var>${input_month}</var>
 </assign>
-<msg timestamp="20190228 15:14:44.303" level="INFO">${input_month} = 11</msg>
-<status status="PASS" endtime="20190228 15:14:44.303" starttime="20190228 15:14:44.302"></status>
+<msg timestamp="20190304 11:39:15.638" level="INFO">${input_month} = 11</msg>
+<status status="PASS" endtime="20190304 11:39:15.638" starttime="20190304 11:39:15.638"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -367,42 +367,42 @@
 <assign>
 <var>${input_year}</var>
 </assign>
-<msg timestamp="20190228 15:14:44.306" level="INFO">${input_year} = 2018</msg>
-<status status="PASS" endtime="20190228 15:14:44.306" starttime="20190228 15:14:44.304"></status>
+<msg timestamp="20190304 11:39:15.639" level="INFO">${input_year} = 2018</msg>
+<status status="PASS" endtime="20190304 11:39:15.639" starttime="20190304 11:39:15.639"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${input_date}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:44.308" level="INFO">${input_date} = 29</msg>
-<status status="PASS" endtime="20190228 15:14:44.308" starttime="20190228 15:14:44.307"></status>
+<msg timestamp="20190304 11:39:15.639" level="INFO">${input_date} = 29</msg>
+<status status="PASS" endtime="20190304 11:39:15.639" starttime="20190304 11:39:15.639"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${input_month}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:44.310" level="INFO">${input_month} = 11</msg>
-<status status="PASS" endtime="20190228 15:14:44.310" starttime="20190228 15:14:44.309"></status>
+<msg timestamp="20190304 11:39:15.640" level="INFO">${input_month} = 11</msg>
+<status status="PASS" endtime="20190304 11:39:15.640" starttime="20190304 11:39:15.639"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${input_year}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:44.311" level="INFO">${input_year} = 2018</msg>
-<status status="PASS" endtime="20190228 15:14:44.311" starttime="20190228 15:14:44.310"></status>
+<msg timestamp="20190304 11:39:15.640" level="INFO">${input_year} = 2018</msg>
+<status status="PASS" endtime="20190304 11:39:15.640" starttime="20190304 11:39:15.640"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:44.312" starttime="20190228 15:14:44.295"></status>
+<status status="PASS" endtime="20190304 11:39:15.640" starttime="20190304 11:39:15.635"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>id:input-oe-detail-transactionDate</arg>
 </arguments>
-<msg timestamp="20190228 15:14:44.312" level="INFO">Clicking element 'id:input-oe-detail-transactionDate'.</msg>
-<status status="PASS" endtime="20190228 15:14:45.288" starttime="20190228 15:14:44.312"></status>
+<msg timestamp="20190304 11:39:15.640" level="INFO">Clicking element 'id:input-oe-detail-transactionDate'.</msg>
+<status status="PASS" endtime="20190304 11:39:16.360" starttime="20190304 11:39:15.640"></status>
 </kw>
 <kw name="Select Date" library="oe_page_add">
 <kw name="Get Current Date" library="DateTime">
@@ -413,15 +413,15 @@
 <assign>
 <var>${currentDate}</var>
 </assign>
-<msg timestamp="20190228 15:14:45.291" level="INFO">${currentDate} = 2019-02-28 15:14:45.291000</msg>
-<status status="PASS" endtime="20190228 15:14:45.291" starttime="20190228 15:14:45.289"></status>
+<msg timestamp="20190304 11:39:16.361" level="INFO">${currentDate} = 2019-03-04 11:39:16.361000</msg>
+<status status="PASS" endtime="20190304 11:39:16.361" starttime="20190304 11:39:16.361"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${currentDate}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:45.296" starttime="20190228 15:14:45.292"></status>
+<status status="PASS" endtime="20190304 11:39:16.363" starttime="20190304 11:39:16.361"></status>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <doc>Converts the given item to an integer number.</doc>
@@ -431,8 +431,8 @@
 <assign>
 <var>${year}</var>
 </assign>
-<msg timestamp="20190228 15:14:45.298" level="INFO">${year} = 2018</msg>
-<status status="PASS" endtime="20190228 15:14:45.299" starttime="20190228 15:14:45.297"></status>
+<msg timestamp="20190304 11:39:16.364" level="INFO">${year} = 2018</msg>
+<status status="PASS" endtime="20190304 11:39:16.364" starttime="20190304 11:39:16.364"></status>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <doc>Converts the given item to an integer number.</doc>
@@ -442,8 +442,8 @@
 <assign>
 <var>${month}</var>
 </assign>
-<msg timestamp="20190228 15:14:45.301" level="INFO">${month} = 11</msg>
-<status status="PASS" endtime="20190228 15:14:45.301" starttime="20190228 15:14:45.299"></status>
+<msg timestamp="20190304 11:39:16.364" level="INFO">${month} = 11</msg>
+<status status="PASS" endtime="20190304 11:39:16.364" starttime="20190304 11:39:16.364"></status>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <doc>Converts the given item to an integer number.</doc>
@@ -453,8 +453,8 @@
 <assign>
 <var>${date}</var>
 </assign>
-<msg timestamp="20190228 15:14:45.303" level="INFO">${date} = 29</msg>
-<status status="PASS" endtime="20190228 15:14:45.303" starttime="20190228 15:14:45.301"></status>
+<msg timestamp="20190304 11:39:16.365" level="INFO">${date} = 29</msg>
+<status status="PASS" endtime="20190304 11:39:16.365" starttime="20190304 11:39:16.365"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
@@ -464,8 +464,8 @@
 <assign>
 <var>${month-diff}</var>
 </assign>
-<msg timestamp="20190228 15:14:45.306" level="INFO">${month-diff} = 9</msg>
-<status status="PASS" endtime="20190228 15:14:45.306" starttime="20190228 15:14:45.304"></status>
+<msg timestamp="20190304 11:39:16.365" level="INFO">${month-diff} = 8</msg>
+<status status="PASS" endtime="20190304 11:39:16.365" starttime="20190304 11:39:16.365"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
@@ -475,8 +475,8 @@
 <assign>
 <var>${year-diff}</var>
 </assign>
-<msg timestamp="20190228 15:14:45.310" level="INFO">${year-diff} = -1</msg>
-<status status="PASS" endtime="20190228 15:14:45.310" starttime="20190228 15:14:45.307"></status>
+<msg timestamp="20190304 11:39:16.366" level="INFO">${year-diff} = -1</msg>
+<status status="PASS" endtime="20190304 11:39:16.366" starttime="20190304 11:39:16.366"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
@@ -486,29 +486,29 @@
 <assign>
 <var>${move}</var>
 </assign>
-<msg timestamp="20190228 15:14:45.311" level="INFO">${move} = -3</msg>
-<status status="PASS" endtime="20190228 15:14:45.311" starttime="20190228 15:14:45.310"></status>
+<msg timestamp="20190304 11:39:16.367" level="INFO">${move} = -4</msg>
+<status status="PASS" endtime="20190304 11:39:16.367" starttime="20190304 11:39:16.366"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${month-diff}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:45.312" starttime="20190228 15:14:45.311"></status>
+<status status="PASS" endtime="20190304 11:39:16.368" starttime="20190304 11:39:16.367"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${year-diff}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:45.315" starttime="20190228 15:14:45.313"></status>
+<status status="PASS" endtime="20190304 11:39:16.369" starttime="20190304 11:39:16.368"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${move}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:45.318" starttime="20190228 15:14:45.315"></status>
+<status status="PASS" endtime="20190304 11:39:16.370" starttime="20190304 11:39:16.369"></status>
 </kw>
 <kw name="Set Variable If" library="BuiltIn">
 <doc>Sets variable based on the given condition.</doc>
@@ -527,10 +527,10 @@
 <arg>${move}&lt;0</arg>
 <arg>0</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:45.322" starttime="20190228 15:14:45.321"></status>
+<status status="PASS" endtime="20190304 11:39:16.371" starttime="20190304 11:39:16.370"></status>
 </kw>
-<msg timestamp="20190228 15:14:45.323" level="INFO">${shiftForward} = 0</msg>
-<status status="PASS" endtime="20190228 15:14:45.323" starttime="20190228 15:14:45.319"></status>
+<msg timestamp="20190304 11:39:16.371" level="INFO">${shiftForward} = 0</msg>
+<status status="PASS" endtime="20190304 11:39:16.371" starttime="20190304 11:39:16.370"></status>
 </kw>
 <kw name="Set Variable If" library="BuiltIn">
 <doc>Sets variable based on the given condition.</doc>
@@ -549,10 +549,10 @@
 <arg>${move}&lt;0</arg>
 <arg>${move}*-1</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:45.327" starttime="20190228 15:14:45.325"></status>
+<status status="PASS" endtime="20190304 11:39:16.372" starttime="20190304 11:39:16.371"></status>
 </kw>
-<msg timestamp="20190228 15:14:45.328" level="INFO">${move} = -3*-1</msg>
-<status status="PASS" endtime="20190228 15:14:45.328" starttime="20190228 15:14:45.324"></status>
+<msg timestamp="20190304 11:39:16.372" level="INFO">${move} = -4*-1</msg>
+<status status="PASS" endtime="20190304 11:39:16.372" starttime="20190304 11:39:16.371"></status>
 </kw>
 <kw type="for" name="${var} IN RANGE [ 0 | ${move} ]">
 <kw type="foritem" name="${var} = 0">
@@ -561,15 +561,15 @@
 <arguments>
 <arg>${table}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:46.012" starttime="20190228 15:14:45.330"></status>
+<status status="PASS" endtime="20190304 11:39:16.995" starttime="20190304 11:39:16.372"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${table}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:46.013" level="INFO">Clicking element 'xpath:(//thead[@class="mat-calendar-table-header"])'.</msg>
-<status status="PASS" endtime="20190228 15:14:46.745" starttime="20190228 15:14:46.012"></status>
+<msg timestamp="20190304 11:39:16.995" level="INFO">Clicking element 'xpath:(//thead[@class="mat-calendar-table-header"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:17.650" starttime="20190304 11:39:16.995"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -583,10 +583,10 @@
 <arguments>
 <arg>${previous}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:46.747" level="INFO">Clicking element 'xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])'.</msg>
-<status status="PASS" endtime="20190228 15:14:47.520" starttime="20190228 15:14:46.746"></status>
+<msg timestamp="20190304 11:39:17.650" level="INFO">Clicking element 'xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:18.325" starttime="20190304 11:39:17.650"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:47.520" starttime="20190228 15:14:46.746"></status>
+<status status="PASS" endtime="20190304 11:39:18.325" starttime="20190304 11:39:17.650"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -595,9 +595,9 @@
 <arg>Click Element</arg>
 <arg>${next}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:47.521" starttime="20190228 15:14:47.520"></status>
+<status status="PASS" endtime="20190304 11:39:18.325" starttime="20190304 11:39:18.325"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:47.521" starttime="20190228 15:14:45.329"></status>
+<status status="PASS" endtime="20190304 11:39:18.325" starttime="20190304 11:39:16.372"></status>
 </kw>
 <kw type="foritem" name="${var} = 1">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -605,15 +605,15 @@
 <arguments>
 <arg>${table}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:48.165" starttime="20190228 15:14:47.523"></status>
+<status status="PASS" endtime="20190304 11:39:18.941" starttime="20190304 11:39:18.326"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${table}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:48.167" level="INFO">Clicking element 'xpath:(//thead[@class="mat-calendar-table-header"])'.</msg>
-<status status="PASS" endtime="20190228 15:14:48.849" starttime="20190228 15:14:48.166"></status>
+<msg timestamp="20190304 11:39:18.941" level="INFO">Clicking element 'xpath:(//thead[@class="mat-calendar-table-header"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:19.580" starttime="20190304 11:39:18.941"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -627,10 +627,10 @@
 <arguments>
 <arg>${previous}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:48.851" level="INFO">Clicking element 'xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])'.</msg>
-<status status="PASS" endtime="20190228 15:14:49.583" starttime="20190228 15:14:48.850"></status>
+<msg timestamp="20190304 11:39:19.580" level="INFO">Clicking element 'xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:20.235" starttime="20190304 11:39:19.580"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:49.583" starttime="20190228 15:14:48.849"></status>
+<status status="PASS" endtime="20190304 11:39:20.235" starttime="20190304 11:39:19.580"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -639,9 +639,9 @@
 <arg>Click Element</arg>
 <arg>${next}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:49.585" starttime="20190228 15:14:49.584"></status>
+<status status="PASS" endtime="20190304 11:39:20.235" starttime="20190304 11:39:20.235"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:49.585" starttime="20190228 15:14:47.523"></status>
+<status status="PASS" endtime="20190304 11:39:20.235" starttime="20190304 11:39:18.325"></status>
 </kw>
 <kw type="foritem" name="${var} = 2">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -649,15 +649,15 @@
 <arguments>
 <arg>${table}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:50.221" starttime="20190228 15:14:49.585"></status>
+<status status="PASS" endtime="20190304 11:39:20.852" starttime="20190304 11:39:20.236"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${table}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:50.222" level="INFO">Clicking element 'xpath:(//thead[@class="mat-calendar-table-header"])'.</msg>
-<status status="PASS" endtime="20190228 15:14:50.894" starttime="20190228 15:14:50.222"></status>
+<msg timestamp="20190304 11:39:20.852" level="INFO">Clicking element 'xpath:(//thead[@class="mat-calendar-table-header"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:21.492" starttime="20190304 11:39:20.852"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -671,10 +671,10 @@
 <arguments>
 <arg>${previous}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:50.895" level="INFO">Clicking element 'xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])'.</msg>
-<status status="PASS" endtime="20190228 15:14:51.600" starttime="20190228 15:14:50.895"></status>
+<msg timestamp="20190304 11:39:21.493" level="INFO">Clicking element 'xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:22.146" starttime="20190304 11:39:21.493"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:51.600" starttime="20190228 15:14:50.894"></status>
+<status status="PASS" endtime="20190304 11:39:22.146" starttime="20190304 11:39:21.492"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -683,19 +683,63 @@
 <arg>Click Element</arg>
 <arg>${next}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:51.601" starttime="20190228 15:14:51.601"></status>
+<status status="PASS" endtime="20190304 11:39:22.147" starttime="20190304 11:39:22.146"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:51.602" starttime="20190228 15:14:49.585"></status>
+<status status="PASS" endtime="20190304 11:39:22.147" starttime="20190304 11:39:20.236"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:51.602" starttime="20190228 15:14:45.328"></status>
+<kw type="foritem" name="${var} = 3">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${table}</arg>
+</arguments>
+<status status="PASS" endtime="20190304 11:39:22.763" starttime="20190304 11:39:22.147"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${table}</arg>
+</arguments>
+<msg timestamp="20190304 11:39:22.763" level="INFO">Clicking element 'xpath:(//thead[@class="mat-calendar-table-header"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:23.403" starttime="20190304 11:39:22.763"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${shiftForward}==0</arg>
+<arg>Click Element</arg>
+<arg>${previous}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${previous}</arg>
+</arguments>
+<msg timestamp="20190304 11:39:23.404" level="INFO">Clicking element 'xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:24.058" starttime="20190304 11:39:23.404"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:39:24.058" starttime="20190304 11:39:23.403"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${shiftForward}==1</arg>
+<arg>Click Element</arg>
+<arg>${next}</arg>
+</arguments>
+<status status="PASS" endtime="20190304 11:39:24.058" starttime="20190304 11:39:24.058"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:39:24.058" starttime="20190304 11:39:22.147"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:39:24.058" starttime="20190304 11:39:16.372"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:(//div[@class="mat-calendar-body-cell-content"])[${date}]</arg>
 </arguments>
-<msg timestamp="20190228 15:14:51.602" level="INFO">Clicking element 'xpath:(//div[@class="mat-calendar-body-cell-content"])[29]'.</msg>
-<status status="PASS" endtime="20190228 15:14:52.382" starttime="20190228 15:14:51.602"></status>
+<msg timestamp="20190304 11:39:24.059" level="INFO">Clicking element 'xpath:(//div[@class="mat-calendar-body-cell-content"])[29]'.</msg>
+<status status="PASS" endtime="20190304 11:39:24.748" starttime="20190304 11:39:24.058"></status>
 </kw>
 <kw name="Get Value" library="SeleniumLibrary">
 <doc>Returns the value attribute of element identified by ``locator``.</doc>
@@ -705,19 +749,19 @@
 <assign>
 <var>${Log_transactionDate}</var>
 </assign>
-<msg timestamp="20190228 15:14:53.021" level="INFO">${Log_transactionDate} = 29/11/2018</msg>
-<status status="PASS" endtime="20190228 15:14:53.021" starttime="20190228 15:14:52.383"></status>
+<msg timestamp="20190304 11:39:25.368" level="INFO">${Log_transactionDate} = 29/11/2018</msg>
+<status status="PASS" endtime="20190304 11:39:25.368" starttime="20190304 11:39:24.748"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${Log_transactionDate}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:53.025" starttime="20190228 15:14:53.022"></status>
+<status status="PASS" endtime="20190304 11:39:25.369" starttime="20190304 11:39:25.368"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:53.026" starttime="20190228 15:14:45.288"></status>
+<status status="PASS" endtime="20190304 11:39:25.370" starttime="20190304 11:39:16.360"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:53.026" starttime="20190228 15:14:44.293"></status>
+<status status="PASS" endtime="20190304 11:39:25.370" starttime="20190304 11:39:15.635"></status>
 </kw>
 <kw name="Input billDate" library="oe_page_add">
 <arguments>
@@ -734,15 +778,15 @@
 <assign>
 <var>${date_now}</var>
 </assign>
-<msg timestamp="20190228 15:14:53.029" level="INFO">${date_now} = [u'21', u'11', u'2018']</msg>
-<status status="PASS" endtime="20190228 15:14:53.029" starttime="20190228 15:14:53.029"></status>
+<msg timestamp="20190304 11:39:25.371" level="INFO">${date_now} = [u'21', u'11', u'2018']</msg>
+<status status="PASS" endtime="20190304 11:39:25.371" starttime="20190304 11:39:25.371"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${date_now}[0]</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:53.031" starttime="20190228 15:14:53.029"></status>
+<status status="PASS" endtime="20190304 11:39:25.372" starttime="20190304 11:39:25.371"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -752,8 +796,8 @@
 <assign>
 <var>${input_date}</var>
 </assign>
-<msg timestamp="20190228 15:14:53.033" level="INFO">${input_date} = 21</msg>
-<status status="PASS" endtime="20190228 15:14:53.033" starttime="20190228 15:14:53.033"></status>
+<msg timestamp="20190304 11:39:25.372" level="INFO">${input_date} = 21</msg>
+<status status="PASS" endtime="20190304 11:39:25.372" starttime="20190304 11:39:25.372"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -763,8 +807,8 @@
 <assign>
 <var>${input_month}</var>
 </assign>
-<msg timestamp="20190228 15:14:53.035" level="INFO">${input_month} = 11</msg>
-<status status="PASS" endtime="20190228 15:14:53.035" starttime="20190228 15:14:53.034"></status>
+<msg timestamp="20190304 11:39:25.373" level="INFO">${input_month} = 11</msg>
+<status status="PASS" endtime="20190304 11:39:25.373" starttime="20190304 11:39:25.372"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -774,42 +818,42 @@
 <assign>
 <var>${input_year}</var>
 </assign>
-<msg timestamp="20190228 15:14:53.038" level="INFO">${input_year} = 2018</msg>
-<status status="PASS" endtime="20190228 15:14:53.038" starttime="20190228 15:14:53.036"></status>
+<msg timestamp="20190304 11:39:25.373" level="INFO">${input_year} = 2018</msg>
+<status status="PASS" endtime="20190304 11:39:25.373" starttime="20190304 11:39:25.373"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${input_date}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:53.040" level="INFO">${input_date} = 21</msg>
-<status status="PASS" endtime="20190228 15:14:53.040" starttime="20190228 15:14:53.039"></status>
+<msg timestamp="20190304 11:39:25.373" level="INFO">${input_date} = 21</msg>
+<status status="PASS" endtime="20190304 11:39:25.373" starttime="20190304 11:39:25.373"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${input_month}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:53.041" level="INFO">${input_month} = 11</msg>
-<status status="PASS" endtime="20190228 15:14:53.041" starttime="20190228 15:14:53.040"></status>
+<msg timestamp="20190304 11:39:25.374" level="INFO">${input_month} = 11</msg>
+<status status="PASS" endtime="20190304 11:39:25.374" starttime="20190304 11:39:25.374"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${input_year}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:53.043" level="INFO">${input_year} = 2018</msg>
-<status status="PASS" endtime="20190228 15:14:53.043" starttime="20190228 15:14:53.042"></status>
+<msg timestamp="20190304 11:39:25.374" level="INFO">${input_year} = 2018</msg>
+<status status="PASS" endtime="20190304 11:39:25.374" starttime="20190304 11:39:25.374"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:53.043" starttime="20190228 15:14:53.028"></status>
+<status status="PASS" endtime="20190304 11:39:25.375" starttime="20190304 11:39:25.370"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>id:input-oe-detail-billDate</arg>
 </arguments>
-<msg timestamp="20190228 15:14:53.044" level="INFO">Clicking element 'id:input-oe-detail-billDate'.</msg>
-<status status="PASS" endtime="20190228 15:14:53.823" starttime="20190228 15:14:53.044"></status>
+<msg timestamp="20190304 11:39:25.375" level="INFO">Clicking element 'id:input-oe-detail-billDate'.</msg>
+<status status="PASS" endtime="20190304 11:39:26.062" starttime="20190304 11:39:25.375"></status>
 </kw>
 <kw name="Select Date" library="oe_page_add">
 <kw name="Get Current Date" library="DateTime">
@@ -820,15 +864,15 @@
 <assign>
 <var>${currentDate}</var>
 </assign>
-<msg timestamp="20190228 15:14:53.827" level="INFO">${currentDate} = 2019-02-28 15:14:53.827000</msg>
-<status status="PASS" endtime="20190228 15:14:53.827" starttime="20190228 15:14:53.825"></status>
+<msg timestamp="20190304 11:39:26.063" level="INFO">${currentDate} = 2019-03-04 11:39:26.063000</msg>
+<status status="PASS" endtime="20190304 11:39:26.063" starttime="20190304 11:39:26.062"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${currentDate}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:53.831" starttime="20190228 15:14:53.827"></status>
+<status status="PASS" endtime="20190304 11:39:26.065" starttime="20190304 11:39:26.063"></status>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <doc>Converts the given item to an integer number.</doc>
@@ -838,8 +882,8 @@
 <assign>
 <var>${year}</var>
 </assign>
-<msg timestamp="20190228 15:14:53.832" level="INFO">${year} = 2018</msg>
-<status status="PASS" endtime="20190228 15:14:53.832" starttime="20190228 15:14:53.832"></status>
+<msg timestamp="20190304 11:39:26.065" level="INFO">${year} = 2018</msg>
+<status status="PASS" endtime="20190304 11:39:26.065" starttime="20190304 11:39:26.065"></status>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <doc>Converts the given item to an integer number.</doc>
@@ -849,8 +893,8 @@
 <assign>
 <var>${month}</var>
 </assign>
-<msg timestamp="20190228 15:14:53.833" level="INFO">${month} = 11</msg>
-<status status="PASS" endtime="20190228 15:14:53.834" starttime="20190228 15:14:53.833"></status>
+<msg timestamp="20190304 11:39:26.066" level="INFO">${month} = 11</msg>
+<status status="PASS" endtime="20190304 11:39:26.066" starttime="20190304 11:39:26.065"></status>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <doc>Converts the given item to an integer number.</doc>
@@ -860,8 +904,8 @@
 <assign>
 <var>${date}</var>
 </assign>
-<msg timestamp="20190228 15:14:53.835" level="INFO">${date} = 21</msg>
-<status status="PASS" endtime="20190228 15:14:53.835" starttime="20190228 15:14:53.835"></status>
+<msg timestamp="20190304 11:39:26.066" level="INFO">${date} = 21</msg>
+<status status="PASS" endtime="20190304 11:39:26.066" starttime="20190304 11:39:26.066"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
@@ -871,8 +915,8 @@
 <assign>
 <var>${month-diff}</var>
 </assign>
-<msg timestamp="20190228 15:14:53.836" level="INFO">${month-diff} = 9</msg>
-<status status="PASS" endtime="20190228 15:14:53.836" starttime="20190228 15:14:53.836"></status>
+<msg timestamp="20190304 11:39:26.067" level="INFO">${month-diff} = 8</msg>
+<status status="PASS" endtime="20190304 11:39:26.067" starttime="20190304 11:39:26.066"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
@@ -882,8 +926,8 @@
 <assign>
 <var>${year-diff}</var>
 </assign>
-<msg timestamp="20190228 15:14:53.836" level="INFO">${year-diff} = -1</msg>
-<status status="PASS" endtime="20190228 15:14:53.836" starttime="20190228 15:14:53.836"></status>
+<msg timestamp="20190304 11:39:26.067" level="INFO">${year-diff} = -1</msg>
+<status status="PASS" endtime="20190304 11:39:26.067" starttime="20190304 11:39:26.067"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
@@ -893,29 +937,29 @@
 <assign>
 <var>${move}</var>
 </assign>
-<msg timestamp="20190228 15:14:53.836" level="INFO">${move} = -3</msg>
-<status status="PASS" endtime="20190228 15:14:53.836" starttime="20190228 15:14:53.836"></status>
+<msg timestamp="20190304 11:39:26.068" level="INFO">${move} = -4</msg>
+<status status="PASS" endtime="20190304 11:39:26.068" starttime="20190304 11:39:26.067"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${month-diff}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:53.843" starttime="20190228 15:14:53.837"></status>
+<status status="PASS" endtime="20190304 11:39:26.069" starttime="20190304 11:39:26.068"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${year-diff}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:53.845" starttime="20190228 15:14:53.843"></status>
+<status status="PASS" endtime="20190304 11:39:26.069" starttime="20190304 11:39:26.069"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${move}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:53.848" starttime="20190228 15:14:53.846"></status>
+<status status="PASS" endtime="20190304 11:39:26.070" starttime="20190304 11:39:26.070"></status>
 </kw>
 <kw name="Set Variable If" library="BuiltIn">
 <doc>Sets variable based on the given condition.</doc>
@@ -934,10 +978,10 @@
 <arg>${move}&lt;0</arg>
 <arg>0</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:53.851" starttime="20190228 15:14:53.850"></status>
+<status status="PASS" endtime="20190304 11:39:26.071" starttime="20190304 11:39:26.071"></status>
 </kw>
-<msg timestamp="20190228 15:14:53.852" level="INFO">${shiftForward} = 0</msg>
-<status status="PASS" endtime="20190228 15:14:53.852" starttime="20190228 15:14:53.848"></status>
+<msg timestamp="20190304 11:39:26.071" level="INFO">${shiftForward} = 0</msg>
+<status status="PASS" endtime="20190304 11:39:26.071" starttime="20190304 11:39:26.070"></status>
 </kw>
 <kw name="Set Variable If" library="BuiltIn">
 <doc>Sets variable based on the given condition.</doc>
@@ -956,10 +1000,10 @@
 <arg>${move}&lt;0</arg>
 <arg>${move}*-1</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:53.856" starttime="20190228 15:14:53.855"></status>
+<status status="PASS" endtime="20190304 11:39:26.072" starttime="20190304 11:39:26.072"></status>
 </kw>
-<msg timestamp="20190228 15:14:53.856" level="INFO">${move} = -3*-1</msg>
-<status status="PASS" endtime="20190228 15:14:53.857" starttime="20190228 15:14:53.853"></status>
+<msg timestamp="20190304 11:39:26.072" level="INFO">${move} = -4*-1</msg>
+<status status="PASS" endtime="20190304 11:39:26.072" starttime="20190304 11:39:26.071"></status>
 </kw>
 <kw type="for" name="${var} IN RANGE [ 0 | ${move} ]">
 <kw type="foritem" name="${var} = 0">
@@ -968,15 +1012,15 @@
 <arguments>
 <arg>${table}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:54.496" starttime="20190228 15:14:53.858"></status>
+<status status="PASS" endtime="20190304 11:39:26.692" starttime="20190304 11:39:26.072"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${table}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:54.496" level="INFO">Clicking element 'xpath:(//thead[@class="mat-calendar-table-header"])'.</msg>
-<status status="PASS" endtime="20190228 15:14:55.202" starttime="20190228 15:14:54.496"></status>
+<msg timestamp="20190304 11:39:26.692" level="INFO">Clicking element 'xpath:(//thead[@class="mat-calendar-table-header"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:27.344" starttime="20190304 11:39:26.692"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -990,10 +1034,10 @@
 <arguments>
 <arg>${previous}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:55.205" level="INFO">Clicking element 'xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])'.</msg>
-<status status="PASS" endtime="20190228 15:14:55.941" starttime="20190228 15:14:55.204"></status>
+<msg timestamp="20190304 11:39:27.345" level="INFO">Clicking element 'xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:28.010" starttime="20190304 11:39:27.344"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:55.941" starttime="20190228 15:14:55.203"></status>
+<status status="PASS" endtime="20190304 11:39:28.010" starttime="20190304 11:39:27.344"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -1002,9 +1046,9 @@
 <arg>Click Element</arg>
 <arg>${next}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:55.942" starttime="20190228 15:14:55.941"></status>
+<status status="PASS" endtime="20190304 11:39:28.010" starttime="20190304 11:39:28.010"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:55.942" starttime="20190228 15:14:53.857"></status>
+<status status="PASS" endtime="20190304 11:39:28.010" starttime="20190304 11:39:26.072"></status>
 </kw>
 <kw type="foritem" name="${var} = 1">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -1012,15 +1056,15 @@
 <arguments>
 <arg>${table}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:56.579" starttime="20190228 15:14:55.942"></status>
+<status status="PASS" endtime="20190304 11:39:28.625" starttime="20190304 11:39:28.010"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${table}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:56.579" level="INFO">Clicking element 'xpath:(//thead[@class="mat-calendar-table-header"])'.</msg>
-<status status="PASS" endtime="20190228 15:14:57.277" starttime="20190228 15:14:56.579"></status>
+<msg timestamp="20190304 11:39:28.625" level="INFO">Clicking element 'xpath:(//thead[@class="mat-calendar-table-header"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:29.264" starttime="20190304 11:39:28.625"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -1034,10 +1078,10 @@
 <arguments>
 <arg>${previous}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:57.278" level="INFO">Clicking element 'xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])'.</msg>
-<status status="PASS" endtime="20190228 15:14:58.036" starttime="20190228 15:14:57.277"></status>
+<msg timestamp="20190304 11:39:29.265" level="INFO">Clicking element 'xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:29.928" starttime="20190304 11:39:29.265"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:58.036" starttime="20190228 15:14:57.277"></status>
+<status status="PASS" endtime="20190304 11:39:29.928" starttime="20190304 11:39:29.264"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -1046,9 +1090,9 @@
 <arg>Click Element</arg>
 <arg>${next}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:58.038" starttime="20190228 15:14:58.037"></status>
+<status status="PASS" endtime="20190304 11:39:29.928" starttime="20190304 11:39:29.928"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:14:58.038" starttime="20190228 15:14:55.942"></status>
+<status status="PASS" endtime="20190304 11:39:29.928" starttime="20190304 11:39:28.010"></status>
 </kw>
 <kw type="foritem" name="${var} = 2">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -1056,15 +1100,15 @@
 <arguments>
 <arg>${table}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:14:58.681" starttime="20190228 15:14:58.038"></status>
+<status status="PASS" endtime="20190304 11:39:30.546" starttime="20190304 11:39:29.929"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${table}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:58.684" level="INFO">Clicking element 'xpath:(//thead[@class="mat-calendar-table-header"])'.</msg>
-<status status="PASS" endtime="20190228 15:14:59.370" starttime="20190228 15:14:58.682"></status>
+<msg timestamp="20190304 11:39:30.546" level="INFO">Clicking element 'xpath:(//thead[@class="mat-calendar-table-header"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:31.187" starttime="20190304 11:39:30.546"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -1078,10 +1122,10 @@
 <arguments>
 <arg>${previous}</arg>
 </arguments>
-<msg timestamp="20190228 15:14:59.372" level="INFO">Clicking element 'xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])'.</msg>
-<status status="PASS" endtime="20190228 15:15:00.086" starttime="20190228 15:14:59.372"></status>
+<msg timestamp="20190304 11:39:31.188" level="INFO">Clicking element 'xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:31.840" starttime="20190304 11:39:31.187"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:00.086" starttime="20190228 15:14:59.370"></status>
+<status status="PASS" endtime="20190304 11:39:31.840" starttime="20190304 11:39:31.187"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -1090,19 +1134,63 @@
 <arg>Click Element</arg>
 <arg>${next}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:15:00.088" starttime="20190228 15:15:00.087"></status>
+<status status="PASS" endtime="20190304 11:39:31.840" starttime="20190304 11:39:31.840"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:00.088" starttime="20190228 15:14:58.038"></status>
+<status status="PASS" endtime="20190304 11:39:31.841" starttime="20190304 11:39:29.928"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:00.088" starttime="20190228 15:14:53.857"></status>
+<kw type="foritem" name="${var} = 3">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${table}</arg>
+</arguments>
+<status status="PASS" endtime="20190304 11:39:32.455" starttime="20190304 11:39:31.841"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${table}</arg>
+</arguments>
+<msg timestamp="20190304 11:39:32.455" level="INFO">Clicking element 'xpath:(//thead[@class="mat-calendar-table-header"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:33.095" starttime="20190304 11:39:32.455"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${shiftForward}==0</arg>
+<arg>Click Element</arg>
+<arg>${previous}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${previous}</arg>
+</arguments>
+<msg timestamp="20190304 11:39:33.096" level="INFO">Clicking element 'xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])'.</msg>
+<status status="PASS" endtime="20190304 11:39:33.747" starttime="20190304 11:39:33.096"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:39:33.747" starttime="20190304 11:39:33.095"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${shiftForward}==1</arg>
+<arg>Click Element</arg>
+<arg>${next}</arg>
+</arguments>
+<status status="PASS" endtime="20190304 11:39:33.747" starttime="20190304 11:39:33.747"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:39:33.747" starttime="20190304 11:39:31.841"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:39:33.747" starttime="20190304 11:39:26.072"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:(//div[@class="mat-calendar-body-cell-content"])[${date}]</arg>
 </arguments>
-<msg timestamp="20190228 15:15:00.089" level="INFO">Clicking element 'xpath:(//div[@class="mat-calendar-body-cell-content"])[21]'.</msg>
-<status status="PASS" endtime="20190228 15:15:00.865" starttime="20190228 15:15:00.088"></status>
+<msg timestamp="20190304 11:39:33.748" level="INFO">Clicking element 'xpath:(//div[@class="mat-calendar-body-cell-content"])[21]'.</msg>
+<status status="PASS" endtime="20190304 11:39:34.430" starttime="20190304 11:39:33.748"></status>
 </kw>
 <kw name="Get Value" library="SeleniumLibrary">
 <doc>Returns the value attribute of element identified by ``locator``.</doc>
@@ -1112,19 +1200,19 @@
 <assign>
 <var>${Log_transactionDate}</var>
 </assign>
-<msg timestamp="20190228 15:15:01.492" level="INFO">${Log_transactionDate} = 29/11/2018</msg>
-<status status="PASS" endtime="20190228 15:15:01.492" starttime="20190228 15:15:00.866"></status>
+<msg timestamp="20190304 11:39:35.043" level="INFO">${Log_transactionDate} = 29/11/2018</msg>
+<status status="PASS" endtime="20190304 11:39:35.043" starttime="20190304 11:39:34.430"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${Log_transactionDate}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:15:01.496" starttime="20190228 15:15:01.492"></status>
+<status status="PASS" endtime="20190304 11:39:35.045" starttime="20190304 11:39:35.043"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:01.496" starttime="20190228 15:14:53.824"></status>
+<status status="PASS" endtime="20190304 11:39:35.045" starttime="20190304 11:39:26.062"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:01.496" starttime="20190228 15:14:53.026"></status>
+<status status="PASS" endtime="20190304 11:39:35.045" starttime="20190304 11:39:25.370"></status>
 </kw>
 <kw name="Input vatPeriod" library="oe_page_add">
 <arguments>
@@ -1136,10 +1224,10 @@
 <arg>id:input-oe-detail-vatPeriod</arg>
 <arg>${detail_vatPeriod}</arg>
 </arguments>
-<msg timestamp="20190228 15:15:01.498" level="INFO">Typing text '11/61' into text field 'id:input-oe-detail-vatPeriod'.</msg>
-<status status="PASS" endtime="20190228 15:15:02.757" starttime="20190228 15:15:01.498"></status>
+<msg timestamp="20190304 11:39:35.046" level="INFO">Typing text '11/61' into text field 'id:input-oe-detail-vatPeriod'.</msg>
+<status status="PASS" endtime="20190304 11:39:36.100" starttime="20190304 11:39:35.046"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:02.757" starttime="20190228 15:15:01.496"></status>
+<status status="PASS" endtime="20190304 11:39:36.100" starttime="20190304 11:39:35.045"></status>
 </kw>
 <kw name="Input description" library="oe_page_add">
 <arguments>
@@ -1151,10 +1239,10 @@
 <arg>id:input-oe-detail-description</arg>
 <arg>${detail_description}</arg>
 </arguments>
-<msg timestamp="20190228 15:15:02.760" level="INFO">Typing text 'ค่าใช้จ่ายล่าสุด' into text field 'id:input-oe-detail-description'.</msg>
-<status status="PASS" endtime="20190228 15:15:04.191" starttime="20190228 15:15:02.759"></status>
+<msg timestamp="20190304 11:39:36.101" level="INFO">Typing text 'ค่าใช้จ่ายล่าสุด' into text field 'id:input-oe-detail-description'.</msg>
+<status status="PASS" endtime="20190304 11:39:37.244" starttime="20190304 11:39:36.100"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:04.191" starttime="20190228 15:15:02.759"></status>
+<status status="PASS" endtime="20190304 11:39:37.244" starttime="20190304 11:39:36.100"></status>
 </kw>
 <kw name="Input list" library="oe_page_add">
 <arguments>
@@ -1166,18 +1254,18 @@
 <arg>id:input-oe-transactions-description-0</arg>
 <arg>${list}</arg>
 </arguments>
-<msg timestamp="20190228 15:15:04.192" level="INFO">Typing text 'ค่าโทรศัพท์' into text field 'id:input-oe-transactions-description-0'.</msg>
-<status status="PASS" endtime="20190228 15:15:05.685" starttime="20190228 15:15:04.192"></status>
+<msg timestamp="20190304 11:39:37.245" level="INFO">Typing text 'ค่าโทรศัพท์' into text field 'id:input-oe-transactions-description-0'.</msg>
+<status status="PASS" endtime="20190304 11:39:38.419" starttime="20190304 11:39:37.245"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://span[@class="ngb-highlight ng-star-inserted"]</arg>
 </arguments>
-<msg timestamp="20190228 15:15:05.685" level="INFO">Clicking element 'xpath://span[@class="ngb-highlight ng-star-inserted"]'.</msg>
-<status status="PASS" endtime="20190228 15:15:06.439" starttime="20190228 15:15:05.685"></status>
+<msg timestamp="20190304 11:39:38.419" level="INFO">Clicking element 'xpath://span[@class="ngb-highlight ng-star-inserted"]'.</msg>
+<status status="PASS" endtime="20190304 11:39:39.086" starttime="20190304 11:39:38.419"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:06.439" starttime="20190228 15:15:04.191"></status>
+<status status="PASS" endtime="20190304 11:39:39.086" starttime="20190304 11:39:37.244"></status>
 </kw>
 <kw name="Input number" library="oe_page_add">
 <arguments>
@@ -1188,12 +1276,12 @@
 <arguments>
 <arg>document.getElementById('input-oe-transactions-qty-0').value='${qty}';</arg>
 </arguments>
-<msg timestamp="20190228 15:15:06.442" level="INFO">Executing JavaScript:
+<msg timestamp="20190304 11:39:39.088" level="INFO">Executing JavaScript:
 document.getElementById('input-oe-transactions-qty-0').value='1';
 Without any arguments.</msg>
-<status status="PASS" endtime="20190228 15:15:06.755" starttime="20190228 15:15:06.440"></status>
+<status status="PASS" endtime="20190304 11:39:39.393" starttime="20190304 11:39:39.087"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:06.755" starttime="20190228 15:15:06.439"></status>
+<status status="PASS" endtime="20190304 11:39:39.393" starttime="20190304 11:39:39.086"></status>
 </kw>
 <kw name="Input Price" library="oe_page_add">
 <arguments>
@@ -1204,7 +1292,7 @@ Without any arguments.</msg>
 <arguments>
 <arg>id:input-oe-transactions-unitPrice-0</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:15:07.442" starttime="20190228 15:15:06.755"></status>
+<status status="PASS" endtime="20190304 11:39:40.040" starttime="20190304 11:39:39.394"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -1212,10 +1300,10 @@ Without any arguments.</msg>
 <arg>id:input-oe-transactions-unitPrice-0</arg>
 <arg>${price}</arg>
 </arguments>
-<msg timestamp="20190228 15:15:07.442" level="INFO">Typing text '6000' into text field 'id:input-oe-transactions-unitPrice-0'.</msg>
-<status status="PASS" endtime="20190228 15:15:08.643" starttime="20190228 15:15:07.442"></status>
+<msg timestamp="20190304 11:39:40.040" level="INFO">Typing text '6000' into text field 'id:input-oe-transactions-unitPrice-0'.</msg>
+<status status="PASS" endtime="20190304 11:39:41.086" starttime="20190304 11:39:40.040"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:08.643" starttime="20190228 15:15:06.755"></status>
+<status status="PASS" endtime="20190304 11:39:41.086" starttime="20190304 11:39:39.393"></status>
 </kw>
 <kw name="Input discount" library="oe_page_add">
 <arguments>
@@ -1226,7 +1314,7 @@ Without any arguments.</msg>
 <arguments>
 <arg>id:input-oe-transactions-discount-0</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:15:09.337" starttime="20190228 15:15:08.644"></status>
+<status status="PASS" endtime="20190304 11:39:41.734" starttime="20190304 11:39:41.087"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -1234,10 +1322,10 @@ Without any arguments.</msg>
 <arg>id:input-oe-transactions-discount-0</arg>
 <arg>${discount}</arg>
 </arguments>
-<msg timestamp="20190228 15:15:09.338" level="INFO">Typing text '500' into text field 'id:input-oe-transactions-discount-0'.</msg>
-<status status="PASS" endtime="20190228 15:15:10.518" starttime="20190228 15:15:09.337"></status>
+<msg timestamp="20190304 11:39:41.734" level="INFO">Typing text '500' into text field 'id:input-oe-transactions-discount-0'.</msg>
+<status status="PASS" endtime="20190304 11:39:42.754" starttime="20190304 11:39:41.734"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:10.518" starttime="20190228 15:15:08.644"></status>
+<status status="PASS" endtime="20190304 11:39:42.754" starttime="20190304 11:39:41.086"></status>
 </kw>
 <kw name="Input Remark" library="oe_page_add">
 <arguments>
@@ -1249,10 +1337,10 @@ Without any arguments.</msg>
 <arg>id:input-oe-detail-remark</arg>
 <arg>${remark}</arg>
 </arguments>
-<msg timestamp="20190228 15:15:10.519" level="INFO">Typing text 'จ่ายค่าโทรศัพท์' into text field 'id:input-oe-detail-remark'.</msg>
-<status status="PASS" endtime="20190228 15:15:11.927" starttime="20190228 15:15:10.519"></status>
+<msg timestamp="20190304 11:39:42.755" level="INFO">Typing text 'จ่ายค่าโทรศัพท์' into text field 'id:input-oe-detail-remark'.</msg>
+<status status="PASS" endtime="20190304 11:39:43.906" starttime="20190304 11:39:42.755"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:11.927" starttime="20190228 15:15:10.518"></status>
+<status status="PASS" endtime="20190304 11:39:43.906" starttime="20190304 11:39:42.754"></status>
 </kw>
 <kw name="Input paymentCash" library="oe_page_add">
 <arguments>
@@ -1264,10 +1352,10 @@ Without any arguments.</msg>
 <arg>id:input-oe-detail-paymentCashAmount</arg>
 <arg>${paymentCashAmount}</arg>
 </arguments>
-<msg timestamp="20190228 15:15:11.928" level="INFO">Typing text '1000' into text field 'id:input-oe-detail-paymentCashAmount'.</msg>
-<status status="PASS" endtime="20190228 15:15:13.090" starttime="20190228 15:15:11.928"></status>
+<msg timestamp="20190304 11:39:43.907" level="INFO">Typing text '1000' into text field 'id:input-oe-detail-paymentCashAmount'.</msg>
+<status status="PASS" endtime="20190304 11:39:44.944" starttime="20190304 11:39:43.907"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:13.091" starttime="20190228 15:15:11.927"></status>
+<status status="PASS" endtime="20190304 11:39:44.944" starttime="20190304 11:39:43.906"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -1275,10 +1363,10 @@ Without any arguments.</msg>
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190228 15:15:13.825" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-02-28%2015-14-23/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_6.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-02-28%2015-14-23/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190228 15:15:13.825" starttime="20190228 15:15:13.092"></status>
+<msg timestamp="20190304 11:39:45.541" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-03-04%2011-38-59/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_6.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%84%E0%B8%AA%E0%B8%AA%E0%B8%AD%E0%B8%87%202019-03-04%2011-38-59/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B5_TAX%282%25%29_6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190304 11:39:45.541" starttime="20190304 11:39:44.945"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:13.825" starttime="20190228 15:15:13.091"></status>
+<status status="PASS" endtime="20190304 11:39:45.542" starttime="20190304 11:39:44.944"></status>
 </kw>
 <kw name="Calculator includeVat" library="oe_page_add">
 <kw name="Get Price" library="oe_page_add">
@@ -1290,25 +1378,25 @@ Without any arguments.</msg>
 <assign>
 <var>${price_now}</var>
 </assign>
-<msg timestamp="20190228 15:15:14.460" level="INFO">${price_now} = 6,000.00</msg>
-<status status="PASS" endtime="20190228 15:15:14.460" starttime="20190228 15:15:13.826"></status>
+<msg timestamp="20190304 11:39:46.155" level="INFO">${price_now} = 6,000.00</msg>
+<status status="PASS" endtime="20190304 11:39:46.155" starttime="20190304 11:39:45.542"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${price_now}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:15:14.464" starttime="20190228 15:15:14.462"></status>
+<status status="PASS" endtime="20190304 11:39:46.157" starttime="20190304 11:39:46.155"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${price_now}</arg>
 </arguments>
-<msg timestamp="20190228 15:15:14.466" level="INFO">${price_now} = 6,000.00</msg>
-<status status="PASS" endtime="20190228 15:15:14.466" starttime="20190228 15:15:14.465"></status>
+<msg timestamp="20190304 11:39:46.157" level="INFO">${price_now} = 6,000.00</msg>
+<status status="PASS" endtime="20190304 11:39:46.157" starttime="20190304 11:39:46.157"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:14.467" starttime="20190228 15:15:13.826"></status>
+<status status="PASS" endtime="20190304 11:39:46.157" starttime="20190304 11:39:45.542"></status>
 </kw>
 <kw name="Replace" library="oe_page_add">
 <arguments>
@@ -1324,25 +1412,25 @@ Without any arguments.</msg>
 <assign>
 <var>${no_comma}</var>
 </assign>
-<msg timestamp="20190228 15:15:14.470" level="INFO">${no_comma} = 6000.00</msg>
-<status status="PASS" endtime="20190228 15:15:14.470" starttime="20190228 15:15:14.468"></status>
+<msg timestamp="20190304 11:39:46.158" level="INFO">${no_comma} = 6000.00</msg>
+<status status="PASS" endtime="20190304 11:39:46.158" starttime="20190304 11:39:46.158"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${no_comma}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:15:14.473" starttime="20190228 15:15:14.470"></status>
+<status status="PASS" endtime="20190304 11:39:46.159" starttime="20190304 11:39:46.158"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${no_comma}</arg>
 </arguments>
-<msg timestamp="20190228 15:15:14.473" level="INFO">${no_comma} = 6000.00</msg>
-<status status="PASS" endtime="20190228 15:15:14.473" starttime="20190228 15:15:14.473"></status>
+<msg timestamp="20190304 11:39:46.159" level="INFO">${no_comma} = 6000.00</msg>
+<status status="PASS" endtime="20190304 11:39:46.159" starttime="20190304 11:39:46.159"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:14.474" starttime="20190228 15:15:14.467"></status>
+<status status="PASS" endtime="20190304 11:39:46.159" starttime="20190304 11:39:46.157"></status>
 </kw>
 <kw name="Float Change 1" library="oe_page_add">
 <kw name="Convert To Number" library="BuiltIn">
@@ -1353,18 +1441,18 @@ Without any arguments.</msg>
 <assign>
 <var>${type_float_1}</var>
 </assign>
-<msg timestamp="20190228 15:15:14.475" level="INFO">${type_float_1} = 6000.0</msg>
-<status status="PASS" endtime="20190228 15:15:14.475" starttime="20190228 15:15:14.475"></status>
+<msg timestamp="20190304 11:39:46.160" level="INFO">${type_float_1} = 6000.0</msg>
+<status status="PASS" endtime="20190304 11:39:46.160" starttime="20190304 11:39:46.160"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${type_float_1}</arg>
 </arguments>
-<msg timestamp="20190228 15:15:14.476" level="INFO">${type_float_1} = 6000.0</msg>
-<status status="PASS" endtime="20190228 15:15:14.476" starttime="20190228 15:15:14.475"></status>
+<msg timestamp="20190304 11:39:46.160" level="INFO">${type_float_1} = 6000.0</msg>
+<status status="PASS" endtime="20190304 11:39:46.160" starttime="20190304 11:39:46.160"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:14.476" starttime="20190228 15:15:14.474"></status>
+<status status="PASS" endtime="20190304 11:39:46.161" starttime="20190304 11:39:46.159"></status>
 </kw>
 <kw name="Get Discount" library="oe_page_add">
 <kw name="Get Value" library="SeleniumLibrary">
@@ -1375,25 +1463,25 @@ Without any arguments.</msg>
 <assign>
 <var>${discount_now}</var>
 </assign>
-<msg timestamp="20190228 15:15:15.099" level="INFO">${discount_now} = 500.00</msg>
-<status status="PASS" endtime="20190228 15:15:15.099" starttime="20190228 15:15:14.477"></status>
+<msg timestamp="20190304 11:39:46.774" level="INFO">${discount_now} = 500.00</msg>
+<status status="PASS" endtime="20190304 11:39:46.774" starttime="20190304 11:39:46.161"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${discount_now}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:15:15.101" starttime="20190228 15:15:15.099"></status>
+<status status="PASS" endtime="20190304 11:39:46.775" starttime="20190304 11:39:46.774"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${discount_now}</arg>
 </arguments>
-<msg timestamp="20190228 15:15:15.102" level="INFO">${discount_now} = 500.00</msg>
-<status status="PASS" endtime="20190228 15:15:15.102" starttime="20190228 15:15:15.101"></status>
+<msg timestamp="20190304 11:39:46.775" level="INFO">${discount_now} = 500.00</msg>
+<status status="PASS" endtime="20190304 11:39:46.775" starttime="20190304 11:39:46.775"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:15.102" starttime="20190228 15:15:14.477"></status>
+<status status="PASS" endtime="20190304 11:39:46.775" starttime="20190304 11:39:46.161"></status>
 </kw>
 <kw name="Replace" library="oe_page_add">
 <arguments>
@@ -1409,25 +1497,25 @@ Without any arguments.</msg>
 <assign>
 <var>${no_comma}</var>
 </assign>
-<msg timestamp="20190228 15:15:15.103" level="INFO">${no_comma} = 500.00</msg>
-<status status="PASS" endtime="20190228 15:15:15.103" starttime="20190228 15:15:15.103"></status>
+<msg timestamp="20190304 11:39:46.776" level="INFO">${no_comma} = 500.00</msg>
+<status status="PASS" endtime="20190304 11:39:46.776" starttime="20190304 11:39:46.776"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${no_comma}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:15:15.106" starttime="20190228 15:15:15.104"></status>
+<status status="PASS" endtime="20190304 11:39:46.777" starttime="20190304 11:39:46.776"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${no_comma}</arg>
 </arguments>
-<msg timestamp="20190228 15:15:15.106" level="INFO">${no_comma} = 500.00</msg>
-<status status="PASS" endtime="20190228 15:15:15.106" starttime="20190228 15:15:15.106"></status>
+<msg timestamp="20190304 11:39:46.778" level="INFO">${no_comma} = 500.00</msg>
+<status status="PASS" endtime="20190304 11:39:46.778" starttime="20190304 11:39:46.777"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:15.106" starttime="20190228 15:15:15.102"></status>
+<status status="PASS" endtime="20190304 11:39:46.778" starttime="20190304 11:39:46.775"></status>
 </kw>
 <kw name="Float Change 2" library="oe_page_add">
 <kw name="Convert To Number" library="BuiltIn">
@@ -1438,18 +1526,18 @@ Without any arguments.</msg>
 <assign>
 <var>${type_float_2}</var>
 </assign>
-<msg timestamp="20190228 15:15:15.107" level="INFO">${type_float_2} = 500.0</msg>
-<status status="PASS" endtime="20190228 15:15:15.107" starttime="20190228 15:15:15.107"></status>
+<msg timestamp="20190304 11:39:46.778" level="INFO">${type_float_2} = 500.0</msg>
+<status status="PASS" endtime="20190304 11:39:46.778" starttime="20190304 11:39:46.778"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${type_float_2}</arg>
 </arguments>
-<msg timestamp="20190228 15:15:15.108" level="INFO">${type_float_2} = 500.0</msg>
-<status status="PASS" endtime="20190228 15:15:15.108" starttime="20190228 15:15:15.107"></status>
+<msg timestamp="20190304 11:39:46.779" level="INFO">${type_float_2} = 500.0</msg>
+<status status="PASS" endtime="20190304 11:39:46.779" starttime="20190304 11:39:46.779"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:15.108" starttime="20190228 15:15:15.106"></status>
+<status status="PASS" endtime="20190304 11:39:46.779" starttime="20190304 11:39:46.778"></status>
 </kw>
 <kw name="Verify subtraction of ${type_float_1} and ${type_float_2}" library="keywords">
 <doc>Verify subtraction of two integers</doc>
@@ -1462,25 +1550,25 @@ Without any arguments.</msg>
 <assign>
 <var>${calculated_result}</var>
 </assign>
-<msg timestamp="20190228 15:15:15.111" level="INFO">${calculated_result} = 5500.0</msg>
-<status status="PASS" endtime="20190228 15:15:15.112" starttime="20190228 15:15:15.108"></status>
+<msg timestamp="20190304 11:39:46.780" level="INFO">${calculated_result} = 5500.0</msg>
+<status status="PASS" endtime="20190304 11:39:46.780" starttime="20190304 11:39:46.779"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${calculated_result}</arg>
 </arguments>
-<status status="PASS" endtime="20190228 15:15:15.114" starttime="20190228 15:15:15.112"></status>
+<status status="PASS" endtime="20190304 11:39:46.781" starttime="20190304 11:39:46.780"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${calculated_result}</arg>
 </arguments>
-<msg timestamp="20190228 15:15:15.114" level="INFO">${calculated_result} = 5500.0</msg>
-<status status="PASS" endtime="20190228 15:15:15.115" starttime="20190228 15:15:15.114"></status>
+<msg timestamp="20190304 11:39:46.781" level="INFO">${calculated_result} = 5500.0</msg>
+<status status="PASS" endtime="20190304 11:39:46.781" starttime="20190304 11:39:46.781"></status>
 </kw>
-<status status="PASS" endtime="20190228 15:15:15.115" starttime="20190228 15:15:15.108"></status>
+<status status="PASS" endtime="20190304 11:39:46.782" starttime="20190304 11:39:46.779"></status>
 </kw>
 <kw name="Convert" library="keywords">
 <arguments>
@@ -1493,26 +1581,26 @@ Without any arguments.</msg>
 <assign>
 <var>${return_current}=</var>
 </assign>
-<msg timestamp="20190228 15:15:15.117" level="FAIL">Multiple keywords with name 'convert_cur' found. Give the full name of the keyword you want to use:
+<msg timestamp="20190304 11:39:46.782" level="FAIL">Multiple keywords with name 'convert_cur' found. Give the full name of the keyword you want to use:
     easy_math.Convert Cur
     math.Convert Cur</msg>
-<status status="FAIL" endtime="20190228 15:15:15.117" starttime="20190228 15:15:15.117"></status>
+<status status="FAIL" endtime="20190304 11:39:46.782" starttime="20190304 11:39:46.782"></status>
 </kw>
-<status status="FAIL" endtime="20190228 15:15:15.117" starttime="20190228 15:15:15.115"></status>
+<status status="FAIL" endtime="20190304 11:39:46.782" starttime="20190304 11:39:46.782"></status>
 </kw>
-<status status="FAIL" endtime="20190228 15:15:15.117" starttime="20190228 15:15:13.825"></status>
+<status status="FAIL" endtime="20190304 11:39:46.782" starttime="20190304 11:39:45.542"></status>
 </kw>
-<status status="FAIL" endtime="20190228 15:15:15.117" starttime="20190228 15:14:23.293"></status>
+<status status="FAIL" endtime="20190304 11:39:46.782" starttime="20190304 11:38:59.068"></status>
 </kw>
-<status status="FAIL" endtime="20190228 15:15:15.120" critical="yes" starttime="20190228 15:14:19.342">Multiple keywords with name 'convert_cur' found. Give the full name of the keyword you want to use:
+<status status="FAIL" endtime="20190304 11:39:46.783" critical="yes" starttime="20190304 11:38:56.123">Multiple keywords with name 'convert_cur' found. Give the full name of the keyword you want to use:
     easy_math.Convert Cur
     math.Convert Cur</status>
 </test>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190228 15:15:17.560" starttime="20190228 15:15:15.166"></status>
+<status status="PASS" endtime="20190304 11:39:49.145" starttime="20190304 11:39:46.793"></status>
 </kw>
-<status status="FAIL" endtime="20190228 15:15:17.561" starttime="20190228 15:14:10.528"></status>
+<status status="FAIL" endtime="20190304 11:39:49.145" starttime="20190304 11:38:49.227"></status>
 </suite>
 <statistics>
 <total>

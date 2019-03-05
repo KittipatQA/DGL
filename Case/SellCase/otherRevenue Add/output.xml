@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="true" generated="20190304 11:43:02.444" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<suite source="d:\DGL\Case\SellCase\otherRevenue Add\TS_OI_Add_Cr_001.robot" id="s1" name="TS OI Add Cr 001">
+<kw type="setup" name="Open the web page" library="dglforsme">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${open_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190304 11:43:02.654" level="INFO">Opening browser 'chrome' to base url 'https://dgl-acct.addtechhub.com'.</msg>
+<status status="PASS" endtime="20190304 11:43:07.945" starttime="20190304 11:43:02.654"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190304 11:43:09.063" starttime="20190304 11:43:07.945"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.5</arg>
+</arguments>
+<status status="PASS" endtime="20190304 11:43:09.064" starttime="20190304 11:43:09.064"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:43:09.064" starttime="20190304 11:43:02.653"></status>
+</kw>
+<test id="s1-t1" name="1ตรวจสอบการเพิ่มรายการ_กรณี_นิติบุคคลมี_VATจ่ายเจ้าหนี้ไม่มี_VAT_รายการ_ไม่มี_TAX_">
+<kw type="setup" name="Go to login page" library="dglforsme">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${login_url}</arg>
+</arguments>
+<msg timestamp="20190304 11:43:09.068" level="INFO">Opening url 'https://dgl-acct.addtechhub.com/login'</msg>
+<status status="PASS" endtime="20190304 11:43:11.944" starttime="20190304 11:43:09.068"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:43:11.944" starttime="20190304 11:43:09.068"></status>
+</kw>
+<kw name="OI Add Data 1" library="TS_OI_Add_Cr_1">
+<arguments>
+<arg>tester_2@gmail.com</arg>
+<arg>123123</arg>
+<arg>OI Add</arg>
+<arg>D001</arg>
+<arg>29/11/2018</arg>
+<arg>02/01/2019</arg>
+<arg>IT</arg>
+<arg>4100-22</arg>
+<arg>ค่าใช้จ่ายล่าสุด</arg>
+<arg>1</arg>
+<arg>6000</arg>
+<arg>0</arg>
+<arg>จ่ายค่าโทรศัพท์</arg>
+<arg>1000</arg>
+<arg>ค้างชำระ</arg>
+</arguments>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.6</arg>
+</arguments>
+<status status="PASS" endtime="20190304 11:43:11.945" starttime="20190304 11:43:11.945"></status>
+</kw>
+<kw name="Set Directory" library="dglforsme">
+<arguments>
+<arg>${image_name}</arg>
+</arguments>
+<kw name="Get DateTime" library="dglforsme">
+<assign>
+<var>${Date}</var>
+</assign>
+<kw name="Get Current Date" library="DateTime">
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<arguments>
+<arg>result_format=%Y-%m-%d %H-%M-%S</arg>
+</arguments>
+<assign>
+<var>${date current}</var>
+</assign>
+<msg timestamp="20190304 11:43:11.946" level="INFO">${date current} = 2019-03-04 11-43-11</msg>
+<status status="PASS" endtime="20190304 11:43:11.946" starttime="20190304 11:43:11.946"></status>
+</kw>
+<msg timestamp="20190304 11:43:11.947" level="INFO">${Date} = 2019-03-04 11-43-11</msg>
+<status status="PASS" endtime="20190304 11:43:11.947" starttime="20190304 11:43:11.946"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Date}</arg>
+</arguments>
+<status status="PASS" endtime="20190304 11:43:11.947" starttime="20190304 11:43:11.947"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${Path}</arg>
+<arg>${Output_url}/${image_name} ${Date}</arg>
+</arguments>
+<msg timestamp="20190304 11:43:11.948" level="INFO">${Path} = /Users/USER1/.jenkins/workspace/DGL/Screen/OI Add 2019-03-04 11-43-11</msg>
+<status status="PASS" endtime="20190304 11:43:11.948" starttime="20190304 11:43:11.947"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:43:11.948" starttime="20190304 11:43:11.946"></status>
+</kw>
+<kw name="Capture Screen" library="dglforsme">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
+</arguments>
+<msg timestamp="20190304 11:43:12.859" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OI%20Add%202019-03-04%2011-43-11/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_TAX_1.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OI%20Add%202019-03-04%2011-43-11/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_TAX_1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190304 11:43:12.859" starttime="20190304 11:43:11.949"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:43:12.860" starttime="20190304 11:43:11.949"></status>
+</kw>
+<kw name="Input User" library="login_page">
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:input-email</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190304 11:43:12.860" level="INFO">Typing text 'tester_2@gmail.com' into text field 'id:input-email'.</msg>
+<status status="PASS" endtime="20190304 11:43:14.801" starttime="20190304 11:43:12.860"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:43:14.801" starttime="20190304 11:43:12.860"></status>
+</kw>
+<kw name="Input Password" library="login_page">
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:input-password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190304 11:43:14.802" level="INFO">Typing text '123123' into text field 'id:input-password'.</msg>
+<status status="PASS" endtime="20190304 11:43:16.682" starttime="20190304 11:43:14.801"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:43:16.682" starttime="20190304 11:43:14.801"></status>
+</kw>
+<kw name="Capture Screen" library="dglforsme">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
+</arguments>
+<msg timestamp="20190304 11:43:17.571" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OI%20Add%202019-03-04%2011-43-11/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_TAX_2.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OI%20Add%202019-03-04%2011-43-11/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_TAX_2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190304 11:43:17.571" starttime="20190304 11:43:16.682"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:43:17.571" starttime="20190304 11:43:16.682"></status>
+</kw>
+<kw name="Login Submit" library="login_page">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id:btn-submit-login</arg>
+</arguments>
+<msg timestamp="20190304 11:43:17.572" level="INFO">Clicking button 'id:btn-submit-login'.</msg>
+<status status="PASS" endtime="20190304 11:43:20.647" starttime="20190304 11:43:17.572"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:43:20.647" starttime="20190304 11:43:17.571"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${logic}</arg>
+</arguments>
+<status status="PASS" endtime="20190304 11:43:21.885" starttime="20190304 11:43:20.647"></status>
+</kw>
+<kw name="Capture Screen" library="dglforsme">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
+</arguments>
+<msg timestamp="20190304 11:43:22.807" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OI%20Add%202019-03-04%2011-43-11/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_TAX_3.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OI%20Add%202019-03-04%2011-43-11/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_TAX_3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190304 11:43:22.807" starttime="20190304 11:43:21.885"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:43:22.807" starttime="20190304 11:43:21.885"></status>
+</kw>
+<kw name="Click Tab Sell" library="home_page">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${sell}</arg>
+</arguments>
+<msg timestamp="20190304 11:43:24.031" level="INFO">Element 'xpath:(//span[@class="menu-title"])[5]' is displayed.</msg>
+<status status="PASS" endtime="20190304 11:43:24.031" starttime="20190304 11:43:22.808"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${sell}</arg>
+</arguments>
+<msg timestamp="20190304 11:43:24.031" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[5]'.</msg>
+<status status="PASS" endtime="20190304 11:43:25.285" starttime="20190304 11:43:24.031"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:43:25.285" starttime="20190304 11:43:22.807"></status>
+</kw>
+<kw name="Capture Screen" library="dglforsme">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
+</arguments>
+<msg timestamp="20190304 11:43:26.197" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OI%20Add%202019-03-04%2011-43-11/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_TAX_4.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OI%20Add%202019-03-04%2011-43-11/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_TAX_4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190304 11:43:26.198" starttime="20190304 11:43:25.285"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:43:26.198" starttime="20190304 11:43:25.285"></status>
+</kw>
+<kw name="Click Tab otherRevenue" library="home_page">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${save_otherRevenue_sell_list}</arg>
+</arguments>
+<msg timestamp="20190304 11:43:27.421" level="INFO">Element 'xpath:(//span[@class="menu-title"])[7]' is displayed.</msg>
+<status status="PASS" endtime="20190304 11:43:27.421" starttime="20190304 11:43:26.198"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${save_otherRevenue_sell_list}</arg>
+</arguments>
+<msg timestamp="20190304 11:43:27.422" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[7]'.</msg>
+<status status="PASS" endtime="20190304 11:43:28.728" starttime="20190304 11:43:27.421"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:43:28.728" starttime="20190304 11:43:26.198"></status>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<doc>Returns number of elements matching ``locator``.</doc>
+<arguments>
+<arg>//*[contains(@id, 'sl-oe-detail')]</arg>
+</arguments>
+<assign>
+<var>${columnbefore}</var>
+</assign>
+<msg timestamp="20190304 11:43:29.340" level="INFO">${columnbefore} = 3</msg>
+<status status="PASS" endtime="20190304 11:43:29.340" starttime="20190304 11:43:28.728"></status>
+</kw>
+<kw name="Click Btn Add" library="oi_page_add">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id:btn-oe-save</arg>
+</arguments>
+<msg timestamp="20190304 11:43:29.340" level="INFO">Clicking button 'id:btn-oe-save'.</msg>
+<status status="PASS" endtime="20190304 11:43:32.563" starttime="20190304 11:43:29.340"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:43:32.563" starttime="20190304 11:43:29.340"></status>
+</kw>
+<kw name="Capture Screen" library="dglforsme">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
+</arguments>
+<msg timestamp="20190304 11:43:33.484" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OI%20Add%202019-03-04%2011-43-11/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_TAX_5.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OI%20Add%202019-03-04%2011-43-11/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9E%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B8%B5_%E0%B8%99%E0%B8%B4%E0%B8%95%E0%B8%B4%E0%B8%9A%E0%B8%B8%E0%B8%84%E0%B8%84%E0%B8%A5%E0%B8%A1%E0%B8%B5_VAT%E0%B8%88%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_VAT_%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5_TAX_5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190304 11:43:33.484" starttime="20190304 11:43:32.563"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:43:33.484" starttime="20190304 11:43:32.563"></status>
+</kw>
+<kw name="Input Supplier Code" library="oi_page_add">
+<arguments>
+<arg>${supplier_code}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:input-oi-detail-code</arg>
+<arg>${supplier_code}</arg>
+</arguments>
+<msg timestamp="20190304 11:43:33.485" level="INFO">Typing text 'D001' into text field 'id:input-oi-detail-code'.</msg>
+<status status="PASS" endtime="20190304 11:43:35.448" starttime="20190304 11:43:33.485"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id:ngb-typeahead-0-0</arg>
+</arguments>
+<msg timestamp="20190304 11:43:35.448" level="INFO">Clicking element 'id:ngb-typeahead-0-0'.</msg>
+<status status="PASS" endtime="20190304 11:43:36.708" starttime="20190304 11:43:35.448"></status>
+</kw>
+<status status="PASS" endtime="20190304 11:43:36.708" starttime="20190304 11:43:33.485"></status>
+</kw>
+<kw name="Input transactionDate" library="oi_page_add">
+<arguments>
+<arg>${transaction_date}</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>id:input-oi-detail-transactionDate</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190304 11:43:38.242" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190304 11:43:38.242" starttime="20190304 11:43:37.340"></status>
+</kw>
+<msg timestamp="20190304 11:43:38.248" level="FAIL">InvalidElementStateException: Message: invalid element state: Element must be user-editable in order to clear it.
+  (Session info: chrome=72.0.3626.119)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20190304 11:43:38.249" starttime="20190304 11:43:36.708"></status>
+</kw>
+<status status="FAIL" endtime="20190304 11:43:38.249" starttime="20190304 11:43:36.708"></status>
+</kw>
+<status status="FAIL" endtime="20190304 11:43:38.249" starttime="20190304 11:43:11.945"></status>
+</kw>
+<status status="FAIL" endtime="20190304 11:43:38.250" critical="yes" starttime="20190304 11:43:09.064">InvalidElementStateException: Message: invalid element state: Element must be user-editable in order to clear it.
+  (Session info: chrome=72.0.3626.119)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190304 11:43:40.896" starttime="20190304 11:43:38.252"></status>
+</kw>
+<status status="FAIL" endtime="20190304 11:43:40.896" starttime="20190304 11:43:02.446"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tasks</stat>
+<stat fail="1" pass="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="TS OI Add Cr 001" pass="0">TS OI Add Cr 001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
