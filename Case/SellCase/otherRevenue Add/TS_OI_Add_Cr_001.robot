@@ -2,6 +2,7 @@
 Library              SeleniumLibrary
 Library              BuiltIn
 Library              String
+Library              ${CURDIR}/../../../Resource/calendar.py
 Resource             ${CURDIR}/../../../Resource/dglforsme.resource
 Resource             ${CURDIR}/../../../Page/home_page.resource
 Resource             ${CURDIR}/../../../Page/oi_page_add.resource
@@ -11,7 +12,6 @@ Suite Setup          Open the web page
 Test Setup           Go to login page
 Test Template        OI Add Data 1
 Suite Teardown       Close Browser
-
 *** Variables ***
 
 *** Keywords ***

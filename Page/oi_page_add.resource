@@ -4,8 +4,57 @@ Library              SeleniumLibrary
 *** Variables ***
 ${status_true}      สถานะถูกต้อง
 ${status_false}     สถานะไม่ถูกต้อง
+${table}       xpath:(//thead[@class="mat-calendar-table-header"])
+${next}     xpath:(//button[@class="mat-calendar-next-button mat-icon-button"])
+${previous}     xpath:(//button[@class="mat-calendar-previous-button mat-icon-button"])
 
 *** Keywords ***
+
+Convert Time
+    [Arguments]     ${datePickerDueDate}
+    ${date_now}=    splittime       ${datePickerDueDate} 
+    Log To Console      ${date_now}[0]
+    ${input_date}=    Set Variable        ${date_now}[0]
+    ${input_month}=    Set Variable        ${date_now}[1]
+    ${input_year}=    Set Variable        ${date_now}[2]
+    Set Suite Variable      ${input_date}
+    Set Suite Variable      ${input_month}
+    Set Suite Variable      ${input_year} 
+
+Select Date 
+    #Click Element       xpath:(//*[@id="input-oe-detail-transactionDate"])
+    ${currentDate} =     Get Current Date       result_format=datetime
+    Log To Console      ${currentDate}
+    ${year}=    Convert To Integer  ${input_year}
+    ${month}=   Convert To Integer  ${input_month}
+    ${date}=    Convert To Integer  ${input_date}
+    ${month-diff}=  Evaluate        ${month}-${currentDate.month}
+    ${year-diff}=   Evaluate        ${year}-${currentDate.year}
+    ${move}=    Evaluate        ${year-diff}*12+${month-diff}
+
+    Log To Console      ${month-diff}      
+    Log To Console      ${year-diff}      
+    Log To Console      ${move}      
+
+    ${shiftForward}=  Set Variable If  
+    ...   ${move}>0  1
+    ...   ${move}<0  0
+
+    ${move}=  Set Variable If  
+    ...   ${move}>0  ${move}
+    ...   ${move}<0  ${move}*-1
+
+    :FOR     ${var}     IN RANGE    0       ${move}
+       \  Wait Until Element Is Visible         ${table}
+       \  Click Element     ${table}
+       \  Run Keyword If  ${shiftForward}==0        Click Element     ${previous} 
+       \  Run Keyword If  ${shiftForward}==1        Click Element     ${next}  
+
+    Click Element       xpath:(//div[@class="mat-calendar-body-cell-content"])[${date}]   
+
+    ${Log_transactionDate}=        Get Value      xpath://*[@id="input-oe-detail-transactionDate"]
+    Log To Console      ${Log_transactionDate}    
+
 
 Click Btn Add
     Click Button       id:btn-oe-save
@@ -26,13 +75,15 @@ Select Vat Type
 
 Input transactionDate
     [Arguments]     ${transaction_date}
-    Clear Element Text      id:input-oi-detail-transactionDate           
-    Input Text      id:input-oi-detail-transactionDate     ${transaction_date}
+    Convert Time        ${transaction_date}           
+    Click Element      id:input-oi-detail-transactionDate
+    Select Date
 
 Input datePickerDueDate
     [Arguments]     ${datePickerDueDate}
-    Clear Element Text      id:input-oi-detail-datePickerDueDate              
-    Input Text      id:input-oi-detail-datePickerDueDate     ${datePickerDueDate}
+    Convert Time        ${datePickerDueDate}
+    Click Element      id:input-oi-detail-datePickerDueDate              
+    Select Date
 
 Input Department
     [Arguments]     ${detail_department}   
