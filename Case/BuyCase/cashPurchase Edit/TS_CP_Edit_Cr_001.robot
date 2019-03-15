@@ -13,7 +13,7 @@ Resource             ${CURDIR}/../../../Resource/keywords.resource
 Suite Setup          Open the web page
 Test Setup           Go to login page
 Test Template        CP Edit Data 1
-#Suite Teardown       Close Browser
+Suite Teardown       Close Browser
 
 *** Variables ***
 

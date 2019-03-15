@@ -19,6 +19,52 @@ ${new_status_list}      ค้างชำระ
 
 *** Keywords ***
 
+Convert Time transactionDate
+    ${edit_now_transactionDate}=       Get Value      id:input-hr-detail-transactionDate
+    Log To Console      ${edit_now_transactionDate}
+    Set Suite Variable      ${edit_now_transactionDate}
+    ${date_now}=    splittime       ${edit_now_transactionDate} 
+    Log To Console      ${date_now}[0]
+    ${before_date_transactionDate}=    Set Variable        ${date_now}[0]
+    ${before_month_transactionDate}=    Set Variable        ${date_now}[1]
+    ${before_year_transactionDate}=    Set Variable        ${date_now}[2]
+    Set Suite Variable      ${before_date_transactionDate}
+    Set Suite Variable      ${before_month_transactionDate}
+    Set Suite Variable      ${before_year_transactionDate} 
+
+Convert Time After transactionDate
+    ${date_now}=    splittime       ${new_transactionDate} 
+    Log To Console      ${date_now}[0]
+    ${after_date_transactionDate}=    Set Variable        ${date_now}[0]
+    ${after_month_transactionDate}=    Set Variable        ${date_now}[1]
+    ${after_year_transactionDate}=    Set Variable        ${date_now}[2]
+    Set Suite Variable      ${after_date_transactionDate}
+    Set Suite Variable      ${after_month_transactionDate}
+    Set Suite Variable      ${after_year_transactionDate} 
+
+Convert Time billDate 
+    ${edit_now_detail_billDate}=       Get Value      id:input-oe-detail-billDate
+    Log To Console      ${edit_now_detail_billDate}
+    Set Suite Variable      ${edit_now_detail_billDate}
+    ${date_now}=    splittime       ${edit_now_detail_billDate} 
+    Log To Console      ${date_now}[0]
+    ${before_date_billDate}=    Set Variable        ${date_now}[0]
+    ${before_month_billDate}=    Set Variable        ${date_now}[1]
+    ${before_year_billDate}=    Set Variable        ${date_now}[2]
+    Set Suite Variable      ${before_date_billDate}
+    Set Suite Variable      ${before_month_billDate}
+    Set Suite Variable      ${before_year_billDate} 
+
+Convert Time After billDate 
+    ${date_now}=    splittime       ${new_billDate} 
+    Log To Console      ${date_now}[0]
+    ${after_date_billDate}=    Set Variable        ${date_now}[0]
+    ${after_month_billDate}=    Set Variable        ${date_now}[1]
+    ${after_year_billDate}=    Set Variable        ${date_now}[2]
+    Set Suite Variable      ${after_date_billDate}
+    Set Suite Variable      ${after_month_billDate}
+    Set Suite Variable      ${after_year_billDate} 
+
 Get edit unitPrice
     ${edit_new_transactions_unitPrice}=       Get Value      id:cp-input-unitPrice-0
     Log To Console      ${edit_new_transactions_unitPrice}
@@ -57,7 +103,7 @@ Get edit billNo
     Should Be Equal As Strings         ${edit_new_billNo}        ${new_billNo} 
 
 Get edit transactionDate
-   ${edit_new_transactionDate}=       Get Value      id:input-cp-detail-transactionDate
+    ${edit_new_transactionDate}=       Get Value      id:input-hr-detail-transactionDate
     Log To Console      ${edit_new_transactionDate}
     Set Suite Variable      ${edit_new_transactionDate}
     Should Be Equal As Strings         ${edit_new_transactionDate}        ${new_transactionDate} 
@@ -102,6 +148,7 @@ Click Submit Edit Btn
     Click Element      id:btn-oe-submit
     Click Element      id:btn-modal-cancel
     Click Element      xpath://button[@class="btn-dark-blue"]
+    Click Element      xpath://button[@class="btn-dark-blue"]
 
 Click last list
     Click Element       xpath://*[@id="sl-cp-detail-0"]
@@ -120,15 +167,15 @@ Clear billNo
     
 Clear billDate
     #[Arguments]     ${new_billDate}
-    Convert Time        ${new_billDate}
+    Convert Time billDate      
     Click Element       id:input-oe-detail-billDate
-    Select Date 
+    Select Date Edit billDate 
 
 Clear transactionDate
     #[Arguments]     ${new_transactionDate}
-    Convert Time        ${new_transactionDate}
+    Convert Time transactionDate       
     Click Element       id:input-hr-detail-transactionDate
-    Select Date   
+    Select Date Edit transactionDate   
 
 Clear detail description 
     Clear Element Text      id:input-cp-detail-description
@@ -182,3 +229,71 @@ Check Status After Add Edit
     ${status_after_edit}=   Get Text     //*[@id="sl-cp-detail-status-0"]
     Set Suite Variable      ${status_after_edit}
     Log To Console      ${status_after_edit}
+
+Select Date Edit transactionDate
+    Convert Time After transactionDate
+    ${year}=    Convert To Integer  ${after_year_transactionDate}
+    ${month}=   Convert To Integer  ${after_month_transactionDate}
+    ${date}=    Convert To Integer  ${after_date_transactionDate}
+    ${month-diff}=  Evaluate        ${month}-${before_month_transactionDate}
+    ${year-diff}=   Evaluate        ${year}-${before_year_transactionDate}
+    ${move}=    Evaluate        ${year-diff}*12+${month-diff}
+    Set Suite Variable      ${move}
+
+    Log To Console      ${month-diff}      
+    Log To Console      ${year-diff}      
+    Log To Console      ${move}      
+
+    ${shiftForward}=  Set Variable If  
+    ...   ${move}>0  1
+    ...   ${move}<0  0
+
+    ${move}=  Set Variable If  
+    ...   ${move}>0  ${move}
+    ...   ${move}<0  ${move}*-1
+
+    :FOR     ${var}     IN RANGE    0       ${move}
+       \  Wait Until Element Is Visible         ${table}
+       \  Click Element     ${table}
+       \  Run Keyword If  ${shiftForward}==0        Click Element     ${previous} 
+       \  Run Keyword If  ${shiftForward}==1        Click Element     ${next}  
+
+    Click Element       xpath:(//div[@class="mat-calendar-body-cell-content"])[${date}]   
+
+    ${Log_transactionDate}=        Get Value      //*[@id="input-hr-detail-transactionDate"]
+    Log To Console      ${Log_transactionDate}    
+
+
+
+Select Date Edit billDate
+    Convert Time After billDate
+    ${year}=    Convert To Integer  ${after_year_billDate}
+    ${month}=   Convert To Integer  ${after_month_billDate}
+    ${date}=    Convert To Integer  ${after_date_billDate}
+    ${month-diff}=  Evaluate        ${month}-${before_month_billDate}
+    ${year-diff}=   Evaluate        ${year}-${before_year_billDate}
+    ${move}=    Evaluate        ${year-diff}*12+${month-diff}
+    Set Suite Variable      ${move}
+
+    Log To Console      ${month-diff}      
+    Log To Console      ${year-diff}      
+    Log To Console      ${move}      
+
+    ${shiftForward}=  Set Variable If  
+    ...   ${move}>0  1
+    ...   ${move}<0  0
+
+    ${move}=  Set Variable If  
+    ...   ${move}>0  ${move}
+    ...   ${move}<0  ${move}*-1
+
+    :FOR     ${var}     IN RANGE    0       ${move}
+       \  Wait Until Element Is Visible         ${table}
+       \  Click Element     ${table}
+       \  Run Keyword If  ${shiftForward}==0        Click Element     ${previous} 
+       \  Run Keyword If  ${shiftForward}==1        Click Element     ${next}  
+
+    Click Element       xpath:(//div[@class="mat-calendar-body-cell-content"])[${date}]   
+
+    ${Log_transactionDate}=        Get Value      //*[@id="input-hr-detail-transactionDate"]
+    Log To Console      ${Log_transactionDate}

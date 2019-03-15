@@ -31,6 +31,7 @@ Select Date
     ${month-diff}=  Evaluate        ${month}-${currentDate.month}
     ${year-diff}=   Evaluate        ${year}-${currentDate.year}
     ${move}=    Evaluate        ${year-diff}*12+${month-diff}
+    Set Suite Variable      ${move}
 
     Log To Console      ${month-diff}      
     Log To Console      ${year-diff}      
