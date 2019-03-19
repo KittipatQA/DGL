@@ -2,12 +2,11 @@
 Library              SeleniumLibrary
 Library              BuiltIn
 Library              ${CURDIR}/../../../Resource/calendar.py
-Resource             ${CURDIR}/../../../Page/oe_page_cancel_delete.resource
+Resource             ${CURDIR}/../../../Page/cp_page_cancel_delete.resource
 Resource             ${CURDIR}/../../../Resource/dglforsme.resource
-Resource             ${CURDIR}/../../../Page/home_page.resource
-Resource             ${CURDIR}/../../../Page/oe_page_add.resource
+Resource             ${CURDIR}/../../../Page/cp_page_add.resource
 Resource             ${CURDIR}/../../../Page/login_page.resource   
-Resource             ${CURDIR}/../../../Logic/TS_OE_Cancel_1.resource
+Resource             ${CURDIR}/../../../Logic/TS_CP_Cancel_1.resource
 Suite Setup          Open the web page
 Test Setup           Go to login page
 Test Template        Oe Cancel delete

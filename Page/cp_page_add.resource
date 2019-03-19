@@ -36,6 +36,7 @@ Select Date
     Log To Console      ${month-diff}      
     Log To Console      ${year-diff}      
     Log To Console      ${move}      
+    
 
     ${shiftForward}=  Set Variable If  
     ...   ${move}>0  1
