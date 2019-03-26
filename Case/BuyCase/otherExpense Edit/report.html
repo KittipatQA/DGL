@@ -5,7 +5,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 3.1a2 (Python 2.7.15 on win32)" name="Generator">
+<meta content="Robot Framework 3.1.1 (Python 2.7.15 on win32)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAqAAAAAAAAAAAAAAAAAAAALIAAAD/AAAA4AAAANwAAADcAAAA3AAAANwAAADcAAAA3AAAANwAAADcAAAA4AAAAP8AAACxAAAAAAAAAKYAAAD/AAAAuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/AAAA/wAAAKkAAAD6AAAAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN8AAAD/AAAA+gAAAMMAAAAAAAAAAgAAAGsAAABrAAAAawAAAGsAAABrAAAAawAAAGsAAABrAAAADAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAIsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANEAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAAAAAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAFAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAADwAAAB8AAAAAAAAAGAAAABcAAAAAAAAAH8AAABKAAAAAAAAAAAAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAADCAAAA/wAAACkAAADqAAAA4QAAAAAAAAD7AAAA/wAAALAAAAAGAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAIwAAAP4AAAD/AAAA/wAAAGAAAAAAAAAAAAAAAMkAAAD/AAAAigAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAAAAAAAIAAAAcAAAABkAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAA2gAAAP8AAAD7AAAAywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4AAAD/AAAAqwAAAP8AAACvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALIAAAD/AAAAsgAAAAAAAAC5AAAA/wAAAMoAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMkAAAD/AAAAvAAAAAAAAAAAAAAAAAAAAKwAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArQAAAAAAAAAAwAMAAIABAAAf+AAAP/wAAD/8AAAgBAAAP/wAAD/8AAA//AAAJIwAADHEAAA//AAAP/wAAB/4AACAAQAAwAMAAA==">
 <style media="all" type="text/css">
 /* Generic and misc styles */
@@ -1023,9 +1023,9 @@ window.util = function () {
         var dt = dateTimeFromDate(date).slice(0, 17);  // drop millis
         var offset = date.getTimezoneOffset();
         var sign = offset > 0 ? '-' : '+';
-        var hours = Math.floor(Math.abs(offset) / 60);
-        var mins = Math.abs(offset) % 60;
-        return dt + ' GMT' + sign + padTo(hours, 2) + ':' + padTo(mins, 2);
+        var hh = Math.floor(Math.abs(offset) / 60);
+        var mm = Math.abs(offset) % 60;
+        return dt + ' UTC' + sign + padTo(hh, 2) + ':' + padTo(mm, 2);
     }
     function createGeneratedAgoString(timestamp) {
         function timeString(time, shortUnit) {
@@ -1585,22 +1585,22 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[1,0,123335],[],[[4,0,1,0,[],[1,9048,111697],[]]],[],[1,1,1,1]];
+window.output["suite"] = [1,2,3,0,[],[1,0,193176],[],[[4,0,1,0,[],[1,7017,183501],[]]],[],[1,1,1,1]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*TS OE Edit Cr 001","*d:\\DGL\\Case\\BuyCase\\otherExpense Edit\\TS_OE_Edit_Cr_001.robot","*TS_OE_Edit_Cr_001.robot","*2ตรวจสอบการเพิ่มรายการ_กรณี_นิติบุคคลมี_VATจ่ายเจ้าหนี้ไม่มี_VAT_รายการมี_TAX(2%)_"]);
+window.output["strings"] = window.output["strings"].concat(["*","*TS OE Edit Cr 001","*d:\\DGL\\Case\\BuyCase\\otherExpense Edit\\TS_OE_Edit_Cr_001.robot","*TS_OE_Edit_Cr_001.robot","*1ตรวจสอบการแก้ไขรายการ_โดยมีเงื่อนไขดังนี้_แก้ไขรหัสหรือชื่อผู้จัดจำหน่าย_ระบุข้อมูลทุก_Field"]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:01:52","fail":0,"label":"Critical Tasks","pass":1},{"elapsed":"00:01:52","fail":0,"label":"All Tasks","pass":1}],[],[{"elapsed":"00:02:03","fail":0,"id":"s1","label":"TS OE Edit Cr 001","name":"TS OE Edit Cr 001","pass":1}]];
+window.output["stats"] = [[{"elapsed":"00:03:04","fail":0,"label":"Critical Tasks","pass":1},{"elapsed":"00:03:04","fail":0,"label":"All Tasks","pass":1}],[],[{"elapsed":"00:03:13","fail":0,"id":"s1","label":"TS OE Edit Cr 001","name":"TS OE Edit Cr 001","pass":1}]];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1547451287931;
+window.output["baseMillis"] = 1553585950416;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 123501;
+window.output["generated"] = 193280;
 </script>
 <script type="text/javascript">
 window.settings = {"background":{"fail":"#f66","nonCriticalFail":"#9e9","pass":"#9e9"},"logURL":"log.html","rpa":true,"title":""};

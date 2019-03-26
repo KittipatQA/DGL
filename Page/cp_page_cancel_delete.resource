@@ -13,15 +13,16 @@ Click Btn cancel
 
 Click Btn confirm cancel and delete
     Click Element        xpath://*[@id="btn-modal-cancel"]
+    Click Element        xpath://*[@id="container"]/div/div[3]/div/button
 
 Click Btn delete
     Click Element        xpath://*[@id="btn-oe-delete"]
 
 Click last list
-    Click Element       xpath://*[@id="sl-oe-detail-0"]
+    Click Element       xpath://*[@id="sl-cp-detail-0"]
 
 Check Status After cancel
-    ${status_list}=   Get Text     //*[@id="sl-oe-detail-0"]/div[7]/label
+    ${status_list}=   Get Text     //*[@id="sl-cp-detail-0"]/div[6]
     Set Suite Variable      ${status_list}
 
 Check Status Cancel

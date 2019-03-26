@@ -2,6 +2,7 @@
 Library              SeleniumLibrary
 Library              BuiltIn
 Library              String
+Library              ${CURDIR}/../../../Resource/calendar.py
 Resource             ${CURDIR}/../../../Resource/dglforsme.resource
 Resource             ${CURDIR}/../../../Page/home_page.resource
 Resource             ${CURDIR}/../../../Page/oe_page_add.resource

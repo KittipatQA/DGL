@@ -18,6 +18,119 @@ ${new_paymentCashAmount}        6,000.00
 ${new_status_list}      ค้างชำระ
 
 *** Keywords ***
+Convert Time transactionDate
+    ${edit_now_transactionDate}=       Get Value      id:input-oe-detail-transactionDate
+    Log To Console      ${edit_now_transactionDate}
+    Set Suite Variable      ${edit_now_transactionDate}
+    ${date_now}=    splittime       ${edit_now_transactionDate} 
+    Log To Console      ${date_now}[0]
+    ${before_date_transactionDate}=    Set Variable        ${date_now}[0]
+    ${before_month_transactionDate}=    Set Variable        ${date_now}[1]
+    ${before_year_transactionDate}=    Set Variable        ${date_now}[2]
+    Set Suite Variable      ${before_date_transactionDate}
+    Set Suite Variable      ${before_month_transactionDate}
+    Set Suite Variable      ${before_year_transactionDate} 
+
+Convert Time After transactionDate
+    ${date_now}=    splittime       ${new_transactionDate} 
+    Log To Console      ${date_now}[0]
+    ${after_date_transactionDate}=    Set Variable        ${date_now}[0]
+    ${after_month_transactionDate}=    Set Variable        ${date_now}[1]
+    ${after_year_transactionDate}=    Set Variable        ${date_now}[2]
+    Set Suite Variable      ${after_date_transactionDate}
+    Set Suite Variable      ${after_month_transactionDate}
+    Set Suite Variable      ${after_year_transactionDate} 
+
+Convert Time billDate 
+    ${edit_now_detail_billDate}=       Get Value      id:input-oe-detail-billDate
+    Log To Console      ${edit_now_detail_billDate}
+    Set Suite Variable      ${edit_now_detail_billDate}
+    ${date_now}=    splittime       ${edit_now_detail_billDate} 
+    Log To Console      ${date_now}[0]
+    ${before_date_billDate}=    Set Variable        ${date_now}[0]
+    ${before_month_billDate}=    Set Variable        ${date_now}[1]
+    ${before_year_billDate}=    Set Variable        ${date_now}[2]
+    Set Suite Variable      ${before_date_billDate}
+    Set Suite Variable      ${before_month_billDate}
+    Set Suite Variable      ${before_year_billDate} 
+
+Convert Time After billDate 
+    ${date_now}=    splittime       ${new_billDate} 
+    Log To Console      ${date_now}[0]
+    ${after_date_billDate}=    Set Variable        ${date_now}[0]
+    ${after_month_billDate}=    Set Variable        ${date_now}[1]
+    ${after_year_billDate}=    Set Variable        ${date_now}[2]
+    Set Suite Variable      ${after_date_billDate}
+    Set Suite Variable      ${after_month_billDate}
+    Set Suite Variable      ${after_year_billDate}
+
+Select Date Edit transactionDate
+    Convert Time After transactionDate
+    ${year}=    Convert To Integer  ${after_year_transactionDate}
+    ${month}=   Convert To Integer  ${after_month_transactionDate}
+    ${date}=    Convert To Integer  ${after_date_transactionDate}
+    ${month-diff}=  Evaluate        ${month}-${before_month_transactionDate}
+    ${year-diff}=   Evaluate        ${year}-${before_year_transactionDate}
+    ${move}=    Evaluate        ${year-diff}*12+${month-diff}
+    Set Suite Variable      ${move}
+
+    Log To Console      ${month-diff}      
+    Log To Console      ${year-diff}      
+    Log To Console      ${move}      
+
+    ${shiftForward}=  Set Variable If  
+    ...   ${move}>0  1
+    ...   ${move}<0  0
+
+    ${move}=  Set Variable If  
+    ...   ${move}>0  ${move}
+    ...   ${move}<0  ${move}*-1
+
+    :FOR     ${var}     IN RANGE    0       ${move}
+       \  Wait Until Element Is Visible         ${table}
+       \  Click Element     ${table}
+       \  Run Keyword If  ${shiftForward}==0        Click Element     ${previous} 
+       \  Run Keyword If  ${shiftForward}==1        Click Element     ${next}  
+
+    Click Element       xpath:(//div[@class="mat-calendar-body-cell-content"])[${date}]   
+
+    ${Log_transactionDate}=        Get Value      //*[@id="input-oe-detail-transactionDate"]
+    Log To Console      ${Log_transactionDate}   
+
+Select Date Edit billDate
+    Convert Time After billDate
+    ${year}=    Convert To Integer  ${after_year_billDate}
+    ${month}=   Convert To Integer  ${after_month_billDate}
+    ${date}=    Convert To Integer  ${after_date_billDate}
+    ${month-diff}=  Evaluate        ${month}-${before_month_billDate}
+    ${year-diff}=   Evaluate        ${year}-${before_year_billDate}
+    ${move}=    Evaluate        ${year-diff}*12+${month-diff}
+    Set Suite Variable      ${move}
+
+    Log To Console      ${month-diff}      
+    Log To Console      ${year-diff}      
+    Log To Console      ${move}      
+
+    ${shiftForward}=  Set Variable If  
+    ...   ${move}>0  1
+    ...   ${move}<0  0
+
+    ${move}=  Set Variable If  
+    ...   ${move}>0  ${move}
+    ...   ${move}<0  ${move}*-1
+
+    :FOR     ${var}     IN RANGE    0       ${move}
+       \  Wait Until Element Is Visible         ${table}
+       \  Click Element     ${table}
+       \  Run Keyword If  ${shiftForward}==0        Click Element     ${previous} 
+       \  Run Keyword If  ${shiftForward}==1        Click Element     ${next}  
+
+    Click Element       xpath:(//div[@class="mat-calendar-body-cell-content"])[${date}]   
+
+    ${Log_transactionDate}=        Get Value      //*[@id="input-oe-detail-billDate"]
+    Log To Console      ${Log_transactionDate} 
+
+
 
 Get edit unitPrice
     ${edit_new_transactions_unitPrice}=       Get Value      id:input-oe-transactions-unitPrice-0
@@ -119,12 +232,14 @@ Clear billNo
     Input Text      id:input-oe-detail-billNo     ${new_billNo}
     
 Clear billDate
-    Clear Element Text      id:input-oe-detail-billDate
-    Input Text      id:input-oe-detail-billDate     ${new_billDate}
+    Convert Time billDate      
+    Click Element       id:input-oe-detail-billDate
+    Select Date Edit billDate
 
 Clear transactionDate
-    Clear Element Text      id:input-oe-detail-transactionDate
-    Input Text      id:input-oe-detail-transactionDate     ${new_transactionDate}
+    Convert Time transactionDate       
+    Click Element       id:input-oe-detail-transactionDate
+    Select Date Edit transactionDate
 
 Clear detail description 
     Clear Element Text      id:input-oe-detail-description
