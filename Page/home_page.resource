@@ -7,6 +7,7 @@ ${save_other_buy_list}      xpath:(//span[@class="menu-title"])[4]
 ${sell}     xpath:(//span[@class="menu-title"])[5]
 ${save_otherRevenue_sell_list}      xpath:(//span[@class="menu-title"])[7]
 ${cashPurchase}     xpath:(//span[@class="menu-title" and contains(text(),'ชื้อสด')])
+${cashSale}     xpath:(//span[@class="menu-title" and contains(text(),'ขายสด')])
 
 *** Keywords ***
 
@@ -29,3 +30,7 @@ Click Tab otherRevenue
 Click Tab cashPurchase
     Element Should Be Visible           ${cashPurchase}
     Click Element       ${cashPurchase}
+
+Click Tab cashSale
+    Element Should Be Visible           ${cashSale}
+    Click Element       ${cashSale}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="true" generated="20190307 16:14:36.227" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<robot rpa="true" generated="20190327 10:53:15.771" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
 <suite source="d:\DGL\Case\BuyCase\otherExpense\TC_OE_Lis_001.robot" id="s1" name="TC OE Lis 001">
 <kw type="setup" name="Open the web page" library="dglforsme">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,21 +8,21 @@
 <arg>${open_url}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20190307 16:14:36.603" level="INFO">Opening browser 'chrome' to base url 'https://dgl-acct.addtechhub.com'.</msg>
-<status status="PASS" endtime="20190307 16:14:43.885" starttime="20190307 16:14:36.602"></status>
+<msg timestamp="20190327 10:53:16.013" level="INFO">Opening browser 'chrome' to base url 'https://dgl-acct.addtechhub.com'.</msg>
+<status status="PASS" endtime="20190327 10:53:23.395" starttime="20190327 10:53:16.013"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20190307 16:14:45.012" starttime="20190307 16:14:43.886"></status>
+<status status="PASS" endtime="20190327 10:53:24.598" starttime="20190327 10:53:23.396"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>0.5</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:14:45.013" starttime="20190307 16:14:45.012"></status>
+<status status="PASS" endtime="20190327 10:53:24.599" starttime="20190327 10:53:24.598"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:14:45.013" starttime="20190307 16:14:36.602"></status>
+<status status="PASS" endtime="20190327 10:53:24.599" starttime="20190327 10:53:16.013"></status>
 </kw>
 <test id="s1-t1" name="1ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ชำระแล้ว">
 <kw type="setup" name="Go to login page" library="dglforsme">
@@ -31,10 +31,10 @@
 <arguments>
 <arg>${login_url}</arg>
 </arguments>
-<msg timestamp="20190307 16:14:45.020" level="INFO">Opening url 'https://dgl-acct.addtechhub.com/login'</msg>
-<status status="PASS" endtime="20190307 16:14:48.427" starttime="20190307 16:14:45.020"></status>
+<msg timestamp="20190327 10:53:24.602" level="INFO">Opening url 'https://dgl-acct.addtechhub.com/login'</msg>
+<status status="PASS" endtime="20190327 10:53:28.628" starttime="20190327 10:53:24.601"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:14:48.427" starttime="20190307 16:14:45.019"></status>
+<status status="PASS" endtime="20190327 10:53:28.628" starttime="20190327 10:53:24.601"></status>
 </kw>
 <kw name="Oe Check Result 1" library="TS_OE_Lis_1">
 <arguments>
@@ -51,7 +51,7 @@
 <arguments>
 <arg>0.5</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:14:48.429" starttime="20190307 16:14:48.429"></status>
+<status status="PASS" endtime="20190327 10:53:28.629" starttime="20190327 10:53:28.629"></status>
 </kw>
 <kw name="Set Directory" library="dglforsme">
 <arguments>
@@ -69,18 +69,18 @@
 <assign>
 <var>${date current}</var>
 </assign>
-<msg timestamp="20190307 16:14:48.430" level="INFO">${date current} = 2019-03-07 16-14-48</msg>
-<status status="PASS" endtime="20190307 16:14:48.431" starttime="20190307 16:14:48.430"></status>
+<msg timestamp="20190327 10:53:28.630" level="INFO">${date current} = 2019-03-27 10-53-28</msg>
+<status status="PASS" endtime="20190327 10:53:28.631" starttime="20190327 10:53:28.630"></status>
 </kw>
-<msg timestamp="20190307 16:14:48.432" level="INFO">${Date} = 2019-03-07 16-14-48</msg>
-<status status="PASS" endtime="20190307 16:14:48.432" starttime="20190307 16:14:48.429"></status>
+<msg timestamp="20190327 10:53:28.631" level="INFO">${Date} = 2019-03-27 10-53-28</msg>
+<status status="PASS" endtime="20190327 10:53:28.631" starttime="20190327 10:53:28.630"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${Date}</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:14:48.434" starttime="20190307 16:14:48.433"></status>
+<status status="PASS" endtime="20190327 10:53:28.631" starttime="20190327 10:53:28.631"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -88,10 +88,10 @@
 <arg>${Path}</arg>
 <arg>${Output_url}/${image_name} ${Date}</arg>
 </arguments>
-<msg timestamp="20190307 16:14:48.435" level="INFO">${Path} = /Users/USER1/.jenkins/workspace/DGL/Screen/OE Page Search 2019-03-07 16-14-48</msg>
-<status status="PASS" endtime="20190307 16:14:48.436" starttime="20190307 16:14:48.435"></status>
+<msg timestamp="20190327 10:53:28.633" level="INFO">${Path} = /Users/USER1/.jenkins/workspace/DGL/Screen/OE Page Search 2019-03-27 10-53-28</msg>
+<status status="PASS" endtime="20190327 10:53:28.633" starttime="20190327 10:53:28.632"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:14:48.436" starttime="20190307 16:14:48.429"></status>
+<status status="PASS" endtime="20190327 10:53:28.633" starttime="20190327 10:53:28.630"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -99,10 +99,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:14:49.415" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-14-48/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A71.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-14-48/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A71.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:14:49.415" starttime="20190307 16:14:48.437"></status>
+<msg timestamp="20190327 10:53:29.590" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-53-28/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A71.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-53-28/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A71.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:53:29.590" starttime="20190327 10:53:28.634"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:14:49.415" starttime="20190307 16:14:48.436"></status>
+<status status="PASS" endtime="20190327 10:53:29.590" starttime="20190327 10:53:28.633"></status>
 </kw>
 <kw name="Input User" library="login_page">
 <arguments>
@@ -114,10 +114,10 @@
 <arg>id:input-email</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190307 16:14:49.417" level="INFO">Typing text 'tester@gmail.com' into text field 'id:input-email'.</msg>
-<status status="PASS" endtime="20190307 16:14:51.199" starttime="20190307 16:14:49.417"></status>
+<msg timestamp="20190327 10:53:29.591" level="INFO">Typing text 'tester@gmail.com' into text field 'id:input-email'.</msg>
+<status status="PASS" endtime="20190327 10:53:31.253" starttime="20190327 10:53:29.591"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:14:51.199" starttime="20190307 16:14:49.416"></status>
+<status status="PASS" endtime="20190327 10:53:31.253" starttime="20190327 10:53:29.590"></status>
 </kw>
 <kw name="Input Password" library="login_page">
 <arguments>
@@ -129,10 +129,10 @@
 <arg>id:input-password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190307 16:14:51.200" level="INFO">Typing text '123123' into text field 'id:input-password'.</msg>
-<status status="PASS" endtime="20190307 16:14:52.898" starttime="20190307 16:14:51.200"></status>
+<msg timestamp="20190327 10:53:31.254" level="INFO">Typing text '123123' into text field 'id:input-password'.</msg>
+<status status="PASS" endtime="20190327 10:53:32.961" starttime="20190327 10:53:31.253"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:14:52.898" starttime="20190307 16:14:51.199"></status>
+<status status="PASS" endtime="20190327 10:53:32.961" starttime="20190327 10:53:31.253"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -140,10 +140,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:14:53.729" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-14-48/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A72.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-14-48/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A72.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:14:53.731" starttime="20190307 16:14:52.899"></status>
+<msg timestamp="20190327 10:53:33.784" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-53-28/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A72.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-53-28/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A72.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:53:33.784" starttime="20190327 10:53:32.961"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:14:53.731" starttime="20190307 16:14:52.898"></status>
+<status status="PASS" endtime="20190327 10:53:33.784" starttime="20190327 10:53:32.961"></status>
 </kw>
 <kw name="Login Submit" library="login_page">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -151,17 +151,17 @@
 <arguments>
 <arg>id:btn-submit-login</arg>
 </arguments>
-<msg timestamp="20190307 16:14:53.731" level="INFO">Clicking button 'id:btn-submit-login'.</msg>
-<status status="PASS" endtime="20190307 16:14:56.494" starttime="20190307 16:14:53.731"></status>
+<msg timestamp="20190327 10:53:33.785" level="INFO">Clicking button 'id:btn-submit-login'.</msg>
+<status status="PASS" endtime="20190327 10:53:36.369" starttime="20190327 10:53:33.785"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:14:56.494" starttime="20190307 16:14:53.731"></status>
+<status status="PASS" endtime="20190327 10:53:36.369" starttime="20190327 10:53:33.784"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${logic}</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:14:57.976" starttime="20190307 16:14:56.495"></status>
+<status status="PASS" endtime="20190327 10:53:37.740" starttime="20190327 10:53:36.370"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -169,10 +169,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:14:58.939" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-14-48/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A73.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-14-48/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A73.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:14:58.939" starttime="20190307 16:14:57.981"></status>
+<msg timestamp="20190327 10:53:38.620" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-53-28/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A73.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-53-28/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A73.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:53:38.620" starttime="20190327 10:53:37.740"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:14:58.940" starttime="20190307 16:14:57.979"></status>
+<status status="PASS" endtime="20190327 10:53:38.620" starttime="20190327 10:53:37.740"></status>
 </kw>
 <kw name="Click Tab Buy" library="home_page">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
@@ -180,18 +180,18 @@
 <arguments>
 <arg>${buy}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:00.014" level="INFO">Element 'xpath:(//span[@class="menu-title"])[2]' is displayed.</msg>
-<status status="PASS" endtime="20190307 16:15:00.014" starttime="20190307 16:14:58.940"></status>
+<msg timestamp="20190327 10:53:39.645" level="INFO">Element 'xpath:(//span[@class="menu-title"])[2]' is displayed.</msg>
+<status status="PASS" endtime="20190327 10:53:39.645" starttime="20190327 10:53:38.621"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${buy}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:00.014" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[2]'.</msg>
-<status status="PASS" endtime="20190307 16:15:01.139" starttime="20190307 16:15:00.014"></status>
+<msg timestamp="20190327 10:53:39.646" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[2]'.</msg>
+<status status="PASS" endtime="20190327 10:53:40.714" starttime="20190327 10:53:39.645"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:01.140" starttime="20190307 16:14:58.940"></status>
+<status status="PASS" endtime="20190327 10:53:40.714" starttime="20190327 10:53:38.620"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -199,10 +199,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:02.067" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-14-48/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A74.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-14-48/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A74.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:15:02.067" starttime="20190307 16:15:01.144"></status>
+<msg timestamp="20190327 10:53:41.562" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-53-28/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A74.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-53-28/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A74.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:53:41.563" starttime="20190327 10:53:40.714"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:02.067" starttime="20190307 16:15:01.141"></status>
+<status status="PASS" endtime="20190327 10:53:41.563" starttime="20190327 10:53:40.714"></status>
 </kw>
 <kw name="Click Tab OtherExpense" library="home_page">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
@@ -210,18 +210,18 @@
 <arguments>
 <arg>${save_other_buy_list}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:03.134" level="INFO">Element 'xpath:(//span[@class="menu-title"])[4]' is displayed.</msg>
-<status status="PASS" endtime="20190307 16:15:03.134" starttime="20190307 16:15:02.068"></status>
+<msg timestamp="20190327 10:53:42.584" level="INFO">Element 'xpath:(//span[@class="menu-title"])[4]' is displayed.</msg>
+<status status="PASS" endtime="20190327 10:53:42.584" starttime="20190327 10:53:41.563"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${save_other_buy_list}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:03.136" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[4]'.</msg>
-<status status="PASS" endtime="20190307 16:15:04.353" starttime="20190307 16:15:03.135"></status>
+<msg timestamp="20190327 10:53:42.584" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[4]'.</msg>
+<status status="PASS" endtime="20190327 10:53:43.714" starttime="20190327 10:53:42.584"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:04.353" starttime="20190307 16:15:02.067"></status>
+<status status="PASS" endtime="20190327 10:53:43.714" starttime="20190327 10:53:41.563"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -229,10 +229,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:05.250" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-14-48/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A75.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-14-48/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A75.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:15:05.251" starttime="20190307 16:15:04.354"></status>
+<msg timestamp="20190327 10:53:44.567" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-53-28/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A75.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-53-28/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A75.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:53:44.567" starttime="20190327 10:53:43.714"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:05.251" starttime="20190307 16:15:04.354"></status>
+<status status="PASS" endtime="20190327 10:53:44.567" starttime="20190327 10:53:43.714"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -248,20 +248,20 @@
 <arguments>
 <arg>id:cbx-oe-paid-input</arg>
 </arguments>
-<msg timestamp="20190307 16:15:05.252" level="INFO">Selecting checkbox 'id:cbx-oe-paid-input'.</msg>
-<status status="PASS" endtime="20190307 16:15:07.345" starttime="20190307 16:15:05.252"></status>
+<msg timestamp="20190327 10:53:44.568" level="INFO">Selecting checkbox 'id:cbx-oe-paid-input'.</msg>
+<status status="PASS" endtime="20190327 10:53:46.601" starttime="20190327 10:53:44.568"></status>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
 <arguments>
 <arg>name:paid</arg>
 </arguments>
-<msg timestamp="20190307 16:15:07.347" level="INFO">Verifying checkbox 'name:paid' is selected.</msg>
-<status status="PASS" endtime="20190307 16:15:09.968" starttime="20190307 16:15:07.346"></status>
+<msg timestamp="20190327 10:53:46.601" level="INFO">Verifying checkbox 'name:paid' is selected.</msg>
+<status status="PASS" endtime="20190327 10:53:49.132" starttime="20190327 10:53:46.601"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:09.968" starttime="20190307 16:15:05.251"></status>
+<status status="PASS" endtime="20190327 10:53:49.132" starttime="20190327 10:53:44.568"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:09.969" starttime="20190307 16:15:05.251"></status>
+<status status="PASS" endtime="20190327 10:53:49.132" starttime="20190327 10:53:44.567"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -277,28 +277,28 @@
 <arguments>
 <arg>name:outstanding</arg>
 </arguments>
-<msg timestamp="20190307 16:15:09.976" level="INFO">Verifying checkbox 'name:outstanding' is selected.</msg>
-<status status="PASS" endtime="20190307 16:15:12.586" starttime="20190307 16:15:09.975"></status>
+<msg timestamp="20190327 10:53:49.133" level="INFO">Verifying checkbox 'name:outstanding' is selected.</msg>
+<status status="PASS" endtime="20190327 10:53:51.670" starttime="20190327 10:53:49.133"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://*[@id="cbx-oe-outstanding"]/label/div</arg>
 </arguments>
-<msg timestamp="20190307 16:15:12.588" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-outstanding"]/label/div'.</msg>
-<status status="PASS" endtime="20190307 16:15:13.794" starttime="20190307 16:15:12.587"></status>
+<msg timestamp="20190327 10:53:51.670" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-outstanding"]/label/div'.</msg>
+<status status="PASS" endtime="20190327 10:53:52.745" starttime="20190327 10:53:51.670"></status>
 </kw>
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
 <arguments>
 <arg>name:outstanding</arg>
 </arguments>
-<msg timestamp="20190307 16:15:13.795" level="INFO">Verifying checkbox 'name:outstanding' is not selected.</msg>
-<status status="PASS" endtime="20190307 16:15:16.400" starttime="20190307 16:15:13.795"></status>
+<msg timestamp="20190327 10:53:52.745" level="INFO">Verifying checkbox 'name:outstanding' is not selected.</msg>
+<status status="PASS" endtime="20190327 10:53:55.273" starttime="20190327 10:53:52.745"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:16.401" starttime="20190307 16:15:09.974"></status>
+<status status="PASS" endtime="20190327 10:53:55.273" starttime="20190327 10:53:49.133"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:16.401" starttime="20190307 16:15:09.970"></status>
+<status status="PASS" endtime="20190327 10:53:55.273" starttime="20190327 10:53:49.132"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -314,28 +314,28 @@
 <arguments>
 <arg>name:void</arg>
 </arguments>
-<msg timestamp="20190307 16:15:16.407" level="INFO">Verifying checkbox 'name:void' is selected.</msg>
-<status status="PASS" endtime="20190307 16:15:19.017" starttime="20190307 16:15:16.407"></status>
+<msg timestamp="20190327 10:53:55.274" level="INFO">Verifying checkbox 'name:void' is selected.</msg>
+<status status="PASS" endtime="20190327 10:53:57.811" starttime="20190327 10:53:55.274"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://*[@id="cbx-oe-void"]/label/div</arg>
 </arguments>
-<msg timestamp="20190307 16:15:19.020" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-void"]/label/div'.</msg>
-<status status="PASS" endtime="20190307 16:15:20.177" starttime="20190307 16:15:19.018"></status>
+<msg timestamp="20190327 10:53:57.811" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-void"]/label/div'.</msg>
+<status status="PASS" endtime="20190327 10:53:58.876" starttime="20190327 10:53:57.811"></status>
 </kw>
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
 <arguments>
 <arg>name:void</arg>
 </arguments>
-<msg timestamp="20190307 16:15:20.177" level="INFO">Verifying checkbox 'name:void' is not selected.</msg>
-<status status="PASS" endtime="20190307 16:15:22.774" starttime="20190307 16:15:20.177"></status>
+<msg timestamp="20190327 10:53:58.876" level="INFO">Verifying checkbox 'name:void' is not selected.</msg>
+<status status="PASS" endtime="20190327 10:54:01.402" starttime="20190327 10:53:58.876"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:22.775" starttime="20190307 16:15:16.405"></status>
+<status status="PASS" endtime="20190327 10:54:01.402" starttime="20190327 10:53:55.274"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:22.775" starttime="20190307 16:15:16.403"></status>
+<status status="PASS" endtime="20190327 10:54:01.402" starttime="20190327 10:53:55.273"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -343,10 +343,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:23.682" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-14-48/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A76.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-14-48/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A76.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:15:23.683" starttime="20190307 16:15:22.777"></status>
+<msg timestamp="20190327 10:54:02.230" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-53-28/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A76.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-53-28/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A76.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:54:02.231" starttime="20190327 10:54:01.402"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:23.683" starttime="20190307 16:15:22.776"></status>
+<status status="PASS" endtime="20190327 10:54:02.231" starttime="20190327 10:54:01.402"></status>
 </kw>
 <kw name="Click Btn Search" library="oe_page">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -354,10 +354,10 @@
 <arguments>
 <arg>id:btn-oe-search-keyword</arg>
 </arguments>
-<msg timestamp="20190307 16:15:23.685" level="INFO">Clicking button 'id:btn-oe-search-keyword'.</msg>
-<status status="PASS" endtime="20190307 16:15:26.373" starttime="20190307 16:15:23.685"></status>
+<msg timestamp="20190327 10:54:02.231" level="INFO">Clicking button 'id:btn-oe-search-keyword'.</msg>
+<status status="PASS" endtime="20190327 10:54:04.803" starttime="20190327 10:54:02.231"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:26.373" starttime="20190307 16:15:23.684"></status>
+<status status="PASS" endtime="20190327 10:54:04.803" starttime="20190327 10:54:02.231"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -365,8 +365,8 @@
 <arg>@{status_line}</arg>
 <arg>${result_status}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:26.375" level="INFO">@{status_line} = [ ชำระแล้ว ]</msg>
-<status status="PASS" endtime="20190307 16:15:26.375" starttime="20190307 16:15:26.373"></status>
+<msg timestamp="20190327 10:54:04.804" level="INFO">@{status_line} = [ ชำระแล้ว ]</msg>
+<status status="PASS" endtime="20190327 10:54:04.804" starttime="20190327 10:54:04.803"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -374,8 +374,8 @@
 <arg>${status_true}</arg>
 <arg>สถานะถูกต้อง</arg>
 </arguments>
-<msg timestamp="20190307 16:15:26.376" level="INFO">${status_true} = สถานะถูกต้อง</msg>
-<status status="PASS" endtime="20190307 16:15:26.377" starttime="20190307 16:15:26.375"></status>
+<msg timestamp="20190327 10:54:04.805" level="INFO">${status_true} = สถานะถูกต้อง</msg>
+<status status="PASS" endtime="20190327 10:54:04.805" starttime="20190327 10:54:04.804"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -383,8 +383,8 @@
 <arg>${status_false}</arg>
 <arg>สถานะไม่ถูกต้อง</arg>
 </arguments>
-<msg timestamp="20190307 16:15:26.377" level="INFO">${status_false} = สถานะไม่ถูกต้อง</msg>
-<status status="PASS" endtime="20190307 16:15:26.377" starttime="20190307 16:15:26.377"></status>
+<msg timestamp="20190327 10:54:04.807" level="INFO">${status_false} = สถานะไม่ถูกต้อง</msg>
+<status status="PASS" endtime="20190327 10:54:04.807" starttime="20190327 10:54:04.806"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -392,8 +392,8 @@
 <arg>${status_value}</arg>
 <arg>ไม่พบรายการ</arg>
 </arguments>
-<msg timestamp="20190307 16:15:26.381" level="INFO">${status_value} = ไม่พบรายการ</msg>
-<status status="PASS" endtime="20190307 16:15:26.381" starttime="20190307 16:15:26.378"></status>
+<msg timestamp="20190327 10:54:04.808" level="INFO">${status_value} = ไม่พบรายการ</msg>
+<status status="PASS" endtime="20190327 10:54:04.808" starttime="20190327 10:54:04.807"></status>
 </kw>
 <kw name="Get Element Count" library="SeleniumLibrary">
 <doc>Returns number of elements matching ``locator``.</doc>
@@ -403,16 +403,16 @@
 <assign>
 <var>${column}</var>
 </assign>
-<msg timestamp="20190307 16:15:26.901" level="INFO">${column} = 1</msg>
-<status status="PASS" endtime="20190307 16:15:26.901" starttime="20190307 16:15:26.382"></status>
+<msg timestamp="20190327 10:54:05.320" level="INFO">${column} = 1</msg>
+<status status="PASS" endtime="20190327 10:54:05.320" starttime="20190327 10:54:04.808"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${column}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:26.903" level="INFO">${column} = 1</msg>
-<status status="PASS" endtime="20190307 16:15:26.903" starttime="20190307 16:15:26.902"></status>
+<msg timestamp="20190327 10:54:05.321" level="INFO">${column} = 1</msg>
+<status status="PASS" endtime="20190327 10:54:05.321" starttime="20190327 10:54:05.320"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -429,9 +429,9 @@
 <arguments>
 <arg>มีรายการ</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:15:26.906" starttime="20190307 16:15:26.905"></status>
+<status status="PASS" endtime="20190327 10:54:05.321" starttime="20190327 10:54:05.321"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:26.908" starttime="20190307 16:15:26.904"></status>
+<status status="PASS" endtime="20190327 10:54:05.321" starttime="20190327 10:54:05.321"></status>
 </kw>
 <kw type="for" name="${index} IN RANGE [ 0 | ${column} ]">
 <kw type="foritem" name="${index} = 0">
@@ -443,8 +443,8 @@
 <assign>
 <var>${status_now}</var>
 </assign>
-<msg timestamp="20190307 16:15:28.023" level="INFO">${status_now} = ชำระแล้ว</msg>
-<status status="PASS" endtime="20190307 16:15:28.024" starttime="20190307 16:15:26.910"></status>
+<msg timestamp="20190327 10:54:06.348" level="INFO">${status_now} = ชำระแล้ว</msg>
+<status status="PASS" endtime="20190327 10:54:06.348" starttime="20190327 10:54:05.321"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -461,13 +461,13 @@
 <arguments>
 <arg>${status_now} : ${status_true}</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:15:28.034" starttime="20190307 16:15:28.031"></status>
+<status status="PASS" endtime="20190327 10:54:06.350" starttime="20190327 10:54:06.349"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:28.034" starttime="20190307 16:15:28.024"></status>
+<status status="PASS" endtime="20190327 10:54:06.350" starttime="20190327 10:54:06.348"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:28.034" starttime="20190307 16:15:26.909"></status>
+<status status="PASS" endtime="20190327 10:54:06.350" starttime="20190327 10:54:05.321"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:28.034" starttime="20190307 16:15:26.908"></status>
+<status status="PASS" endtime="20190327 10:54:06.350" starttime="20190327 10:54:05.321"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -475,21 +475,21 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:29.008" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-14-48/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A77.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-14-48/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A77.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:15:29.008" starttime="20190307 16:15:28.037"></status>
+<msg timestamp="20190327 10:54:07.171" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-53-28/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A77.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-53-28/1%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A77.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:54:07.171" starttime="20190327 10:54:06.350"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:29.008" starttime="20190307 16:15:28.036"></status>
+<status status="PASS" endtime="20190327 10:54:07.172" starttime="20190327 10:54:06.350"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:29.008" starttime="20190307 16:14:48.428"></status>
+<status status="PASS" endtime="20190327 10:54:07.172" starttime="20190327 10:53:28.628"></status>
 </kw>
 <kw type="teardown" name="Run Keyword If Test Failed" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
 <arguments>
 <arg>Capture Screen</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:15:29.010" starttime="20190307 16:15:29.010"></status>
+<status status="PASS" endtime="20190327 10:54:07.172" starttime="20190327 10:54:07.172"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:29.010" critical="yes" starttime="20190307 16:14:45.013"></status>
+<status status="PASS" endtime="20190327 10:54:07.173" critical="yes" starttime="20190327 10:53:24.599"></status>
 </test>
 <test id="s1-t2" name="2ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ค้างชำระ">
 <kw type="setup" name="Go to login page" library="dglforsme">
@@ -498,10 +498,10 @@
 <arguments>
 <arg>${login_url}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:29.019" level="INFO">Opening url 'https://dgl-acct.addtechhub.com/login'</msg>
-<status status="PASS" endtime="20190307 16:15:33.051" starttime="20190307 16:15:29.019"></status>
+<msg timestamp="20190327 10:54:07.177" level="INFO">Opening url 'https://dgl-acct.addtechhub.com/login'</msg>
+<status status="PASS" endtime="20190327 10:54:11.826" starttime="20190327 10:54:07.177"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:33.052" starttime="20190307 16:15:29.018"></status>
+<status status="PASS" endtime="20190327 10:54:11.826" starttime="20190327 10:54:07.177"></status>
 </kw>
 <kw name="Oe Check Result 1" library="TS_OE_Lis_1">
 <arguments>
@@ -518,7 +518,7 @@
 <arguments>
 <arg>0.5</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:15:33.057" starttime="20190307 16:15:33.056"></status>
+<status status="PASS" endtime="20190327 10:54:11.828" starttime="20190327 10:54:11.827"></status>
 </kw>
 <kw name="Set Directory" library="dglforsme">
 <arguments>
@@ -536,18 +536,18 @@
 <assign>
 <var>${date current}</var>
 </assign>
-<msg timestamp="20190307 16:15:33.067" level="INFO">${date current} = 2019-03-07 16-15-33</msg>
-<status status="PASS" endtime="20190307 16:15:33.067" starttime="20190307 16:15:33.064"></status>
+<msg timestamp="20190327 10:54:11.828" level="INFO">${date current} = 2019-03-27 10-54-11</msg>
+<status status="PASS" endtime="20190327 10:54:11.829" starttime="20190327 10:54:11.828"></status>
 </kw>
-<msg timestamp="20190307 16:15:33.068" level="INFO">${Date} = 2019-03-07 16-15-33</msg>
-<status status="PASS" endtime="20190307 16:15:33.068" starttime="20190307 16:15:33.062"></status>
+<msg timestamp="20190327 10:54:11.829" level="INFO">${Date} = 2019-03-27 10-54-11</msg>
+<status status="PASS" endtime="20190327 10:54:11.829" starttime="20190327 10:54:11.828"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${Date}</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:15:33.071" starttime="20190307 16:15:33.069"></status>
+<status status="PASS" endtime="20190327 10:54:11.830" starttime="20190327 10:54:11.829"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -555,10 +555,10 @@
 <arg>${Path}</arg>
 <arg>${Output_url}/${image_name} ${Date}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:33.074" level="INFO">${Path} = /Users/USER1/.jenkins/workspace/DGL/Screen/OE Page Search 2019-03-07 16-15-33</msg>
-<status status="PASS" endtime="20190307 16:15:33.075" starttime="20190307 16:15:33.072"></status>
+<msg timestamp="20190327 10:54:11.830" level="INFO">${Path} = /Users/USER1/.jenkins/workspace/DGL/Screen/OE Page Search 2019-03-27 10-54-11</msg>
+<status status="PASS" endtime="20190327 10:54:11.830" starttime="20190327 10:54:11.830"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:33.076" starttime="20190307 16:15:33.057"></status>
+<status status="PASS" endtime="20190327 10:54:11.830" starttime="20190327 10:54:11.828"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -566,10 +566,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:33.952" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-15-33/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B01.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-15-33/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B01.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:15:33.952" starttime="20190307 16:15:33.080"></status>
+<msg timestamp="20190327 10:54:12.661" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-11/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B01.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-11/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:54:12.661" starttime="20190327 10:54:11.830"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:33.953" starttime="20190307 16:15:33.077"></status>
+<status status="PASS" endtime="20190327 10:54:12.661" starttime="20190327 10:54:11.830"></status>
 </kw>
 <kw name="Input User" library="login_page">
 <arguments>
@@ -581,10 +581,10 @@
 <arg>id:input-email</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:33.958" level="INFO">Typing text 'tester@gmail.com' into text field 'id:input-email'.</msg>
-<status status="PASS" endtime="20190307 16:15:35.761" starttime="20190307 16:15:33.956"></status>
+<msg timestamp="20190327 10:54:12.662" level="INFO">Typing text 'tester@gmail.com' into text field 'id:input-email'.</msg>
+<status status="PASS" endtime="20190327 10:54:14.274" starttime="20190327 10:54:12.662"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:35.762" starttime="20190307 16:15:33.953"></status>
+<status status="PASS" endtime="20190327 10:54:14.274" starttime="20190327 10:54:12.661"></status>
 </kw>
 <kw name="Input Password" library="login_page">
 <arguments>
@@ -596,10 +596,10 @@
 <arg>id:input-password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:35.763" level="INFO">Typing text '123123' into text field 'id:input-password'.</msg>
-<status status="PASS" endtime="20190307 16:15:37.479" starttime="20190307 16:15:35.762"></status>
+<msg timestamp="20190327 10:54:14.275" level="INFO">Typing text '123123' into text field 'id:input-password'.</msg>
+<status status="PASS" endtime="20190327 10:54:15.858" starttime="20190327 10:54:14.274"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:37.480" starttime="20190307 16:15:35.762"></status>
+<status status="PASS" endtime="20190327 10:54:15.858" starttime="20190327 10:54:14.274"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -607,10 +607,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:38.393" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-15-33/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B02.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-15-33/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B02.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:15:38.394" starttime="20190307 16:15:37.481"></status>
+<msg timestamp="20190327 10:54:16.674" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-11/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B02.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-11/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B02.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:54:16.674" starttime="20190327 10:54:15.859"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:38.395" starttime="20190307 16:15:37.480"></status>
+<status status="PASS" endtime="20190327 10:54:16.674" starttime="20190327 10:54:15.858"></status>
 </kw>
 <kw name="Login Submit" library="login_page">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -618,17 +618,17 @@
 <arguments>
 <arg>id:btn-submit-login</arg>
 </arguments>
-<msg timestamp="20190307 16:15:38.397" level="INFO">Clicking button 'id:btn-submit-login'.</msg>
-<status status="PASS" endtime="20190307 16:15:41.180" starttime="20190307 16:15:38.396"></status>
+<msg timestamp="20190327 10:54:16.675" level="INFO">Clicking button 'id:btn-submit-login'.</msg>
+<status status="PASS" endtime="20190327 10:54:19.248" starttime="20190327 10:54:16.674"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:41.181" starttime="20190307 16:15:38.395"></status>
+<status status="PASS" endtime="20190327 10:54:19.248" starttime="20190327 10:54:16.674"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${logic}</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:15:42.350" starttime="20190307 16:15:41.181"></status>
+<status status="PASS" endtime="20190327 10:54:20.359" starttime="20190327 10:54:19.248"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -636,10 +636,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:43.401" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-15-33/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B03.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-15-33/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B03.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:15:43.402" starttime="20190307 16:15:42.352"></status>
+<msg timestamp="20190327 10:54:21.198" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-11/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B03.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-11/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B03.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:54:21.198" starttime="20190327 10:54:20.359"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:43.403" starttime="20190307 16:15:42.351"></status>
+<status status="PASS" endtime="20190327 10:54:21.198" starttime="20190327 10:54:20.359"></status>
 </kw>
 <kw name="Click Tab Buy" library="home_page">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
@@ -647,18 +647,18 @@
 <arguments>
 <arg>${buy}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:44.475" level="INFO">Element 'xpath:(//span[@class="menu-title"])[2]' is displayed.</msg>
-<status status="PASS" endtime="20190307 16:15:44.475" starttime="20190307 16:15:43.405"></status>
+<msg timestamp="20190327 10:54:22.222" level="INFO">Element 'xpath:(//span[@class="menu-title"])[2]' is displayed.</msg>
+<status status="PASS" endtime="20190327 10:54:22.222" starttime="20190327 10:54:21.199"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${buy}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:44.477" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[2]'.</msg>
-<status status="PASS" endtime="20190307 16:15:45.597" starttime="20190307 16:15:44.476"></status>
+<msg timestamp="20190327 10:54:22.222" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[2]'.</msg>
+<status status="PASS" endtime="20190327 10:54:23.272" starttime="20190327 10:54:22.222"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:45.597" starttime="20190307 16:15:43.403"></status>
+<status status="PASS" endtime="20190327 10:54:23.272" starttime="20190327 10:54:21.198"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -666,10 +666,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:46.487" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-15-33/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B04.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-15-33/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B04.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:15:46.488" starttime="20190307 16:15:45.600"></status>
+<msg timestamp="20190327 10:54:24.129" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-11/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B04.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-11/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B04.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:54:24.129" starttime="20190327 10:54:23.272"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:46.488" starttime="20190307 16:15:45.598"></status>
+<status status="PASS" endtime="20190327 10:54:24.129" starttime="20190327 10:54:23.272"></status>
 </kw>
 <kw name="Click Tab OtherExpense" library="home_page">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
@@ -677,18 +677,18 @@
 <arguments>
 <arg>${save_other_buy_list}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:47.528" level="INFO">Element 'xpath:(//span[@class="menu-title"])[4]' is displayed.</msg>
-<status status="PASS" endtime="20190307 16:15:47.529" starttime="20190307 16:15:46.488"></status>
+<msg timestamp="20190327 10:54:25.153" level="INFO">Element 'xpath:(//span[@class="menu-title"])[4]' is displayed.</msg>
+<status status="PASS" endtime="20190327 10:54:25.153" starttime="20190327 10:54:24.129"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${save_other_buy_list}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:47.531" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[4]'.</msg>
-<status status="PASS" endtime="20190307 16:15:48.801" starttime="20190307 16:15:47.530"></status>
+<msg timestamp="20190327 10:54:25.153" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[4]'.</msg>
+<status status="PASS" endtime="20190327 10:54:26.271" starttime="20190327 10:54:25.153"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:48.802" starttime="20190307 16:15:46.488"></status>
+<status status="PASS" endtime="20190327 10:54:26.271" starttime="20190327 10:54:24.129"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -696,10 +696,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:15:49.691" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-15-33/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B05.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-15-33/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B05.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:15:49.692" starttime="20190307 16:15:48.806"></status>
+<msg timestamp="20190327 10:54:27.126" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-11/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B05.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-11/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B05.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:54:27.126" starttime="20190327 10:54:26.271"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:49.692" starttime="20190307 16:15:48.803"></status>
+<status status="PASS" endtime="20190327 10:54:27.126" starttime="20190327 10:54:26.271"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -715,28 +715,28 @@
 <arguments>
 <arg>name:paid</arg>
 </arguments>
-<msg timestamp="20190307 16:15:49.693" level="INFO">Verifying checkbox 'name:paid' is selected.</msg>
-<status status="PASS" endtime="20190307 16:15:52.292" starttime="20190307 16:15:49.692"></status>
+<msg timestamp="20190327 10:54:27.128" level="INFO">Verifying checkbox 'name:paid' is selected.</msg>
+<status status="PASS" endtime="20190327 10:54:29.662" starttime="20190327 10:54:27.127"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://*[@id="cbx-oe-paid"]/label/div</arg>
 </arguments>
-<msg timestamp="20190307 16:15:52.294" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-paid"]/label/div'.</msg>
-<status status="PASS" endtime="20190307 16:15:53.409" starttime="20190307 16:15:52.293"></status>
+<msg timestamp="20190327 10:54:29.662" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-paid"]/label/div'.</msg>
+<status status="PASS" endtime="20190327 10:54:30.784" starttime="20190327 10:54:29.662"></status>
 </kw>
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
 <arguments>
 <arg>name:paid</arg>
 </arguments>
-<msg timestamp="20190307 16:15:53.409" level="INFO">Verifying checkbox 'name:paid' is not selected.</msg>
-<status status="PASS" endtime="20190307 16:15:55.964" starttime="20190307 16:15:53.409"></status>
+<msg timestamp="20190327 10:54:30.784" level="INFO">Verifying checkbox 'name:paid' is not selected.</msg>
+<status status="PASS" endtime="20190327 10:54:33.318" starttime="20190327 10:54:30.784"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:55.965" starttime="20190307 16:15:49.692"></status>
+<status status="PASS" endtime="20190327 10:54:33.318" starttime="20190327 10:54:27.127"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:15:55.965" starttime="20190307 16:15:49.692"></status>
+<status status="PASS" endtime="20190327 10:54:33.318" starttime="20190327 10:54:27.126"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -752,20 +752,20 @@
 <arguments>
 <arg>id:cbx-oe-outstanding-input</arg>
 </arguments>
-<msg timestamp="20190307 16:15:55.972" level="INFO">Selecting checkbox 'id:cbx-oe-outstanding-input'.</msg>
-<status status="PASS" endtime="20190307 16:15:58.051" starttime="20190307 16:15:55.971"></status>
+<msg timestamp="20190327 10:54:33.319" level="INFO">Selecting checkbox 'id:cbx-oe-outstanding-input'.</msg>
+<status status="PASS" endtime="20190327 10:54:35.356" starttime="20190327 10:54:33.319"></status>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
 <arguments>
 <arg>name:outstanding</arg>
 </arguments>
-<msg timestamp="20190307 16:15:58.052" level="INFO">Verifying checkbox 'name:outstanding' is selected.</msg>
-<status status="PASS" endtime="20190307 16:16:00.607" starttime="20190307 16:15:58.052"></status>
+<msg timestamp="20190327 10:54:35.357" level="INFO">Verifying checkbox 'name:outstanding' is selected.</msg>
+<status status="PASS" endtime="20190327 10:54:37.890" starttime="20190327 10:54:35.356"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:00.609" starttime="20190307 16:15:55.968"></status>
+<status status="PASS" endtime="20190327 10:54:37.890" starttime="20190327 10:54:33.319"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:00.609" starttime="20190307 16:15:55.966"></status>
+<status status="PASS" endtime="20190327 10:54:37.890" starttime="20190327 10:54:33.318"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -781,28 +781,28 @@
 <arguments>
 <arg>name:void</arg>
 </arguments>
-<msg timestamp="20190307 16:16:00.614" level="INFO">Verifying checkbox 'name:void' is selected.</msg>
-<status status="PASS" endtime="20190307 16:16:03.242" starttime="20190307 16:16:00.613"></status>
+<msg timestamp="20190327 10:54:37.892" level="INFO">Verifying checkbox 'name:void' is selected.</msg>
+<status status="PASS" endtime="20190327 10:54:40.430" starttime="20190327 10:54:37.892"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://*[@id="cbx-oe-void"]/label/div</arg>
 </arguments>
-<msg timestamp="20190307 16:16:03.245" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-void"]/label/div'.</msg>
-<status status="PASS" endtime="20190307 16:16:04.400" starttime="20190307 16:16:03.243"></status>
+<msg timestamp="20190327 10:54:40.430" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-void"]/label/div'.</msg>
+<status status="PASS" endtime="20190327 10:54:41.511" starttime="20190327 10:54:40.430"></status>
 </kw>
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
 <arguments>
 <arg>name:void</arg>
 </arguments>
-<msg timestamp="20190307 16:16:04.402" level="INFO">Verifying checkbox 'name:void' is not selected.</msg>
-<status status="PASS" endtime="20190307 16:16:06.990" starttime="20190307 16:16:04.401"></status>
+<msg timestamp="20190327 10:54:41.511" level="INFO">Verifying checkbox 'name:void' is not selected.</msg>
+<status status="PASS" endtime="20190327 10:54:44.040" starttime="20190327 10:54:41.511"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:06.990" starttime="20190307 16:16:00.611"></status>
+<status status="PASS" endtime="20190327 10:54:44.040" starttime="20190327 10:54:37.891"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:06.991" starttime="20190307 16:16:00.609"></status>
+<status status="PASS" endtime="20190327 10:54:44.040" starttime="20190327 10:54:37.890"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -810,10 +810,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:07.902" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-15-33/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B06.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-15-33/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B06.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:16:07.903" starttime="20190307 16:16:06.993"></status>
+<msg timestamp="20190327 10:54:44.885" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-11/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B06.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-11/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B06.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:54:44.885" starttime="20190327 10:54:44.040"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:07.903" starttime="20190307 16:16:06.992"></status>
+<status status="PASS" endtime="20190327 10:54:44.885" starttime="20190327 10:54:44.040"></status>
 </kw>
 <kw name="Click Btn Search" library="oe_page">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -821,10 +821,10 @@
 <arguments>
 <arg>id:btn-oe-search-keyword</arg>
 </arguments>
-<msg timestamp="20190307 16:16:07.904" level="INFO">Clicking button 'id:btn-oe-search-keyword'.</msg>
-<status status="PASS" endtime="20190307 16:16:10.585" starttime="20190307 16:16:07.904"></status>
+<msg timestamp="20190327 10:54:44.886" level="INFO">Clicking button 'id:btn-oe-search-keyword'.</msg>
+<status status="PASS" endtime="20190327 10:54:47.461" starttime="20190327 10:54:44.886"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:10.586" starttime="20190307 16:16:07.904"></status>
+<status status="PASS" endtime="20190327 10:54:47.461" starttime="20190327 10:54:44.886"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -832,8 +832,8 @@
 <arg>@{status_line}</arg>
 <arg>${result_status}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:10.592" level="INFO">@{status_line} = [ ค้างชำระ ]</msg>
-<status status="PASS" endtime="20190307 16:16:10.592" starttime="20190307 16:16:10.586"></status>
+<msg timestamp="20190327 10:54:47.464" level="INFO">@{status_line} = [ ค้างชำระ ]</msg>
+<status status="PASS" endtime="20190327 10:54:47.464" starttime="20190327 10:54:47.461"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -841,8 +841,8 @@
 <arg>${status_true}</arg>
 <arg>สถานะถูกต้อง</arg>
 </arguments>
-<msg timestamp="20190307 16:16:10.594" level="INFO">${status_true} = สถานะถูกต้อง</msg>
-<status status="PASS" endtime="20190307 16:16:10.594" starttime="20190307 16:16:10.593"></status>
+<msg timestamp="20190327 10:54:47.465" level="INFO">${status_true} = สถานะถูกต้อง</msg>
+<status status="PASS" endtime="20190327 10:54:47.465" starttime="20190327 10:54:47.464"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -850,8 +850,8 @@
 <arg>${status_false}</arg>
 <arg>สถานะไม่ถูกต้อง</arg>
 </arguments>
-<msg timestamp="20190307 16:16:10.595" level="INFO">${status_false} = สถานะไม่ถูกต้อง</msg>
-<status status="PASS" endtime="20190307 16:16:10.595" starttime="20190307 16:16:10.594"></status>
+<msg timestamp="20190327 10:54:47.465" level="INFO">${status_false} = สถานะไม่ถูกต้อง</msg>
+<status status="PASS" endtime="20190327 10:54:47.465" starttime="20190327 10:54:47.465"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -859,8 +859,8 @@
 <arg>${status_value}</arg>
 <arg>ไม่พบรายการ</arg>
 </arguments>
-<msg timestamp="20190307 16:16:10.595" level="INFO">${status_value} = ไม่พบรายการ</msg>
-<status status="PASS" endtime="20190307 16:16:10.595" starttime="20190307 16:16:10.595"></status>
+<msg timestamp="20190327 10:54:47.465" level="INFO">${status_value} = ไม่พบรายการ</msg>
+<status status="PASS" endtime="20190327 10:54:47.465" starttime="20190327 10:54:47.465"></status>
 </kw>
 <kw name="Get Element Count" library="SeleniumLibrary">
 <doc>Returns number of elements matching ``locator``.</doc>
@@ -870,16 +870,16 @@
 <assign>
 <var>${column}</var>
 </assign>
-<msg timestamp="20190307 16:16:11.112" level="INFO">${column} = 1</msg>
-<status status="PASS" endtime="20190307 16:16:11.113" starttime="20190307 16:16:10.595"></status>
+<msg timestamp="20190327 10:54:47.976" level="INFO">${column} = 1</msg>
+<status status="PASS" endtime="20190327 10:54:47.976" starttime="20190327 10:54:47.466"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${column}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:11.116" level="INFO">${column} = 1</msg>
-<status status="PASS" endtime="20190307 16:16:11.116" starttime="20190307 16:16:11.114"></status>
+<msg timestamp="20190327 10:54:47.977" level="INFO">${column} = 1</msg>
+<status status="PASS" endtime="20190327 10:54:47.977" starttime="20190327 10:54:47.976"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -896,9 +896,9 @@
 <arguments>
 <arg>มีรายการ</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:16:11.124" starttime="20190307 16:16:11.120"></status>
+<status status="PASS" endtime="20190327 10:54:47.978" starttime="20190327 10:54:47.977"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:11.124" starttime="20190307 16:16:11.117"></status>
+<status status="PASS" endtime="20190327 10:54:47.978" starttime="20190327 10:54:47.977"></status>
 </kw>
 <kw type="for" name="${index} IN RANGE [ 0 | ${column} ]">
 <kw type="foritem" name="${index} = 0">
@@ -910,8 +910,8 @@
 <assign>
 <var>${status_now}</var>
 </assign>
-<msg timestamp="20190307 16:16:12.221" level="INFO">${status_now} = ค้างชำระ</msg>
-<status status="PASS" endtime="20190307 16:16:12.222" starttime="20190307 16:16:11.127"></status>
+<msg timestamp="20190327 10:54:49.004" level="INFO">${status_now} = ค้างชำระ</msg>
+<status status="PASS" endtime="20190327 10:54:49.004" starttime="20190327 10:54:47.978"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -928,13 +928,13 @@
 <arguments>
 <arg>${status_now} : ${status_true}</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:16:12.232" starttime="20190307 16:16:12.229"></status>
+<status status="PASS" endtime="20190327 10:54:49.006" starttime="20190327 10:54:49.006"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:12.232" starttime="20190307 16:16:12.223"></status>
+<status status="PASS" endtime="20190327 10:54:49.006" starttime="20190327 10:54:49.004"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:12.232" starttime="20190307 16:16:11.126"></status>
+<status status="PASS" endtime="20190327 10:54:49.006" starttime="20190327 10:54:47.978"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:12.232" starttime="20190307 16:16:11.124"></status>
+<status status="PASS" endtime="20190327 10:54:49.006" starttime="20190327 10:54:47.978"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -942,21 +942,21 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:13.253" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-15-33/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B07.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-15-33/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B07.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:16:13.253" starttime="20190307 16:16:12.234"></status>
+<msg timestamp="20190327 10:54:49.818" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-11/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B07.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-11/2%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%8A%E0%B8%B3%E0%B8%A3%E0%B8%B07.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:54:49.818" starttime="20190327 10:54:49.006"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:13.256" starttime="20190307 16:16:12.233"></status>
+<status status="PASS" endtime="20190327 10:54:49.818" starttime="20190327 10:54:49.006"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:13.256" starttime="20190307 16:15:33.053"></status>
+<status status="PASS" endtime="20190327 10:54:49.818" starttime="20190327 10:54:11.827"></status>
 </kw>
 <kw type="teardown" name="Run Keyword If Test Failed" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
 <arguments>
 <arg>Capture Screen</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:16:13.261" starttime="20190307 16:16:13.260"></status>
+<status status="PASS" endtime="20190327 10:54:49.819" starttime="20190327 10:54:49.819"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:13.262" critical="yes" starttime="20190307 16:15:29.014"></status>
+<status status="PASS" endtime="20190327 10:54:49.820" critical="yes" starttime="20190327 10:54:07.175"></status>
 </test>
 <test id="s1-t3" name="3ตรวจสอบการแสดงรายการ_โดยมีเงื่อนไขดังนี้_เลือก_Checkbox_ยกเลิกรายการ">
 <kw type="setup" name="Go to login page" library="dglforsme">
@@ -965,10 +965,10 @@
 <arguments>
 <arg>${login_url}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:13.277" level="INFO">Opening url 'https://dgl-acct.addtechhub.com/login'</msg>
-<status status="PASS" endtime="20190307 16:16:17.416" starttime="20190307 16:16:13.277"></status>
+<msg timestamp="20190327 10:54:49.823" level="INFO">Opening url 'https://dgl-acct.addtechhub.com/login'</msg>
+<status status="PASS" endtime="20190327 10:54:55.565" starttime="20190327 10:54:49.823"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:17.417" starttime="20190307 16:16:13.276"></status>
+<status status="PASS" endtime="20190327 10:54:55.565" starttime="20190327 10:54:49.823"></status>
 </kw>
 <kw name="Oe Check Result 1" library="TS_OE_Lis_1">
 <arguments>
@@ -985,7 +985,7 @@
 <arguments>
 <arg>0.5</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:16:17.426" starttime="20190307 16:16:17.424"></status>
+<status status="PASS" endtime="20190327 10:54:55.566" starttime="20190327 10:54:55.566"></status>
 </kw>
 <kw name="Set Directory" library="dglforsme">
 <arguments>
@@ -1003,18 +1003,18 @@
 <assign>
 <var>${date current}</var>
 </assign>
-<msg timestamp="20190307 16:16:17.434" level="INFO">${date current} = 2019-03-07 16-16-17</msg>
-<status status="PASS" endtime="20190307 16:16:17.435" starttime="20190307 16:16:17.432"></status>
+<msg timestamp="20190327 10:54:55.567" level="INFO">${date current} = 2019-03-27 10-54-55</msg>
+<status status="PASS" endtime="20190327 10:54:55.567" starttime="20190327 10:54:55.567"></status>
 </kw>
-<msg timestamp="20190307 16:16:17.437" level="INFO">${Date} = 2019-03-07 16-16-17</msg>
-<status status="PASS" endtime="20190307 16:16:17.437" starttime="20190307 16:16:17.430"></status>
+<msg timestamp="20190327 10:54:55.567" level="INFO">${Date} = 2019-03-27 10-54-55</msg>
+<status status="PASS" endtime="20190327 10:54:55.567" starttime="20190327 10:54:55.567"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${Date}</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:16:17.441" starttime="20190307 16:16:17.438"></status>
+<status status="PASS" endtime="20190327 10:54:55.568" starttime="20190327 10:54:55.567"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -1022,10 +1022,10 @@
 <arg>${Path}</arg>
 <arg>${Output_url}/${image_name} ${Date}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:17.445" level="INFO">${Path} = /Users/USER1/.jenkins/workspace/DGL/Screen/OE Page Search 2019-03-07 16-16-17</msg>
-<status status="PASS" endtime="20190307 16:16:17.446" starttime="20190307 16:16:17.443"></status>
+<msg timestamp="20190327 10:54:55.568" level="INFO">${Path} = /Users/USER1/.jenkins/workspace/DGL/Screen/OE Page Search 2019-03-27 10-54-55</msg>
+<status status="PASS" endtime="20190327 10:54:55.568" starttime="20190327 10:54:55.568"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:17.446" starttime="20190307 16:16:17.427"></status>
+<status status="PASS" endtime="20190327 10:54:55.568" starttime="20190327 10:54:55.566"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -1033,10 +1033,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:18.395" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-16-17/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A31.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-16-17/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A31.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:16:18.396" starttime="20190307 16:16:17.450"></status>
+<msg timestamp="20190327 10:54:56.359" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-55/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A31.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-55/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A31.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:54:56.359" starttime="20190327 10:54:55.569"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:18.397" starttime="20190307 16:16:17.447"></status>
+<status status="PASS" endtime="20190327 10:54:56.359" starttime="20190327 10:54:55.568"></status>
 </kw>
 <kw name="Input User" library="login_page">
 <arguments>
@@ -1048,10 +1048,10 @@
 <arg>id:input-email</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:18.399" level="INFO">Typing text 'tester@gmail.com' into text field 'id:input-email'.</msg>
-<status status="PASS" endtime="20190307 16:16:20.136" starttime="20190307 16:16:18.398"></status>
+<msg timestamp="20190327 10:54:56.360" level="INFO">Typing text 'tester@gmail.com' into text field 'id:input-email'.</msg>
+<status status="PASS" endtime="20190327 10:54:57.966" starttime="20190327 10:54:56.360"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:20.137" starttime="20190307 16:16:18.397"></status>
+<status status="PASS" endtime="20190327 10:54:57.966" starttime="20190327 10:54:56.359"></status>
 </kw>
 <kw name="Input Password" library="login_page">
 <arguments>
@@ -1063,10 +1063,10 @@
 <arg>id:input-password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:20.141" level="INFO">Typing text '123123' into text field 'id:input-password'.</msg>
-<status status="PASS" endtime="20190307 16:16:21.811" starttime="20190307 16:16:20.140"></status>
+<msg timestamp="20190327 10:54:57.967" level="INFO">Typing text '123123' into text field 'id:input-password'.</msg>
+<status status="PASS" endtime="20190327 10:54:59.540" starttime="20190327 10:54:57.966"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:21.811" starttime="20190307 16:16:20.137"></status>
+<status status="PASS" endtime="20190327 10:54:59.540" starttime="20190327 10:54:57.966"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -1074,10 +1074,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:22.679" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-16-17/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A32.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-16-17/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A32.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:16:22.679" starttime="20190307 16:16:21.812"></status>
+<msg timestamp="20190327 10:55:00.350" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-55/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A32.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-55/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:55:00.350" starttime="20190327 10:54:59.541"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:22.679" starttime="20190307 16:16:21.812"></status>
+<status status="PASS" endtime="20190327 10:55:00.350" starttime="20190327 10:54:59.540"></status>
 </kw>
 <kw name="Login Submit" library="login_page">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -1085,17 +1085,17 @@
 <arguments>
 <arg>id:btn-submit-login</arg>
 </arguments>
-<msg timestamp="20190307 16:16:22.680" level="INFO">Clicking button 'id:btn-submit-login'.</msg>
-<status status="PASS" endtime="20190307 16:16:25.360" starttime="20190307 16:16:22.680"></status>
+<msg timestamp="20190327 10:55:00.350" level="INFO">Clicking button 'id:btn-submit-login'.</msg>
+<status status="PASS" endtime="20190327 10:55:02.945" starttime="20190327 10:55:00.350"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:25.360" starttime="20190307 16:16:22.679"></status>
+<status status="PASS" endtime="20190327 10:55:02.945" starttime="20190327 10:55:00.350"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${logic}</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:16:26.589" starttime="20190307 16:16:25.361"></status>
+<status status="PASS" endtime="20190327 10:55:04.065" starttime="20190327 10:55:02.945"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -1103,10 +1103,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:27.466" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-16-17/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A33.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-16-17/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A33.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:16:27.466" starttime="20190307 16:16:26.589"></status>
+<msg timestamp="20190327 10:55:04.890" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-55/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A33.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-55/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:55:04.890" starttime="20190327 10:55:04.065"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:27.466" starttime="20190307 16:16:26.589"></status>
+<status status="PASS" endtime="20190327 10:55:04.890" starttime="20190327 10:55:04.065"></status>
 </kw>
 <kw name="Click Tab Buy" library="home_page">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
@@ -1114,18 +1114,18 @@
 <arguments>
 <arg>${buy}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:28.534" level="INFO">Element 'xpath:(//span[@class="menu-title"])[2]' is displayed.</msg>
-<status status="PASS" endtime="20190307 16:16:28.534" starttime="20190307 16:16:27.466"></status>
+<msg timestamp="20190327 10:55:05.913" level="INFO">Element 'xpath:(//span[@class="menu-title"])[2]' is displayed.</msg>
+<status status="PASS" endtime="20190327 10:55:05.913" starttime="20190327 10:55:04.891"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${buy}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:28.534" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[2]'.</msg>
-<status status="PASS" endtime="20190307 16:16:29.633" starttime="20190307 16:16:28.534"></status>
+<msg timestamp="20190327 10:55:05.913" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[2]'.</msg>
+<status status="PASS" endtime="20190327 10:55:06.968" starttime="20190327 10:55:05.913"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:29.634" starttime="20190307 16:16:27.466"></status>
+<status status="PASS" endtime="20190327 10:55:06.968" starttime="20190327 10:55:04.890"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -1133,10 +1133,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:30.564" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-16-17/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A34.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-16-17/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A34.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:16:30.566" starttime="20190307 16:16:29.636"></status>
+<msg timestamp="20190327 10:55:07.817" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-55/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A34.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-55/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A34.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:55:07.817" starttime="20190327 10:55:06.969"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:30.566" starttime="20190307 16:16:29.635"></status>
+<status status="PASS" endtime="20190327 10:55:07.817" starttime="20190327 10:55:06.968"></status>
 </kw>
 <kw name="Click Tab OtherExpense" library="home_page">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
@@ -1144,18 +1144,18 @@
 <arguments>
 <arg>${save_other_buy_list}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:31.636" level="INFO">Element 'xpath:(//span[@class="menu-title"])[4]' is displayed.</msg>
-<status status="PASS" endtime="20190307 16:16:31.637" starttime="20190307 16:16:30.569"></status>
+<msg timestamp="20190327 10:55:08.840" level="INFO">Element 'xpath:(//span[@class="menu-title"])[4]' is displayed.</msg>
+<status status="PASS" endtime="20190327 10:55:08.840" starttime="20190327 10:55:07.817"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${save_other_buy_list}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:31.639" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[4]'.</msg>
-<status status="PASS" endtime="20190307 16:16:32.839" starttime="20190307 16:16:31.638"></status>
+<msg timestamp="20190327 10:55:08.840" level="INFO">Clicking element 'xpath:(//span[@class="menu-title"])[4]'.</msg>
+<status status="PASS" endtime="20190327 10:55:09.954" starttime="20190327 10:55:08.840"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:32.839" starttime="20190307 16:16:30.567"></status>
+<status status="PASS" endtime="20190327 10:55:09.954" starttime="20190327 10:55:07.817"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -1163,10 +1163,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:33.741" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-16-17/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A35.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-16-17/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A35.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:16:33.742" starttime="20190307 16:16:32.842"></status>
+<msg timestamp="20190327 10:55:10.797" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-55/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A35.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-55/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A35.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:55:10.797" starttime="20190327 10:55:09.955"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:33.743" starttime="20190307 16:16:32.840"></status>
+<status status="PASS" endtime="20190327 10:55:10.797" starttime="20190327 10:55:09.954"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -1182,28 +1182,28 @@
 <arguments>
 <arg>name:paid</arg>
 </arguments>
-<msg timestamp="20190307 16:16:33.753" level="INFO">Verifying checkbox 'name:paid' is selected.</msg>
-<status status="PASS" endtime="20190307 16:16:36.384" starttime="20190307 16:16:33.751"></status>
+<msg timestamp="20190327 10:55:10.798" level="INFO">Verifying checkbox 'name:paid' is selected.</msg>
+<status status="PASS" endtime="20190327 10:55:13.334" starttime="20190327 10:55:10.798"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://*[@id="cbx-oe-paid"]/label/div</arg>
 </arguments>
-<msg timestamp="20190307 16:16:36.385" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-paid"]/label/div'.</msg>
-<status status="PASS" endtime="20190307 16:16:37.548" starttime="20190307 16:16:36.384"></status>
+<msg timestamp="20190327 10:55:13.334" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-paid"]/label/div'.</msg>
+<status status="PASS" endtime="20190327 10:55:14.391" starttime="20190327 10:55:13.334"></status>
 </kw>
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
 <arguments>
 <arg>name:paid</arg>
 </arguments>
-<msg timestamp="20190307 16:16:37.549" level="INFO">Verifying checkbox 'name:paid' is not selected.</msg>
-<status status="PASS" endtime="20190307 16:16:40.120" starttime="20190307 16:16:37.549"></status>
+<msg timestamp="20190327 10:55:14.391" level="INFO">Verifying checkbox 'name:paid' is not selected.</msg>
+<status status="PASS" endtime="20190327 10:55:16.915" starttime="20190327 10:55:14.391"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:40.121" starttime="20190307 16:16:33.750"></status>
+<status status="PASS" endtime="20190327 10:55:16.915" starttime="20190327 10:55:10.798"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:40.121" starttime="20190307 16:16:33.745"></status>
+<status status="PASS" endtime="20190327 10:55:16.915" starttime="20190327 10:55:10.797"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -1219,28 +1219,28 @@
 <arguments>
 <arg>name:outstanding</arg>
 </arguments>
-<msg timestamp="20190307 16:16:40.129" level="INFO">Verifying checkbox 'name:outstanding' is selected.</msg>
-<status status="PASS" endtime="20190307 16:16:42.753" starttime="20190307 16:16:40.128"></status>
+<msg timestamp="20190327 10:55:16.915" level="INFO">Verifying checkbox 'name:outstanding' is selected.</msg>
+<status status="PASS" endtime="20190327 10:55:19.454" starttime="20190327 10:55:16.915"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://*[@id="cbx-oe-outstanding"]/label/div</arg>
 </arguments>
-<msg timestamp="20190307 16:16:42.755" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-outstanding"]/label/div'.</msg>
-<status status="PASS" endtime="20190307 16:16:43.883" starttime="20190307 16:16:42.754"></status>
+<msg timestamp="20190327 10:55:19.454" level="INFO">Clicking element 'xpath://*[@id="cbx-oe-outstanding"]/label/div'.</msg>
+<status status="PASS" endtime="20190327 10:55:20.518" starttime="20190327 10:55:19.454"></status>
 </kw>
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
 <arguments>
 <arg>name:outstanding</arg>
 </arguments>
-<msg timestamp="20190307 16:16:43.884" level="INFO">Verifying checkbox 'name:outstanding' is not selected.</msg>
-<status status="PASS" endtime="20190307 16:16:46.476" starttime="20190307 16:16:43.884"></status>
+<msg timestamp="20190327 10:55:20.518" level="INFO">Verifying checkbox 'name:outstanding' is not selected.</msg>
+<status status="PASS" endtime="20190327 10:55:23.047" starttime="20190327 10:55:20.518"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:46.476" starttime="20190307 16:16:40.126"></status>
+<status status="PASS" endtime="20190327 10:55:23.047" starttime="20190327 10:55:16.915"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:46.476" starttime="20190307 16:16:40.121"></status>
+<status status="PASS" endtime="20190327 10:55:23.047" starttime="20190327 10:55:16.915"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -1256,20 +1256,20 @@
 <arguments>
 <arg>id:cbx-oe-void-input</arg>
 </arguments>
-<msg timestamp="20190307 16:16:46.478" level="INFO">Selecting checkbox 'id:cbx-oe-void-input'.</msg>
-<status status="PASS" endtime="20190307 16:16:48.565" starttime="20190307 16:16:46.478"></status>
+<msg timestamp="20190327 10:55:23.047" level="INFO">Selecting checkbox 'id:cbx-oe-void-input'.</msg>
+<status status="PASS" endtime="20190327 10:55:25.078" starttime="20190327 10:55:23.047"></status>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
 <arguments>
 <arg>name:void</arg>
 </arguments>
-<msg timestamp="20190307 16:16:48.566" level="INFO">Verifying checkbox 'name:void' is selected.</msg>
-<status status="PASS" endtime="20190307 16:16:51.156" starttime="20190307 16:16:48.565"></status>
+<msg timestamp="20190327 10:55:25.078" level="INFO">Verifying checkbox 'name:void' is selected.</msg>
+<status status="PASS" endtime="20190327 10:55:27.610" starttime="20190327 10:55:25.078"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:51.157" starttime="20190307 16:16:46.477"></status>
+<status status="PASS" endtime="20190327 10:55:27.610" starttime="20190327 10:55:23.047"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:51.158" starttime="20190307 16:16:46.476"></status>
+<status status="PASS" endtime="20190327 10:55:27.610" starttime="20190327 10:55:23.047"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -1277,10 +1277,10 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:52.229" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-16-17/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A36.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-16-17/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A36.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:16:52.230" starttime="20190307 16:16:51.160"></status>
+<msg timestamp="20190327 10:55:28.429" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-55/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A36.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-55/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A36.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:55:28.429" starttime="20190327 10:55:27.610"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:52.230" starttime="20190307 16:16:51.158"></status>
+<status status="PASS" endtime="20190327 10:55:28.430" starttime="20190327 10:55:27.610"></status>
 </kw>
 <kw name="Click Btn Search" library="oe_page">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -1288,10 +1288,10 @@
 <arguments>
 <arg>id:btn-oe-search-keyword</arg>
 </arguments>
-<msg timestamp="20190307 16:16:52.232" level="INFO">Clicking button 'id:btn-oe-search-keyword'.</msg>
-<status status="PASS" endtime="20190307 16:16:54.895" starttime="20190307 16:16:52.231"></status>
+<msg timestamp="20190327 10:55:28.430" level="INFO">Clicking button 'id:btn-oe-search-keyword'.</msg>
+<status status="PASS" endtime="20190327 10:55:31.022" starttime="20190327 10:55:28.430"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:54.895" starttime="20190307 16:16:52.230"></status>
+<status status="PASS" endtime="20190327 10:55:31.022" starttime="20190327 10:55:28.430"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -1299,8 +1299,8 @@
 <arg>@{status_line}</arg>
 <arg>${result_status}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:54.898" level="INFO">@{status_line} = [ ยกเลิกรายการ ]</msg>
-<status status="PASS" endtime="20190307 16:16:54.898" starttime="20190307 16:16:54.896"></status>
+<msg timestamp="20190327 10:55:31.022" level="INFO">@{status_line} = [ ยกเลิกรายการ ]</msg>
+<status status="PASS" endtime="20190327 10:55:31.022" starttime="20190327 10:55:31.022"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -1308,8 +1308,8 @@
 <arg>${status_true}</arg>
 <arg>สถานะถูกต้อง</arg>
 </arguments>
-<msg timestamp="20190307 16:16:54.903" level="INFO">${status_true} = สถานะถูกต้อง</msg>
-<status status="PASS" endtime="20190307 16:16:54.903" starttime="20190307 16:16:54.900"></status>
+<msg timestamp="20190327 10:55:31.022" level="INFO">${status_true} = สถานะถูกต้อง</msg>
+<status status="PASS" endtime="20190327 10:55:31.022" starttime="20190327 10:55:31.022"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -1317,8 +1317,8 @@
 <arg>${status_false}</arg>
 <arg>สถานะไม่ถูกต้อง</arg>
 </arguments>
-<msg timestamp="20190307 16:16:54.904" level="INFO">${status_false} = สถานะไม่ถูกต้อง</msg>
-<status status="PASS" endtime="20190307 16:16:54.904" starttime="20190307 16:16:54.903"></status>
+<msg timestamp="20190327 10:55:31.022" level="INFO">${status_false} = สถานะไม่ถูกต้อง</msg>
+<status status="PASS" endtime="20190327 10:55:31.023" starttime="20190327 10:55:31.022"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -1326,8 +1326,8 @@
 <arg>${status_value}</arg>
 <arg>ไม่พบรายการ</arg>
 </arguments>
-<msg timestamp="20190307 16:16:54.905" level="INFO">${status_value} = ไม่พบรายการ</msg>
-<status status="PASS" endtime="20190307 16:16:54.905" starttime="20190307 16:16:54.905"></status>
+<msg timestamp="20190327 10:55:31.023" level="INFO">${status_value} = ไม่พบรายการ</msg>
+<status status="PASS" endtime="20190327 10:55:31.023" starttime="20190327 10:55:31.023"></status>
 </kw>
 <kw name="Get Element Count" library="SeleniumLibrary">
 <doc>Returns number of elements matching ``locator``.</doc>
@@ -1337,16 +1337,16 @@
 <assign>
 <var>${column}</var>
 </assign>
-<msg timestamp="20190307 16:16:55.421" level="INFO">${column} = 1</msg>
-<status status="PASS" endtime="20190307 16:16:55.421" starttime="20190307 16:16:54.905"></status>
+<msg timestamp="20190327 10:55:31.536" level="INFO">${column} = 1</msg>
+<status status="PASS" endtime="20190327 10:55:31.536" starttime="20190327 10:55:31.023"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${column}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:55.425" level="INFO">${column} = 1</msg>
-<status status="PASS" endtime="20190307 16:16:55.426" starttime="20190307 16:16:55.422"></status>
+<msg timestamp="20190327 10:55:31.536" level="INFO">${column} = 1</msg>
+<status status="PASS" endtime="20190327 10:55:31.536" starttime="20190327 10:55:31.536"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -1363,9 +1363,9 @@
 <arguments>
 <arg>มีรายการ</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:16:55.432" starttime="20190307 16:16:55.429"></status>
+<status status="PASS" endtime="20190327 10:55:31.538" starttime="20190327 10:55:31.537"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:55.433" starttime="20190307 16:16:55.426"></status>
+<status status="PASS" endtime="20190327 10:55:31.538" starttime="20190327 10:55:31.537"></status>
 </kw>
 <kw type="for" name="${index} IN RANGE [ 0 | ${column} ]">
 <kw type="foritem" name="${index} = 0">
@@ -1377,8 +1377,8 @@
 <assign>
 <var>${status_now}</var>
 </assign>
-<msg timestamp="20190307 16:16:56.479" level="INFO">${status_now} = ยกเลิกรายการ</msg>
-<status status="PASS" endtime="20190307 16:16:56.479" starttime="20190307 16:16:55.437"></status>
+<msg timestamp="20190327 10:55:32.564" level="INFO">${status_now} = ยกเลิกรายการ</msg>
+<status status="PASS" endtime="20190327 10:55:32.564" starttime="20190327 10:55:31.538"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -1395,13 +1395,13 @@
 <arguments>
 <arg>${status_now} : ${status_true}</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:16:56.489" starttime="20190307 16:16:56.486"></status>
+<status status="PASS" endtime="20190327 10:55:32.565" starttime="20190327 10:55:32.565"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:56.489" starttime="20190307 16:16:56.480"></status>
+<status status="PASS" endtime="20190327 10:55:32.566" starttime="20190327 10:55:32.564"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:56.490" starttime="20190307 16:16:55.435"></status>
+<status status="PASS" endtime="20190327 10:55:32.566" starttime="20190327 10:55:31.538"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:56.490" starttime="20190307 16:16:55.433"></status>
+<status status="PASS" endtime="20190327 10:55:32.566" starttime="20190327 10:55:31.538"></status>
 </kw>
 <kw name="Capture Screen" library="dglforsme">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
@@ -1409,27 +1409,27 @@
 <arguments>
 <arg>${Path}/${TEST_NAME}{index}.${Type of file}</arg>
 </arguments>
-<msg timestamp="20190307 16:16:57.384" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-16-17/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A37.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-07%2016-16-17/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A37.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190307 16:16:57.385" starttime="20190307 16:16:56.492"></status>
+<msg timestamp="20190327 10:55:33.378" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-55/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A37.png"&gt;&lt;img src="../../../../Users/USER1/.jenkins/workspace/DGL/Screen/OE%20Page%20Search%202019-03-27%2010-54-55/3%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%87%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%82%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89_%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%81_Checkbox_%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A37.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190327 10:55:33.378" starttime="20190327 10:55:32.566"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:57.385" starttime="20190307 16:16:56.491"></status>
+<status status="PASS" endtime="20190327 10:55:33.378" starttime="20190327 10:55:32.566"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:57.387" starttime="20190307 16:16:17.419"></status>
+<status status="PASS" endtime="20190327 10:55:33.378" starttime="20190327 10:54:55.565"></status>
 </kw>
 <kw type="teardown" name="Run Keyword If Test Failed" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
 <arguments>
 <arg>Capture Screen</arg>
 </arguments>
-<status status="PASS" endtime="20190307 16:16:57.389" starttime="20190307 16:16:57.388"></status>
+<status status="PASS" endtime="20190327 10:55:33.379" starttime="20190327 10:55:33.379"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:16:57.391" critical="yes" starttime="20190307 16:16:13.272"></status>
+<status status="PASS" endtime="20190327 10:55:33.380" critical="yes" starttime="20190327 10:54:49.821"></status>
 </test>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190307 16:17:00.062" starttime="20190307 16:16:57.402"></status>
+<status status="PASS" endtime="20190327 10:55:35.940" starttime="20190327 10:55:33.382"></status>
 </kw>
-<status status="PASS" endtime="20190307 16:17:00.062" starttime="20190307 16:14:36.230"></status>
+<status status="PASS" endtime="20190327 10:55:35.940" starttime="20190327 10:53:15.774"></status>
 </suite>
 <statistics>
 <total>

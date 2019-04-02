@@ -6,7 +6,7 @@ Resource             ${CURDIR}/../Resource/dglforsme.resource
 
 *** Keywords ***
 
-CS Check Search 3
+Oe Check Search 1
     [Arguments]            ${username}    ${password}       ${image_name}       ${data}
     Set Selenium Speed     0.5
     Set Directory          ${image_name}
@@ -15,22 +15,21 @@ CS Check Search 3
     Input Password         ${password}
     Capture Screen
     Login Submit                 
-    Wait Until Element Is Visible           ${logic} 
+    Wait Until Element Is Visible           ${logic}
     Capture Screen
     Click Tab Buy
     Capture Screen
     Click Tab OtherExpense
     Capture Screen
+    Click Btn Search
+    ${column}=       Get Element Count        //*[@id="sl-oe-detail-0"]
+    Set Suite Variable      ${column}
+    Log To Console       ${column}
+    Run Keyword If       ${column} > 1        Fail
     Input Data Search    ${data}
     Click Btn Search
-    Set Suite Variable       ${status_value}  ไม่พบรายการ
-    ${column}=       Get Element Count        //*[contains(@id, 'sl-oe-detail')]
-    Set Suite Variable       ${column}
-    Run Keyword If       ${column}>0        Log To Console      มีรายการ       ELSE        fail  ${column} : ${status_value}
+    ${number_document}=    Get Text     //*[@id="sl-oe-detail-0"]/div[1]/label 
     Set Suite Variable       ${status_true}   สถานะถูกต้อง
     Set Suite Variable       ${status_false}  สถานะไม่ถูกต้อง
-    :FOR    ${index}    IN RANGE     0     ${column}
-    \   ${status_now}=   Get Text     //*[@id="sl-oe-detail-${index}"]/div[3]/label
-    \   Log To Console      ${status_now}
-    \   Run Keyword If      '${status_now}'=='${data}'      Log To Console      ${status_now} : ${status_true}      ELSE      fail  ${status_now} : ${status_false}
+    Run Keyword If     '${number_document}'=='${data}'      Log To Console      ${number_document} : ${status_true}      ELSE        fail  ${number_document} : ${status_false}  
     Capture Screen

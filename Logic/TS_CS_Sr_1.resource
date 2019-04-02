@@ -1,0 +1,34 @@
+*** Settings ***
+Library              SeleniumLibrary
+Resource             ${CURDIR}/../Resource/dglforsme.resource
+
+*** Variables ***
+
+*** Keywords ***
+
+CS Check Search 1
+    [Arguments]            ${username}    ${password}       ${image_name}       ${data}
+    Set Selenium Speed     0.5
+    Set Directory          ${image_name}
+    Capture Screen
+    Input User             ${username}    
+    Input Password         ${password}
+    Capture Screen
+    Login Submit                 
+    Wait Until Element Is Visible           ${logic}
+    Capture Screen
+    Click Tab Sell
+    Capture Screen
+    Click Tab cashSale
+    Capture Screen
+    Input Data Search    ${data}
+    Click Btn Search
+    ${column}=       Get Element Count        //div[starts-with(@id,'sl-hs-detail')]
+    Set Suite Variable      ${column}
+    Log To Console       ${column}
+    Run Keyword If       ${column} > 1        Fail
+    ${number_document}=    Get Text     //*[@id="sl-hs-detail-0"]/div[1] 
+    Set Suite Variable       ${status_true}   สถานะถูกต้อง
+    Set Suite Variable       ${status_false}  สถานะไม่ถูกต้อง
+    Run Keyword If     '${number_document}'=='${data}'      Log To Console      ${number_document} : ${status_true}      ELSE        fail  ${number_document} : ${status_false}  
+    Capture Screen
